@@ -1,7 +1,7 @@
 # Kevin Kelm's Individual Project
 [Project Details (Wiki)](https://github.com/kkelm/adhound/wiki)
 
-![Trail Description](images/AdHound-Logo-Horizontal.jpg)
+![AdHound](images/AdHound-Logo-Horizontal.jpg)
 
 AdHound™ empowers media distribution professionals with the most powerful and customizable advertisement placement tracking system on the market. Offering you and your clients accurate performance and accounting reports.
 
