@@ -7,7 +7,12 @@ import java.sql.SQLException;
 import org.apache.ibatis.jdbc.ScriptRunner;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Database {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     private Properties properties;
 
@@ -43,6 +48,10 @@ public class Database {
      */
     private void loadProperties() {
 
+        System.out.println("Properties File");
+
+        logger.info("Properties File Loaded");
+
         properties = new Properties();
 
         try {
@@ -50,6 +59,8 @@ public class Database {
             properties.load(this.getClass().getResourceAsStream("/database.properties"));
 
         } catch (IOException e) {
+
+            logger.info("Properties File Did Not Load: ", e);
 
             System.out.println("Database.loadProperties() : Cannot load the properties file.");
 
