@@ -1,0 +1,23 @@
+/**
+// AdHound Colors //
+Red
+  Hex: #ee2f25
+  RGB: (238,47,37)
+
+Blue
+  Hex: #012d6b
+  RGB: (1,45,107)
+ */
+body {}
+
+.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    background-color: #ee2f25;
+}
+
+.btn-secondary {
+    color: #fff;
+    font-weight: bold;
+    background-color: #012d6b;
+}
