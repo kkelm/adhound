@@ -3,6 +3,7 @@ package com.adhound.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name = "State")
 @Table(name = "states")
@@ -20,12 +21,9 @@ public class State {
     @Column(name = "states_Name")
     private String name;
 
-    //@OneToOne(mappedBy = "state")
+    //@ManyToOne
+    //@JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     //private User user;
-
-    @ManyToOne
-    @JoinColumn(name = "id", insertable = false, updatable = false, nullable = false)
-    private User user;
 
     State() {}
 

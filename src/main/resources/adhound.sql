@@ -568,8 +568,8 @@ LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES (1,'kkelm','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890')
 ,(2,'assistant','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890')
-,(3,'runner','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',34,'12345-67890')
-,(4,'admin_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',35,'12345-67890')
+,(3,'runner','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
+,(4,'admin_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
 ,(5,'assistant_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',36,'12345-67890');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;

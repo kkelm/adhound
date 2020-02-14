@@ -37,7 +37,7 @@
                 <td>${user.firstName} ${user.lastName}</td>
                 <td>${user.username}</td>
 
-                <td><c:out value="${user.state.toArray()[0].abbreviation}" /></td>
+                <td><c:out value="${user.state.abbreviation}" /></td>
             </tr>
         </c:forEach>
         </tbody>
