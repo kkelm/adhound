@@ -508,30 +508,6 @@ INSERT INTO `user_locations` VALUES (1,1),(1,2),(1,3);
 /*!40000 ALTER TABLE `user_locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `user_roles`
---
-
-DROP TABLE IF EXISTS `user_roles`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_roles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(24) NOT NULL,
-  `role_name` varchar(24) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_roles`
---
-
-LOCK TABLES `user_roles` WRITE;
-/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES (1,'kkelm','Administrator'),(2,'assistant','Assistant'),(3,'runner','Runner'),(4,'admin_test','Administrator'),(5,'assistant_test','Assistant');
-/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `user_users`
@@ -567,7 +543,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(24) NOT NULL,
+  `username` varchar(24) NOT NULL UNIQUE,
   `password` varchar(128) NOT NULL,
   `first_name` varchar(24) NOT NULL,
   `last_name` varchar(24) NOT NULL,
@@ -578,12 +554,9 @@ CREATE TABLE `users` (
   `city` varchar(24) NOT NULL,
   `state_id` int(2) NOT NULL,
   `zipcode` varchar(11) NOT NULL,
-  `type_id` int(11) DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `users_state_fk` (`state_id`),
-  KEY `users_type_fk` (`type_id`),
-  CONSTRAINT `users_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`),
-  CONSTRAINT `users_type_fk` FOREIGN KEY (`type_id`) REFERENCES `user_roles` (`id`)
+  CONSTRAINT `users_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -593,11 +566,11 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'kkelm','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890',1)
-,(2,'assistant','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890',2)
-,(3,'runner','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890',3)
-,(4,'admin_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890',1)
-,(5,'assistant_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890',2);
+INSERT INTO `users` VALUES (1,'kkelm','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890')
+,(2,'assistant','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890')
+,(3,'runner','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',34,'12345-67890')
+,(4,'admin_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',35,'12345-67890')
+,(5,'assistant_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',36,'12345-67890');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -611,3 +584,31 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2018-12-13 19:20:45
+
+
+--
+-- Table structure for table `user_roles`
+--
+
+DROP TABLE IF EXISTS `user_roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_roles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(24) NOT NULL,
+  `role_name` varchar(24) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `username_fk` (`username`),
+  CONSTRAINT `username_fk` FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_roles`
+--
+
+LOCK TABLES `user_roles` WRITE;
+/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
+INSERT INTO `user_roles` VALUES (1,'kkelm','Administrator'),(2,'assistant','Assistant'),(3,'runner','Runner'),(4,'admin_test','Administrator'),(5,'assistant_test','Assistant');
+/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
+UNLOCK TABLES;
