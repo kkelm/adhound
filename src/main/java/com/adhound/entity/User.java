@@ -48,15 +48,12 @@ public class User {
     private int stateId;
 
 
-    //@OneToOne
-    //@JoinColumn(name = "state_id", insertable = false, updatable = false)
-    //private State state;
+    @OneToOne
+    @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
+    private State state;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
-    private Set<State> state;
-
-    //@OneToOne(mappedBy="id")
-    //private State state;
+    //@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    //private Set<State> state;
 
     @Column(name = "zipcode")
     private String zipcode;
@@ -222,14 +219,14 @@ public class User {
     /**
      * @return
      */
-    public Set<State> getState() {
+    public State getState() {
         return state;
     }
 
     /**
      * @param state
      */
-    public void setState(Set<State> state) {
+    public void setState(State state) {
         this.state = state;
     }
 
