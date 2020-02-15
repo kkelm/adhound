@@ -47,7 +47,6 @@ public class User {
     @Column(name = "state_id")
     private int stateId;
 
-
     @OneToOne
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
@@ -57,8 +56,6 @@ public class User {
 
     @Column(name = "zipcode")
     private String zipcode;
-
-
 
     User() {}
 
