@@ -57,7 +57,39 @@ public class User {
     @Column(name = "zipcode")
     private String zipcode;
 
-    User() {}
+    /**
+     * Instantiates a new User.
+     */
+    public User() {}
+
+    /**
+     * Instantiates a new User.
+     *
+     * @param username  the username
+     * @param password  the password
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param phone     the phone
+     * @param fax       the fax
+     * @param email     the email
+     * @param address   the address
+     * @param city      the city
+     * @param stateId   the state id
+     * @param zipcode   the zipcode
+     */
+    public User(String username, String password, String firstName, String lastName, String phone, String fax, String email, String address, String city, int stateId, String zipcode) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.fax = fax;
+        this.email = email;
+        this.address = address;
+        this.city = city;
+        this.stateId = stateId;
+        this.zipcode = zipcode;
+    }
 
     /**
      * @return
