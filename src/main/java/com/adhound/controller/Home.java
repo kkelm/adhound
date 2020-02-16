@@ -1,5 +1,4 @@
 package com.adhound.controller;
-import com.adhound.persistence.Database;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +16,7 @@ public class Home extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Database database = new Database();
+
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
 

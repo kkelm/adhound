@@ -1,10 +1,12 @@
-package com.adhound.persistence;
+package com.adhound.test.util;
 
 import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import org.apache.ibatis.jdbc.ScriptRunner;
+
+import java.sql.Statement;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
@@ -13,6 +15,8 @@ import org.apache.logging.log4j.Logger;
 public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+
+    private static Database instance = new Database();
 
     private Properties properties;
 
@@ -26,6 +30,7 @@ public class Database {
     /**
      * Runs a SQL file to create the AdHound database.
      */
+    /*
     private void createDatabase() {
 
         ScriptRunner scriptRunner = new ScriptRunner(getConnection());
@@ -43,6 +48,7 @@ public class Database {
         }
 
     }
+    */
     /**
      * Instantiates an object of the Properties class, and loads the database properties file.
      */

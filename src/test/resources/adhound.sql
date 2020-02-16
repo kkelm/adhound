@@ -566,11 +566,11 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'kkelm','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890')
-,(2,'assistant','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890')
-,(3,'runner','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
-,(4,'admin_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
-,(5,'assistant_test','$2y$10$J5Dy.vfoLfhE6HKq3Mal3eIdn9kdVPO7NahHpNWLgYiMoyqwn17QW','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',36,'12345-67890');
+INSERT INTO `users` VALUES (1,'kkelm','123abc','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890')
+,(2,'assistant','123abc','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890')
+,(3,'runner','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
+,(4,'admin_test','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
+,(5,'assistant_test','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',36,'12345-67890');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -599,7 +599,7 @@ CREATE TABLE `user_roles` (
   `role_name` varchar(24) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `username_fk` (`username`),
-  CONSTRAINT `username_fk` FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+  CONSTRAINT `username_fk` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
