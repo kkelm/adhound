@@ -15,9 +15,8 @@ class UserDataTest {
 
     UserData userData;
 
-
     /**
-     * Sets up.
+     * Sets up the tests with a new UserData object.
      */
     @BeforeEach
     void setUp() {
@@ -27,7 +26,7 @@ class UserDataTest {
     }
 
     /**
-     * Gets all users data.
+     * Test get all users data.
      */
     @Test
     void testGetAllUsersData() {
@@ -39,7 +38,7 @@ class UserDataTest {
     }
 
     /**
-     * Gets user data success.
+     * Test get one user data success.
      */
     @Test
     void testGetUserDataSuccess() {
@@ -48,6 +47,9 @@ class UserDataTest {
         assertEquals("Kevin", getUser.getFirstName());
     }
 
+    /**
+     * Test an update of a user record.
+     */
     @Test
     void testSaveOrUpdate() {
         String password = "testPassword";
@@ -58,6 +60,9 @@ class UserDataTest {
         assertEquals(password, getUser.getPassword());
     }
 
+    /**
+     * Test the creation of a new user record.
+     */
     @Test
     void testInsert() {
         User newUser = new User("testUsername", "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
@@ -66,9 +71,12 @@ class UserDataTest {
         assertEquals("testUsername", insertedUser.getUsername());
     }
 
+    /**
+     * Test the deletion of a user record.
+     */
     @Test
     void testDelete() {
-        userData.delete(userData.getUserData(5));
-        assertNull(userData.getUserData(5));
+        userData.delete(userData.getUserData(6));
+        assertNull(userData.getUserData(6));
     }
 }

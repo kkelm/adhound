@@ -11,7 +11,6 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
@@ -21,8 +20,16 @@ import java.util.List;
 public class UserData {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * Gets all users data.
+     *
+     * @return the all users data
+     */
     public List<User> getAllUsersData() {
         Session session = sessionFactory.openSession();
         // Create a CriteriaBuilder instance by calling the getCriteriaBuilder method on the Session
@@ -39,6 +46,12 @@ public class UserData {
         return user;
     }
 
+    /**
+     * Gets user data for one user.
+     *
+     * @param id the id
+     * @return the user data
+     */
     public User getUserData(int id) {
         Session session = sessionFactory.openSession();
         User user = session.get(User.class, id);
@@ -63,8 +76,9 @@ public class UserData {
     }
 
     /**
-     * update User
-     * @param user  User to be inserted or updated
+     * Updates a user record in the database.
+     *
+     * @param user User to be updated
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
@@ -75,8 +89,10 @@ public class UserData {
     }
 
     /**
-     * update User
-     * @param user  User to be inserted or updated
+     * Inserts a new user record in the database.
+     *
+     * @param user User to be inserted
+     * @return id of of the new record
      */
     public int insert(User user) {
         int id = 0;
@@ -89,7 +105,8 @@ public class UserData {
     }
 
     /**
-     * Delete a user
+     * Delete a user record from the database.
+     *
      * @param user User to be deleted
      */
     public void delete(User user) {
