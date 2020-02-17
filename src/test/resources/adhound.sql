@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.19, for Linux (x86_64)
 --
--- Host: 0.0.0.0    Database: adhound
+-- Host: 127.0.0.1    Database: adhound
 -- ------------------------------------------------------
--- Server version	5.5.57-0ubuntu0.14.04.1
+-- Server version	8.0.19-0ubuntu0.19.10.3
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,9 +21,9 @@
 
 DROP TABLE IF EXISTS `contact_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `contact_types` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(48) NOT NULL,
   `description` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -46,9 +46,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_categories` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(48) NOT NULL,
   `description` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -71,14 +71,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_category`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_category` (
-  `location_id` int(11) NOT NULL,
-  `category_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `category_id` int NOT NULL,
   PRIMARY KEY (`location_id`,`category_id`),
   KEY `category_fk` (`category_id`),
-  CONSTRAINT `category_location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `category_fk` FOREIGN KEY (`category_id`) REFERENCES `location_categories` (`id`)
+  CONSTRAINT `category_fk` FOREIGN KEY (`category_id`) REFERENCES `location_categories` (`id`),
+  CONSTRAINT `category_location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -98,14 +98,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_contact`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_contact` (
-  `location_id` int(11) NOT NULL,
-  `contact_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `contact_id` int NOT NULL,
   PRIMARY KEY (`location_id`,`contact_id`),
   KEY `contact_fk` (`contact_id`),
-  CONSTRAINT `location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `contact_fk` FOREIGN KEY (`contact_id`) REFERENCES `location_contacts` (`id`)
+  CONSTRAINT `contact_fk` FOREIGN KEY (`contact_id`) REFERENCES `location_contacts` (`id`),
+  CONSTRAINT `location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -125,9 +125,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_contacts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_contacts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `first_name` varchar(24) NOT NULL,
   `last_name` varchar(24) NOT NULL,
   `phone` varchar(15) DEFAULT NULL,
@@ -135,9 +135,9 @@ CREATE TABLE `location_contacts` (
   `email` varchar(128) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL,
   `city` varchar(24) NOT NULL,
-  `state_id` int(2) NOT NULL,
+  `state_id` int NOT NULL,
   `zipcode` varchar(11) NOT NULL,
-  `type_id` int(11) NOT NULL,
+  `type_id` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `contacts_state_fk` (`state_id`),
   KEY `contacts_type_fk` (`type_id`),
@@ -162,14 +162,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_level`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_level` (
-  `location_id` int(11) NOT NULL,
-  `level_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `level_id` int NOT NULL,
   PRIMARY KEY (`location_id`,`level_id`),
   KEY `level_fk` (`level_id`),
-  CONSTRAINT `locations_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `level_fk` FOREIGN KEY (`level_id`) REFERENCES `location_levels` (`id`)
+  CONSTRAINT `level_fk` FOREIGN KEY (`level_id`) REFERENCES `location_levels` (`id`),
+  CONSTRAINT `locations_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -189,9 +189,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_levels`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_levels` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(24) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -213,11 +213,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_notes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_notes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `note` varchar(1024) DEFAULT NULL,
-  `location_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `notes_location_fk` (`location_id`),
   CONSTRAINT `notes_location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE
@@ -240,13 +240,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_panel`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_panel` (
-  `location_id` int(11) NOT NULL,
-  `level_id` int(11) NOT NULL,
-  `room_id` int(11) NOT NULL,
-  `wall_id` int(11) NOT NULL,
-  `panel_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `level_id` int NOT NULL,
+  `room_id` int NOT NULL,
+  `wall_id` int NOT NULL,
+  `panel_id` int NOT NULL,
   `height` float(5,3) NOT NULL,
   `width` float(5,3) NOT NULL,
   `description` varchar(1024) DEFAULT NULL,
@@ -273,9 +273,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_panels`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_panels` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(24) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
@@ -297,9 +297,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_regions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_regions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(48) NOT NULL,
   `description` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -322,11 +322,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_room`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_room` (
-  `location_id` int(11) NOT NULL,
-  `level_id` int(11) NOT NULL,
-  `room_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `level_id` int NOT NULL,
+  `room_id` int NOT NULL,
   PRIMARY KEY (`location_id`,`level_id`,`room_id`),
   KEY `room_fk` (`room_id`),
   CONSTRAINT `location_level_fk` FOREIGN KEY (`location_id`, `level_id`) REFERENCES `location_level` (`location_id`, `level_id`) ON DELETE CASCADE,
@@ -350,9 +350,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_rooms`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_rooms` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(24) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -374,12 +374,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_wall`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_wall` (
-  `location_id` int(11) NOT NULL,
-  `level_id` int(11) NOT NULL,
-  `room_id` int(11) NOT NULL,
-  `wall_id` int(11) NOT NULL,
+  `location_id` int NOT NULL,
+  `level_id` int NOT NULL,
+  `room_id` int NOT NULL,
+  `wall_id` int NOT NULL,
   PRIMARY KEY (`location_id`,`level_id`,`room_id`,`wall_id`),
   KEY `wall_fk` (`wall_id`),
   CONSTRAINT `location_wall_fk` FOREIGN KEY (`location_id`, `level_id`, `room_id`) REFERENCES `location_room` (`location_id`, `level_id`, `room_id`) ON DELETE CASCADE,
@@ -403,9 +403,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `location_walls`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location_walls` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(24) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
@@ -427,22 +427,22 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `locations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `locations` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(48) NOT NULL,
   `phone` varchar(15) DEFAULT NULL,
   `fax` varchar(15) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL,
   `city` varchar(24) NOT NULL,
-  `state_id` int(2) NOT NULL,
+  `state_id` int NOT NULL,
   `zipcode` varchar(11) NOT NULL,
-  `region_id` int(11) DEFAULT NULL,
+  `region_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `locations_state_fk` (`state_id`),
   KEY `locations_region_fk` (`region_id`),
-  CONSTRAINT `locations_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`) ON DELETE NO ACTION,
-  CONSTRAINT `locations_region_fk` FOREIGN KEY (`region_id`) REFERENCES `location_regions` (`id`) ON DELETE NO ACTION
+  CONSTRAINT `locations_region_fk` FOREIGN KEY (`region_id`) REFERENCES `location_regions` (`id`),
+  CONSTRAINT `locations_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -462,9 +462,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `states`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `states` (
-  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `states_Abbreviation` varchar(2) NOT NULL,
   `states_Name` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
@@ -487,10 +487,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `user_locations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_locations` (
-  `admin_id` int(11) NOT NULL,
-  `location_id` int(11) NOT NULL,
+  `admin_id` int NOT NULL,
+  `location_id` int NOT NULL,
   KEY `user_admin_location_fk` (`admin_id`),
   KEY `user_location_fk` (`location_id`),
   CONSTRAINT `user_admin_location_fk` FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
@@ -508,31 +508,38 @@ INSERT INTO `user_locations` VALUES (1,1),(1,2),(1,3);
 /*!40000 ALTER TABLE `user_locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
+--
+-- Table structure for table `user_roles`
+--
+
+DROP TABLE IF EXISTS `user_roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_roles` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(24) NOT NULL,
+  `role_name` varchar(24) DEFAULT 'Distributor',
+  PRIMARY KEY (`id`),
+  KEY `username_fk` (`username`),
+  CONSTRAINT `username_fk` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_roles`
+--
+
+LOCK TABLES `user_roles` WRITE;
+/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
+INSERT INTO `user_roles` VALUES (1,'kkelm','Administrator'),(2,'distributor','Distributor'),(3,'runner','Runner');
+/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `user_users`
 --
 
 DROP TABLE IF EXISTS `user_users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_users` (
-  `admin_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`admin_id`,`user_id`),
-  CONSTRAINT `user_admin_fk` FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_users`
---
-
-LOCK TABLES `user_users` WRITE;
-/*!40000 ALTER TABLE `user_users` DISABLE KEYS */;
-INSERT INTO `user_users` VALUES (1,1),(1,2),(1,3),(2,2),(2,4),(2,5);
-/*!40000 ALTER TABLE `user_users` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `users`
@@ -540,10 +547,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(24) NOT NULL UNIQUE,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(24) NOT NULL,
   `password` varchar(128) NOT NULL,
   `first_name` varchar(24) NOT NULL,
   `last_name` varchar(24) NOT NULL,
@@ -552,12 +559,13 @@ CREATE TABLE `users` (
   `email` varchar(128) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL,
   `city` varchar(24) NOT NULL,
-  `state_id` int(2) NOT NULL,
+  `state_id` int NOT NULL,
   `zipcode` varchar(11) NOT NULL,
   PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
   KEY `users_state_fk` (`state_id`),
   CONSTRAINT `users_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -566,11 +574,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'kkelm','123abc','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890')
-,(2,'assistant','123abc','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890')
-,(3,'runner','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
-,(4,'admin_test','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890')
-,(5,'assistant_test','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',36,'12345-67890');
+INSERT INTO `users` VALUES (1,'kkelm','testPassword','Kevin','Kelm','(123) 456-7890','(123) 789-4560','kkelm@outlook.com','123 Test Road','Fitchburg',49,'12345-67890'),(2,'distributor','test','Darth','Vader','(123) 456-7890','(123) 789-4560','test@gmail.com','123 Test Street','Madison',25,'12345-67890'),(3,'runner','123abc','Luke','Skywalker','(123) 456-7890','(123) 789-4560','test@yahoo.com','123 Test Circle','Markesan',33,'12345-67890');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -583,32 +587,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-13 19:20:45
-
-
---
--- Table structure for table `user_roles`
---
-
-DROP TABLE IF EXISTS `user_roles`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_roles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(24) NOT NULL,
-  `role_name` varchar(24) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `username_fk` (`username`),
-  CONSTRAINT `username_fk` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_roles`
---
-
-LOCK TABLES `user_roles` WRITE;
-/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES (1,'kkelm','Administrator'),(2,'assistant','Assistant'),(3,'runner','Runner'),(4,'admin_test','Administrator'),(5,'assistant_test','Assistant');
-/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
-UNLOCK TABLES;
+-- Dump completed on 2020-02-17 16:00:22

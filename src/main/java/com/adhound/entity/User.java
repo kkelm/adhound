@@ -3,6 +3,7 @@ package com.adhound.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity(name = "User")
@@ -48,9 +49,6 @@ public class User {
     @OneToOne
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
-
-    //@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    //private Set<State> state;
 
     @Column(name = "zipcode")
     private String zipcode;
