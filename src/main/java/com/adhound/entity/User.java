@@ -10,8 +10,6 @@ import java.util.Set;
 
 public class User {
 
-    //State state = new State();
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
