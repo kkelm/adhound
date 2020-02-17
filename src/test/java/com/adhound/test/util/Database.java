@@ -1,6 +1,7 @@
 package com.adhound.test.util;
 
 import java.io.*;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -30,25 +31,42 @@ public class Database {
     /**
      * Runs a SQL file to create the AdHound database.
      */
-    /*
-    private void createDatabase() {
 
-        ScriptRunner scriptRunner = new ScriptRunner(getConnection());
+    public void createDatabase(String sqlFile) {
+
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+
+        String sql =  String.valueOf(classLoader.getResource(sqlFile));
+
 
         try {
 
-            Reader reader = new BufferedReader(new FileReader(("/adhound.sql")));
+            Runtime rt = Runtime.getRuntime();
+            String executeSqlCommand = "sudo mysql -u root adhound < " + sql;
+            Process pr = rt.exec(executeSqlCommand);
+            int exitVal = pr.waitFor();
+            System.out.println("Exited with error code " + exitVal);
+            /*
+            this.setConnection();
+
+            ScriptRunner scriptRunner = new ScriptRunner(this.getConnection());
+
+            Reader reader = new BufferedReader(new FileReader(sql));
 
             scriptRunner.runScript(reader);
-
+            */
         } catch (FileNotFoundException e) {
 
             System.out.println("Database.createDatabase() : Cannot load the SQL file.");
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
     }
-    */
+
     /**
      * Instantiates an object of the Properties class, and loads the database properties file.
      */
@@ -72,6 +90,13 @@ public class Database {
 
         }
 
+    }
+    /**
+     * Gets the only Database object available
+     * @return Database object
+     */
+    public static Database getInstance() {
+        return instance;
     }
     /**
      * Gets the Connection object to the database
@@ -128,5 +153,42 @@ public class Database {
         connection = null;
 
     }
+/*
+    public void runSQL(String sqlFile) {
 
+
+
+        Statement statement = null;
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        InputStream inputStream = classLoader.getResourceAsStream(sqlFile);
+
+        //// InputStream inputStream = getClass().getClassLoader().getResourceAsStream(sqlFile);
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+
+            this.setConnection();
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            statement = getConnection().createStatement();
+
+            while (reader.ready()) {
+
+                String sql = reader.readLine();
+                if ((sql != null) && (!sql.equals("")) && (sql.matches("^[a-zA-Z]*$"))) {
+                    logger.info(sql);
+                    statement.executeUpdate(sql);
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            disconnect();
+        }
+
+    }
+*/
 }

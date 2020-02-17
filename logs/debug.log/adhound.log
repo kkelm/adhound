@@ -98,3 +98,86 @@
 [INFO ] 2020-02-15 17:03:44.773 [main] Database - Properties File Loaded
 [INFO ] 2020-02-15 17:05:11.825 [main] Database - Properties File Loaded
 [INFO ] 2020-02-15 17:05:11.828 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:25:46.240 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:25:46.243 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:27:34.940 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:27:34.943 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:28:43.821 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:28:43.824 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:30:15.633 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:30:15.636 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:30:53.310 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:30:53.313 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:31:32.339 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:31:32.342 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:33:16.709 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:33:16.712 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:33:55.155 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:33:55.157 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:34:06.591 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:34:06.594 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:39:55.578 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:40:14.192 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:41:06.071 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:42:21.567 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:45:07.295 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:45:19.942 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:48:07.188 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:48:36.125 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:51:12.737 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:55:16.528 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:56:06.496 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:56:38.091 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:57:05.444 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:59:45.527 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 10:59:45.963 [main] Database - -- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
+[INFO ] 2020-02-17 10:59:45.964 [main] Database - --
+[INFO ] 2020-02-17 10:59:45.964 [main] Database - -- Host: 0.0.0.0    Database: adhound
+[INFO ] 2020-02-17 10:59:45.965 [main] Database - -- ------------------------------------------------------
+[INFO ] 2020-02-17 10:59:45.965 [main] Database - -- Server version	5.5.57-0ubuntu0.14.04.1
+[INFO ] 2020-02-17 10:59:45.965 [main] Database - 
+[INFO ] 2020-02-17 11:00:10.702 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:02:53.711 [main] Database - -- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
+[INFO ] 2020-02-17 11:03:04.632 [main] Database - --
+[INFO ] 2020-02-17 11:03:04.632 [main] Database - -- Host: 0.0.0.0    Database: adhound
+[INFO ] 2020-02-17 11:03:04.633 [main] Database - -- ------------------------------------------------------
+[INFO ] 2020-02-17 11:03:04.633 [main] Database - -- Server version	5.5.57-0ubuntu0.14.04.1
+[INFO ] 2020-02-17 11:03:04.634 [main] Database - 
+[INFO ] 2020-02-17 11:03:07.768 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:03:38.046 [main] Database - -- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
+[INFO ] 2020-02-17 11:03:43.718 [main] Database - --
+[INFO ] 2020-02-17 11:03:44.549 [main] Database - -- Host: 0.0.0.0    Database: adhound
+[INFO ] 2020-02-17 11:03:45.630 [main] Database - -- ------------------------------------------------------
+[INFO ] 2020-02-17 11:03:46.266 [main] Database - -- Server version	5.5.57-0ubuntu0.14.04.1
+[INFO ] 2020-02-17 11:03:47.014 [main] Database - 
+[INFO ] 2020-02-17 11:11:12.173 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:11:32.765 [main] Database - 
+[INFO ] 2020-02-17 11:12:20.461 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:13:22.896 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:39:20.998 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:40:30.849 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:41:55.953 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:47:25.416 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:48:17.955 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:51:50.516 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:53:23.142 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:55:09.367 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:56:35.911 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:57:42.059 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 11:58:18.849 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:00:52.363 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:01:16.447 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:01:58.958 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:03:04.411 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:04:12.613 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:04:41.174 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:06:14.861 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:07:07.271 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:10:30.446 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:10:56.003 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:12:20.642 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:21:49.898 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:30:36.422 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:31:55.560 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:32:19.169 [main] Database - Properties File Loaded
+[INFO ] 2020-02-17 12:33:13.907 [main] Database - Properties File Loaded
