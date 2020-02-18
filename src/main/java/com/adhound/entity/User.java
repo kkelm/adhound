@@ -53,6 +53,10 @@ public class User {
     @Column(name = "zipcode")
     private String zipcode;
 
+    @OneToOne
+    @JoinColumn(name = "username", insertable = false, updatable = false, nullable = false)
+    private UserRole userRole;
+
     /**
      * Instantiates a new User.
      */
@@ -88,187 +92,270 @@ public class User {
     }
 
     /**
-     * @return
+     * Gets the user id.
+     *
+     * @return the id integer
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id
+     * Sets the user id.
+     *
+     * @param id integer
      */
     public void setId(int id) {
         this.id = id;
     }
 
     /**
-     * @return
+     * Gets the user's username.
+     *
+     * @return the username string
      */
     public String getUsername() {
         return username;
     }
 
     /**
-     * @param username
+     * Sets the user's username.
+     *
+     * @param username string
      */
     public void setUsername(String username) {
         this.username = username;
     }
 
     /**
-     * @return
+     * Gets the user's password.
+     *
+     * @return the password string
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     * @param password
+     * Sets the user's password.
+     *
+     * @param password string
      */
     public void setPassword(String password) {
         this.password = password;
     }
 
     /**
-     * @return
+     * Gets the user's first name.
+     *
+     * @return the first name string
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * @param firstName
+     * Sets the user's first name.
+     *
+     * @param firstName string
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
     /**
-     * @return
+     * Gets the user's last name.
+     *
+     * @return the last name string
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * @param lastName
+     * Sets the user's last name.
+     *
+     * @param lastName string
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
     /**
-     * @return
+     * Gets the user's phone.
+     *
+     * @return the phone string
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     * @param phone
+     * Sets the user's phone.
+     *
+     * @param phone string
      */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
     /**
-     * @return
+     * Gets the user's fax.
+     *
+     * @return the fax string
      */
     public String getFax() {
         return fax;
     }
 
     /**
-     * @param fax
+     * Sets the user's fax.
+     *
+     * @param fax string
      */
     public void setFax(String fax) {
         this.fax = fax;
     }
 
     /**
-     * @return
+     * Gets the user's email.
+     *
+     * @return the email string
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * @param email
+     * Sets the user's email.
+     *
+     * @param email string
      */
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     * @return
+     * Gets the user's address.
+     *
+     * @return the address string
      */
     public String getAddress() {
         return address;
     }
 
     /**
-     * @param address
+     * Sets the user's address.
+     *
+     * @param address string
      */
     public void setAddress(String address) {
         this.address = address;
     }
 
     /**
-     * @return
+     * Gets the user's city.
+     *
+     * @return the city string
      */
     public String getCity() {
         return city;
     }
 
     /**
-     * @param city
+     * Sets the user's city.
+     *
+     * @param city string
      */
     public void setCity(String city) {
         this.city = city;
     }
 
     /**
-     * @return
+     * Gets the user's state id.
+     *
+     * @return the state id integer
      */
     public int getStateId() {
         return stateId;
     }
 
     /**
-     * @param stateId
+     * Sets the user's state id.
+     *
+     * @param stateId integer
      */
     public void setStateId(int stateId) {
         this.stateId = stateId;
     }
 
     /**
-     * @return
+     * Gets the state object for the user's state.
+     *
+     * @return state the State object
      */
     public State getState() {
         return state;
     }
 
     /**
-     * @param state
+     * Sets the state object for the user's state.
+     *
+     * @param state the State object
      */
     public void setState(State state) {
         this.state = state;
     }
 
     /**
-     * @return
+     * Gets the user's zipcode.
+     *
+     * @return the zipcode string
      */
     public String getZipcode() {
         return zipcode;
     }
 
     /**
-     * @param zipcode
+     * Sets the user's zipcode.
+     *
+     * @param zipcode string
      */
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 
+    /**
+     * Gets the user role object for the user's role.
+     *
+     * @return the UserRole object
+     */
+    public UserRole getUserRole() { return userRole; }
 
+    /**
+     * Sets the user role object for the user's role.
+     *
+     * @param userRole the UserRole object
+     */
+    public void setUserRole(UserRole userRole) {
+        this.userRole = userRole;
+    }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phone='" + phone + '\'' +
+                ", fax='" + fax + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", stateId=" + stateId +
+                ", zipcode='" + zipcode +
+                '}';
+    }
 }

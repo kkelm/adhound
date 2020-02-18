@@ -3,7 +3,6 @@ package com.adhound.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity(name = "State")
 @Table(name = "states")
@@ -21,33 +20,72 @@ public class State {
     @Column(name = "states_Name")
     private String name;
 
-    //@ManyToOne
-    //@JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
-    //private User user;
+    /**
+     * Instantiates a new State.
+     */
+    public State() {}
 
-    State() {}
-
+    /**
+     * Gets state id.
+     *
+     * @return the state id integer
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets state id.
+     *
+     * @param id integer
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets abbreviation.
+     *
+     * @return the state abbreviation string
+     */
     public String getAbbreviation() {
         return abbreviation;
     }
 
+    /**
+     * Sets state abbreviation.
+     *
+     * @param abbreviation string
+     */
     public void setAbbreviation(String abbreviation) {
         this.abbreviation = abbreviation;
     }
 
+    /**
+     * Gets state name.
+     *
+     * @return the state name string
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets state name.
+     *
+     * @param name string
+     */
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "State{" +
+                "id=" + id +
+                ", abbreviation='" + abbreviation + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
 }
