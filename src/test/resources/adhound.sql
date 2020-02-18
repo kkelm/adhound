@@ -536,12 +536,6 @@ INSERT INTO `user_roles` VALUES (1,'kkelm','Administrator'),(2,'distributor','Di
 UNLOCK TABLES;
 
 --
--- Table structure for table `user_users`
---
-
-DROP TABLE IF EXISTS `user_users`;
-
---
 -- Table structure for table `users`
 --
 

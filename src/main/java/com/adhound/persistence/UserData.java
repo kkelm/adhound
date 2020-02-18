@@ -1,6 +1,7 @@
 package com.adhound.persistence;
 
 import com.adhound.entity.User;
+import com.adhound.entity.UserRole;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -55,6 +56,7 @@ public class UserData {
     public User getUserData(int id) {
         Session session = sessionFactory.openSession();
         User user = session.get(User.class, id);
+        //UserRole userRole = session.get(UserRole.class, user.getUsername());
 /*
         // Create a CriteriaBuilder instance by calling the getCriteriaBuilder method on the Session
         // instance to build a query statement.
@@ -95,13 +97,18 @@ public class UserData {
      * @return id of of the new record
      */
     public int insert(User user) {
-        int id = 0;
+        int userId = 0;
+        String userRoleId;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(user);
+        userId = (int)session.save(user);
+
+        UserRole userRole = new UserRole(user.getUsername());
+        userRoleId = (String)session.save(userRole);
+
         transaction.commit();
         session.close();
-        return id;
+        return userId;
     }
 
     /**

@@ -21,8 +21,6 @@ class UserDataTest {
 
     UserData userData;
 
-    public int newIdToDelete = 0;
-
     /**
      * Sets up the tests with a new UserData object.
      */
@@ -47,7 +45,7 @@ class UserDataTest {
 
         assertEquals(currentSize, users.size());
 
-        logger.info("testGetAllUsersData");
+        logger.info("Got all users");
     }
 
     /**
@@ -59,7 +57,7 @@ class UserDataTest {
 
         assertEquals("Kevin", getUser.getFirstName());
 
-        logger.info("testGetUserDataSuccess");
+        logger.info("Got user information for ID: " + getUser.getId());
     }
 
 
@@ -67,21 +65,21 @@ class UserDataTest {
      * Test the creation of a new user record.
      */
     @Test
-    void AtestInsert() {
-        User newUser = new User("testUsername", "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
+    void testInsert() {
+        String newUsername = "testUsername" + Math.round(Math.random()*100);
+        User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
         int newId = userData.insert(newUser);
-        newIdToDelete = newId;
         User insertedUser = userData.getUserData(newId);
-        assertEquals("testUsername", insertedUser.getUsername());
+        assertEquals(newUsername, insertedUser.getUsername());
 
-        logger.info("testInsert");
+        logger.info("Inserted record for ID: " + newId);
     }
 
     /**
      * Test an update of a user record.
      */
     @Test
-    void BtestSaveOrUpdate() {
+    void testSaveOrUpdate() {
         String password = "testPassword";
         User updateUser = userData.getUserData(1);
         updateUser.setPassword(password);
@@ -89,18 +87,22 @@ class UserDataTest {
         User getUser = userData.getUserData(1);
         assertEquals(password, getUser.getPassword());
 
-        logger.info("testSaveOrUpdate");
+        logger.info("Updated the password for ID: " + updateUser.getId());
     }
 
     /**
      * Test the deletion of a user record.
      */
     @Test
-    void CtestDelete() {
+    void testDelete() {
         //User user = userData.getUserData(10);
-        userData.delete(userData.getUserData(11));
-        assertNull(userData.getUserData(11));
+        List<User> users = userData.getAllUsersData();
 
-        logger.info("testDelete");
+        int deleteId = users.get((users.size() - 1)).getId();
+
+        userData.delete(userData.getUserData(deleteId));
+        assertNull(userData.getUserData(deleteId));
+
+        logger.info("Deleted record for ID: " + deleteId);
     }
 }
