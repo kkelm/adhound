@@ -1,14 +1,11 @@
-[INFO ] 2020-02-18 15:20:47.182 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-18 15:28:56.428 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-18 15:29:09.356 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-18 15:39:45.043 [main] UserDataTest - Got all users
-[INFO ] 2020-02-18 15:39:45.058 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-18 15:39:45.116 [main] UserDataTest - Deleted record for ID: 3
-[INFO ] 2020-02-18 15:39:45.159 [main] UserDataTest - Updated the password for ID: 1
-[INFO ] 2020-02-18 15:42:20.046 [main] UserDataTest - Got all users
-[INFO ] 2020-02-18 15:42:20.059 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-18 15:42:20.110 [main] UserDataTest - Deleted record for ID: 2
-[INFO ] 2020-02-18 15:42:20.132 [main] UserDataTest - Inserted record for ID: 10
-[INFO ] 2020-02-18 15:42:20.151 [main] UserDataTest - Updated the password for ID: 1
-[INFO ] 2020-02-18 16:40:37.925 [main] UserDataTest - Inserted record for ID: 11
-[INFO ] 2020-02-18 16:41:32.352 [main] UserDataTest - Inserted record for ID: 12
+[INFO ] 2020-02-19 11:39:18.559 [main] UserDataTest - Inserted record for ID: 13
+[INFO ] 2020-02-19 11:39:39.307 [main] UserDataTest - Inserted record for ID: 14
+[INFO ] 2020-02-19 11:48:15.114 [main] UserDataTest - Inserted record for ID: 15
+[INFO ] 2020-02-19 11:50:42.525 [main] UserDataTest - Inserted record for ID: 16
+[INFO ] 2020-02-19 11:52:33.900 [main] UserDataTest - Got all users
+[INFO ] 2020-02-19 11:52:48.491 [main] UserDataTest - Deleted record for ID: 16
+[INFO ] 2020-02-19 11:55:18.327 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-02-19 11:55:18.440 [main] UserDataTest - Got all users
+[INFO ] 2020-02-19 11:55:18.498 [main] UserDataTest - Deleted record for ID: 15
+[INFO ] 2020-02-19 11:55:18.519 [main] UserDataTest - Inserted record for ID: 17
+[INFO ] 2020-02-19 11:55:18.536 [main] UserDataTest - Updated the password for ID: 1

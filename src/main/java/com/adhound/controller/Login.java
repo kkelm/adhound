@@ -46,7 +46,7 @@ public class Login extends HttpServlet {
 
         if (!username.trim().isEmpty() && !password.trim().isEmpty()) {
             //session.setAttribute("title", username);
-            request.setAttribute("results", userData.getUserData(1));
+            request.setAttribute("results", userData.getByIdUser(1));
         }
         else {
             session.setAttribute("message", "Please enter a valid username and password.");
