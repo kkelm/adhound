@@ -3,6 +3,7 @@ package com.adhound.persistence;
 import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 
+import com.adhound.service.CrudService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,6 +14,7 @@ import org.hibernate.Transaction;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -21,6 +23,15 @@ import java.util.List;
 public class UserData {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+
+    CrudService service = null;
+
+    public UserData() {
+        User user = new User();
+        service = new CrudService(user.getClass());
+    }
+
+
     /**
      * The Session factory.
      */
@@ -31,7 +42,10 @@ public class UserData {
      *
      * @return the all users data
      */
-    public List<User> getAllUsersData() {
+    public List<User> getAllUsers() {
+
+        List<User> users = service.getAll();
+        /*
         Session session = sessionFactory.openSession();
         // Create a CriteriaBuilder instance by calling the getCriteriaBuilder method on the Session
         // instance to build a query statement.
@@ -42,9 +56,9 @@ public class UserData {
         Root<User> root = query.from(User.class);
         // Run the query and set the results to a list of user.
         List<User> user = session.createQuery(query).getResultList();
-
         session.close();
-        return user;
+        */
+        return users;
     }
 
     /**
@@ -53,10 +67,13 @@ public class UserData {
      * @param id the id
      * @return the user data
      */
-    public User getUserData(int id) {
-        Session session = sessionFactory.openSession();
-        User user = session.get(User.class, id);
-        //UserRole userRole = session.get(UserRole.class, user.getUsername());
+    public User getByIdUser(int id) {
+
+        User user = (User) service.getById(id);
+        
+        //Session session = sessionFactory.openSession();
+        //User user = session.get(User.class, id);
+        
 /*
         // Create a CriteriaBuilder instance by calling the getCriteriaBuilder method on the Session
         // instance to build a query statement.
@@ -73,7 +90,7 @@ public class UserData {
         // Run the query and set the results to a list of user.
         List<User> user = session.createQuery(query).getResultList();
 */
-        session.close();
+        //session.close();
         return user;
     }
 
@@ -83,11 +100,14 @@ public class UserData {
      * @param user User to be updated
      */
     public void saveOrUpdate(User user) {
+        service.updateRecords(user);
+        /*
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(user);
         transaction.commit();
         session.close();
+        */
     }
 
     /**
@@ -97,18 +117,10 @@ public class UserData {
      * @return id of of the new record
      */
     public int insert(User user) {
-        int userId = 0;
-        String userRoleId;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        userId = (int)session.save(user);
-
+        Serializable id = service.insertRecord(user);
         UserRole userRole = new UserRole(user.getUsername());
-        userRoleId = (String)session.save(userRole);
-
-        transaction.commit();
-        session.close();
-        return userId;
+        Serializable userRoleId = service.insertRecord(userRole);
+        return (Integer) id;
     }
 
     /**
@@ -117,11 +129,7 @@ public class UserData {
      * @param user User to be deleted
      */
     public void delete(User user) {
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.delete(user);
-        transaction.commit();
-        session.close();
+        service.deleteRecord(user);
     }
 
 }
