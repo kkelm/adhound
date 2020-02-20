@@ -57,6 +57,11 @@ public class User {
     @JoinColumn(name = "username", insertable = false, updatable = false, nullable = false)
     private UserRole userRole;
 
+    // mappedBy refers to the instance variable in Location
+    // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<Location> locations = new HashSet<>();
+
     /**
      * Instantiates a new User.
      */
@@ -341,6 +346,14 @@ public class User {
         this.userRole = userRole;
     }
 
+    public Set<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Set<Location> locations) {
+        this.locations = locations;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -356,6 +369,7 @@ public class User {
                 ", city='" + city + '\'' +
                 ", stateId=" + stateId +
                 ", zipcode='" + zipcode +
+                ", locations='" + locations +
                 '}';
     }
 }

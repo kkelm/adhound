@@ -453,3 +453,12 @@
 [INFO ] 2020-02-19 22:12:17.593 [main] CrudService - getById Started
 [INFO ] 2020-02-19 22:12:17.596 [main] CrudService - getById Finished
 [INFO ] 2020-02-19 22:12:17.596 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-02-20 12:29:02.229 [main] CrudService - 2 ID was passed to getById
+[INFO ] 2020-02-20 12:29:02.230 [main] CrudService - getById Started
+[INFO ] 2020-02-20 12:29:02.302 [main] CrudService - getById Finished
+[INFO ] 2020-02-20 12:29:02.302 [main] CrudService - insertRecord Started
+[INFO ] 2020-02-20 12:29:02.315 [main] CrudService - insertRecord Finished
+[INFO ] 2020-02-20 12:29:02.315 [main] CrudService - 4 ID was passed to getById
+[INFO ] 2020-02-20 12:29:02.315 [main] CrudService - getById Started
+[INFO ] 2020-02-20 12:29:02.321 [main] CrudService - getById Finished
+[INFO ] 2020-02-20 12:29:02.323 [main] UserDataTest - Inserted location record for ID: 4

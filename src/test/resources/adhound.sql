@@ -430,6 +430,7 @@ DROP TABLE IF EXISTS `locations`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `locations` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
   `name` varchar(48) NOT NULL,
   `phone` varchar(15) DEFAULT NULL,
   `fax` varchar(15) DEFAULT NULL,
@@ -439,8 +440,10 @@ CREATE TABLE `locations` (
   `zipcode` varchar(11) NOT NULL,
   `region_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
+  KEY `locations_user_fk` (`user_id`),
   KEY `locations_state_fk` (`state_id`),
   KEY `locations_region_fk` (`region_id`),
+  CONSTRAINT `locations_user_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   CONSTRAINT `locations_region_fk` FOREIGN KEY (`region_id`) REFERENCES `location_regions` (`id`),
   CONSTRAINT `locations_state_fk` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -452,7 +455,7 @@ CREATE TABLE `locations` (
 
 LOCK TABLES `locations` WRITE;
 /*!40000 ALTER TABLE `locations` DISABLE KEYS */;
-INSERT INTO `locations` VALUES (1,'BW-3s','(123) 456-7789','(123) 455-3890','123 Test Road','Madison',49,'12345-67890',1),(2,'AJ Bombers','(445) 123-7890','(123) 444-7390','321 Test Road','Fitchburg',25,'67890-12345',2),(3,'Great Dane','(664) 877-7890','(123) 444-7390','441 Test Road','Markesan',19,'67890-12345',3);
+INSERT INTO `locations` VALUES (1, 2,'BW-3s','(123) 456-7789','(123) 455-3890','123 Test Road','Madison',49,'12345-67890',1),(2, 2,'AJ Bombers','(445) 123-7890','(123) 444-7390','321 Test Road','Fitchburg',25,'67890-12345',2),(3, 2,'Great Dane','(664) 877-7890','(123) 444-7390','441 Test Road','Markesan',19,'67890-12345',3);
 /*!40000 ALTER TABLE `locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -479,33 +482,6 @@ LOCK TABLES `states` WRITE;
 /*!40000 ALTER TABLE `states` DISABLE KEYS */;
 INSERT INTO `states` VALUES (1,'AL','Alabama'),(2,'AK','Alaska'),(3,'AZ','Arizona'),(4,'AR','Arkansas'),(5,'CA','California'),(6,'CO','Colorado'),(7,'CT','Connecticut'),(8,'DE','Delaware'),(9,'FL','Florida'),(10,'GA','Georgia'),(11,'HI','Hawaii'),(12,'ID','Idaho'),(13,'IL','Illinois'),(14,'IN','Indiana'),(15,'IA','Iowa'),(16,'KS','Kansas'),(17,'KY','Kentucky'),(18,'LA','Louisiana'),(19,'ME','Maine'),(20,'MD','Maryland'),(21,'MA','Massachusetts'),(22,'MI','Michigan'),(23,'MN','Minnesota'),(24,'MS','Mississippi'),(25,'MO','Missouri'),(26,'MT','Montana'),(27,'NE','Nebraska'),(28,'NV','Nevada'),(29,'NH','New Hampshire'),(30,'NJ','New Jersey'),(31,'NM','New Mexico'),(32,'NY','New York'),(33,'NC','North Carolina'),(34,'ND','North Dakota'),(35,'OH','Ohio'),(36,'OK','Oklahoma'),(37,'OR','Oregon'),(38,'PA','Pennsylvania'),(39,'RI','Rhode Island'),(40,'SC','South Carolina'),(41,'SD','South Dakota'),(42,'TN','Tennessee'),(43,'TX','Texas'),(44,'UT','Utah'),(45,'VT','Vermont'),(46,'VA','Virginia'),(47,'WA','Washington'),(48,'WV','West Virginia'),(49,'WI','Wisconsin'),(50,'WY','Wyoming');
 /*!40000 ALTER TABLE `states` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `user_locations`
---
-
-DROP TABLE IF EXISTS `user_locations`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user_locations` (
-  `admin_id` int NOT NULL,
-  `location_id` int NOT NULL,
-  KEY `user_admin_location_fk` (`admin_id`),
-  KEY `user_location_fk` (`location_id`),
-  CONSTRAINT `user_admin_location_fk` FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `user_location_fk` FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_locations`
---
-
-LOCK TABLES `user_locations` WRITE;
-/*!40000 ALTER TABLE `user_locations` DISABLE KEYS */;
-INSERT INTO `user_locations` VALUES (1,1),(1,2),(1,3);
-/*!40000 ALTER TABLE `user_locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
