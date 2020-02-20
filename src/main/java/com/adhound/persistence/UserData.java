@@ -25,9 +25,7 @@ public class UserData {
     /**
      * Instantiates a new CRUD service to access the CRUD methods with this class.
      */
-    public UserData() {
-        this.crud = new CrudService(User.class);
-    }
+    public UserData() { this.crud = new CrudService(User.class); }
 /*
     public User register () {
         User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");

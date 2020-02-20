@@ -59,7 +59,7 @@ public class User {
 
     // mappedBy refers to the instance variable in Location
     // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Location> locations = new HashSet<>();
 
     /**
@@ -368,8 +368,10 @@ public class User {
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", stateId=" + stateId +
-                ", zipcode='" + zipcode +
-                ", locations='" + locations +
+                ", state=" + state +
+                ", zipcode='" + zipcode + '\'' +
+                ", userRole=" + userRole +
+                ", locations=" + locations +
                 '}';
     }
 }

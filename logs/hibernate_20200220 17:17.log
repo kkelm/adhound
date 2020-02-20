@@ -1,0 +1,1155 @@
+[DEBUG] 2020-02-20 17:17:48.207 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2020-02-20 17:17:48.211 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2020-02-20 17:17:48.213 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2020-02-20 17:17:48.248 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2020-02-20 17:17:48.249 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2020-02-20 17:17:48.338 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2020-02-20 17:17:48.604 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2020-02-20 17:17:48.623 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2020-02-20 17:17:48.623 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2020-02-20 17:17:48.635 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2020-02-20 17:17:48.658 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@58f174d9
+[DEBUG] 2020-02-20 17:17:48.658 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@58f174d9
+[DEBUG] 2020-02-20 17:17:48.659 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@58f174d9
+[DEBUG] 2020-02-20 17:17:48.659 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4d6f623d
+[DEBUG] 2020-02-20 17:17:48.660 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@7a26928a
+[DEBUG] 2020-02-20 17:17:48.660 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@d0ec63
+[DEBUG] 2020-02-20 17:17:48.662 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7ff2b8d2
+[DEBUG] 2020-02-20 17:17:48.662 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7ff2b8d2
+[DEBUG] 2020-02-20 17:17:48.662 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7ff2b8d2
+[DEBUG] 2020-02-20 17:17:48.663 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@5b6e8f77
+[DEBUG] 2020-02-20 17:17:48.664 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@5b6e8f77
+[DEBUG] 2020-02-20 17:17:48.664 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5b6e8f77
+[DEBUG] 2020-02-20 17:17:48.665 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@27e32fe4
+[DEBUG] 2020-02-20 17:17:48.665 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@27e32fe4
+[DEBUG] 2020-02-20 17:17:48.665 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@27e32fe4
+[DEBUG] 2020-02-20 17:17:48.666 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@3044e9c7
+[DEBUG] 2020-02-20 17:17:48.666 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@3044e9c7
+[DEBUG] 2020-02-20 17:17:48.666 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3044e9c7
+[DEBUG] 2020-02-20 17:17:48.668 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@28952dea
+[DEBUG] 2020-02-20 17:17:48.668 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@28952dea
+[DEBUG] 2020-02-20 17:17:48.669 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@28952dea
+[DEBUG] 2020-02-20 17:17:48.669 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@70807224
+[DEBUG] 2020-02-20 17:17:48.669 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@70807224
+[DEBUG] 2020-02-20 17:17:48.675 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@70807224
+[DEBUG] 2020-02-20 17:17:48.676 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2caf6912
+[DEBUG] 2020-02-20 17:17:48.676 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2caf6912
+[DEBUG] 2020-02-20 17:17:48.676 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2caf6912
+[DEBUG] 2020-02-20 17:17:48.676 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@31ff1390
+[DEBUG] 2020-02-20 17:17:48.676 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@31ff1390
+[DEBUG] 2020-02-20 17:17:48.678 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1f12e153
+[DEBUG] 2020-02-20 17:17:48.679 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1f12e153
+[DEBUG] 2020-02-20 17:17:48.680 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@469d003c
+[DEBUG] 2020-02-20 17:17:48.680 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@469d003c
+[DEBUG] 2020-02-20 17:17:48.680 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@e8fadb0
+[DEBUG] 2020-02-20 17:17:48.680 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6eafb10e
+[DEBUG] 2020-02-20 17:17:48.681 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@757529a4
+[DEBUG] 2020-02-20 17:17:48.681 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@757529a4
+[DEBUG] 2020-02-20 17:17:48.682 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@c68a5f8
+[DEBUG] 2020-02-20 17:17:48.682 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@c68a5f8
+[DEBUG] 2020-02-20 17:17:48.686 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4d6f197e
+[DEBUG] 2020-02-20 17:17:48.686 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4d6f197e
+[DEBUG] 2020-02-20 17:17:48.687 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@66908383
+[DEBUG] 2020-02-20 17:17:48.687 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@66908383
+[DEBUG] 2020-02-20 17:17:48.688 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6fe46b62
+[DEBUG] 2020-02-20 17:17:48.688 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6fe46b62
+[DEBUG] 2020-02-20 17:17:48.689 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@736ac09a
+[DEBUG] 2020-02-20 17:17:48.689 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@736ac09a
+[DEBUG] 2020-02-20 17:17:48.689 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@74fef3f7
+[DEBUG] 2020-02-20 17:17:48.690 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@74fef3f7
+[DEBUG] 2020-02-20 17:17:48.690 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@516ebdf8
+[DEBUG] 2020-02-20 17:17:48.690 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@516ebdf8
+[DEBUG] 2020-02-20 17:17:48.691 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c2a69b4
+[DEBUG] 2020-02-20 17:17:48.691 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c2a69b4
+[DEBUG] 2020-02-20 17:17:48.693 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2189e7a7
+[DEBUG] 2020-02-20 17:17:48.694 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2189e7a7
+[DEBUG] 2020-02-20 17:17:48.694 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@4d847d32
+[DEBUG] 2020-02-20 17:17:48.694 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4d847d32
+[DEBUG] 2020-02-20 17:17:48.696 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@6ad11a56
+[DEBUG] 2020-02-20 17:17:48.696 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6ad11a56
+[DEBUG] 2020-02-20 17:17:48.696 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6ad11a56
+[DEBUG] 2020-02-20 17:17:48.697 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7c8326a4
+[DEBUG] 2020-02-20 17:17:48.697 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@60baef24
+[DEBUG] 2020-02-20 17:17:48.697 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@60baef24
+[DEBUG] 2020-02-20 17:17:48.697 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@60baef24
+[DEBUG] 2020-02-20 17:17:48.698 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6ad5923a
+[DEBUG] 2020-02-20 17:17:48.698 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@6f6962ba
+[DEBUG] 2020-02-20 17:17:48.698 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6f6962ba
+[DEBUG] 2020-02-20 17:17:48.699 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@3fbfa96
+[DEBUG] 2020-02-20 17:17:48.699 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3fbfa96
+[DEBUG] 2020-02-20 17:17:48.699 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@301d8120
+[DEBUG] 2020-02-20 17:17:48.699 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@301d8120
+[DEBUG] 2020-02-20 17:17:48.700 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3e134896
+[DEBUG] 2020-02-20 17:17:48.700 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3e134896
+[DEBUG] 2020-02-20 17:17:48.700 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2d0bfb24
+[DEBUG] 2020-02-20 17:17:48.700 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2d0bfb24
+[DEBUG] 2020-02-20 17:17:48.701 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@38499e48
+[DEBUG] 2020-02-20 17:17:48.701 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@693e4d19
+[DEBUG] 2020-02-20 17:17:48.701 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@693e4d19
+[DEBUG] 2020-02-20 17:17:48.701 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@693e4d19
+[DEBUG] 2020-02-20 17:17:48.702 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@57bd802b
+[DEBUG] 2020-02-20 17:17:48.702 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@57bd802b
+[DEBUG] 2020-02-20 17:17:48.702 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@57bd802b
+[DEBUG] 2020-02-20 17:17:48.702 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@27068a50
+[DEBUG] 2020-02-20 17:17:48.703 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@48bfb884
+[DEBUG] 2020-02-20 17:17:48.703 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4525d1d3
+[DEBUG] 2020-02-20 17:17:48.704 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4525d1d3
+[DEBUG] 2020-02-20 17:17:48.705 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4525d1d3
+[DEBUG] 2020-02-20 17:17:48.705 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@773bd77b
+[DEBUG] 2020-02-20 17:17:48.705 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@773bd77b
+[DEBUG] 2020-02-20 17:17:48.705 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@773bd77b
+[DEBUG] 2020-02-20 17:17:48.706 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@47c64cfe
+[DEBUG] 2020-02-20 17:17:48.706 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@6f8f8a80
+[DEBUG] 2020-02-20 17:17:48.707 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@588ffeb
+[DEBUG] 2020-02-20 17:17:48.707 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@588ffeb
+[DEBUG] 2020-02-20 17:17:48.708 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@25d958c6
+[DEBUG] 2020-02-20 17:17:48.709 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6443b128
+[DEBUG] 2020-02-20 17:17:48.709 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6443b128
+[DEBUG] 2020-02-20 17:17:48.710 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@847f3e7
+[DEBUG] 2020-02-20 17:17:48.710 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@847f3e7
+[DEBUG] 2020-02-20 17:17:48.710 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6ad6fa53
+[DEBUG] 2020-02-20 17:17:48.710 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4a03bb68
+[DEBUG] 2020-02-20 17:17:48.711 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5c20ffa8
+[DEBUG] 2020-02-20 17:17:48.712 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@25b865b5
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@25b865b5
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@bdecc21
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5e3a39cd
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@21f9277b
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@201aa8c1
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5d58c727
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@52a36910
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3a095ec0
+[DEBUG] 2020-02-20 17:17:48.713 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4f20a5e0
+[DEBUG] 2020-02-20 17:17:48.735 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2020-02-20 17:17:48.735 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2020-02-20 17:17:48.736 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-20 17:17:48.736 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-20 17:17:48.736 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2020-02-20 17:17:48.737 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2020-02-20 17:17:48.738 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2020-02-20 17:17:48.738 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-20 17:17:48.739 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2020-02-20 17:17:48.739 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2020-02-20 17:17:48.739 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2020-02-20 17:17:48.740 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2020-02-20 17:17:48.740 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-20 17:17:48.740 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2020-02-20 17:17:48.750 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/adhound-test
+[INFO ] 2020-02-20 17:17:48.750 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=devfecta}
+[INFO ] 2020-02-20 17:17:48.750 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2020-02-20 17:17:48.831 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2020-02-20 17:17:49.139 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.19-0ubuntu0.19.10.3
+      major : 8
+      minor : 0
+[DEBUG] 2020-02-20 17:17:49.139 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2020-02-20 17:17:49.139 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2020-02-20 17:17:49.149 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2020-02-20 17:17:49.158 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2020-02-20 17:17:49.173 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2020-02-20 17:17:49.192 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2020-02-20 17:17:49.194 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6ffa56fa] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6c575325]
+[DEBUG] 2020-02-20 17:17:49.221 [main] AnnotationBinder - Binding entity from annotated class: com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.234 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-20 17:17:49.236 [main] EntityBinder - Import with entity name User
+[DEBUG] 2020-02-20 17:17:49.238 [main] EntityBinder - Bind entity com.adhound.entity.User on table users
+[DEBUG] 2020-02-20 17:17:49.257 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.258 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-20 17:17:49.259 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:id]
+[DEBUG] 2020-02-20 17:17:49.260 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.261 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-20 17:17:49.263 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-20 17:17:49.264 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=address, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.264 [main] PropertyBinder - MetadataSourceProcessor property address with lazy=false
+[DEBUG] 2020-02-20 17:17:49.264 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:address]
+[DEBUG] 2020-02-20 17:17:49.265 [main] SimpleValueBinder - building SimpleValue for address
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - Building property address
+[DEBUG] 2020-02-20 17:17:49.265 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2020-02-20 17:17:49.265 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:city]
+[DEBUG] 2020-02-20 17:17:49.265 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - Building property city
+[DEBUG] 2020-02-20 17:17:49.265 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2020-02-20 17:17:49.265 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:email]
+[DEBUG] 2020-02-20 17:17:49.265 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - Building property email
+[DEBUG] 2020-02-20 17:17:49.265 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=fax, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.265 [main] PropertyBinder - MetadataSourceProcessor property fax with lazy=false
+[DEBUG] 2020-02-20 17:17:49.266 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:fax]
+[DEBUG] 2020-02-20 17:17:49.266 [main] SimpleValueBinder - building SimpleValue for fax
+[DEBUG] 2020-02-20 17:17:49.266 [main] PropertyBinder - Building property fax
+[DEBUG] 2020-02-20 17:17:49.266 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.266 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2020-02-20 17:17:49.266 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:firstName]
+[DEBUG] 2020-02-20 17:17:49.266 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2020-02-20 17:17:49.266 [main] PropertyBinder - Building property firstName
+[DEBUG] 2020-02-20 17:17:49.266 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.266 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2020-02-20 17:17:49.266 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:lastName]
+[DEBUG] 2020-02-20 17:17:49.266 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2020-02-20 17:17:49.266 [main] PropertyBinder - Building property lastName
+[DEBUG] 2020-02-20 17:17:49.267 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-02-20 17:17:49.267 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=locations, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.268 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.273 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.273 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=locations_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.273 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='locations_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-02-20 17:17:49.274 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-02-20 17:17:49.274 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-02-20 17:17:49.274 [main] CollectionBinder - Collection role: com.adhound.entity.User.locations
+[DEBUG] 2020-02-20 17:17:49.276 [main] PropertyBinder - Building property locations
+[DEBUG] 2020-02-20 17:17:49.276 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.276 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2020-02-20 17:17:49.276 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:password]
+[DEBUG] 2020-02-20 17:17:49.276 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2020-02-20 17:17:49.276 [main] PropertyBinder - Building property password
+[DEBUG] 2020-02-20 17:17:49.276 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=phone, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.276 [main] PropertyBinder - MetadataSourceProcessor property phone with lazy=false
+[DEBUG] 2020-02-20 17:17:49.276 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:phone]
+[DEBUG] 2020-02-20 17:17:49.276 [main] SimpleValueBinder - building SimpleValue for phone
+[DEBUG] 2020-02-20 17:17:49.276 [main] PropertyBinder - Building property phone
+[DEBUG] 2020-02-20 17:17:49.277 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='state_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-02-20 17:17:49.277 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=state, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.277 [main] PropertyBinder - Building property state
+[DEBUG] 2020-02-20 17:17:49.278 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=state_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.278 [main] PropertyBinder - MetadataSourceProcessor property stateId with lazy=false
+[DEBUG] 2020-02-20 17:17:49.278 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:stateId]
+[DEBUG] 2020-02-20 17:17:49.278 [main] SimpleValueBinder - building SimpleValue for stateId
+[DEBUG] 2020-02-20 17:17:49.278 [main] PropertyBinder - Building property stateId
+[DEBUG] 2020-02-20 17:17:49.278 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='username', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-02-20 17:17:49.278 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=userRole, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.278 [main] PropertyBinder - Building property userRole
+[DEBUG] 2020-02-20 17:17:49.278 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.278 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2020-02-20 17:17:49.278 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:username]
+[DEBUG] 2020-02-20 17:17:49.278 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2020-02-20 17:17:49.278 [main] PropertyBinder - Building property username
+[DEBUG] 2020-02-20 17:17:49.278 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=zipcode, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.279 [main] PropertyBinder - MetadataSourceProcessor property zipcode with lazy=false
+[DEBUG] 2020-02-20 17:17:49.279 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.User:zipcode]
+[DEBUG] 2020-02-20 17:17:49.279 [main] SimpleValueBinder - building SimpleValue for zipcode
+[DEBUG] 2020-02-20 17:17:49.279 [main] PropertyBinder - Building property zipcode
+[DEBUG] 2020-02-20 17:17:49.279 [main] AnnotationBinder - Binding entity from annotated class: com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.280 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-20 17:17:49.280 [main] EntityBinder - Import with entity name UserRole
+[DEBUG] 2020-02-20 17:17:49.280 [main] EntityBinder - Bind entity com.adhound.entity.UserRole on table user_roles
+[DEBUG] 2020-02-20 17:17:49.280 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.280 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2020-02-20 17:17:49.280 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.UserRole:username]
+[DEBUG] 2020-02-20 17:17:49.280 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2020-02-20 17:17:49.280 [main] PropertyBinder - Building property username
+[DEBUG] 2020-02-20 17:17:49.281 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(username)]), username, assigned, , ...)
+[DEBUG] 2020-02-20 17:17:49.281 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.281 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-20 17:17:49.281 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.UserRole:id]
+[DEBUG] 2020-02-20 17:17:49.281 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.281 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-20 17:17:49.281 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=role_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.281 [main] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2020-02-20 17:17:49.281 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.UserRole:roleName]
+[DEBUG] 2020-02-20 17:17:49.281 [main] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2020-02-20 17:17:49.281 [main] PropertyBinder - Building property roleName
+[DEBUG] 2020-02-20 17:17:49.281 [main] AnnotationBinder - Binding entity from annotated class: com.adhound.entity.Location
+[DEBUG] 2020-02-20 17:17:49.281 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-20 17:17:49.281 [main] EntityBinder - Import with entity name Location
+[DEBUG] 2020-02-20 17:17:49.281 [main] EntityBinder - Bind entity com.adhound.entity.Location on table locations
+[DEBUG] 2020-02-20 17:17:49.283 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.283 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-20 17:17:49.283 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:id]
+[DEBUG] 2020-02-20 17:17:49.283 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-20 17:17:49.284 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-20 17:17:49.284 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=address, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - MetadataSourceProcessor property address with lazy=false
+[DEBUG] 2020-02-20 17:17:49.284 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:address]
+[DEBUG] 2020-02-20 17:17:49.284 [main] SimpleValueBinder - building SimpleValue for address
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - Building property address
+[DEBUG] 2020-02-20 17:17:49.284 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2020-02-20 17:17:49.284 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:city]
+[DEBUG] 2020-02-20 17:17:49.284 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - Building property city
+[DEBUG] 2020-02-20 17:17:49.284 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=fax, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - MetadataSourceProcessor property fax with lazy=false
+[DEBUG] 2020-02-20 17:17:49.284 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:fax]
+[DEBUG] 2020-02-20 17:17:49.284 [main] SimpleValueBinder - building SimpleValue for fax
+[DEBUG] 2020-02-20 17:17:49.284 [main] PropertyBinder - Building property fax
+[DEBUG] 2020-02-20 17:17:49.285 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2020-02-20 17:17:49.285 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:name]
+[DEBUG] 2020-02-20 17:17:49.285 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - Building property name
+[DEBUG] 2020-02-20 17:17:49.285 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=phone, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - MetadataSourceProcessor property phone with lazy=false
+[DEBUG] 2020-02-20 17:17:49.285 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:phone]
+[DEBUG] 2020-02-20 17:17:49.285 [main] SimpleValueBinder - building SimpleValue for phone
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - Building property phone
+[DEBUG] 2020-02-20 17:17:49.285 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='region_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-02-20 17:17:49.285 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=region, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - Building property region
+[DEBUG] 2020-02-20 17:17:49.285 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=region_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.285 [main] PropertyBinder - MetadataSourceProcessor property regionId with lazy=false
+[DEBUG] 2020-02-20 17:17:49.285 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:regionId]
+[DEBUG] 2020-02-20 17:17:49.285 [main] SimpleValueBinder - building SimpleValue for regionId
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - Building property regionId
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='state_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=state, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - Building property state
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=state_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - MetadataSourceProcessor property stateId with lazy=false
+[DEBUG] 2020-02-20 17:17:49.286 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:stateId]
+[DEBUG] 2020-02-20 17:17:49.286 [main] SimpleValueBinder - building SimpleValue for stateId
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - Building property stateId
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - Building property user
+[DEBUG] 2020-02-20 17:17:49.286 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(locations), mappingColumn=zipcode, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.286 [main] PropertyBinder - MetadataSourceProcessor property zipcode with lazy=false
+[DEBUG] 2020-02-20 17:17:49.286 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Location:zipcode]
+[DEBUG] 2020-02-20 17:17:49.287 [main] SimpleValueBinder - building SimpleValue for zipcode
+[DEBUG] 2020-02-20 17:17:49.287 [main] PropertyBinder - Building property zipcode
+[DEBUG] 2020-02-20 17:17:49.287 [main] AnnotationBinder - Binding entity from annotated class: com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.287 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-20 17:17:49.287 [main] EntityBinder - Import with entity name Region
+[DEBUG] 2020-02-20 17:17:49.287 [main] EntityBinder - Bind entity com.adhound.entity.Region on table location_regions
+[DEBUG] 2020-02-20 17:17:49.287 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location_regions), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.287 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-20 17:17:49.287 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Region:id]
+[DEBUG] 2020-02-20 17:17:49.287 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.287 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-20 17:17:49.287 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-20 17:17:49.288 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location_regions), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.288 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2020-02-20 17:17:49.288 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Region:description]
+[DEBUG] 2020-02-20 17:17:49.288 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2020-02-20 17:17:49.288 [main] PropertyBinder - Building property description
+[DEBUG] 2020-02-20 17:17:49.288 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location_regions), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.288 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2020-02-20 17:17:49.288 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.Region:name]
+[DEBUG] 2020-02-20 17:17:49.288 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.288 [main] PropertyBinder - Building property name
+[DEBUG] 2020-02-20 17:17:49.288 [main] AnnotationBinder - Binding entity from annotated class: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.288 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-20 17:17:49.288 [main] EntityBinder - Import with entity name State
+[DEBUG] 2020-02-20 17:17:49.288 [main] EntityBinder - Bind entity com.adhound.entity.State on table states
+[DEBUG] 2020-02-20 17:17:49.289 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(states), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.289 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-20 17:17:49.289 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.State:id]
+[DEBUG] 2020-02-20 17:17:49.289 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.289 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-20 17:17:49.289 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-20 17:17:49.289 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(states), mappingColumn=states_Abbreviation, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.289 [main] PropertyBinder - MetadataSourceProcessor property abbreviation with lazy=false
+[DEBUG] 2020-02-20 17:17:49.289 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.State:abbreviation]
+[DEBUG] 2020-02-20 17:17:49.289 [main] SimpleValueBinder - building SimpleValue for abbreviation
+[DEBUG] 2020-02-20 17:17:49.289 [main] PropertyBinder - Building property abbreviation
+[DEBUG] 2020-02-20 17:17:49.289 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(states), mappingColumn=states_Name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-20 17:17:49.290 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2020-02-20 17:17:49.290 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.adhound.entity.State:name]
+[DEBUG] 2020-02-20 17:17:49.290 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.290 [main] PropertyBinder - Building property name
+[DEBUG] 2020-02-20 17:17:49.290 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for address
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for fax
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for phone
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for stateId
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for zipcode
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for address
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for fax
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for phone
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for regionId
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for stateId
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for zipcode
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for abbreviation
+[DEBUG] 2020-02-20 17:17:49.291 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2020-02-20 17:17:49.294 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2020-02-20 17:17:49.294 [main] PrimaryKey - Forcing column [username] to be non-null as it is part of the primary key for table [user_roles]
+[DEBUG] 2020-02-20 17:17:49.294 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [locations]
+[DEBUG] 2020-02-20 17:17:49.294 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [location_regions]
+[DEBUG] 2020-02-20 17:17:49.295 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [states]
+[DEBUG] 2020-02-20 17:17:49.295 [main] CollectionSecondPass - Second pass for collection: com.adhound.entity.User.locations
+[DEBUG] 2020-02-20 17:17:49.295 [main] CollectionBinder - Binding a OneToMany: com.adhound.entity.User.locations through a foreign key
+[DEBUG] 2020-02-20 17:17:49.295 [main] CollectionBinder - Mapping collection: com.adhound.entity.User.locations -> locations
+[DEBUG] 2020-02-20 17:17:49.296 [main] TableBinder - Retrieving property com.adhound.entity.Location.user
+[DEBUG] 2020-02-20 17:17:49.296 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: com.adhound.entity.Location
+[DEBUG] 2020-02-20 17:17:49.296 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.297 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.297 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.297 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.297 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.298 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.298 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.298 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.298 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.298 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.316 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - SessionFactory name : null
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Statistics: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Default null ordering: NONE
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Query language substitutions: {}
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Named query checking : enabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Second-level cache: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2020-02-20 17:17:49.317 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JDBC batch size: 15
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JPA compliance - query : 
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2020-02-20 17:17:49.318 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2020-02-20 17:17:49.345 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2020-02-20 17:17:49.355 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2020-02-20 17:17:49.356 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/devfecta/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/lib/idea_rt.jar:/home/devfecta/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/junit/lib/junit5-rt.jar:/home/devfecta/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/junit/lib/junit-rt.jar:/home/devfecta/IdeaProjects/adhound/target/test-classes:/home/devfecta/IdeaProjects/adhound/target/classes:/home/devfecta/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/devfecta/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/devfecta/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/devfecta/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/devfecta/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/devfecta/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/devfecta/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/devfecta/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/devfecta/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/devfecta/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/devfecta/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/devfecta/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/devfecta/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/devfecta/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/devfecta/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/devfecta/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/devfecta/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/devfecta/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/devfecta/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/devfecta/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/devfecta/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/devfecta/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/devfecta/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/devfecta/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/devfecta/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/devfecta/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/devfecta/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/devfecta/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/devfecta/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/devfecta/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/devfecta/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/devfecta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/devfecta/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/devfecta/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/devfecta/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/devfecta/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/devfecta/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/devfecta/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/devfecta/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/devfecta/.m2/repository/org/mybatis/mybatis/3.5.4/mybatis-3.5.4.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.adhound.persistence.UserDataTest,testDeleteLocation, jdk.debug=release, sun.cpu.endian=little, user.home=/home/devfecta, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=m3tallica, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu119.10.1, user.name=devfecta, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-40-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/adhound-test, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/devfecta/IdeaProjects/adhound, os.arch=amd64, connection.username=devfecta, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@16a9eb2e, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu119.10.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/adhound-test, java.class.version=55.0}
+[DEBUG] 2020-02-20 17:17:49.367 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2020-02-20 17:17:49.367 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2020-02-20 17:17:49.367 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2020-02-20 17:17:49.367 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6ffa56fa] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@44b21f9f]
+[DEBUG] 2020-02-20 17:17:49.395 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.User] is safe
+[DEBUG] 2020-02-20 17:17:49.395 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.404 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.User] is safe
+[DEBUG] 2020-02-20 17:17:49.405 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.546 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.UserRole] is safe
+[DEBUG] 2020-02-20 17:17:49.546 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.546 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.UserRole] is safe
+[DEBUG] 2020-02-20 17:17:49.546 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.553 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.State] is safe
+[DEBUG] 2020-02-20 17:17:49.553 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.553 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.State] is safe
+[DEBUG] 2020-02-20 17:17:49.553 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.559 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.Region] is safe
+[DEBUG] 2020-02-20 17:17:49.559 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.559 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.Region] is safe
+[DEBUG] 2020-02-20 17:17:49.559 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.564 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.Location] is safe
+[DEBUG] 2020-02-20 17:17:49.564 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.Location
+[DEBUG] 2020-02-20 17:17:49.564 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.adhound.entity.Location] is safe
+[DEBUG] 2020-02-20 17:17:49.564 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.adhound.entity.Location
+[DEBUG] 2020-02-20 17:17:49.579 [main] AbstractCollectionPersister - Static SQL for collection: com.adhound.entity.User.locations
+[DEBUG] 2020-02-20 17:17:49.579 [main] AbstractCollectionPersister -  Row insert: update locations set user_id=? where id=?
+[DEBUG] 2020-02-20 17:17:49.579 [main] AbstractCollectionPersister -  Row update: update locations set  where id=?
+[DEBUG] 2020-02-20 17:17:49.579 [main] AbstractCollectionPersister -  Row delete: update locations set user_id=null where user_id=? and id=?
+[DEBUG] 2020-02-20 17:17:49.579 [main] AbstractCollectionPersister -  One-shot delete: update locations set user_id=null where user_id=?
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister - Static SQL for entity: com.adhound.entity.User
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Version select: select id from users where id =?
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.address as address2_4_, user_.city as city3_4_, user_.email as email4_4_, user_.fax as fax5_4_, user_.first_name as first_na6_4_, user_.last_name as last_nam7_4_, user_.password as password8_4_, user_.phone as phone9_4_, user_.state_id as state_i10_4_, user_.username as usernam11_4_, user_.zipcode as zipcode12_4_ from users user_ where user_.id=?
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Insert 0: insert into users (address, city, email, fax, first_name, last_name, password, phone, state_id, username, zipcode, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Update 0: update users set address=?, city=?, email=?, fax=?, first_name=?, last_name=?, password=?, phone=?, state_id=?, username=?, zipcode=? where id=?
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Delete 0: delete from users where id=?
+[DEBUG] 2020-02-20 17:17:49.581 [main] AbstractEntityPersister -  Identity insert: insert into users (address, city, email, fax, first_name, last_name, password, phone, state_id, username, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.591 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3946075]
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : fax
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2020-02-20 17:17:49.592 [main] MetamodelGraphWalker - Visiting attribute path : locations
+[DEBUG] 2020-02-20 17:17:49.594 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@23468512]
+[DEBUG] 2020-02-20 17:17:49.595 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bc6da03]
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.address
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.city
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.fax
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.name
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.phone
+[DEBUG] 2020-02-20 17:17:49.595 [main] MetamodelGraphWalker - Visiting attribute path : locations.region
+[DEBUG] 2020-02-20 17:17:49.595 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c26ba07]
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.region.description
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.region.name
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.regionId
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.state
+[DEBUG] 2020-02-20 17:17:49.596 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@317890ea]
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.state.name
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.stateId
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.user
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Property path deemed to be circular : locations.user
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : locations.zipcode
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2020-02-20 17:17:49.596 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6048e26a]
+[DEBUG] 2020-02-20 17:17:49.596 [main] MetamodelGraphWalker - Visiting attribute path : state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : state.name
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : stateId
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : userRole
+[DEBUG] 2020-02-20 17:17:49.597 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44286963]
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : userRole.id
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : userRole.roleName
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2020-02-20 17:17:49.597 [main] MetamodelGraphWalker - Visiting attribute path : zipcode
+[DEBUG] 2020-02-20 17:17:49.597 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.603 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.606 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.User, querySpaceUid=<gen:0>, path=com.adhound.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.adhound.entity.User.locations, querySpaceUid=<gen:1>, path=com.adhound.entity.User.locations)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.adhound.entity.Location, querySpaceUid=<gen:2>, path=com.adhound.entity.User.locations.<elements>)
+                - EntityAttributeFetchImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:3>, path=com.adhound.entity.User.locations.<elements>.region)
+                - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:4>, path=com.adhound.entity.User.locations.<elements>.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:5>, path=com.adhound.entity.User.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:6>, path=com.adhound.entity.User.userRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+          - JOIN (JoinDefinedByMetadata(locations)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.adhound.entity.User.locations)
+                - SQL table alias mapping - locations1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id10_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.adhound.entity.Location)
+                      - SQL table alias mapping - locations1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+                      - JOIN (JoinDefinedByMetadata(region)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.adhound.entity.Region)
+                            - SQL table alias mapping - region2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                      - JOIN (JoinDefinedByMetadata(state)) : <gen:2> -> <gen:4>
+                         - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.adhound.entity.State)
+                            - SQL table alias mapping - state3_
+                            - alias suffix - 4_
+                            - suffixed key columns - {id1_2_4_}
+          - JOIN (JoinDefinedByMetadata(state)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.adhound.entity.State)
+                - SQL table alias mapping - state4_
+                - alias suffix - 5_
+                - suffixed key columns - {id1_2_5_}
+          - JOIN (JoinDefinedByMetadata(userRole)) : <gen:0> -> <gen:6>
+             - EntityQuerySpaceImpl(uid=<gen:6>, entity=com.adhound.entity.UserRole)
+                - SQL table alias mapping - userrole5_
+                - alias suffix - 6_
+                - suffixed key columns - {username1_3_6_}
+
+[DEBUG] 2020-02-20 17:17:49.607 [main] EntityLoader - Static select for entity com.adhound.entity.User [NONE]: select user0_.id as id1_4_0_, user0_.address as address2_4_0_, user0_.city as city3_4_0_, user0_.email as email4_4_0_, user0_.fax as fax5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.password as password8_4_0_, user0_.phone as phone9_4_0_, user0_.state_id as state_i10_4_0_, user0_.username as usernam11_4_0_, user0_.zipcode as zipcode12_4_0_, locations1_.user_id as user_id10_1_1_, locations1_.id as id1_1_1_, locations1_.id as id1_1_2_, locations1_.address as address2_1_2_, locations1_.city as city3_1_2_, locations1_.fax as fax4_1_2_, locations1_.name as name5_1_2_, locations1_.phone as phone6_1_2_, locations1_.region_id as region_i7_1_2_, locations1_.state_id as state_id8_1_2_, locations1_.user_id as user_id10_1_2_, locations1_.zipcode as zipcode9_1_2_, region2_.id as id1_0_3_, region2_.description as descript2_0_3_, region2_.name as name3_0_3_, state3_.id as id1_2_4_, state3_.states_Abbreviation as states_A2_2_4_, state3_.states_Name as states_N3_2_4_, state4_.id as id1_2_5_, state4_.states_Abbreviation as states_A2_2_5_, state4_.states_Name as states_N3_2_5_, userrole5_.username as username1_3_6_, userrole5_.id as id2_3_6_, userrole5_.role_name as role_nam3_3_6_ from users user0_ left outer join locations locations1_ on user0_.id=locations1_.user_id left outer join location_regions region2_ on locations1_.region_id=region2_.id left outer join states state3_ on locations1_.state_id=state3_.id inner join states state4_ on user0_.state_id=state4_.id inner join user_roles userrole5_ on user0_.username=userrole5_.username where user0_.id=?
+[DEBUG] 2020-02-20 17:17:49.607 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28babeca]
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : fax
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations
+[DEBUG] 2020-02-20 17:17:49.607 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@168ad26f]
+[DEBUG] 2020-02-20 17:17:49.607 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f93bf0a]
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations.address
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations.city
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations.fax
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations.name
+[DEBUG] 2020-02-20 17:17:49.607 [main] MetamodelGraphWalker - Visiting attribute path : locations.phone
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.region
+[DEBUG] 2020-02-20 17:17:49.608 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@25b38203]
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.region.description
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.region.name
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.regionId
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.state
+[DEBUG] 2020-02-20 17:17:49.608 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55acec99]
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.state.name
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.stateId
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.user
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Property path deemed to be circular : locations.user
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : locations.zipcode
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2020-02-20 17:17:49.608 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58833798]
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : state.name
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : stateId
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : userRole
+[DEBUG] 2020-02-20 17:17:49.608 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d464510]
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : userRole.id
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : userRole.roleName
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2020-02-20 17:17:49.608 [main] MetamodelGraphWalker - Visiting attribute path : zipcode
+[DEBUG] 2020-02-20 17:17:49.609 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.609 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.609 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.User, querySpaceUid=<gen:0>, path=com.adhound.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.adhound.entity.User.locations, querySpaceUid=<gen:1>, path=com.adhound.entity.User.locations)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.adhound.entity.Location, querySpaceUid=<gen:2>, path=com.adhound.entity.User.locations.<elements>)
+                - EntityAttributeFetchImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:3>, path=com.adhound.entity.User.locations.<elements>.region)
+                - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:4>, path=com.adhound.entity.User.locations.<elements>.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:5>, path=com.adhound.entity.User.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:6>, path=com.adhound.entity.User.userRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+          - JOIN (JoinDefinedByMetadata(locations)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.adhound.entity.User.locations)
+                - SQL table alias mapping - locations1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id10_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.adhound.entity.Location)
+                      - SQL table alias mapping - locations1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+                      - JOIN (JoinDefinedByMetadata(region)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.adhound.entity.Region)
+                            - SQL table alias mapping - region2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                      - JOIN (JoinDefinedByMetadata(state)) : <gen:2> -> <gen:4>
+                         - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.adhound.entity.State)
+                            - SQL table alias mapping - state3_
+                            - alias suffix - 4_
+                            - suffixed key columns - {id1_2_4_}
+          - JOIN (JoinDefinedByMetadata(state)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.adhound.entity.State)
+                - SQL table alias mapping - state4_
+                - alias suffix - 5_
+                - suffixed key columns - {id1_2_5_}
+          - JOIN (JoinDefinedByMetadata(userRole)) : <gen:0> -> <gen:6>
+             - EntityQuerySpaceImpl(uid=<gen:6>, entity=com.adhound.entity.UserRole)
+                - SQL table alias mapping - userrole5_
+                - alias suffix - 6_
+                - suffixed key columns - {username1_3_6_}
+
+[DEBUG] 2020-02-20 17:17:49.609 [main] EntityLoader - Static select for entity com.adhound.entity.User [READ]: select user0_.id as id1_4_0_, user0_.address as address2_4_0_, user0_.city as city3_4_0_, user0_.email as email4_4_0_, user0_.fax as fax5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.password as password8_4_0_, user0_.phone as phone9_4_0_, user0_.state_id as state_i10_4_0_, user0_.username as usernam11_4_0_, user0_.zipcode as zipcode12_4_0_, locations1_.user_id as user_id10_1_1_, locations1_.id as id1_1_1_, locations1_.id as id1_1_2_, locations1_.address as address2_1_2_, locations1_.city as city3_1_2_, locations1_.fax as fax4_1_2_, locations1_.name as name5_1_2_, locations1_.phone as phone6_1_2_, locations1_.region_id as region_i7_1_2_, locations1_.state_id as state_id8_1_2_, locations1_.user_id as user_id10_1_2_, locations1_.zipcode as zipcode9_1_2_, region2_.id as id1_0_3_, region2_.description as descript2_0_3_, region2_.name as name3_0_3_, state3_.id as id1_2_4_, state3_.states_Abbreviation as states_A2_2_4_, state3_.states_Name as states_N3_2_4_, state4_.id as id1_2_5_, state4_.states_Abbreviation as states_A2_2_5_, state4_.states_Name as states_N3_2_5_, userrole5_.username as username1_3_6_, userrole5_.id as id2_3_6_, userrole5_.role_name as role_nam3_3_6_ from users user0_ left outer join locations locations1_ on user0_.id=locations1_.user_id left outer join location_regions region2_ on locations1_.region_id=region2_.id left outer join states state3_ on locations1_.state_id=state3_.id inner join states state4_ on user0_.state_id=state4_.id inner join user_roles userrole5_ on user0_.username=userrole5_.username where user0_.id=?
+[DEBUG] 2020-02-20 17:17:49.615 [main] Loader - Static select for action ACTION_MERGE on entity com.adhound.entity.User: select user0_.id as id1_4_1_, user0_.address as address2_4_1_, user0_.city as city3_4_1_, user0_.email as email4_4_1_, user0_.fax as fax5_4_1_, user0_.first_name as first_na6_4_1_, user0_.last_name as last_nam7_4_1_, user0_.password as password8_4_1_, user0_.phone as phone9_4_1_, user0_.state_id as state_i10_4_1_, user0_.username as usernam11_4_1_, user0_.zipcode as zipcode12_4_1_, locations1_.user_id as user_id10_1_3_, locations1_.id as id1_1_3_, locations1_.id as id1_1_0_, locations1_.address as address2_1_0_, locations1_.city as city3_1_0_, locations1_.fax as fax4_1_0_, locations1_.name as name5_1_0_, locations1_.phone as phone6_1_0_, locations1_.region_id as region_i7_1_0_, locations1_.state_id as state_id8_1_0_, locations1_.user_id as user_id10_1_0_, locations1_.zipcode as zipcode9_1_0_ from users user0_ left outer join locations locations1_ on user0_.id=locations1_.user_id where user0_.id=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] Loader - Static select for action ACTION_REFRESH on entity com.adhound.entity.User: select user0_.id as id1_4_1_, user0_.address as address2_4_1_, user0_.city as city3_4_1_, user0_.email as email4_4_1_, user0_.fax as fax5_4_1_, user0_.first_name as first_na6_4_1_, user0_.last_name as last_nam7_4_1_, user0_.password as password8_4_1_, user0_.phone as phone9_4_1_, user0_.state_id as state_i10_4_1_, user0_.username as usernam11_4_1_, user0_.zipcode as zipcode12_4_1_, locations1_.user_id as user_id10_1_3_, locations1_.id as id1_1_3_, locations1_.id as id1_1_0_, locations1_.address as address2_1_0_, locations1_.city as city3_1_0_, locations1_.fax as fax4_1_0_, locations1_.name as name5_1_0_, locations1_.phone as phone6_1_0_, locations1_.region_id as region_i7_1_0_, locations1_.state_id as state_id8_1_0_, locations1_.user_id as user_id10_1_0_, locations1_.zipcode as zipcode9_1_0_ from users user0_ left outer join locations locations1_ on user0_.id=locations1_.user_id where user0_.id=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister - Static SQL for entity: com.adhound.entity.UserRole
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister -  Version select: select username from user_roles where username =?
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister -  Snapshot select: select userrole_.username, userrole_.id as id2_3_, userrole_.role_name as role_nam3_3_ from user_roles userrole_ where userrole_.username=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister -  Insert 0: insert into user_roles (id, role_name, username) values (?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister -  Update 0: update user_roles set id=?, role_name=? where username=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] AbstractEntityPersister -  Delete 0: delete from user_roles where username=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3cc053]
+[DEBUG] 2020-02-20 17:17:49.616 [main] MetamodelGraphWalker - Visiting attribute path : id
+[DEBUG] 2020-02-20 17:17:49.616 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-02-20 17:17:49.616 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.616 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.616 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.UserRole)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:0>, path=com.adhound.entity.UserRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.UserRole)
+          - SQL table alias mapping - userrole0_
+          - alias suffix - 0_
+          - suffixed key columns - {username1_3_0_}
+
+[DEBUG] 2020-02-20 17:17:49.616 [main] EntityLoader - Static select for entity com.adhound.entity.UserRole [NONE]: select userrole0_.username as username1_3_0_, userrole0_.id as id2_3_0_, userrole0_.role_name as role_nam3_3_0_ from user_roles userrole0_ where userrole0_.username=?
+[DEBUG] 2020-02-20 17:17:49.616 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fbd3e75]
+[DEBUG] 2020-02-20 17:17:49.617 [main] MetamodelGraphWalker - Visiting attribute path : id
+[DEBUG] 2020-02-20 17:17:49.617 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-02-20 17:17:49.617 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.617 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.617 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.UserRole)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:0>, path=com.adhound.entity.UserRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.UserRole)
+          - SQL table alias mapping - userrole0_
+          - alias suffix - 0_
+          - suffixed key columns - {username1_3_0_}
+
+[DEBUG] 2020-02-20 17:17:49.617 [main] EntityLoader - Static select for entity com.adhound.entity.UserRole [READ]: select userrole0_.username as username1_3_0_, userrole0_.id as id2_3_0_, userrole0_.role_name as role_nam3_3_0_ from user_roles userrole0_ where userrole0_.username=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] Loader - Static select for action ACTION_MERGE on entity com.adhound.entity.UserRole: select userrole0_.username as username1_3_0_, userrole0_.id as id2_3_0_, userrole0_.role_name as role_nam3_3_0_ from user_roles userrole0_ where userrole0_.username=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] Loader - Static select for action ACTION_REFRESH on entity com.adhound.entity.UserRole: select userrole0_.username as username1_3_0_, userrole0_.id as id2_3_0_, userrole0_.role_name as role_nam3_3_0_ from user_roles userrole0_ where userrole0_.username=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister - Static SQL for entity: com.adhound.entity.State
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Version select: select id from states where id =?
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Snapshot select: select state_.id, state_.states_Abbreviation as states_A2_2_, state_.states_Name as states_N3_2_ from states state_ where state_.id=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Insert 0: insert into states (states_Abbreviation, states_Name, id) values (?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Update 0: update states set states_Abbreviation=?, states_Name=? where id=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Delete 0: delete from states where id=?
+[DEBUG] 2020-02-20 17:17:49.617 [main] AbstractEntityPersister -  Identity insert: insert into states (states_Abbreviation, states_Name) values (?, ?)
+[DEBUG] 2020-02-20 17:17:49.617 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fdd43cd]
+[DEBUG] 2020-02-20 17:17:49.617 [main] MetamodelGraphWalker - Visiting attribute path : abbreviation
+[DEBUG] 2020-02-20 17:17:49.617 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.617 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.617 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.618 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.State)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:0>, path=com.adhound.entity.State)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.State)
+          - SQL table alias mapping - state0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2020-02-20 17:17:49.618 [main] EntityLoader - Static select for entity com.adhound.entity.State [NONE]: select state0_.id as id1_2_0_, state0_.states_Abbreviation as states_A2_2_0_, state0_.states_Name as states_N3_2_0_ from states state0_ where state0_.id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ce03e86]
+[DEBUG] 2020-02-20 17:17:49.618 [main] MetamodelGraphWalker - Visiting attribute path : abbreviation
+[DEBUG] 2020-02-20 17:17:49.618 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.618 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.618 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.618 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.State)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:0>, path=com.adhound.entity.State)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.State)
+          - SQL table alias mapping - state0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2020-02-20 17:17:49.618 [main] EntityLoader - Static select for entity com.adhound.entity.State [READ]: select state0_.id as id1_2_0_, state0_.states_Abbreviation as states_A2_2_0_, state0_.states_Name as states_N3_2_0_ from states state0_ where state0_.id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] Loader - Static select for action ACTION_MERGE on entity com.adhound.entity.State: select state0_.id as id1_2_0_, state0_.states_Abbreviation as states_A2_2_0_, state0_.states_Name as states_N3_2_0_ from states state0_ where state0_.id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] Loader - Static select for action ACTION_REFRESH on entity com.adhound.entity.State: select state0_.id as id1_2_0_, state0_.states_Abbreviation as states_A2_2_0_, state0_.states_Name as states_N3_2_0_ from states state0_ where state0_.id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister - Static SQL for entity: com.adhound.entity.Region
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Version select: select id from location_regions where id =?
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Snapshot select: select region_.id, region_.description as descript2_0_, region_.name as name3_0_ from location_regions region_ where region_.id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Insert 0: insert into location_regions (description, name, id) values (?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Update 0: update location_regions set description=?, name=? where id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Delete 0: delete from location_regions where id=?
+[DEBUG] 2020-02-20 17:17:49.618 [main] AbstractEntityPersister -  Identity insert: insert into location_regions (description, name) values (?, ?)
+[DEBUG] 2020-02-20 17:17:49.618 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9b47400]
+[DEBUG] 2020-02-20 17:17:49.619 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2020-02-20 17:17:49.619 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.619 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.619 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.619 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.Region)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:0>, path=com.adhound.entity.Region)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.Region)
+          - SQL table alias mapping - region0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2020-02-20 17:17:49.619 [main] EntityLoader - Static select for entity com.adhound.entity.Region [NONE]: select region0_.id as id1_0_0_, region0_.description as descript2_0_0_, region0_.name as name3_0_0_ from location_regions region0_ where region0_.id=?
+[DEBUG] 2020-02-20 17:17:49.619 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@594131f2]
+[DEBUG] 2020-02-20 17:17:49.619 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2020-02-20 17:17:49.619 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.619 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.619 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.619 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.Region)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:0>, path=com.adhound.entity.Region)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.Region)
+          - SQL table alias mapping - region0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2020-02-20 17:17:49.619 [main] EntityLoader - Static select for entity com.adhound.entity.Region [READ]: select region0_.id as id1_0_0_, region0_.description as descript2_0_0_, region0_.name as name3_0_0_ from location_regions region0_ where region0_.id=?
+[DEBUG] 2020-02-20 17:17:49.619 [main] Loader - Static select for action ACTION_MERGE on entity com.adhound.entity.Region: select region0_.id as id1_0_0_, region0_.description as descript2_0_0_, region0_.name as name3_0_0_ from location_regions region0_ where region0_.id=?
+[DEBUG] 2020-02-20 17:17:49.619 [main] Loader - Static select for action ACTION_REFRESH on entity com.adhound.entity.Region: select region0_.id as id1_0_0_, region0_.description as descript2_0_0_, region0_.name as name3_0_0_ from location_regions region0_ where region0_.id=?
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister - Static SQL for entity: com.adhound.entity.Location
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Version select: select id from locations where id =?
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Snapshot select: select location_.id, location_.address as address2_1_, location_.city as city3_1_, location_.fax as fax4_1_, location_.name as name5_1_, location_.phone as phone6_1_, location_.region_id as region_i7_1_, location_.state_id as state_id8_1_, location_.user_id as user_id10_1_, location_.zipcode as zipcode9_1_ from locations location_ where location_.id=?
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Insert 0: insert into locations (address, city, fax, name, phone, region_id, state_id, user_id, zipcode, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Update 0: update locations set address=?, city=?, fax=?, name=?, phone=?, region_id=?, state_id=?, user_id=?, zipcode=? where id=?
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Delete 0: delete from locations where id=?
+[DEBUG] 2020-02-20 17:17:49.620 [main] AbstractEntityPersister -  Identity insert: insert into locations (address, city, fax, name, phone, region_id, state_id, user_id, zipcode) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-20 17:17:49.620 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7bee8621]
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : fax
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : region
+[DEBUG] 2020-02-20 17:17:49.620 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e12a5a6]
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : region.description
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : region.name
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : regionId
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2020-02-20 17:17:49.620 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47a7c93e]
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : state.name
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : stateId
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-02-20 17:17:49.620 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64ae105d]
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.city
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.fax
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2020-02-20 17:17:49.620 [main] MetamodelGraphWalker - Visiting attribute path : user.locations
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Property path deemed to be circular : user.locations
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.state
+[DEBUG] 2020-02-20 17:17:49.621 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69364b2d]
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.state.name
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.stateId
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole
+[DEBUG] 2020-02-20 17:17:49.621 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4792f119]
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole.id
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole.roleName
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : user.zipcode
+[DEBUG] 2020-02-20 17:17:49.621 [main] MetamodelGraphWalker - Visiting attribute path : zipcode
+[DEBUG] 2020-02-20 17:17:49.621 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.621 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.622 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.Location)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.Location, querySpaceUid=<gen:0>, path=com.adhound.entity.Location)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:1>, path=com.adhound.entity.Location.region)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:2>, path=com.adhound.entity.Location.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.User, querySpaceUid=<gen:3>, path=com.adhound.entity.Location.user)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:4>, path=com.adhound.entity.Location.user.state)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:5>, path=com.adhound.entity.Location.user.userRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.Location)
+          - SQL table alias mapping - location0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(region)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.adhound.entity.Region)
+                - SQL table alias mapping - region1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+          - JOIN (JoinDefinedByMetadata(state)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.adhound.entity.State)
+                - SQL table alias mapping - state2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_2_2_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.adhound.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_4_3_}
+                - JOIN (JoinDefinedByMetadata(state)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.adhound.entity.State)
+                      - SQL table alias mapping - state4_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_2_4_}
+                - JOIN (JoinDefinedByMetadata(userRole)) : <gen:3> -> <gen:5>
+                   - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.adhound.entity.UserRole)
+                      - SQL table alias mapping - userrole5_
+                      - alias suffix - 5_
+                      - suffixed key columns - {username1_3_5_}
+
+[DEBUG] 2020-02-20 17:17:49.622 [main] EntityLoader - Static select for entity com.adhound.entity.Location [NONE]: select location0_.id as id1_1_0_, location0_.address as address2_1_0_, location0_.city as city3_1_0_, location0_.fax as fax4_1_0_, location0_.name as name5_1_0_, location0_.phone as phone6_1_0_, location0_.region_id as region_i7_1_0_, location0_.state_id as state_id8_1_0_, location0_.user_id as user_id10_1_0_, location0_.zipcode as zipcode9_1_0_, region1_.id as id1_0_1_, region1_.description as descript2_0_1_, region1_.name as name3_0_1_, state2_.id as id1_2_2_, state2_.states_Abbreviation as states_A2_2_2_, state2_.states_Name as states_N3_2_2_, user3_.id as id1_4_3_, user3_.address as address2_4_3_, user3_.city as city3_4_3_, user3_.email as email4_4_3_, user3_.fax as fax5_4_3_, user3_.first_name as first_na6_4_3_, user3_.last_name as last_nam7_4_3_, user3_.password as password8_4_3_, user3_.phone as phone9_4_3_, user3_.state_id as state_i10_4_3_, user3_.username as usernam11_4_3_, user3_.zipcode as zipcode12_4_3_, state4_.id as id1_2_4_, state4_.states_Abbreviation as states_A2_2_4_, state4_.states_Name as states_N3_2_4_, userrole5_.username as username1_3_5_, userrole5_.id as id2_3_5_, userrole5_.role_name as role_nam3_3_5_ from locations location0_ inner join location_regions region1_ on location0_.region_id=region1_.id inner join states state2_ on location0_.state_id=state2_.id left outer join users user3_ on location0_.user_id=user3_.id left outer join states state4_ on user3_.state_id=state4_.id left outer join user_roles userrole5_ on user3_.username=userrole5_.username where location0_.id=?
+[DEBUG] 2020-02-20 17:17:49.622 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ea00de]
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : fax
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : region
+[DEBUG] 2020-02-20 17:17:49.622 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52f6900a]
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : region.description
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : region.name
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : regionId
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2020-02-20 17:17:49.622 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b80e5a9]
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : state.name
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : stateId
+[DEBUG] 2020-02-20 17:17:49.622 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-02-20 17:17:49.622 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a50b32d]
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.city
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.fax
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.locations
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Property path deemed to be circular : user.locations
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.state
+[DEBUG] 2020-02-20 17:17:49.623 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ac6dd3d]
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.state.name
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.stateId
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole
+[DEBUG] 2020-02-20 17:17:49.623 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@794f11cd]
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole.id
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.userRole.roleName
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : user.zipcode
+[DEBUG] 2020-02-20 17:17:49.623 [main] MetamodelGraphWalker - Visiting attribute path : zipcode
+[DEBUG] 2020-02-20 17:17:49.623 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.623 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.624 [main] LoadPlanTreePrinter - LoadPlan(entity=com.adhound.entity.Location)
+    - Returns
+       - EntityReturnImpl(entity=com.adhound.entity.Location, querySpaceUid=<gen:0>, path=com.adhound.entity.Location)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:1>, path=com.adhound.entity.Location.region)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:2>, path=com.adhound.entity.Location.state)
+          - EntityAttributeFetchImpl(entity=com.adhound.entity.User, querySpaceUid=<gen:3>, path=com.adhound.entity.Location.user)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:4>, path=com.adhound.entity.Location.user.state)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.UserRole, querySpaceUid=<gen:5>, path=com.adhound.entity.Location.user.userRole)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.adhound.entity.Location)
+          - SQL table alias mapping - location0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(region)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.adhound.entity.Region)
+                - SQL table alias mapping - region1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+          - JOIN (JoinDefinedByMetadata(state)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.adhound.entity.State)
+                - SQL table alias mapping - state2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_2_2_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.adhound.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_4_3_}
+                - JOIN (JoinDefinedByMetadata(state)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.adhound.entity.State)
+                      - SQL table alias mapping - state4_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_2_4_}
+                - JOIN (JoinDefinedByMetadata(userRole)) : <gen:3> -> <gen:5>
+                   - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.adhound.entity.UserRole)
+                      - SQL table alias mapping - userrole5_
+                      - alias suffix - 5_
+                      - suffixed key columns - {username1_3_5_}
+
+[DEBUG] 2020-02-20 17:17:49.624 [main] EntityLoader - Static select for entity com.adhound.entity.Location [READ]: select location0_.id as id1_1_0_, location0_.address as address2_1_0_, location0_.city as city3_1_0_, location0_.fax as fax4_1_0_, location0_.name as name5_1_0_, location0_.phone as phone6_1_0_, location0_.region_id as region_i7_1_0_, location0_.state_id as state_id8_1_0_, location0_.user_id as user_id10_1_0_, location0_.zipcode as zipcode9_1_0_, region1_.id as id1_0_1_, region1_.description as descript2_0_1_, region1_.name as name3_0_1_, state2_.id as id1_2_2_, state2_.states_Abbreviation as states_A2_2_2_, state2_.states_Name as states_N3_2_2_, user3_.id as id1_4_3_, user3_.address as address2_4_3_, user3_.city as city3_4_3_, user3_.email as email4_4_3_, user3_.fax as fax5_4_3_, user3_.first_name as first_na6_4_3_, user3_.last_name as last_nam7_4_3_, user3_.password as password8_4_3_, user3_.phone as phone9_4_3_, user3_.state_id as state_i10_4_3_, user3_.username as usernam11_4_3_, user3_.zipcode as zipcode12_4_3_, state4_.id as id1_2_4_, state4_.states_Abbreviation as states_A2_2_4_, state4_.states_Name as states_N3_2_4_, userrole5_.username as username1_3_5_, userrole5_.id as id2_3_5_, userrole5_.role_name as role_nam3_3_5_ from locations location0_ inner join location_regions region1_ on location0_.region_id=region1_.id inner join states state2_ on location0_.state_id=state2_.id left outer join users user3_ on location0_.user_id=user3_.id left outer join states state4_ on user3_.state_id=state4_.id left outer join user_roles userrole5_ on user3_.username=userrole5_.username where location0_.id=?
+[DEBUG] 2020-02-20 17:17:49.624 [main] Loader - Static select for action ACTION_MERGE on entity com.adhound.entity.Location: select location0_.id as id1_1_0_, location0_.address as address2_1_0_, location0_.city as city3_1_0_, location0_.fax as fax4_1_0_, location0_.name as name5_1_0_, location0_.phone as phone6_1_0_, location0_.region_id as region_i7_1_0_, location0_.state_id as state_id8_1_0_, location0_.user_id as user_id10_1_0_, location0_.zipcode as zipcode9_1_0_ from locations location0_ where location0_.id=?
+[DEBUG] 2020-02-20 17:17:49.624 [main] Loader - Static select for action ACTION_REFRESH on entity com.adhound.entity.Location: select location0_.id as id1_1_0_, location0_.address as address2_1_0_, location0_.city as city3_1_0_, location0_.fax as fax4_1_0_, location0_.name as name5_1_0_, location0_.phone as phone6_1_0_, location0_.region_id as region_i7_1_0_, location0_.state_id as state_id8_1_0_, location0_.user_id as user_id10_1_0_, location0_.zipcode as zipcode9_1_0_ from locations location0_ where location0_.id=?
+[DEBUG] 2020-02-20 17:17:49.626 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1cbc5693]
+[DEBUG] 2020-02-20 17:17:49.626 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d2f3dcb]
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : fax
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : region
+[DEBUG] 2020-02-20 17:17:49.626 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e375bba]
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : region.description
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : region.name
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : regionId
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2020-02-20 17:17:49.626 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71664560]
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : state.abbreviation
+[DEBUG] 2020-02-20 17:17:49.626 [main] MetamodelGraphWalker - Visiting attribute path : state.name
+[DEBUG] 2020-02-20 17:17:49.627 [main] MetamodelGraphWalker - Visiting attribute path : stateId
+[DEBUG] 2020-02-20 17:17:49.627 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-02-20 17:17:49.627 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-02-20 17:17:49.627 [main] MetamodelGraphWalker - Visiting attribute path : zipcode
+[DEBUG] 2020-02-20 17:17:49.627 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-20 17:17:49.627 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-20 17:17:49.628 [main] LoadPlanTreePrinter - LoadPlan(collection=com.adhound.entity.User.locations)
+    - Returns
+       - CollectionReturnImpl(collection=com.adhound.entity.User.locations, querySpaceUid=<gen:0>, path=[com.adhound.entity.User.locations])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.adhound.entity.Location, querySpaceUid=<gen:1>, path=[com.adhound.entity.User.locations].<elements>)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.Region, querySpaceUid=<gen:2>, path=[com.adhound.entity.User.locations].<elements>.region)
+             - EntityAttributeFetchImpl(entity=com.adhound.entity.State, querySpaceUid=<gen:3>, path=[com.adhound.entity.User.locations].<elements>.state)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.adhound.entity.User.locations)
+          - SQL table alias mapping - locations0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id10_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.adhound.entity.Location)
+                - SQL table alias mapping - locations0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(region)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.adhound.entity.Region)
+                      - SQL table alias mapping - region1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+                - JOIN (JoinDefinedByMetadata(state)) : <gen:1> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.adhound.entity.State)
+                      - SQL table alias mapping - state2_
+                      - alias suffix - 3_
+                      - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2020-02-20 17:17:49.628 [main] CollectionLoader - Static select for collection com.adhound.entity.User.locations: select locations0_.user_id as user_id10_1_0_, locations0_.id as id1_1_0_, locations0_.id as id1_1_1_, locations0_.address as address2_1_1_, locations0_.city as city3_1_1_, locations0_.fax as fax4_1_1_, locations0_.name as name5_1_1_, locations0_.phone as phone6_1_1_, locations0_.region_id as region_i7_1_1_, locations0_.state_id as state_id8_1_1_, locations0_.user_id as user_id10_1_1_, locations0_.zipcode as zipcode9_1_1_, region1_.id as id1_0_2_, region1_.description as descript2_0_2_, region1_.name as name3_0_2_, state2_.id as id1_2_3_, state2_.states_Abbreviation as states_A2_2_3_, state2_.states_Name as states_N3_2_3_ from locations locations0_ inner join location_regions region1_ on locations0_.region_id=region1_.id inner join states state2_ on locations0_.state_id=state2_.id where locations0_.user_id=?
+[DEBUG] 2020-02-20 17:17:49.643 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2020-02-20 17:17:49.643 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2020-02-20 17:17:49.643 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2020-02-20 17:17:49.645 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2020-02-20 17:17:49.645 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2020-02-20 17:17:49.646 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2020-02-20 17:17:49.646 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2020-02-20 17:17:49.647 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6c538eb2
+[DEBUG] 2020-02-20 17:17:49.647 [main] SessionFactoryRegistry - Registering SessionFactory: 59eaeec3-d11d-4f08-8639-bca18e2a506c (<unnamed>)
+[DEBUG] 2020-02-20 17:17:49.647 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2020-02-20 17:17:49.688 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2020-02-20 17:17:49.695 [main] SQL - select user0_.id as id1_4_0_, user0_.address as address2_4_0_, user0_.city as city3_4_0_, user0_.email as email4_4_0_, user0_.fax as fax5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.password as password8_4_0_, user0_.phone as phone9_4_0_, user0_.state_id as state_i10_4_0_, user0_.username as usernam11_4_0_, user0_.zipcode as zipcode12_4_0_, locations1_.user_id as user_id10_1_1_, locations1_.id as id1_1_1_, locations1_.id as id1_1_2_, locations1_.address as address2_1_2_, locations1_.city as city3_1_2_, locations1_.fax as fax4_1_2_, locations1_.name as name5_1_2_, locations1_.phone as phone6_1_2_, locations1_.region_id as region_i7_1_2_, locations1_.state_id as state_id8_1_2_, locations1_.user_id as user_id10_1_2_, locations1_.zipcode as zipcode9_1_2_, region2_.id as id1_0_3_, region2_.description as descript2_0_3_, region2_.name as name3_0_3_, state3_.id as id1_2_4_, state3_.states_Abbreviation as states_A2_2_4_, state3_.states_Name as states_N3_2_4_, state4_.id as id1_2_5_, state4_.states_Abbreviation as states_A2_2_5_, state4_.states_Name as states_N3_2_5_, userrole5_.username as username1_3_6_, userrole5_.id as id2_3_6_, userrole5_.role_name as role_nam3_3_6_ from users user0_ left outer join locations locations1_ on user0_.id=locations1_.user_id left outer join location_regions region2_ on locations1_.region_id=region2_.id left outer join states state3_ on locations1_.state_id=state3_.id inner join states state4_ on user0_.state_id=state4_.id inner join user_roles userrole5_ on user0_.username=userrole5_.username where user0_.id=?
+[DEBUG] 2020-02-20 17:17:49.707 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-20 17:17:49.708 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-20 17:17:49.713 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.adhound.entity.User.locations#2]
+[DEBUG] 2020-02-20 17:17:49.716 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-02-20 17:17:49.716 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-20 17:17:49.716 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.adhound.entity.User.locations#2]
+[DEBUG] 2020-02-20 17:17:49.716 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.User#2]
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `address` : value = 123 Test Street
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `city` : value = Madison
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `email` : value = test@gmail.com
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `fax` : value = (123) 789-4560
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`fax`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Darth
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Vader
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `locations` : value = NOT NULL COLLECTION
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`locations`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `password` : value = test
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `phone` : value = (123) 456-7890
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`phone`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `state` : value = 25
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`state`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `stateId` : value = 25
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`stateId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Processing attribute `userRole` : value = distributor
+[DEBUG] 2020-02-20 17:17:49.717 [main] TwoPhaseLoad - Attribute (`userRole`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `username` : value = distributor
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `zipcode` : value = 12345-67890
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.User#2]
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.Location#1]
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `address` : value = 123 Test Road
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `city` : value = Madison
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `fax` : value = (123) 455-3890
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`fax`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `name` : value = BW-3s Updated Updated
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `phone` : value = (123) 456-7789
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`phone`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `region` : value = 1
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`region`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `regionId` : value = 1
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`regionId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `state` : value = 49
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`state`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `stateId` : value = 49
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`stateId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2020-02-20 17:17:49.718 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `zipcode` : value = 12345-67890
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.Location#1]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.Region#1]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `description` : value = Test Region 1 Description
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `name` : value = Test Region 1
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.Region#1]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.State#49]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `abbreviation` : value = WI
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`abbreviation`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `name` : value = Wisconsin
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.State#49]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.State#25]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `abbreviation` : value = MO
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`abbreviation`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `name` : value = Missouri
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.State#25]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.UserRole#distributor]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `id` : value = 2
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `roleName` : value = Distributor
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.UserRole#distributor]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.Location#10]
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `address` : value = 123 Test Street
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `city` : value = Madison
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `fax` : value = (987) 654-3210
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`fax`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `name` : value = Test Location 52 Updated
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `phone` : value = (123) 456-7890
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`phone`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `region` : value = 1
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`region`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `regionId` : value = 1
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`regionId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `state` : value = 33
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`state`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `stateId` : value = 33
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Attribute (`stateId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.719 [main] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Processing attribute `zipcode` : value = 12345
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Attribute (`zipcode`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.Location#10]
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Resolving attributes for [com.adhound.entity.State#33]
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Processing attribute `abbreviation` : value = NC
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Attribute (`abbreviation`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Processing attribute `name` : value = North Carolina
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-20 17:17:49.720 [main] TwoPhaseLoad - Done materializing entity [com.adhound.entity.State#33]
+[DEBUG] 2020-02-20 17:17:49.720 [main] CollectionLoadContext - 1 collections were found in result set for role: com.adhound.entity.User.locations
+[DEBUG] 2020-02-20 17:17:49.721 [main] CollectionLoadContext - Collection fully initialized: [com.adhound.entity.User.locations#2]
+[DEBUG] 2020-02-20 17:17:49.721 [main] CollectionLoadContext - 1 collections initialized for role: com.adhound.entity.User.locations
+[DEBUG] 2020-02-20 17:17:49.721 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-20 17:17:49.721 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.adhound.entity.User#2
+[DEBUG] 2020-02-20 17:17:49.721 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-20 17:17:49.724 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-20 17:17:49.724 [main] TransactionImpl - begin
+[DEBUG] 2020-02-20 17:17:49.729 [main] TransactionImpl - committing
+[DEBUG] 2020-02-20 17:17:49.730 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-20 17:17:49.730 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-20 17:17:49.730 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2020-02-20 17:17:49.730 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-20 17:17:49.731 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-20 17:17:49.731 [main] EntityPrinter - com.adhound.entity.Location{zipcode=12345, address=123 Test Street, city=Madison, phone=(123) 456-7890, regionId=1, stateId=33, name=Test Location 52 Updated, id=10, state=com.adhound.entity.State#33, fax=(987) 654-3210, region=com.adhound.entity.Region#1, user=com.adhound.entity.User#2}
+[DEBUG] 2020-02-20 17:17:49.734 [main] SQL - delete from locations where id=?
+[DEBUG] 2020-02-20 17:17:49.737 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-20 17:17:49.738 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-20 17:17:49.738 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
