@@ -14,6 +14,9 @@ public class Location {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @ManyToOne
+    private User user;
+
     @Column(name = "name")
     private String name;
 
@@ -48,10 +51,119 @@ public class Location {
 
     public Location() {}
 
+    public Location(User user, String name, String phone, String fax, String address, String city, int stateId, String zipcode, int regionId) {
+        this.user = user;
+        this.name = name;
+        this.phone = phone;
+        this.fax = fax;
+        this.address = address;
+        this.city = city;
+        this.stateId = stateId;
+        this.zipcode = zipcode;
+        this.regionId = regionId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getStateId() {
+        return stateId;
+    }
+
+    public void setStateId(int stateId) {
+        this.stateId = stateId;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public int getRegionId() {
+        return regionId;
+    }
+
+    public void setRegionId(int regionId) {
+        this.regionId = regionId;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
+    }
+
     @Override
     public String toString() {
         return "Location{" +
                 "id=" + id +
+                ", user='" + user + '\'' +
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fax='" + fax + '\'' +
@@ -62,4 +174,5 @@ public class Location {
                 ", regionId=" + regionId +
                 '}';
     }
+
 }

@@ -1,5 +1,6 @@
 package com.adhound.persistence;
 
+import com.adhound.entity.Location;
 import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 import com.adhound.test.util.Database;
@@ -22,6 +23,7 @@ class UserDataTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     UserData userData;
+    LocationData locationData;
 
     /**
      * Sets up the tests with a new UserData object.
@@ -33,6 +35,7 @@ class UserDataTest {
         //database.createDatabase("adhound.sql");
 
         userData = new UserData();
+        locationData = new LocationData();
 
     }
 
@@ -106,5 +109,24 @@ class UserDataTest {
         assertNull(userData.crud.getById(deleteId));
 
         logger.info("Deleted record for ID: " + deleteId);
+    }
+
+    /**
+     * Test the creation of a new user record.
+     */
+    @Test
+    void testInsertUserLocation() {
+
+        User user = (User) userData.crud.getById(2);
+
+        Location newLocation = new Location(user, "Test Location", "(123) 456-7890", "(987) 654-3210", "123 Test Street", "Madison", 33, "12345", 1);
+
+        int newId = (int) locationData.crud.insertRecord(newLocation);
+
+        Location getLocation = (Location) locationData.crud.getById(newId);
+
+        assertEquals("Test Location", getLocation.getName());
+
+        logger.info("Inserted location record for ID: " + newId);
     }
 }

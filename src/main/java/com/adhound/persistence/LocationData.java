@@ -22,4 +22,6 @@ public class LocationData {
         this.crud = new CrudService(Location.class);
     }
 
+
+
 }
