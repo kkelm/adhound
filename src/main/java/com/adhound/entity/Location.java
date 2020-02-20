@@ -163,15 +163,16 @@ public class Location {
     public String toString() {
         return "Location{" +
                 "id=" + id +
-                ", user='" + user + '\'' +
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fax='" + fax + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", stateId=" + stateId +
+                ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
                 ", regionId=" + regionId +
+                ", region=" + region +
                 '}';
     }
 
