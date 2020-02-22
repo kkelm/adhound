@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity(name = "User")
@@ -374,4 +375,29 @@ public class User {
                 ", locations=" + locations +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(stateId, user.stateId) &&
+                Objects.equals(username, user.username) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(phone, user.phone) &&
+                Objects.equals(fax, user.fax) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(address, user.address) &&
+                Objects.equals(city, user.city) &&
+                Objects.equals(zipcode, user.zipcode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, username, password, firstName, lastName, phone, fax, email, address, city, stateId, zipcode);
+    }
+
 }
