@@ -1,43 +1,9 @@
-[INFO ] 2020-02-22 06:46:22.678 [main] CrudService - 1 ID was passed to getById
-[INFO ] 2020-02-22 06:46:22.679 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:22.952 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:22.954 [main] UserDataTest - Got user information for ID: 1
-[INFO ] 2020-02-22 06:46:22.957 [main] CrudService - getAll Started
-[INFO ] 2020-02-22 06:46:23.145 [main] CrudService - getAll Finished
-[INFO ] 2020-02-22 06:46:23.145 [main] UserDataTest - Got all users
-[INFO ] 2020-02-22 06:46:23.146 [main] CrudService - 1 ID was passed to getById
-[INFO ] 2020-02-22 06:46:23.146 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:23.153 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:23.153 [main] CrudService - updateRecords Started
-[INFO ] 2020-02-22 06:46:23.174 [main] CrudService - updateRecords Finished
-[INFO ] 2020-02-22 06:46:23.174 [main] CrudService - 1 ID was passed to getById
-[INFO ] 2020-02-22 06:46:23.174 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:23.178 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:23.178 [main] UserDataTest - Updated the password for ID: 1
-[INFO ] 2020-02-22 06:46:23.180 [main] CrudService - insertRecord Started
-[INFO ] 2020-02-22 06:46:23.208 [main] CrudService - insertRecord Finished
-[INFO ] 2020-02-22 06:46:23.208 [main] CrudService - insertRecord Started
-[INFO ] 2020-02-22 06:46:23.214 [main] CrudService - insertRecord Finished
-[INFO ] 2020-02-22 06:46:23.214 [main] CrudService - 9 ID was passed to getById
-[INFO ] 2020-02-22 06:46:23.214 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:23.220 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:23.220 [main] UserDataTest - Inserted record for ID: 9
-[INFO ] 2020-02-22 06:46:23.220 [main] CrudService - getAll Started
-[INFO ] 2020-02-22 06:46:23.244 [main] CrudService - getAll Finished
-[INFO ] 2020-02-22 06:46:23.245 [main] CrudService - 9 ID was passed to getById
-[INFO ] 2020-02-22 06:46:23.245 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:23.253 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:23.253 [main] CrudService - deleteRecord Started
-[INFO ] 2020-02-22 06:46:23.267 [main] CrudService - deleteRecord Finished
-[INFO ] 2020-02-22 06:46:23.267 [main] CrudService - 9 ID was passed to getById
-[INFO ] 2020-02-22 06:46:23.267 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:23.274 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:23.274 [main] UserDataTest - Deleted record for ID: 9
-[INFO ] 2020-02-22 06:46:57.898 [main] CrudService - 2 ID was passed to getById
-[INFO ] 2020-02-22 06:46:57.903 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:58.026 [main] CrudService - getById Finished
-[INFO ] 2020-02-22 06:46:58.026 [main] CrudService - deleteRecord Started
-[INFO ] 2020-02-22 06:46:58.055 [main] CrudService - deleteRecord Finished
-[INFO ] 2020-02-22 06:46:58.055 [main] CrudService - 3 ID was passed to getById
-[INFO ] 2020-02-22 06:46:58.055 [main] CrudService - getById Started
-[INFO ] 2020-02-22 06:46:58.064 [main] CrudService - getById Finished
+[INFO ] 2020-02-22 10:48:53.603 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-02-22 10:48:53.707 [main] CrudService - getById Finished
+[INFO ] 2020-02-22 10:48:53.722 [main] CrudService - updateRecords Finished
+[INFO ] 2020-02-22 10:48:53.732 [main] CrudService - getById Finished
+[INFO ] 2020-02-22 10:48:53.732 [main] LocationDataTest - End Location Update
+[INFO ] 2020-02-22 12:04:36.850 [main] CrudService - getById Finished
+[INFO ] 2020-02-22 12:04:36.868 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-02-22 12:04:36.871 [main] CrudService - getById Finished
+[INFO ] 2020-02-22 12:04:36.872 [main] LocationDataTest - Deleted record for ID: 6
