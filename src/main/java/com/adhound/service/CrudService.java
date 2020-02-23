@@ -45,7 +45,7 @@ public class CrudService<GenericType> {
      * @return the all users
      */
     public List<GenericType> getAll() {
-        logger.info("getAll Started");
+        //logger.info("getAll Started");
         Session session = sessionFactory.openSession();
         CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
         CriteriaQuery<GenericType> query = criteriaBuilder.createQuery(entityClass);
@@ -62,8 +62,8 @@ public class CrudService<GenericType> {
      * @return the record data
      */
     public GenericType getById(int id) {
-        logger.info(id + " ID was passed to getById");
-        logger.info("getById Started");
+        //logger.info(id + " ID was passed to getById");
+        //logger.info("getById Started");
         Session session = sessionFactory.openSession();
         GenericType user = session.get(entityClass, id);
         session.close();
@@ -76,7 +76,7 @@ public class CrudService<GenericType> {
      * @param type Entity to be updated
      */
     public void updateRecords(GenericType type) {
-        logger.info("updateRecords Started");
+        //logger.info("updateRecords Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(type);
@@ -91,7 +91,7 @@ public class CrudService<GenericType> {
      * @return id of of the new record
      */
     public Serializable insertRecord(GenericType type) {
-        logger.info("insertRecord Started");
+        //logger.info("insertRecord Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         Serializable id = session.save(type);
@@ -106,7 +106,7 @@ public class CrudService<GenericType> {
      * @param type Entity to be deleted
      */
     public void deleteRecord(GenericType type) {
-        logger.info("deleteRecord Started");
+        //logger.info("deleteRecord Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(type);
