@@ -12,19 +12,44 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 
 </head>
-<body>
-<header class="text-white bg-dark p-3 row">
-    <div class="col-md px-3 d-flex justify-content-end align-items-center">
-        <h1 class="mr-auto">User Display Exercise - Week 2</h1>
+<body class="bg-light">
 
-        <form action="login" method="post" class="">
-            <input type="text" id="searchTermTextbox" name="searchTermTextbox" class="p-1 mr-1" value="" placeholder="Enter a Name" />
-            <input type="submit" id="searchButton" name="searchButton" class="btn btn-primary p-1 mr-2" value="Search" />
-            <a href="searchUser" class="btn btn-secondary p-1" role="button">View All Users</a>
-        </form>
-    </div>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Switch account</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
+
 <main class="container p-2">
