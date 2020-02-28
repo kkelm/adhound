@@ -55,6 +55,46 @@ footer {
     font-weight: bold;
     font-size: 2vw;
 }
-.btn-footer > a {
+.btn-footer > a, #dashboardDiv a, #logoutDiv a {
     color: #012d6b;
+}
+
+@media (min-width: 768px) {
+
+    #dashboardDiv, #logoutDiv {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    #dashboardDiv, #logoutDiv {
+        font-size: 1.5vw;
+    }
+
+    .btn-footer > a::before {
+        font-size: 1.5vw;
+        line-height: .2em;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #dashboardDiv, #logoutDiv {
+        min-height: 50px;
+        font-size: 4vw;
+        
+    }
+
+    #logoutDiv {
+        justify-content: flex-start !important;
+    }
+
+    #searchDiv {
+        justify-content: flex-end !important;
+    }
+    
 }
