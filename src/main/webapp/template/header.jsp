@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,45 +10,43 @@
     <title>${title}</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+
 
 </head>
 <body class="bg-light">
 
-<header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
-        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Switch account</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
+
+<nav class="navbar navbar-expand-xl navbar-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mb-1"></span>
+    </button>
+
+    <div class="row collapse navbar-collapse my-2" id="navbarsExampleDefault">
+        <div id="dashboardDiv" class="col-md-2 d-flex justify-content-start align-items-center">
+            <a class="nav-link stretched-link" href="#"><span class="fas fa-tachometer-alt"></span> Dashboard</a> <span class="sr-only">(current)</span>
         </div>
-    </nav>
-</header>
+        <div id="searchDiv" class="col-md-8">
+            <form class="row my-2 mx-2">
+                <input class="col-9 form-control" type="text" placeholder="Search" aria-label="Search">
+                <button class="col-3 form-control btn btn-secondary" type="submit">Search</button>
+            </form>
+        </div>
+        <div id="logoutDiv" class="col-md-2 d-flex justify-content-end align-items-center">
+            <a class="nav-link stretched-link" href="#">Logout <span class="fas fa-sign-out-alt"></span></a>
+        </div>
+    </div>
+</nav>
+
 
 <main class="container p-2">
