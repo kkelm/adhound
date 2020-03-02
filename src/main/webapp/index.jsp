@@ -11,6 +11,8 @@
         </div>
     </form>
 </section>
+<img src="http://localhost:8080/adhound_war/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" />
+
 
 <table class="table">
 
