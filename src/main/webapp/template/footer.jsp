@@ -5,37 +5,26 @@
 
     <div class="row d-flex justify-content-around align-items-center">
 
-        <div class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
-            <a href="" class="stretched-link">
-                <span class="fas fa-chart-bar" style="font-size: 3vw"></span>
-                <br />Reports
-            </a>
-        </div>
-        <div class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
-            <a href="" class="stretched-link">
-                <span class="fas fa-map-marked-alt" style="font-size: 3vw;"></span>
-                <br />Locations
-            </a>
-        </div>
-        <div class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
-            <a href="" class="stretched-link">
-                <span class="fas fa-th-large" style="font-size: 3vw;"></span>
-                <br />Panels
-            </a>
-        </div>
-        <div class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
-            <a href="" class="stretched-link">
-                <span class="fas fa-address-card" style="font-size: 3vw;"></span>
-                <br />Advertisers
-            </a>
-        </div>
-        <div class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
-            <a href="" class="stretched-link">
-                <span class="fas fa-file-image" style="font-size: 3vw;"></span>
-                <br />Advertisements
-            </a>
-        </div>
-
+        <a href="reports" class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
+            <span class="fas fa-chart-bar" style="font-size: 3vw"></span>
+            <br />Reports
+        </a>
+        <a href="locations" class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
+            <span class="fas fa-map-marked-alt" style="font-size: 3vw;"></span>
+            <br />Locations
+        </a>
+        <a href="panels" class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
+            <span class="fas fa-th-large" style="font-size: 3vw;"></span>
+            <br />Panels
+        </a>
+        <a href="advertisers" class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
+            <span class="fas fa-address-card" style="font-size: 3vw;"></span>
+            <br />Advertisers
+        </a>
+        <a href="advertisements" class="col-xs flex-fill justify-content-stretch m-1 btn btn-footer">
+            <span class="fas fa-file-image" style="font-size: 3vw;"></span>
+            <br />Advertisements
+        </a>
     </div>
 
 </footer>

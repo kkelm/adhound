@@ -59,6 +59,10 @@ footer {
     color: #012d6b;
 }
 
+.list-group {
+    font-size: 1em;
+}
+
 @media (min-width: 768px) {
 
     #dashboardDiv, #logoutDiv {
