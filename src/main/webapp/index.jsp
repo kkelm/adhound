@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
-<%@include file="template/header.jsp"%>
+<%@ include file="template/header.jsp" %>
 
 <section class="row align-items-center h-100">
     <form action="userSearch" method="post" class="col-md-6 mx-auto">
@@ -11,8 +10,6 @@
         </div>
     </form>
 </section>
-<img src="http://localhost:8080/adhound_war/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" />
-
 
 <table class="table">
 
@@ -52,4 +49,4 @@
 
 </table>
 
-<%@include file="template/footer.jsp"%>
+<%@ include file="template/footer.jsp" %>
