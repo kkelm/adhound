@@ -6,7 +6,12 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.username">devfecta</property>
         <property name="connection.password">m3tallica</property>
-
+            <!--
+                    <property name="connection.driver_class">${db.driverClass}</property>
+                    <property name="connection.url">${db.jdbcUrl}</property>
+                    <property name="connection.username">${db.user}</property>
+                    <property name="connection.password">${db.password}</property>
+            -->
         <property name="hibernate.c3p0.min_size">5</property>
         <property name="hibernate.c3p0.max_size">20</property>
         <property name="hibernate.c3p0.timeout">300</property>

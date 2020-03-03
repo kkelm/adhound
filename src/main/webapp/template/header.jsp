@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,20 +10,36 @@
     <title>${title}</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 
 </head>
-<body>
-<header class="text-white bg-dark p-3 row">
-    <div class="col-md px-3 d-flex justify-content-end align-items-center">
-        <h1 class="mr-auto">User Display Exercise - Week 2</h1>
+<body class="bg-light">
 
-        <form action="login" method="post" class="">
-            <input type="text" id="searchTermTextbox" name="searchTermTextbox" class="p-1 mr-1" value="" placeholder="Enter a Name" />
-            <input type="submit" id="searchButton" name="searchButton" class="btn btn-primary p-1 mr-2" value="Search" />
-            <a href="searchUser" class="btn btn-secondary p-1" role="button">View All Users</a>
-        </form>
+
+
+<nav class="navbar navbar-expand-xl navbar-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mb-1"></span>
+    </button>
+
+    <div class="row collapse navbar-collapse my-2" id="navbarsExampleDefault">
+        <div id="dashboardDiv" class="col-md-2 d-flex justify-content-start align-items-center">
+            <a class="nav-link stretched-link" href="#"><span class="fas fa-tachometer-alt"></span> Dashboard</a> <span class="sr-only">(current)</span>
+        </div>
+        <div id="searchDiv" class="col-md-8">
+            <form class="row my-2 mx-2">
+                <input class="col-9 form-control" type="text" placeholder="Search" aria-label="Search">
+                <button class="col-3 form-control btn btn-secondary" type="submit">Search</button>
+            </form>
+        </div>
+        <div id="logoutDiv" class="col-md-2 d-flex justify-content-end align-items-center">
+            <a class="nav-link stretched-link" href="#">Logout <span class="fas fa-sign-out-alt"></span></a>
+        </div>
     </div>
-</header>
+</nav>
+
+
 <main class="container p-2">

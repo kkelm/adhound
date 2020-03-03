@@ -3,6 +3,7 @@ package com.adhound.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity(name = "Location")
 @Table(name = "locations")
@@ -176,4 +177,25 @@ public class Location {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Location location = (Location) o;
+        return id == location.id &&
+                Objects.equals(user, location.user) &&
+                Objects.equals(name, location.name) &&
+                Objects.equals(phone, location.phone) &&
+                Objects.equals(fax, location.fax) &&
+                Objects.equals(address, location.address) &&
+                Objects.equals(city, location.city) &&
+                Objects.equals(stateId, location.stateId) &&
+                Objects.equals(zipcode, location.zipcode) &&
+                Objects.equals(regionId, location.regionId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, user, name, phone, fax, address, city, stateId, zipcode, regionId);
+    }
 }

@@ -9,10 +9,16 @@ import org.hibernate.SessionFactory;
 
 import java.util.List;
 
+/**
+ * The Location data.
+ */
 public class LocationData {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The CRUD.
+     */
     public CrudService crud;
 
     /**
