@@ -5113,3 +5113,1725 @@
 [INFO ] 2020-03-02 23:10:14.024 [main] LocationDataTest - Inserted record with the ID: 128
 [INFO ] 2020-03-02 23:10:14.024 [main] LocationDataTest - End Location Insert
 [INFO ] 2020-03-02 23:10:14.031 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.128 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.130 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-02 23:42:31.230 [main] CrudService - getAll Finished
+[INFO ] 2020-03-02 23:42:31.231 [main] UserDataTest - Got all users
+[INFO ] 2020-03-02 23:42:31.236 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.250 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-02 23:42:31.254 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.254 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-02 23:42:31.269 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-02 23:42:31.273 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-02 23:42:31.277 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.277 [main] UserDataTest - Inserted record for ID: 133
+[INFO ] 2020-03-02 23:42:31.297 [main] CrudService - getAll Finished
+[INFO ] 2020-03-02 23:42:31.300 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.310 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-02 23:42:31.312 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.312 [main] UserDataTest - Deleted record for ID: 133
+[INFO ] 2020-03-02 23:42:31.332 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.336 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-02 23:42:31.338 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.338 [main] LocationDataTest - Deleted record for ID: 125
+[INFO ] 2020-03-02 23:42:31.339 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-02 23:42:31.353 [main] CrudService - getAll Finished
+[INFO ] 2020-03-02 23:42:31.358 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.358 [main] LocationDataTest - Location Test Location 32 found by getById()
+[INFO ] 2020-03-02 23:42:31.358 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-02 23:42:31.359 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-02 23:42:31.367 [main] CrudService - getAll Finished
+[INFO ] 2020-03-02 23:42:31.367 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-02 23:42:31.367 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-02 23:42:31.368 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-02 23:42:31.372 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.376 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-02 23:42:31.381 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.381 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-02 23:42:31.382 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-02 23:42:31.385 [main] CrudService - getById Finished
+[INFO ] 2020-03-02 23:42:31.389 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-02 23:42:31.389 [main] LocationDataTest - Inserted record with the ID: 129
+[INFO ] 2020-03-02 23:42:31.389 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-02 23:42:31.394 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:04.639 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:04.646 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 13:59:04.870 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:04.871 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 13:59:04.878 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:04.904 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 13:59:04.910 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:04.911 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 13:59:04.935 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:04.942 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:04.948 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:04.948 [main] UserDataTest - Inserted record for ID: 134
+[INFO ] 2020-03-03 13:59:04.981 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:04.987 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.004 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 13:59:05.008 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.009 [main] UserDataTest - Deleted record for ID: 134
+[INFO ] 2020-03-03 13:59:05.030 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.061 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 13:59:05.065 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.065 [main] LocationDataTest - Deleted record for ID: 128
+[INFO ] 2020-03-03 13:59:05.066 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 13:59:05.100 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:05.116 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.117 [main] LocationDataTest - Location Test Location 76 found by getById()
+[INFO ] 2020-03-03 13:59:05.117 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 13:59:05.121 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 13:59:05.139 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:05.139 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 13:59:05.139 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 13:59:05.140 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 13:59:05.146 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.152 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 13:59:05.162 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.162 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 13:59:05.165 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 13:59:05.174 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:05.182 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:05.182 [main] LocationDataTest - Inserted record with the ID: 130
+[INFO ] 2020-03-03 13:59:05.182 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 13:59:05.193 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.670 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.676 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 13:59:52.871 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:52.871 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 13:59:52.877 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.902 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 13:59:52.908 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.908 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 13:59:52.931 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:52.936 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:52.942 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.943 [main] UserDataTest - Inserted record for ID: 135
+[INFO ] 2020-03-03 13:59:52.970 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:52.974 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.988 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 13:59:52.991 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:52.991 [main] UserDataTest - Deleted record for ID: 135
+[INFO ] 2020-03-03 13:59:53.009 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.014 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 13:59:53.017 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.018 [main] LocationDataTest - Deleted record for ID: 129
+[INFO ] 2020-03-03 13:59:53.019 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 13:59:53.040 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:53.049 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.049 [main] LocationDataTest - Location Test Location 61 found by getById()
+[INFO ] 2020-03-03 13:59:53.049 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 13:59:53.050 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 13:59:53.065 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 13:59:53.065 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 13:59:53.065 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 13:59:53.066 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 13:59:53.072 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.077 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 13:59:53.085 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.085 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 13:59:53.086 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 13:59:53.091 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 13:59:53.097 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 13:59:53.097 [main] LocationDataTest - Inserted record with the ID: 131
+[INFO ] 2020-03-03 13:59:53.097 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 13:59:53.105 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.061 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.064 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:01:48.176 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:01:48.176 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:01:48.182 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.201 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:01:48.206 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.207 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:01:48.223 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:01:48.234 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:01:48.240 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.241 [main] UserDataTest - Inserted record for ID: 136
+[INFO ] 2020-03-03 14:01:48.270 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:01:48.275 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.287 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:01:48.290 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.291 [main] UserDataTest - Deleted record for ID: 136
+[INFO ] 2020-03-03 14:01:48.313 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.318 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:01:48.321 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.322 [main] LocationDataTest - Deleted record for ID: 131
+[INFO ] 2020-03-03 14:01:48.323 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:01:48.344 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:01:48.352 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.352 [main] LocationDataTest - Location Test Location 61 Updated found by getById()
+[INFO ] 2020-03-03 14:01:48.352 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:01:48.353 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:01:48.366 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:01:48.366 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:01:48.366 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:01:48.367 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:01:48.373 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.378 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:01:48.385 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.385 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:01:48.386 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:01:48.392 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:01:48.397 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:01:48.398 [main] LocationDataTest - Inserted record with the ID: 132
+[INFO ] 2020-03-03 14:01:48.398 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:01:48.405 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:17.997 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.004 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:04:18.166 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:04:18.166 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:04:18.173 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.200 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:04:18.205 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.206 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:04:18.226 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:04:18.231 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:04:18.236 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.237 [main] UserDataTest - Inserted record for ID: 137
+[INFO ] 2020-03-03 14:04:18.265 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:04:18.270 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.284 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:04:18.287 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.288 [main] UserDataTest - Deleted record for ID: 137
+[INFO ] 2020-03-03 14:04:18.315 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.325 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:04:18.327 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.328 [main] LocationDataTest - Deleted record for ID: 130
+[INFO ] 2020-03-03 14:04:18.328 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:04:18.358 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:04:18.364 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.365 [main] LocationDataTest - Location Test Location 38 found by getById()
+[INFO ] 2020-03-03 14:04:18.365 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:04:18.366 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:04:18.380 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:04:18.380 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:04:18.380 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:04:18.381 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:04:18.389 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.394 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:04:18.402 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.402 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:04:18.402 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:04:18.408 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:04:18.416 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:04:18.416 [main] LocationDataTest - Inserted record with the ID: 133
+[INFO ] 2020-03-03 14:04:18.416 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:04:18.426 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.109 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.115 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:09:47.313 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:09:47.314 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:09:47.322 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.350 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:09:47.355 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.355 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:09:47.377 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:09:47.385 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:09:47.390 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.391 [main] UserDataTest - Inserted record for ID: 138
+[INFO ] 2020-03-03 14:09:47.425 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:09:47.431 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.449 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:09:47.453 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.454 [main] UserDataTest - Deleted record for ID: 138
+[INFO ] 2020-03-03 14:09:47.479 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.485 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:09:47.488 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.489 [main] LocationDataTest - Deleted record for ID: 133
+[INFO ] 2020-03-03 14:09:47.490 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:09:47.517 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:09:47.525 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.526 [main] LocationDataTest - Location Test Location 38 Updated found by getById()
+[INFO ] 2020-03-03 14:09:47.526 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:09:47.527 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:09:47.543 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:09:47.544 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:09:47.544 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:09:47.547 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:09:47.562 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.568 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:09:47.578 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.578 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:09:47.580 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:09:47.591 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:09:47.599 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:09:47.599 [main] LocationDataTest - Inserted record with the ID: 134
+[INFO ] 2020-03-03 14:09:47.599 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:09:47.608 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.379 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.386 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:20:59.550 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:20:59.550 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:20:59.558 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.582 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:20:59.588 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.588 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:20:59.612 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:20:59.618 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:20:59.624 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.625 [main] UserDataTest - Inserted record for ID: 139
+[INFO ] 2020-03-03 14:20:59.660 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:20:59.665 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.679 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:20:59.682 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.684 [main] UserDataTest - Deleted record for ID: 139
+[INFO ] 2020-03-03 14:20:59.700 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.706 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:20:59.710 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.710 [main] LocationDataTest - Deleted record for ID: 132
+[INFO ] 2020-03-03 14:20:59.711 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:20:59.737 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:20:59.748 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.749 [main] LocationDataTest - Location Test Location 24 found by getById()
+[INFO ] 2020-03-03 14:20:59.749 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:20:59.750 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:20:59.764 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:20:59.764 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:20:59.764 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:20:59.765 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:20:59.772 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.777 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:20:59.785 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.785 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:20:59.786 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:20:59.791 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:20:59.797 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:20:59.798 [main] LocationDataTest - Inserted record with the ID: 135
+[INFO ] 2020-03-03 14:20:59.798 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:20:59.808 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:17.951 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:17.957 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:31:18.132 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:31:18.133 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:31:18.140 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.168 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:31:18.173 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.174 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:31:18.194 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:31:18.200 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:31:18.205 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.206 [main] UserDataTest - Inserted record for ID: 140
+[INFO ] 2020-03-03 14:31:18.236 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:31:18.240 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.260 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:31:18.267 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.269 [main] UserDataTest - Deleted record for ID: 140
+[INFO ] 2020-03-03 14:31:18.287 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.297 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:31:18.299 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.300 [main] LocationDataTest - Deleted record for ID: 135
+[INFO ] 2020-03-03 14:31:18.301 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:31:18.336 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:31:18.351 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.353 [main] LocationDataTest - Location Test Location 24 Updated found by getById()
+[INFO ] 2020-03-03 14:31:18.353 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:31:18.354 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:31:18.367 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:31:18.367 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:31:18.367 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:31:18.368 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:31:18.373 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.378 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:31:18.386 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.386 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:31:18.386 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:31:18.397 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:31:18.404 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:31:18.404 [main] LocationDataTest - Inserted record with the ID: 136
+[INFO ] 2020-03-03 14:31:18.404 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:31:18.413 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.672 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.680 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:33:26.850 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:33:26.850 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:33:26.857 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.888 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:33:26.894 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.895 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:33:26.925 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:33:26.936 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:33:26.941 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.941 [main] UserDataTest - Inserted record for ID: 141
+[INFO ] 2020-03-03 14:33:26.978 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:33:26.983 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:26.998 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:33:27.001 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.002 [main] UserDataTest - Deleted record for ID: 141
+[INFO ] 2020-03-03 14:33:27.021 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.032 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:33:27.038 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.038 [main] LocationDataTest - Deleted record for ID: 136
+[INFO ] 2020-03-03 14:33:27.039 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:33:27.065 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:33:27.077 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.078 [main] LocationDataTest - Location Test Location 24 Updated Updated found by getById()
+[INFO ] 2020-03-03 14:33:27.078 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:33:27.079 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:33:27.094 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:33:27.094 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:33:27.094 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:33:27.096 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:33:27.102 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.109 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:33:27.115 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.115 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:33:27.117 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:33:27.123 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:33:27.130 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:33:27.130 [main] LocationDataTest - Inserted record with the ID: 137
+[INFO ] 2020-03-03 14:33:27.130 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:33:27.138 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.418 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.424 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:39:51.591 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:39:51.591 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:39:51.598 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.625 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:39:51.632 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.632 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:39:51.660 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:39:51.669 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:39:51.676 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.676 [main] UserDataTest - Inserted record for ID: 142
+[INFO ] 2020-03-03 14:39:51.706 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:39:51.712 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.726 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:39:51.729 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.730 [main] UserDataTest - Deleted record for ID: 142
+[INFO ] 2020-03-03 14:39:51.761 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.778 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:39:51.789 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.790 [main] LocationDataTest - Deleted record for ID: 134
+[INFO ] 2020-03-03 14:39:51.791 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:39:51.818 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:39:51.828 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.828 [main] LocationDataTest - Location Test Location 4 found by getById()
+[INFO ] 2020-03-03 14:39:51.828 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:39:51.829 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:39:51.844 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:39:51.844 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:39:51.844 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:39:51.845 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:39:51.851 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.857 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:39:51.865 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.865 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:39:51.866 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:39:51.871 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:39:51.878 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:39:51.878 [main] LocationDataTest - Inserted record with the ID: 138
+[INFO ] 2020-03-03 14:39:51.878 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:39:51.886 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:56.844 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:56.853 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:46:57.122 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:46:57.124 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:46:57.136 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.171 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:46:57.177 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.177 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:46:57.204 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:46:57.213 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:46:57.219 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.219 [main] UserDataTest - Inserted record for ID: 143
+[INFO ] 2020-03-03 14:46:57.265 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:46:57.272 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.287 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:46:57.290 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.291 [main] UserDataTest - Deleted record for ID: 143
+[INFO ] 2020-03-03 14:46:57.317 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.324 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:46:57.326 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.327 [main] LocationDataTest - Deleted record for ID: 137
+[INFO ] 2020-03-03 14:46:57.328 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:46:57.355 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:46:57.363 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.363 [main] LocationDataTest - Location Test Location 42 found by getById()
+[INFO ] 2020-03-03 14:46:57.363 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:46:57.364 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:46:57.379 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:46:57.379 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:46:57.379 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:46:57.380 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:46:57.389 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.394 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:46:57.401 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.401 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:46:57.402 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:46:57.409 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:46:57.421 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:46:57.421 [main] LocationDataTest - Inserted record with the ID: 139
+[INFO ] 2020-03-03 14:46:57.421 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:46:57.431 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.746 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.749 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:48:50.859 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:48:50.859 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:48:50.865 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.882 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:48:50.887 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.887 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:48:50.903 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:48:50.908 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:48:50.912 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.913 [main] UserDataTest - Inserted record for ID: 144
+[INFO ] 2020-03-03 14:48:50.939 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:48:50.944 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.955 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:48:50.957 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.958 [main] UserDataTest - Deleted record for ID: 144
+[INFO ] 2020-03-03 14:48:50.973 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.978 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:48:50.981 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:50.982 [main] LocationDataTest - Deleted record for ID: 138
+[INFO ] 2020-03-03 14:48:50.983 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:48:51.002 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:48:51.009 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:51.010 [main] LocationDataTest - Location Test Location 16 found by getById()
+[INFO ] 2020-03-03 14:48:51.010 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:48:51.010 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:48:51.023 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:48:51.023 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:48:51.023 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:48:51.024 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:48:51.029 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:51.034 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:48:51.041 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:51.041 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:48:51.042 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:48:51.047 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:48:51.052 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:48:51.052 [main] LocationDataTest - Inserted record with the ID: 140
+[INFO ] 2020-03-03 14:48:51.052 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:48:51.060 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.599 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.616 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:50:00.812 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:50:00.813 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:50:00.819 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.852 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:50:00.857 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.858 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:50:00.913 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:50:00.922 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:50:00.928 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.930 [main] UserDataTest - Inserted record for ID: 145
+[INFO ] 2020-03-03 14:50:00.972 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:50:00.977 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:00.996 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:50:01.000 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.001 [main] UserDataTest - Deleted record for ID: 145
+[INFO ] 2020-03-03 14:50:01.026 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.033 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:50:01.036 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.036 [main] LocationDataTest - Deleted record for ID: 140
+[INFO ] 2020-03-03 14:50:01.037 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:50:01.064 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:50:01.075 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.075 [main] LocationDataTest - Location Test Location 16 Updated found by getById()
+[INFO ] 2020-03-03 14:50:01.075 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:50:01.076 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:50:01.090 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:50:01.090 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:50:01.090 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:50:01.091 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:50:01.099 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.104 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:50:01.113 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.113 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:50:01.115 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:50:01.123 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:50:01.130 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:50:01.131 [main] LocationDataTest - Inserted record with the ID: 141
+[INFO ] 2020-03-03 14:50:01.131 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:50:01.140 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.154 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.158 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:51:48.323 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:51:48.323 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:51:48.330 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.364 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:51:48.372 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.372 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:51:48.392 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:51:48.397 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:51:48.403 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.403 [main] UserDataTest - Inserted record for ID: 146
+[INFO ] 2020-03-03 14:51:48.436 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:51:48.442 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.454 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:51:48.459 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.461 [main] UserDataTest - Deleted record for ID: 146
+[INFO ] 2020-03-03 14:51:48.486 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.491 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:51:48.493 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.494 [main] LocationDataTest - Deleted record for ID: 141
+[INFO ] 2020-03-03 14:51:48.495 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:51:48.517 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:51:48.529 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.530 [main] LocationDataTest - Location Test Location 16 Updated Updated found by getById()
+[INFO ] 2020-03-03 14:51:48.530 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:51:48.531 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:51:48.545 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:51:48.545 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:51:48.545 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:51:48.546 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:51:48.552 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.556 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:51:48.570 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.570 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:51:48.571 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:51:48.580 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:51:48.595 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:51:48.595 [main] LocationDataTest - Inserted record with the ID: 142
+[INFO ] 2020-03-03 14:51:48.595 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:51:48.611 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.324 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.329 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:53:36.482 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:53:36.483 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:53:36.492 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.520 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:53:36.525 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.526 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:53:36.549 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:53:36.554 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:53:36.558 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.559 [main] UserDataTest - Inserted record for ID: 147
+[INFO ] 2020-03-03 14:53:36.593 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:53:36.601 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.620 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:53:36.623 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.624 [main] UserDataTest - Deleted record for ID: 147
+[INFO ] 2020-03-03 14:53:36.642 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.646 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:53:36.649 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.649 [main] LocationDataTest - Deleted record for ID: 142
+[INFO ] 2020-03-03 14:53:36.650 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:53:36.675 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:53:36.682 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.683 [main] LocationDataTest - Location Test Location 16 Updated Updated Updated found by getById()
+[INFO ] 2020-03-03 14:53:36.683 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:53:36.684 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:53:36.696 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:53:36.696 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:53:36.696 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:53:36.697 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:53:36.702 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.707 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:53:36.713 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.713 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:53:36.714 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:53:36.719 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:53:36.725 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:53:36.725 [main] LocationDataTest - Inserted record with the ID: 143
+[INFO ] 2020-03-03 14:53:36.725 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:53:36.732 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:38.523 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:38.531 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:54:38.834 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:54:38.834 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:54:38.846 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:38.908 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:54:38.923 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:38.924 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:54:38.988 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:54:38.997 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:54:39.006 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.006 [main] UserDataTest - Inserted record for ID: 148
+[INFO ] 2020-03-03 14:54:39.053 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:54:39.063 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.083 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:54:39.088 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.090 [main] UserDataTest - Deleted record for ID: 148
+[INFO ] 2020-03-03 14:54:39.145 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.154 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:54:39.158 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.159 [main] LocationDataTest - Deleted record for ID: 139
+[INFO ] 2020-03-03 14:54:39.161 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:54:39.199 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:54:39.212 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.212 [main] LocationDataTest - Location Test Location 2 found by getById()
+[INFO ] 2020-03-03 14:54:39.213 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:54:39.214 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:54:39.233 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:54:39.233 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:54:39.233 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:54:39.236 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:54:39.244 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.250 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:54:39.260 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.260 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:54:39.261 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:54:39.270 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:54:39.276 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:54:39.277 [main] LocationDataTest - Inserted record with the ID: 144
+[INFO ] 2020-03-03 14:54:39.277 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:54:39.289 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.065 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.068 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 14:55:30.183 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:55:30.184 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 14:55:30.190 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.207 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:55:30.212 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.212 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 14:55:30.228 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:55:30.232 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:55:30.239 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.239 [main] UserDataTest - Inserted record for ID: 149
+[INFO ] 2020-03-03 14:55:30.265 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:55:30.270 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.282 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:55:30.285 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.286 [main] UserDataTest - Deleted record for ID: 149
+[INFO ] 2020-03-03 14:55:30.311 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.318 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 14:55:30.320 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.321 [main] LocationDataTest - Deleted record for ID: 144
+[INFO ] 2020-03-03 14:55:30.322 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 14:55:30.341 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:55:30.349 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.349 [main] LocationDataTest - Location Test Location 2 Updated found by getById()
+[INFO ] 2020-03-03 14:55:30.349 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 14:55:30.351 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 14:55:30.364 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 14:55:30.364 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 14:55:30.364 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 14:55:30.365 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 14:55:30.371 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.375 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 14:55:30.382 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.382 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 14:55:30.383 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 14:55:30.388 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 14:55:30.395 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 14:55:30.395 [main] LocationDataTest - Inserted record with the ID: 145
+[INFO ] 2020-03-03 14:55:30.395 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 14:55:30.403 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.279 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.290 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:03:42.440 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:03:42.440 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:03:42.448 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.487 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:03:42.494 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.495 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:03:42.528 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:03:42.537 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:03:42.543 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.543 [main] UserDataTest - Inserted record for ID: 150
+[INFO ] 2020-03-03 15:03:42.575 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:03:42.580 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.602 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:03:42.607 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.608 [main] UserDataTest - Deleted record for ID: 150
+[INFO ] 2020-03-03 15:03:42.626 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.634 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:03:42.637 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.637 [main] LocationDataTest - Deleted record for ID: 145
+[INFO ] 2020-03-03 15:03:42.638 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:03:42.660 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:03:42.669 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.670 [main] LocationDataTest - Location Test Location 2 Updated Updated found by getById()
+[INFO ] 2020-03-03 15:03:42.670 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:03:42.670 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:03:42.685 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:03:42.685 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:03:42.685 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:03:42.686 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:03:42.693 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.705 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:03:42.714 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.714 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:03:42.715 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:03:42.721 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:03:42.727 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:03:42.729 [main] LocationDataTest - Inserted record with the ID: 146
+[INFO ] 2020-03-03 15:03:42.729 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:03:42.739 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.487 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.491 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:05:01.599 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:01.599 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:05:01.605 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.622 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:05:01.627 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.627 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:05:01.643 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:01.648 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:01.652 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.653 [main] UserDataTest - Inserted record for ID: 151
+[INFO ] 2020-03-03 15:05:01.677 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:01.682 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.692 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:05:01.694 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.695 [main] UserDataTest - Deleted record for ID: 151
+[INFO ] 2020-03-03 15:05:01.716 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.722 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:05:01.724 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.724 [main] LocationDataTest - Deleted record for ID: 143
+[INFO ] 2020-03-03 15:05:01.725 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:05:01.744 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:01.751 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.751 [main] LocationDataTest - Location Test Location 4 found by getById()
+[INFO ] 2020-03-03 15:05:01.751 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:05:01.752 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:05:01.764 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:01.764 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:05:01.764 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:05:01.765 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:05:01.770 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.775 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:05:01.781 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.781 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:05:01.782 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:05:01.787 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:01.792 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:01.792 [main] LocationDataTest - Inserted record with the ID: 147
+[INFO ] 2020-03-03 15:05:01.792 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:05:01.799 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.408 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.412 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:05:57.521 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:57.521 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:05:57.527 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.544 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:05:57.549 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.550 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:05:57.566 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:57.571 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:57.576 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.576 [main] UserDataTest - Inserted record for ID: 152
+[INFO ] 2020-03-03 15:05:57.602 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:57.606 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.617 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:05:57.620 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.621 [main] UserDataTest - Deleted record for ID: 152
+[INFO ] 2020-03-03 15:05:57.646 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.651 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:05:57.654 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.654 [main] LocationDataTest - Deleted record for ID: 146
+[INFO ] 2020-03-03 15:05:57.655 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:05:57.674 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:57.681 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.681 [main] LocationDataTest - Location Test Location 6 found by getById()
+[INFO ] 2020-03-03 15:05:57.681 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:05:57.682 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:05:57.694 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:05:57.694 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:05:57.694 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:05:57.695 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:05:57.700 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.705 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:05:57.711 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.711 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:05:57.712 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:05:57.718 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:05:57.723 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:05:57.723 [main] LocationDataTest - Inserted record with the ID: 148
+[INFO ] 2020-03-03 15:05:57.723 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:05:57.730 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:09.896 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:09.908 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:07:10.100 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:07:10.100 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:07:10.108 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.135 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:07:10.141 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.142 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:07:10.165 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:07:10.171 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:07:10.176 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.176 [main] UserDataTest - Inserted record for ID: 153
+[INFO ] 2020-03-03 15:07:10.211 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:07:10.220 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.237 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:07:10.241 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.242 [main] UserDataTest - Deleted record for ID: 153
+[INFO ] 2020-03-03 15:07:10.263 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.272 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:07:10.275 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.275 [main] LocationDataTest - Deleted record for ID: 148
+[INFO ] 2020-03-03 15:07:10.276 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:07:10.301 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:07:10.309 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.310 [main] LocationDataTest - Location Test Location 6 Updated found by getById()
+[INFO ] 2020-03-03 15:07:10.310 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:07:10.310 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:07:10.325 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:07:10.325 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:07:10.325 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:07:10.326 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:07:10.332 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.338 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:07:10.349 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.349 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:07:10.349 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:07:10.357 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:07:10.363 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:07:10.364 [main] LocationDataTest - Inserted record with the ID: 149
+[INFO ] 2020-03-03 15:07:10.364 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:07:10.373 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.366 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.371 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:09:12.538 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:09:12.538 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:09:12.545 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.568 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:09:12.575 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.576 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:09:12.603 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:09:12.614 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:09:12.622 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.622 [main] UserDataTest - Inserted record for ID: 154
+[INFO ] 2020-03-03 15:09:12.662 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:09:12.668 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.683 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:09:12.687 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.688 [main] UserDataTest - Deleted record for ID: 154
+[INFO ] 2020-03-03 15:09:12.718 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.729 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:09:12.733 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.735 [main] LocationDataTest - Deleted record for ID: 149
+[INFO ] 2020-03-03 15:09:12.736 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:09:12.763 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:09:12.774 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.774 [main] LocationDataTest - Location Test Location 6 Updated Updated found by getById()
+[INFO ] 2020-03-03 15:09:12.774 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:09:12.776 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:09:12.793 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:09:12.793 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:09:12.793 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:09:12.794 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:09:12.800 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.806 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:09:12.814 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.814 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:09:12.816 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:09:12.829 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:09:12.835 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:09:12.835 [main] LocationDataTest - Inserted record with the ID: 150
+[INFO ] 2020-03-03 15:09:12.835 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:09:12.845 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:54.919 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:54.926 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:20:55.079 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:20:55.080 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:20:55.088 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.123 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:20:55.130 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.131 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:20:55.157 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:20:55.168 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:20:55.174 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.174 [main] UserDataTest - Inserted record for ID: 155
+[INFO ] 2020-03-03 15:20:55.209 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:20:55.214 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.230 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:20:55.232 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.233 [main] UserDataTest - Deleted record for ID: 155
+[INFO ] 2020-03-03 15:20:55.278 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.293 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:20:55.301 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.301 [main] LocationDataTest - Deleted record for ID: 147
+[INFO ] 2020-03-03 15:20:55.302 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:20:55.326 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:20:55.333 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.333 [main] LocationDataTest - Location Test Location 44 found by getById()
+[INFO ] 2020-03-03 15:20:55.333 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:20:55.334 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:20:55.346 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:20:55.346 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:20:55.346 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:20:55.347 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:20:55.352 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.359 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:20:55.365 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.365 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:20:55.366 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:20:55.372 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:20:55.380 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:20:55.380 [main] LocationDataTest - Inserted record with the ID: 151
+[INFO ] 2020-03-03 15:20:55.380 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:20:55.388 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.219 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.232 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:32:04.499 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:32:04.499 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:32:04.505 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.529 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:32:04.535 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.535 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:32:04.567 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:32:04.578 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:32:04.584 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.584 [main] UserDataTest - Inserted record for ID: 156
+[INFO ] 2020-03-03 15:32:04.656 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:32:04.672 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.686 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:32:04.689 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.690 [main] UserDataTest - Deleted record for ID: 156
+[INFO ] 2020-03-03 15:32:04.720 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.724 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:32:04.727 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.728 [main] LocationDataTest - Deleted record for ID: 150
+[INFO ] 2020-03-03 15:32:04.729 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:32:04.746 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:32:04.753 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.754 [main] LocationDataTest - Location Test Location 96 found by getById()
+[INFO ] 2020-03-03 15:32:04.754 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:32:04.755 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:32:04.766 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:32:04.766 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:32:04.766 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:32:04.768 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:32:04.773 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.777 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:32:04.783 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.783 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:32:04.784 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:32:04.789 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:32:04.794 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:32:04.795 [main] LocationDataTest - Inserted record with the ID: 152
+[INFO ] 2020-03-03 15:32:04.795 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:32:04.803 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:34.862 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:34.865 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:35:34.974 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:35:34.974 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:35:34.982 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.002 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:35:35.009 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.009 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:35:35.028 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:35:35.032 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:35:35.038 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.039 [main] UserDataTest - Inserted record for ID: 157
+[INFO ] 2020-03-03 15:35:35.068 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:35:35.073 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.084 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:35:35.087 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.087 [main] UserDataTest - Deleted record for ID: 157
+[INFO ] 2020-03-03 15:35:35.105 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.116 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:35:35.119 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.119 [main] LocationDataTest - Deleted record for ID: 151
+[INFO ] 2020-03-03 15:35:35.123 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:35:35.143 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:35:35.150 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.150 [main] LocationDataTest - Location Test Location 10 found by getById()
+[INFO ] 2020-03-03 15:35:35.150 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:35:35.151 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:35:35.162 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:35:35.162 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:35:35.162 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:35:35.163 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:35:35.168 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.173 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:35:35.179 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.179 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:35:35.180 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:35:35.185 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:35:35.193 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:35:35.193 [main] LocationDataTest - Inserted record with the ID: 153
+[INFO ] 2020-03-03 15:35:35.193 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:35:35.201 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.332 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.337 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:37:32.446 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:37:32.447 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:37:32.453 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.470 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:37:32.474 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.475 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:37:32.490 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:37:32.496 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:37:32.502 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.503 [main] UserDataTest - Inserted record for ID: 158
+[INFO ] 2020-03-03 15:37:32.530 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:37:32.535 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.546 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:37:32.549 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.550 [main] UserDataTest - Deleted record for ID: 158
+[INFO ] 2020-03-03 15:37:32.595 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.600 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:37:32.602 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.603 [main] LocationDataTest - Deleted record for ID: 153
+[INFO ] 2020-03-03 15:37:32.604 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:37:32.627 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:37:32.634 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.635 [main] LocationDataTest - Location Test Location 10 Updated found by getById()
+[INFO ] 2020-03-03 15:37:32.635 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:37:32.636 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:37:32.649 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:37:32.649 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:37:32.649 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:37:32.650 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:37:32.656 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.661 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:37:32.667 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.667 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:37:32.669 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:37:32.676 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:37:32.681 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:37:32.682 [main] LocationDataTest - Inserted record with the ID: 154
+[INFO ] 2020-03-03 15:37:32.682 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:37:32.689 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:56.799 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:56.806 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:39:57.016 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:39:57.016 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:39:57.024 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.051 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:39:57.058 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.058 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:39:57.078 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:39:57.083 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:39:57.088 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.088 [main] UserDataTest - Inserted record for ID: 159
+[INFO ] 2020-03-03 15:39:57.119 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:39:57.125 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.141 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:39:57.144 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.147 [main] UserDataTest - Deleted record for ID: 159
+[INFO ] 2020-03-03 15:39:57.182 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.187 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:39:57.190 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.190 [main] LocationDataTest - Deleted record for ID: 154
+[INFO ] 2020-03-03 15:39:57.191 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:39:57.213 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:39:57.221 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.222 [main] LocationDataTest - Location Test Location 10 Updated Updated found by getById()
+[INFO ] 2020-03-03 15:39:57.222 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:39:57.223 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:39:57.242 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:39:57.242 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:39:57.242 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:39:57.243 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:39:57.251 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.256 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:39:57.263 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.263 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:39:57.264 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:39:57.270 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:39:57.277 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:39:57.277 [main] LocationDataTest - Inserted record with the ID: 155
+[INFO ] 2020-03-03 15:39:57.277 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:39:57.286 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.050 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.054 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:41:22.201 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:41:22.201 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:41:22.209 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.238 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:41:22.244 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.244 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:41:22.275 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:41:22.282 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:41:22.288 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.288 [main] UserDataTest - Inserted record for ID: 160
+[INFO ] 2020-03-03 15:41:22.324 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:41:22.331 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.352 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:41:22.357 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.358 [main] UserDataTest - Deleted record for ID: 160
+[INFO ] 2020-03-03 15:41:22.389 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.399 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:41:22.404 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.404 [main] LocationDataTest - Deleted record for ID: 152
+[INFO ] 2020-03-03 15:41:22.406 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:41:22.428 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:41:22.437 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.438 [main] LocationDataTest - Location Test Location 43 found by getById()
+[INFO ] 2020-03-03 15:41:22.438 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:41:22.439 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:41:22.452 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:41:22.453 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:41:22.453 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:41:22.454 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:41:22.460 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.466 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:41:22.472 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.472 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:41:22.473 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:41:22.479 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:41:22.485 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:41:22.486 [main] LocationDataTest - Inserted record with the ID: 156
+[INFO ] 2020-03-03 15:41:22.486 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:41:22.493 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:26.974 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:26.977 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:42:27.105 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:42:27.106 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:42:27.112 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.130 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:42:27.135 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.135 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:42:27.152 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:42:27.158 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:42:27.163 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.163 [main] UserDataTest - Inserted record for ID: 161
+[INFO ] 2020-03-03 15:42:27.193 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:42:27.198 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.211 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:42:27.214 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.215 [main] UserDataTest - Deleted record for ID: 161
+[INFO ] 2020-03-03 15:42:27.254 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.260 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:42:27.263 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.263 [main] LocationDataTest - Deleted record for ID: 156
+[INFO ] 2020-03-03 15:42:27.265 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:42:27.293 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:42:27.303 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.304 [main] LocationDataTest - Location Test Location 43 Updated found by getById()
+[INFO ] 2020-03-03 15:42:27.304 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:42:27.305 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:42:27.320 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:42:27.320 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:42:27.320 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:42:27.322 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:42:27.328 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.333 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:42:27.343 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.343 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:42:27.344 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:42:27.351 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:42:27.359 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:42:27.359 [main] LocationDataTest - Inserted record with the ID: 157
+[INFO ] 2020-03-03 15:42:27.359 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:42:27.369 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.695 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.699 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:48:01.824 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:48:01.825 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:48:01.831 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.850 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:48:01.855 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.855 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:48:01.873 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:48:01.878 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:48:01.883 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.884 [main] UserDataTest - Inserted record for ID: 162
+[INFO ] 2020-03-03 15:48:01.911 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:48:01.915 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.927 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:48:01.930 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.931 [main] UserDataTest - Deleted record for ID: 162
+[INFO ] 2020-03-03 15:48:01.960 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.970 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:48:01.973 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:01.973 [main] LocationDataTest - Deleted record for ID: 155
+[INFO ] 2020-03-03 15:48:01.974 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:48:01.997 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:48:02.005 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:02.005 [main] LocationDataTest - Location Test Location 98 found by getById()
+[INFO ] 2020-03-03 15:48:02.005 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:48:02.006 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:48:02.017 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:48:02.017 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:48:02.017 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:48:02.018 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:48:02.023 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:02.029 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:48:02.034 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:02.034 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:48:02.035 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:48:02.040 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:48:02.045 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:48:02.046 [main] LocationDataTest - Inserted record with the ID: 158
+[INFO ] 2020-03-03 15:48:02.046 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:48:02.053 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.477 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.489 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:51:13.692 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:51:13.693 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:51:13.702 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.739 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:51:13.746 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.746 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:51:13.777 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:51:13.785 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:51:13.793 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.794 [main] UserDataTest - Inserted record for ID: 163
+[INFO ] 2020-03-03 15:51:13.831 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:51:13.843 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.867 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:51:13.873 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.874 [main] UserDataTest - Deleted record for ID: 163
+[INFO ] 2020-03-03 15:51:13.918 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.928 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:51:13.935 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.937 [main] LocationDataTest - Deleted record for ID: 158
+[INFO ] 2020-03-03 15:51:13.938 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:51:13.976 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:51:13.988 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:13.988 [main] LocationDataTest - Location Test Location 98 Updated found by getById()
+[INFO ] 2020-03-03 15:51:13.988 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:51:13.989 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:51:14.012 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:51:14.012 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:51:14.012 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:51:14.013 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:51:14.026 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:14.032 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:51:14.041 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:14.041 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:51:14.042 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:51:14.047 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:51:14.056 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:51:14.056 [main] LocationDataTest - Inserted record with the ID: 159
+[INFO ] 2020-03-03 15:51:14.056 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:51:14.066 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.700 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.703 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:52:12.826 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:52:12.826 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:52:12.832 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.851 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:52:12.856 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.856 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:52:12.873 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:52:12.878 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:52:12.883 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.883 [main] UserDataTest - Inserted record for ID: 164
+[INFO ] 2020-03-03 15:52:12.908 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:52:12.913 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.925 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:52:12.928 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.929 [main] UserDataTest - Deleted record for ID: 164
+[INFO ] 2020-03-03 15:52:12.944 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.951 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:52:12.956 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.957 [main] LocationDataTest - Deleted record for ID: 159
+[INFO ] 2020-03-03 15:52:12.958 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:52:12.979 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:52:12.987 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:12.987 [main] LocationDataTest - Location Test Location 98 Updated Updated found by getById()
+[INFO ] 2020-03-03 15:52:12.987 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:52:12.988 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:52:13.000 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:52:13.000 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:52:13.000 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:52:13.001 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:52:13.007 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:13.012 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:52:13.019 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:13.019 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:52:13.020 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:52:13.025 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:52:13.031 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:52:13.032 [main] LocationDataTest - Inserted record with the ID: 160
+[INFO ] 2020-03-03 15:52:13.032 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:52:13.040 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.287 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.290 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:55:03.406 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:55:03.406 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:55:03.414 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.433 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:55:03.438 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.439 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:55:03.456 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:55:03.462 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:55:03.467 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.467 [main] UserDataTest - Inserted record for ID: 165
+[INFO ] 2020-03-03 15:55:03.495 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:55:03.500 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.511 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:55:03.514 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.515 [main] UserDataTest - Deleted record for ID: 165
+[INFO ] 2020-03-03 15:55:03.531 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.539 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:55:03.542 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.543 [main] LocationDataTest - Deleted record for ID: 157
+[INFO ] 2020-03-03 15:55:03.544 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:55:03.573 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:55:03.590 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.591 [main] LocationDataTest - Location Test Location 75 found by getById()
+[INFO ] 2020-03-03 15:55:03.591 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:55:03.596 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:55:03.612 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:55:03.612 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:55:03.612 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:55:03.613 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:55:03.619 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.624 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:55:03.631 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.631 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:55:03.632 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:55:03.638 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:55:03.643 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:55:03.643 [main] LocationDataTest - Inserted record with the ID: 161
+[INFO ] 2020-03-03 15:55:03.643 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:55:03.651 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:20.926 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:20.932 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:56:21.065 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:56:21.065 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:56:21.072 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.090 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:56:21.099 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.100 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:56:21.128 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:56:21.135 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:56:21.144 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.145 [main] UserDataTest - Inserted record for ID: 166
+[INFO ] 2020-03-03 15:56:21.180 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:56:21.185 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.201 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:56:21.203 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.204 [main] UserDataTest - Deleted record for ID: 166
+[INFO ] 2020-03-03 15:56:21.243 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.248 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:56:21.254 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.255 [main] LocationDataTest - Deleted record for ID: 161
+[INFO ] 2020-03-03 15:56:21.256 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:56:21.289 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:56:21.301 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.302 [main] LocationDataTest - Location Test Location 75 Updated found by getById()
+[INFO ] 2020-03-03 15:56:21.302 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:56:21.303 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:56:21.323 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:56:21.323 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:56:21.323 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:56:21.325 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:56:21.331 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.337 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:56:21.345 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.345 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:56:21.346 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:56:21.352 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:56:21.363 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:56:21.363 [main] LocationDataTest - Inserted record with the ID: 162
+[INFO ] 2020-03-03 15:56:21.363 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:56:21.371 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.175 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.178 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:57:01.297 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:01.297 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:57:01.303 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.321 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:57:01.326 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.327 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:57:01.345 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:01.350 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:01.354 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.355 [main] UserDataTest - Inserted record for ID: 167
+[INFO ] 2020-03-03 15:57:01.384 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:01.389 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.403 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:57:01.406 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.407 [main] UserDataTest - Deleted record for ID: 167
+[INFO ] 2020-03-03 15:57:01.431 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.436 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:57:01.439 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.439 [main] LocationDataTest - Deleted record for ID: 160
+[INFO ] 2020-03-03 15:57:01.440 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:57:01.462 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:01.470 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.471 [main] LocationDataTest - Location Test Location 55 found by getById()
+[INFO ] 2020-03-03 15:57:01.471 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:57:01.471 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:57:01.483 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:01.483 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:57:01.483 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:57:01.484 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:57:01.490 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.494 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:57:01.502 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.502 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:57:01.503 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:57:01.509 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:01.514 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:01.514 [main] LocationDataTest - Inserted record with the ID: 163
+[INFO ] 2020-03-03 15:57:01.514 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:57:01.522 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.454 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.458 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:57:50.607 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:50.607 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:57:50.613 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.631 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:57:50.636 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.636 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:57:50.653 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:50.658 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:50.662 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.663 [main] UserDataTest - Inserted record for ID: 168
+[INFO ] 2020-03-03 15:57:50.688 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:50.693 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.708 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:57:50.711 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.712 [main] UserDataTest - Deleted record for ID: 168
+[INFO ] 2020-03-03 15:57:50.731 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.736 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:57:50.739 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.739 [main] LocationDataTest - Deleted record for ID: 162
+[INFO ] 2020-03-03 15:57:50.740 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:57:50.759 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:50.766 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.767 [main] LocationDataTest - Location Test Location 65 found by getById()
+[INFO ] 2020-03-03 15:57:50.767 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:57:50.768 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:57:50.784 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:57:50.784 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:57:50.784 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:57:50.787 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:57:50.794 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.800 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:57:50.809 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.809 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:57:50.810 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:57:50.818 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:57:50.825 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:57:50.825 [main] LocationDataTest - Inserted record with the ID: 164
+[INFO ] 2020-03-03 15:57:50.825 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:57:50.835 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.260 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.264 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 15:58:40.380 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:58:40.380 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 15:58:40.387 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.407 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:58:40.413 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.413 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 15:58:40.430 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:58:40.437 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:58:40.442 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.442 [main] UserDataTest - Inserted record for ID: 169
+[INFO ] 2020-03-03 15:58:40.474 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:58:40.479 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.493 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:58:40.496 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.497 [main] UserDataTest - Deleted record for ID: 169
+[INFO ] 2020-03-03 15:58:40.523 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.528 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 15:58:40.531 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.532 [main] LocationDataTest - Deleted record for ID: 163
+[INFO ] 2020-03-03 15:58:40.533 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 15:58:40.556 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:58:40.564 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.564 [main] LocationDataTest - Location Test Location 52 found by getById()
+[INFO ] 2020-03-03 15:58:40.564 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 15:58:40.565 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 15:58:40.578 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 15:58:40.578 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 15:58:40.578 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 15:58:40.579 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 15:58:40.585 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.591 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 15:58:40.602 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.602 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 15:58:40.603 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 15:58:40.610 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 15:58:40.615 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 15:58:40.615 [main] LocationDataTest - Inserted record with the ID: 165
+[INFO ] 2020-03-03 15:58:40.615 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 15:58:40.625 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.307 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.311 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 16:04:01.443 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:04:01.443 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 16:04:01.451 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.471 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:04:01.477 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.477 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 16:04:01.496 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:04:01.503 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:04:01.509 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.509 [main] UserDataTest - Inserted record for ID: 170
+[INFO ] 2020-03-03 16:04:01.539 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:04:01.544 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.559 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:04:01.562 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.563 [main] UserDataTest - Deleted record for ID: 170
+[INFO ] 2020-03-03 16:04:01.579 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.584 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:04:01.587 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.587 [main] LocationDataTest - Deleted record for ID: 164
+[INFO ] 2020-03-03 16:04:01.588 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 16:04:01.609 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:04:01.617 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.617 [main] LocationDataTest - Location Test Location 34 found by getById()
+[INFO ] 2020-03-03 16:04:01.617 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 16:04:01.618 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 16:04:01.630 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:04:01.630 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 16:04:01.630 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 16:04:01.631 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 16:04:01.637 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.642 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:04:01.649 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.649 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 16:04:01.650 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 16:04:01.656 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:04:01.661 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:04:01.662 [main] LocationDataTest - Inserted record with the ID: 166
+[INFO ] 2020-03-03 16:04:01.662 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 16:04:01.670 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.097 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.102 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 16:06:23.217 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:06:23.217 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 16:06:23.224 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.242 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:06:23.247 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.248 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 16:06:23.266 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:06:23.271 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:06:23.276 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.277 [main] UserDataTest - Inserted record for ID: 171
+[INFO ] 2020-03-03 16:06:23.307 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:06:23.315 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.332 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:06:23.338 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.339 [main] UserDataTest - Deleted record for ID: 171
+[INFO ] 2020-03-03 16:06:23.355 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.360 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:06:23.365 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.365 [main] LocationDataTest - Deleted record for ID: 165
+[INFO ] 2020-03-03 16:06:23.366 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 16:06:23.386 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:06:23.393 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.393 [main] LocationDataTest - Location Test Location 5 found by getById()
+[INFO ] 2020-03-03 16:06:23.393 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 16:06:23.394 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 16:06:23.406 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:06:23.406 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 16:06:23.406 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 16:06:23.407 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 16:06:23.412 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.417 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:06:23.424 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.424 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 16:06:23.425 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 16:06:23.430 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:06:23.435 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:06:23.435 [main] LocationDataTest - Inserted record with the ID: 167
+[INFO ] 2020-03-03 16:06:23.435 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 16:06:23.443 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.032 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.035 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 16:08:18.155 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:08:18.155 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 16:08:18.162 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.181 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:08:18.185 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.186 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 16:08:18.203 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:08:18.208 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:08:18.213 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.213 [main] UserDataTest - Inserted record for ID: 172
+[INFO ] 2020-03-03 16:08:18.249 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:08:18.253 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.265 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:08:18.269 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.270 [main] UserDataTest - Deleted record for ID: 172
+[INFO ] 2020-03-03 16:08:18.296 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.300 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:08:18.304 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.304 [main] LocationDataTest - Deleted record for ID: 167
+[INFO ] 2020-03-03 16:08:18.305 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 16:08:18.324 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:08:18.331 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.332 [main] LocationDataTest - Location Test Location 5 Updated found by getById()
+[INFO ] 2020-03-03 16:08:18.332 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 16:08:18.333 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 16:08:18.346 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:08:18.346 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 16:08:18.346 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 16:08:18.347 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 16:08:18.352 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.357 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:08:18.363 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.363 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 16:08:18.364 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 16:08:18.369 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:08:18.374 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:08:18.375 [main] LocationDataTest - Inserted record with the ID: 168
+[INFO ] 2020-03-03 16:08:18.375 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 16:08:18.382 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.619 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.622 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 16:10:47.738 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:10:47.739 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 16:10:47.745 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.762 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:10:47.770 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.770 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 16:10:47.787 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:10:47.792 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:10:47.797 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.797 [main] UserDataTest - Inserted record for ID: 173
+[INFO ] 2020-03-03 16:10:47.826 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:10:47.831 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.843 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:10:47.846 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.847 [main] UserDataTest - Deleted record for ID: 173
+[INFO ] 2020-03-03 16:10:47.862 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.872 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:10:47.875 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.875 [main] LocationDataTest - Deleted record for ID: 168
+[INFO ] 2020-03-03 16:10:47.876 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 16:10:47.898 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:10:47.905 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.906 [main] LocationDataTest - Location Test Location 5 Updated Updated found by getById()
+[INFO ] 2020-03-03 16:10:47.906 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 16:10:47.907 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 16:10:47.920 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:10:47.920 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 16:10:47.920 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 16:10:47.921 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 16:10:47.926 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.931 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:10:47.940 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.940 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 16:10:47.940 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 16:10:47.946 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:10:47.952 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:10:47.952 [main] LocationDataTest - Inserted record with the ID: 169
+[INFO ] 2020-03-03 16:10:47.952 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 16:10:47.961 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:46.900 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:46.902 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-03 16:11:47.022 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:11:47.023 [main] UserDataTest - Got all users
+[INFO ] 2020-03-03 16:11:47.029 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.048 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:11:47.053 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.054 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-03 16:11:47.071 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:11:47.077 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:11:47.082 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.082 [main] UserDataTest - Inserted record for ID: 174
+[INFO ] 2020-03-03 16:11:47.110 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:11:47.115 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.128 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:11:47.130 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.131 [main] UserDataTest - Deleted record for ID: 174
+[INFO ] 2020-03-03 16:11:47.147 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.151 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-03 16:11:47.155 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.155 [main] LocationDataTest - Deleted record for ID: 166
+[INFO ] 2020-03-03 16:11:47.156 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-03 16:11:47.178 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:11:47.185 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.185 [main] LocationDataTest - Location Test Location 2 found by getById()
+[INFO ] 2020-03-03 16:11:47.185 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-03 16:11:47.186 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-03 16:11:47.199 [main] CrudService - getAll Finished
+[INFO ] 2020-03-03 16:11:47.199 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-03 16:11:47.199 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-03 16:11:47.200 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-03 16:11:47.205 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.210 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-03 16:11:47.217 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.217 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-03 16:11:47.218 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-03 16:11:47.223 [main] CrudService - getById Finished
+[INFO ] 2020-03-03 16:11:47.230 [main] CrudService - insertRecord Finished
+[INFO ] 2020-03-03 16:11:47.230 [main] LocationDataTest - Inserted record with the ID: 170
+[INFO ] 2020-03-03 16:11:47.230 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-03 16:11:47.252 [main] CrudService - getById Finished

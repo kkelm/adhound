@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(
-        urlPatterns = {"/"}
+        urlPatterns = {"/home"}
 )
 
 public class Home extends HttpServlet {
