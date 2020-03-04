@@ -40,13 +40,7 @@ public class Locations extends HttpServlet {
         User user = (User) userData.crud.getById(2);
         Set<Location> locations = user.getLocations();
 
-        System.out.println(locations);
-
-        //this.crud = new CrudService(Location.class);
-        //List<Location> locations = this.crud.getById(2);
         request.setAttribute("locations", locations);
-
-
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/locations.jsp");
         dispatcher.forward(request, response);
