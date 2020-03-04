@@ -11,9 +11,9 @@
     <title>${title}</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/font-awesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css" />
 
 </head>
 <body class="bg-light">
@@ -21,7 +21,7 @@
 
 
 <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <a class="navbar-brand" href="home"><img src="images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
+    <a class="navbar-brand" href="home"><img src="${pageContext.request.contextPath}/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mb-1"></span>
     </button>
