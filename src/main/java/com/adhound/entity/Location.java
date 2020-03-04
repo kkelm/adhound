@@ -183,7 +183,6 @@ public class Location {
         if (o == null || getClass() != o.getClass()) return false;
         Location location = (Location) o;
         return id == location.id &&
-                Objects.equals(user, location.user) &&
                 Objects.equals(name, location.name) &&
                 Objects.equals(phone, location.phone) &&
                 Objects.equals(fax, location.fax) &&
@@ -196,6 +195,6 @@ public class Location {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user, name, phone, fax, address, city, stateId, zipcode, regionId);
+        return Objects.hash(id, name, phone, fax, address, city, stateId, zipcode, regionId);
     }
 }

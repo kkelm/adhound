@@ -14,6 +14,8 @@ public class UserRole {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    //private User user;
+
     @Id
     private String username;
 
@@ -31,6 +33,8 @@ public class UserRole {
      * @param username string
      */
     public UserRole(String username) {
+        //this.user = user;
+        //this.roleName = roleName;
         this.username = username;
     }
 
