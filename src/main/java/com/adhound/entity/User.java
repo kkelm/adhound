@@ -54,9 +54,14 @@ public class User {
     @Column(name = "zipcode")
     private String zipcode;
 
+/*
     @OneToOne
     @JoinColumn(name = "username", insertable = false, updatable = false, nullable = false)
     private UserRole userRole;
+*/
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<UserRole> userRole = new HashSet<>();
+
 
     // mappedBy refers to the instance variable in Location
     // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
@@ -336,14 +341,14 @@ public class User {
      *
      * @return the UserRole object
      */
-    public UserRole getUserRole() { return userRole; }
+    public Set<UserRole> getUserRole() { return userRole; }
 
     /**
      * Sets the user role object for the user's role.
      *
      * @param userRole the UserRole object
      */
-    public void setUserRole(UserRole userRole) {
+    public void setUserRole(Set<UserRole> userRole) {
         this.userRole = userRole;
     }
 
@@ -371,7 +376,6 @@ public class User {
                 ", stateId=" + stateId +
                 ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
-                ", userRole=" + userRole +
                 ", locations=" + locations +
                 '}';
     }

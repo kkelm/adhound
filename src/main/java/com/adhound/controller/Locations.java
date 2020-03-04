@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 @WebServlet(
-        urlPatterns = {"/locations"}
+        urlPatterns = {"/dashboard/locations"}
 )
 
 public class Locations extends HttpServlet {
@@ -42,7 +42,7 @@ public class Locations extends HttpServlet {
 
         request.setAttribute("locations", locations);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/locations.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/locations.jsp");
         dispatcher.forward(request, response);
 
     }

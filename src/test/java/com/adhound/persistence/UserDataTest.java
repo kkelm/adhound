@@ -62,7 +62,9 @@ class UserDataTest {
         User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
         int newId = (int) userData.crud.insertRecord(newUser);
 
-        UserRole userRole = new UserRole(newUser.getUsername());
+        newUser = (User) userData.crud.getById(newId);
+
+        UserRole userRole = new UserRole(newUser, newUser.getUsername());
         Serializable userRoleId = userData.crud.insertRecord(userRole);
 
         User insertedUser = (User) userData.crud.getById(newId);

@@ -9,14 +9,20 @@ import javax.persistence.*;
 
 public class UserRole {
 
-    @Column(name ="id")
+    @Id
+
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    //private User user;
+    @ManyToOne
+    @JoinColumn(name = "username",
+            foreignKey = @ForeignKey(name = "username_fk"), insertable = false, updatable = false
+    )
+    private User user;
 
-    @Id
+
+    @Column(name ="username")
     private String username;
 
     @Column(name = "role_name")
@@ -32,9 +38,9 @@ public class UserRole {
      *
      * @param username string
      */
-    public UserRole(String username) {
-        //this.user = user;
-        //this.roleName = roleName;
+    public UserRole(User user, String username) {
+        this.user = user;
+        // this.roleName = roleName;
         this.username = username;
     }
 
@@ -55,6 +61,18 @@ public class UserRole {
     public void setId(int id) {
         this.id = id;
     }
+
+
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
 
     /**
      * Gets the username.
