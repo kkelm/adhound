@@ -126,7 +126,7 @@
                 <profile.name>AWS</profile.name>
                 <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
                 <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound</db.jdbcUrl>
-                <db.user>devfecta</db.user>
+                <db.user>root</db.user>
                 <db.password>m3tallica</db.password>
             </properties>
         </profile>

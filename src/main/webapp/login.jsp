@@ -8,7 +8,7 @@
     <form action="j_security_check" method="post" class="col-md-6 mx-auto">
         <div class="jumbotron">
             <input type="text" id="usernameTextbox" name="j_username" class="p-1 mr-1" value="kkelm" placeholder="e-Mail Address" />
-            <input type="password" id="passwordTextbox" name="j_username" class="p-1 mr-1" value="testPassword" placeholder="Password" />
+            <input type="password" id="passwordTextbox" name="j_password" class="p-1 mr-1" value="testPassword" placeholder="Password" />
             <button type="submit" class="btn btn-primary p-1 mr-2" role="button">Login</button>
             <a href="searchUser" class="btn btn-secondary p-1" role="button">Register</a>
         </div>
