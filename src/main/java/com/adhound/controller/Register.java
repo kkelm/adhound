@@ -13,12 +13,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 @WebServlet(
         urlPatterns = {"/register"}
@@ -28,16 +29,20 @@ public class Register extends HttpServlet {
 
     HttpSession session;
 
-    public CrudService crud;
+    public CrudService crud = new CrudService(State.class);
+    //State state = (State)
+    List <State> states = this.crud.getAll();
+
+    private static Validator validator;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         session = request.getSession();
 
-        this.crud = new CrudService(State.class);
-        //State state = (State)
-        List <State> states = this.crud.getAll();
+
+
+        request.setAttribute("message", "Please enter a valid username and password.");
 
         request.setAttribute("states", states);
 
@@ -55,6 +60,9 @@ public class Register extends HttpServlet {
 
         User newUser = new User();
 
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
+
         newUser.setUsername(request.getParameter("emailTextbox").trim());
         newUser.setPassword(request.getParameter("passwordTextbox").trim());
         newUser.setFirstName(request.getParameter("firstNameTextbox").trim());
@@ -67,34 +75,59 @@ public class Register extends HttpServlet {
         newUser.setStateId(Integer.parseInt(request.getParameter("stateIdDropdown").trim()));
         newUser.setZipcode(request.getParameter("zipcodeTextbox").trim());
 
-        int newId = (int) userData.crud.insertRecord(newUser);
+        Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
+//constraintViolations.isEmpty()
+// constraintViolations.iterator().next()
+        //constraintViolations.iterator().next().getPropertyPath().toString()
+        //constraintViolations.iterator().next().getInvalidValue()
+        //constraintViolations.iterator().next().getMessage()
 
-        newUser = (User) userData.crud.getById(newId);
+        if (constraintViolations.isEmpty()) {
+            int newId = (int) userData.crud.insertRecord(newUser);
 
-        UserRole userRole = new UserRole(newUser, newUser.getUsername());
-        Serializable userRoleId = userData.crud.insertRecord(userRole);
+            newUser = (User) userData.crud.getById(newId);
 
-        User insertedUser = (User) userData.crud.getById(newId);
+            UserRole userRole = new UserRole(newUser, newUser.getUsername());
+            Serializable userRoleId = userData.crud.insertRecord(userRole);
 
-        if (insertedUser != null) {
-            /**
-             * Instantiate a new array list of user data.
-             */
-            List <User> user = new ArrayList<>();
-            /**
-             * Add the user data to the array list.
-             */
-            user.add(insertedUser);
-            /**
-             * Pass the array list to the view.
-             */
-            request.setAttribute("results", user);
+            User insertedUser = (User) userData.crud.getById(newId);
 
+            if (insertedUser != null) {
+                /**
+                 * Instantiate a new array list of user data.
+                 */
+                List <User> user = new ArrayList<>();
+                /**
+                 * Add the user data to the array list.
+                 */
+                user.add(insertedUser);
+                /**
+                 * Pass the array list to the view.
+                 */
+                request.setAttribute("results", user);
+
+            }
+            else {
+
+                request.setAttribute("results", "");
+            }
         }
         else {
-            session.setAttribute("message", "Please enter a valid username and password.");
-            request.setAttribute("results", "");
+
+            Iterator<ConstraintViolation<User>> errorMessages = constraintViolations.iterator();
+
+            while (errorMessages.hasNext()) {
+
+                ConstraintViolation<User> next = errorMessages.next();
+
+                String property = next.getPropertyPath().toString();
+                String message = next.getMessage();
+                request.setAttribute(property, message);
+            }
         }
+
+        request.setAttribute("states", states);
+
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
         dispatcher.forward(request, response);

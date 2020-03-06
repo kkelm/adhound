@@ -18,6 +18,9 @@
             <c:otherwise></c:otherwise>
         </c:choose>
 
+
+
+
         <form action="register" method="post" class="needs-validation" novalidate>
 
             <div class="row">
@@ -25,8 +28,12 @@
                     <label for="emailTextbox">e-Mail Address</label>
                     <div class="input-group">
                         <input value="test@email.com" required type="email" id="emailTextbox" name="emailTextbox" class="form-control" placeholder="you@example.com" />
+                        <div class="invalid-feedback">
+                            ${username}
+                        </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="row">
@@ -55,7 +62,7 @@
                     <input value="(123) 456-7890" required type="text" id="phoneTextbox" name="phoneTextbox" class="form-control" />
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="faxTextbox">Last Name</label>
+                    <label for="faxTextbox">Fax</label>
                     <input value="(987) 654-3210" required type="text" id="faxTextbox" name="faxTextbox" class="form-control" />
                 </div>
             </div>
@@ -75,7 +82,7 @@
                     <input value="Madison" required type="text" id="cityTextbox" name="cityTextbox" class="form-control" />
                 </div>
                 <div class="col-md-3 mb-3">
-                    <label for="stateIdDropdown">Phone</label>
+                    <label for="stateIdDropdown">State</label>
                     <select required type="text" id="stateIdDropdown" name="stateIdDropdown" class="form-control">
                         <c:forEach var="state" items="${states}">
                             <option value="${state.id}">${state.abbreviation}</option>
@@ -83,7 +90,7 @@
                     </select>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="zipcodeTextbox">Last Name</label>
+                    <label for="zipcodeTextbox">Zipcode</label>
                     <input value="12345-6789" required type="text" id="zipcodeTextbox" name="zipcodeTextbox" class="form-control" />
                 </div>
             </div>

@@ -30,6 +30,8 @@
         <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
         <mybatis-version>3.5.4</mybatis-version>
         <!-- <mybatis-version>3.5.3</mybatis-version> -->
+        <javax.el.version>3.0.0</javax.el.version>
+        <hibernate-validator-cdi-version>6.1.2.Final</hibernate-validator-cdi-version>
 
     </properties>
 
@@ -98,6 +100,22 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
             <version>5.4.4.Final</version>
+        </dependency>
+        <!-- Hibernate Validation -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>${javax.el.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.4.3.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator-cdi</artifactId>
+            <version>5.4.3.Final</version>
         </dependency>
 
 

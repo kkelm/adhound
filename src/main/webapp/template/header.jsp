@@ -21,14 +21,14 @@
 
 
 <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <a class="navbar-brand" href="home"><img src="${pageContext.request.contextPath}/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
+    <a class="navbar-brand" href="${pageContext.request.contextPath}/dashboard"><img src="${pageContext.request.contextPath}/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mb-1"></span>
     </button>
 
     <div class="row collapse navbar-collapse my-2" id="navbarsExampleDefault">
         <div id="dashboardDiv" class="col-md-2 d-flex justify-content-start align-items-center">
-            <a class="nav-link stretched-link" href="/"><span class="fas fa-tachometer-alt"></span> Dashboard</a> <span class="sr-only">(current)</span>
+            <a class="nav-link stretched-link" href="${pageContext.request.contextPath}/dashboard"><span class="fas fa-tachometer-alt"></span> Dashboard</a> <span class="sr-only">(current)</span>
         </div>
         <div id="searchDiv" class="col-md-8">
             <form class="row my-2 mx-2">
@@ -37,7 +37,7 @@
             </form>
         </div>
         <div id="logoutDiv" class="col-md-2 d-flex justify-content-end align-items-center">
-            <a class="nav-link stretched-link" href="logout">Logout <span class="fas fa-sign-out-alt"></span></a>
+            <a class="nav-link stretched-link" href="${pageContext.request.contextPath}/logout.jsp">Logout <span class="fas fa-sign-out-alt"></span></a>
         </div>
     </div>
 </nav>
