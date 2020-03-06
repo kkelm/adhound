@@ -1,8 +1,10 @@
 package com.adhound.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -17,9 +19,13 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @Column(name = "username")
+    @NotNull
+    @NotEmpty(message = "Enter a Valid Username")
+    @Column(name = "username",  nullable = false)
     private String username;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Valid Password")
     @Column(name = "password")
     private String password;
 

@@ -1,7 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
+<%@ page session="true"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,18 +74,16 @@
 </head>
 <body class="text-center">
 
-<form class="login-form" action="j_security_check" method="post">
+<form class="login-form" action="dashboard" method="get">
     <img class="brand-logo mb-2 w-100" src="./images/AdHound-Logo-Square.jpg" alt="AdHound">
 
-    <label for="usernameTextbox" class="sr-only">Username</label>
-    <input type="text" id="usernameTextbox" name="j_username" value="kkelm" class="form-control mb-3" placeholder="Username" required autofocus />
+    User '<%=request.getRemoteUser()%>' has been logged out.
 
-    <label for="passwordTextbox" class="sr-only">Password</label>
-    <input type="password" id="passwordTextbox" name="j_password" class="form-control mb-3" value="testPassword" placeholder="Password" required />
+    <% session.invalidate(); %>
+
+    <br/><br/>
 
     <button type="submit" class="btn btn-primary btn-block mb-3" role="button">Login</button>
-
-    <a href="register" class="btn btn-secondary btn-block" role="button">Register</a>
 
     <p class="mt-4 text-muted">&copy; 2020</p>
 
