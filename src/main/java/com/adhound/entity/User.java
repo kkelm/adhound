@@ -1,7 +1,9 @@
 package com.adhound.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -20,36 +22,50 @@ public class User {
     private int id;
 
     @NotNull
-    @NotEmpty(message = "Enter a Valid Username")
+    @NotEmpty(message = "Enter a Username")
+    @Email(message = "Enter a Valid e-Mail Address")
     @Column(name = "username",  nullable = false)
     private String username;
 
     @NotNull
-    @NotEmpty(message = "Enter a Valid Password")
+    @NotEmpty(message = "Enter a Password")
     @Column(name = "password")
     private String password;
 
+    @NotNull
+    @NotEmpty(message = "Enter a First Name")
     @Column(name = "first_name")
     private String firstName;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Last Name")
     @Column(name = "last_name")
     private String lastName;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Phone Number")
     @Column(name = "phone")
     private String phone;
 
     @Column(name = "fax")
     private String fax;
 
+    @NotNull
+    @NotEmpty(message = "Enter a e-Mail Address")
     @Column(name = "email")
     private String email;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Street Address")
     @Column(name = "address")
     private String address;
 
+    @NotNull
+    @NotEmpty(message = "Enter a City")
     @Column(name = "city")
     private String city;
 
+    @Range(min = 1, max = 50)
     @Column(name = "state_id")
     private int stateId;
 
@@ -57,6 +73,8 @@ public class User {
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Zipcode")
     @Column(name = "zipcode")
     private String zipcode;
 

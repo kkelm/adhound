@@ -31,6 +31,9 @@ public class Register extends HttpServlet {
 
     public CrudService crud = new CrudService(State.class);
     //State state = (State)
+
+    Map<String, String> errors = new HashMap<>();
+
     List <State> states = this.crud.getAll();
 
     private static Validator validator;
@@ -82,6 +85,8 @@ public class Register extends HttpServlet {
         //constraintViolations.iterator().next().getInvalidValue()
         //constraintViolations.iterator().next().getMessage()
 
+
+
         if (constraintViolations.isEmpty()) {
             int newId = (int) userData.crud.insertRecord(newUser);
 
@@ -116,18 +121,25 @@ public class Register extends HttpServlet {
 
             Iterator<ConstraintViolation<User>> errorMessages = constraintViolations.iterator();
 
+
+
             while (errorMessages.hasNext()) {
 
                 ConstraintViolation<User> next = errorMessages.next();
 
                 String property = next.getPropertyPath().toString();
                 String message = next.getMessage();
-                request.setAttribute(property, message);
+
+                errors.put(property, message);
+
             }
+
+
         }
 
-        request.setAttribute("states", states);
+        request.setAttribute("errormessages", errors);
 
+        request.setAttribute("states", states);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
         dispatcher.forward(request, response);
