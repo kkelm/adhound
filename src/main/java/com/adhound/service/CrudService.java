@@ -116,6 +116,7 @@ public class CrudService<GenericType> {
                 logger.error(ex);
                 throw ex;
             }
+
         }
         finally {
             if (session != null) {

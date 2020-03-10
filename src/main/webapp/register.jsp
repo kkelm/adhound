@@ -66,7 +66,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="emailTextbox">e-Mail Address</label>
-                                    <input value='${param.emailTextbox}' required type="email" id="emailTextbox" name="emailTextbox" class="form-control" placeholder="you@example.com" />
+                                    <input value='<c:if test="${empty errormessages.username}">${param.emailTextbox}</c:if>' required type="email" id="emailTextbox" name="emailTextbox" class="form-control" placeholder="you@example.com" />
                                     <div class="invalid-feedback">
                                             ${errormessages.username}
                                     </div>
