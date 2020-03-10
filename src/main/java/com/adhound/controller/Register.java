@@ -5,6 +5,7 @@ import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
+import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import java.io.IOException;
 import java.io.Serializable;
+import java.sql.SQLException;
 import java.util.*;
 
 @WebServlet(
@@ -30,9 +32,8 @@ public class Register extends HttpServlet {
     HttpSession session;
 
     public CrudService crud = new CrudService(State.class);
-    //State state = (State)
 
-    Map<String, String> errors = new HashMap<>();
+    public Map<String, String> errors = new HashMap<>();
 
     List <State> states = this.crud.getAll();
 
@@ -42,10 +43,6 @@ public class Register extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         session = request.getSession();
-
-
-
-        request.setAttribute("message", "Please enter a valid username and password.");
 
         request.setAttribute("states", states);
 
@@ -79,49 +76,67 @@ public class Register extends HttpServlet {
         newUser.setZipcode(request.getParameter("zipcodeTextbox").trim());
 
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
-//constraintViolations.isEmpty()
-// constraintViolations.iterator().next()
+        //constraintViolations.isEmpty()
+        //constraintViolations.iterator().next()
         //constraintViolations.iterator().next().getPropertyPath().toString()
         //constraintViolations.iterator().next().getInvalidValue()
         //constraintViolations.iterator().next().getMessage()
-
-
-
         if (constraintViolations.isEmpty()) {
-            int newId = (int) userData.crud.insertRecord(newUser);
 
-            newUser = (User) userData.crud.getById(newId);
+            int newId = 0;
+            //newId = (int) userData.crud.insertRecord(newUser);
 
-            UserRole userRole = new UserRole(newUser, newUser.getUsername());
-            Serializable userRoleId = userData.crud.insertRecord(userRole);
+            try {
+                newId = (int) userData.crud.insertRecord(newUser);
+                newUser = (User) userData.crud.getById(newId);
 
-            User insertedUser = (User) userData.crud.getById(newId);
+                UserRole userRole = new UserRole(newUser, newUser.getUsername());
+                Serializable userRoleId = userData.crud.insertRecord(userRole);
 
-            if (insertedUser != null) {
-                /**
-                 * Instantiate a new array list of user data.
-                 */
-                List <User> user = new ArrayList<>();
-                /**
-                 * Add the user data to the array list.
-                 */
-                user.add(insertedUser);
-                /**
-                 * Pass the array list to the view.
-                 */
-                request.setAttribute("results", user);
+                User insertedUser = (User) userData.crud.getById(newId);
+
+                if (insertedUser != null) {
+                    /**
+                     * Instantiate a new array list of user data.
+                     */
+                    List <User> user = new ArrayList<>();
+                    /**
+                     * Add the user data to the array list.
+                     */
+                    user.add(insertedUser);
+                    /**
+                     * Pass the array list to the view.
+                     */
+                    request.setAttribute("registrantFirstName", insertedUser.getFirstName());
+
+                }
+                else {
+
+                    request.setAttribute("registrantFirstName", "");
+                }
+            }
+            catch (Exception e) {
+               // e.getCause().getLocalizedMessage();
+                errors.put("username", "test");
+                /*
+                switch (SQLException e.getErrorCode()) {
+                    case 1062:
+                        errors.put("username", "Duplicate Username");
+                        //RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
+                        //dispatcher.forward(request, response);
+                        break;
+                    default:
+                        break;
+                }
+                */
+                //e.printStackTrace();
 
             }
-            else {
 
-                request.setAttribute("results", "");
-            }
         }
         else {
 
             Iterator<ConstraintViolation<User>> errorMessages = constraintViolations.iterator();
-
-
 
             while (errorMessages.hasNext()) {
 
@@ -133,7 +148,6 @@ public class Register extends HttpServlet {
                 errors.put(property, message);
 
             }
-
 
         }
 

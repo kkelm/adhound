@@ -14,6 +14,7 @@ import java.util.Set;
 @Entity(name = "User")
 @Table(name = "users")
 
+
 public class User {
 
     @Id
@@ -24,7 +25,7 @@ public class User {
     @NotNull
     @NotEmpty(message = "Enter a Username")
     @Email(message = "Enter a Valid e-Mail Address")
-    @Column(name = "username",  nullable = false)
+    @Column(name = "username", unique = true, nullable = false)
     private String username;
 
     @NotNull
