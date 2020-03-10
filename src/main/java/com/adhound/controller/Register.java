@@ -6,6 +6,7 @@ import com.adhound.entity.UserRole;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import org.hibernate.HibernateException;
+import org.hibernate.exception.ConstraintViolationException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,11 +34,10 @@ public class Register extends HttpServlet {
 
     public CrudService crud = new CrudService(State.class);
 
-    public Map<String, String> errors = new HashMap<>();
-
     List <State> states = this.crud.getAll();
 
     private static Validator validator;
+    private Object ConstraintViolationException;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -53,6 +53,8 @@ public class Register extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        Map<String, String> errors = new HashMap<>();
 
         session = request.getSession();
 
@@ -116,20 +118,10 @@ public class Register extends HttpServlet {
                 }
             }
             catch (Exception e) {
-               // e.getCause().getLocalizedMessage();
-                errors.put("username", "test");
-                /*
-                switch (SQLException e.getErrorCode()) {
-                    case 1062:
-                        errors.put("username", "Duplicate Username");
-                        //RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
-                        //dispatcher.forward(request, response);
-                        break;
-                    default:
-                        break;
+
+                if (((ConstraintViolationException) e).getConstraintName().equals("users.username") && ((ConstraintViolationException) e).getCause().getMessage().contains("Duplicate")) {
+                    errors.put("username", "Username Already Exists");
                 }
-                */
-                //e.printStackTrace();
 
             }
 
@@ -150,6 +142,7 @@ public class Register extends HttpServlet {
             }
 
         }
+
 
         request.setAttribute("errormessages", errors);
 

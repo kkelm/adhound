@@ -443,3 +443,757 @@
 [INFO ] 2020-03-10 00:47:43.756 [main] LocationDataTest - End Location Insert
 [INFO ] 2020-03-10 00:47:43.761 [main] CrudService - getById Finished
 [INFO ] 2020-03-10 01:01:06.207 [http-nio-8080-exec-10] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:03:10.532 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:10.544 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:03:10.793 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:03:10.793 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:03:10.799 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:10.861 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:03:10.864 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:10.864 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:03:10.935 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:10.947 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:10.947 [main] UserDataTest - Inserted record for ID: 60
+[INFO ] 2020-03-10 12:03:10.990 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:03:10.997 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.016 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:03:11.021 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.023 [main] UserDataTest - Deleted record for ID: 60
+[INFO ] 2020-03-10 12:03:11.050 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.065 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:03:11.068 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.068 [main] LocationDataTest - Deleted record for ID: 47
+[INFO ] 2020-03-10 12:03:11.069 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:03:11.090 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:03:11.102 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.103 [main] LocationDataTest - Location Test Location 35 found by getById()
+[INFO ] 2020-03-10 12:03:11.103 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:03:11.104 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:03:11.124 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:03:11.125 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:03:11.125 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:03:11.126 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:03:11.133 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.140 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:03:11.149 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.149 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:03:11.150 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:03:11.158 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:11.173 [main] LocationDataTest - Inserted record with the ID: 48
+[INFO ] 2020-03-10 12:03:11.173 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:03:11.185 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:03:45.089 [http-nio-8080-exec-7] CrudService - getAll Finished
+[ERROR] 2020-03-10 12:04:15.417 [http-nio-8080-exec-2] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:04:15.420 [http-nio-8080-exec-2] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:09:46.918 [http-nio-8080-exec-10] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:09:46.920 [http-nio-8080-exec-10] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:12:05.557 [http-nio-8080-exec-3] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:12:05.560 [http-nio-8080-exec-3] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 12:13:59.456 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.460 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:13:59.646 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:13:59.646 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:13:59.655 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.721 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:13:59.728 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.729 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:13:59.776 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.785 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.785 [main] UserDataTest - Inserted record for ID: 61
+[INFO ] 2020-03-10 12:13:59.809 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:13:59.815 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.828 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:13:59.830 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.831 [main] UserDataTest - Deleted record for ID: 61
+[INFO ] 2020-03-10 12:13:59.844 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.849 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:13:59.858 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.859 [main] LocationDataTest - Deleted record for ID: 48
+[INFO ] 2020-03-10 12:13:59.860 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:13:59.884 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:13:59.892 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.892 [main] LocationDataTest - Location Test Location 35 Updated found by getById()
+[INFO ] 2020-03-10 12:13:59.892 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:13:59.893 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:13:59.902 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:13:59.902 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:13:59.902 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:13:59.903 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:13:59.907 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.912 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:13:59.919 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.919 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:13:59.920 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:13:59.926 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:13:59.938 [main] LocationDataTest - Inserted record with the ID: 49
+[INFO ] 2020-03-10 12:13:59.938 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:13:59.947 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.168 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.171 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:27:45.251 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:27:45.251 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:27:45.257 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.287 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:27:45.290 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.291 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:27:45.321 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.328 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.328 [main] UserDataTest - Inserted record for ID: 62
+[INFO ] 2020-03-10 12:27:45.345 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:27:45.348 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.357 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:27:45.359 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.359 [main] UserDataTest - Deleted record for ID: 62
+[INFO ] 2020-03-10 12:27:45.372 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.376 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:27:45.377 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.378 [main] LocationDataTest - Deleted record for ID: 49
+[INFO ] 2020-03-10 12:27:45.378 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:27:45.393 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:27:45.402 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.402 [main] LocationDataTest - Location Test Location 35 Updated Updated found by getById()
+[INFO ] 2020-03-10 12:27:45.402 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:27:45.403 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:27:45.410 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:27:45.410 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:27:45.410 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:27:45.411 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:27:45.415 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.418 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:27:45.423 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.423 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:27:45.423 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:27:45.427 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:27:45.433 [main] LocationDataTest - Inserted record with the ID: 50
+[INFO ] 2020-03-10 12:27:45.433 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:27:45.437 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.568 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.571 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:28:36.651 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:28:36.652 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:28:36.657 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.687 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:28:36.690 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.691 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:28:36.722 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.729 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.729 [main] UserDataTest - Inserted record for ID: 63
+[INFO ] 2020-03-10 12:28:36.746 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:28:36.749 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.757 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:28:36.759 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.760 [main] UserDataTest - Deleted record for ID: 63
+[INFO ] 2020-03-10 12:28:36.769 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.773 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:28:36.775 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.775 [main] LocationDataTest - Deleted record for ID: 50
+[INFO ] 2020-03-10 12:28:36.776 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:28:36.789 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:28:36.797 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.797 [main] LocationDataTest - Location Test Location 35 Updated Updated Updated found by getById()
+[INFO ] 2020-03-10 12:28:36.797 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:28:36.798 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:28:36.808 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:28:36.808 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:28:36.808 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:28:36.808 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:28:36.812 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.816 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:28:36.822 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.822 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:28:36.823 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:28:36.827 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:28:36.835 [main] LocationDataTest - Inserted record with the ID: 51
+[INFO ] 2020-03-10 12:28:36.835 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:28:36.840 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.579 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.581 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:29:40.695 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:29:40.695 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:29:40.701 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.734 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:29:40.737 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.738 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:29:40.768 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.775 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.775 [main] UserDataTest - Inserted record for ID: 64
+[INFO ] 2020-03-10 12:29:40.792 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:29:40.795 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.803 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:29:40.805 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.805 [main] UserDataTest - Deleted record for ID: 64
+[INFO ] 2020-03-10 12:29:40.817 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.824 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:29:40.826 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.827 [main] LocationDataTest - Deleted record for ID: 46
+[INFO ] 2020-03-10 12:29:40.827 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:29:40.840 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:29:40.845 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.846 [main] LocationDataTest - Location Test Location 91 found by getById()
+[INFO ] 2020-03-10 12:29:40.846 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:29:40.846 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:29:40.855 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:29:40.855 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:29:40.855 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:29:40.855 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:29:40.859 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.862 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:29:40.867 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.867 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:29:40.868 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:29:40.871 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:29:40.878 [main] LocationDataTest - Inserted record with the ID: 52
+[INFO ] 2020-03-10 12:29:40.878 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:29:40.883 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.708 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.713 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:30:24.820 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:30:24.821 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:30:24.827 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.858 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:30:24.862 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.862 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:30:24.893 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.901 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.901 [main] UserDataTest - Inserted record for ID: 65
+[INFO ] 2020-03-10 12:30:24.919 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:30:24.922 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.930 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:30:24.932 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.933 [main] UserDataTest - Deleted record for ID: 65
+[INFO ] 2020-03-10 12:30:24.949 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.952 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:30:24.954 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.954 [main] LocationDataTest - Deleted record for ID: 51
+[INFO ] 2020-03-10 12:30:24.955 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:30:24.967 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:30:24.973 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.973 [main] LocationDataTest - Location Test Location 62 found by getById()
+[INFO ] 2020-03-10 12:30:24.973 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:30:24.974 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:30:24.982 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:30:24.982 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:30:24.982 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:30:24.982 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:30:24.986 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.989 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:30:24.994 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:24.994 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:30:24.995 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:30:24.998 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:25.005 [main] LocationDataTest - Inserted record with the ID: 53
+[INFO ] 2020-03-10 12:30:25.006 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:30:25.010 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:30:44.256 [http-nio-8080-exec-1] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:31:25.441 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.444 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:31:25.528 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:31:25.528 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:31:25.534 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.564 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:31:25.567 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.567 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:31:25.599 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.605 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.605 [main] UserDataTest - Inserted record for ID: 66
+[INFO ] 2020-03-10 12:31:25.622 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:31:25.625 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.633 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:31:25.635 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.635 [main] UserDataTest - Deleted record for ID: 66
+[INFO ] 2020-03-10 12:31:25.650 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.653 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:31:25.655 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.655 [main] LocationDataTest - Deleted record for ID: 53
+[INFO ] 2020-03-10 12:31:25.656 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:31:25.671 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:31:25.678 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.679 [main] LocationDataTest - Location Test Location 62 Updated found by getById()
+[INFO ] 2020-03-10 12:31:25.679 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:31:25.680 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:31:25.694 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:31:25.694 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:31:25.694 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:31:25.696 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:31:25.700 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.703 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:31:25.708 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.708 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:31:25.708 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:31:25.712 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:25.719 [main] LocationDataTest - Inserted record with the ID: 54
+[INFO ] 2020-03-10 12:31:25.719 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:31:25.723 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:31:45.574 [http-nio-8080-exec-1] CrudService - getAll Finished
+[ERROR] 2020-03-10 12:32:05.209 [http-nio-8080-exec-5] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:32:05.212 [http-nio-8080-exec-5] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 12:37:21.581 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.583 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:37:21.666 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:37:21.666 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:37:21.672 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.703 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:37:21.707 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.707 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:37:21.741 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.749 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.749 [main] UserDataTest - Inserted record for ID: 67
+[INFO ] 2020-03-10 12:37:21.766 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:37:21.769 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.776 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:37:21.778 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.779 [main] UserDataTest - Deleted record for ID: 67
+[INFO ] 2020-03-10 12:37:21.789 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.793 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:37:21.796 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.796 [main] LocationDataTest - Deleted record for ID: 52
+[INFO ] 2020-03-10 12:37:21.797 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:37:21.814 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:37:21.819 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.819 [main] LocationDataTest - Location Test Location 17 found by getById()
+[INFO ] 2020-03-10 12:37:21.819 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:37:21.820 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:37:21.829 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:37:21.829 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:37:21.829 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:37:21.830 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:37:21.833 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.837 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:37:21.842 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.842 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:37:21.843 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:37:21.846 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:37:21.854 [main] LocationDataTest - Inserted record with the ID: 55
+[INFO ] 2020-03-10 12:37:21.854 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:37:21.859 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.687 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.689 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:38:11.772 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:38:11.772 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:38:11.778 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.808 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:38:11.812 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.812 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:38:11.843 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.851 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.851 [main] UserDataTest - Inserted record for ID: 68
+[INFO ] 2020-03-10 12:38:11.869 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:38:11.872 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.880 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:38:11.882 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.883 [main] UserDataTest - Deleted record for ID: 68
+[INFO ] 2020-03-10 12:38:11.893 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.896 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:38:11.898 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.898 [main] LocationDataTest - Deleted record for ID: 55
+[INFO ] 2020-03-10 12:38:11.899 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:38:11.912 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:38:11.917 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.917 [main] LocationDataTest - Location Test Location 17 Updated found by getById()
+[INFO ] 2020-03-10 12:38:11.917 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:38:11.918 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:38:11.926 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:38:11.926 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:38:11.926 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:38:11.927 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:38:11.930 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.934 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:38:11.939 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.939 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:38:11.940 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:38:11.943 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:11.951 [main] LocationDataTest - Inserted record with the ID: 56
+[INFO ] 2020-03-10 12:38:11.951 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:38:11.956 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:38:28.692 [http-nio-8080-exec-10] CrudService - getAll Finished
+[ERROR] 2020-03-10 12:38:47.412 [http-nio-8080-exec-4] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:38:47.415 [http-nio-8080-exec-4] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 12:40:43.063 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.066 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:40:43.153 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:40:43.153 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:40:43.160 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.191 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:40:43.194 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.194 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:40:43.226 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.233 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.233 [main] UserDataTest - Inserted record for ID: 69
+[INFO ] 2020-03-10 12:40:43.251 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:40:43.254 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.262 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:40:43.264 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.264 [main] UserDataTest - Deleted record for ID: 69
+[INFO ] 2020-03-10 12:40:43.281 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.284 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:40:43.286 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.286 [main] LocationDataTest - Deleted record for ID: 54
+[INFO ] 2020-03-10 12:40:43.287 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:40:43.299 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:40:43.303 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.304 [main] LocationDataTest - Location Test Location 43 found by getById()
+[INFO ] 2020-03-10 12:40:43.304 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:40:43.304 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:40:43.312 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:40:43.312 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:40:43.312 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:40:43.312 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:40:43.316 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.320 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:40:43.324 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.324 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:40:43.325 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:40:43.328 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:43.335 [main] LocationDataTest - Inserted record with the ID: 57
+[INFO ] 2020-03-10 12:40:43.335 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:40:43.340 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:40:55.590 [http-nio-8080-exec-4] CrudService - getAll Finished
+[ERROR] 2020-03-10 12:40:55.663 [http-nio-8080-exec-4] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:40:55.667 [http-nio-8080-exec-4] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:41:28.025 [http-nio-8080-exec-3] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:41:28.028 [http-nio-8080-exec-3] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:42:12.206 [http-nio-8080-exec-13] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:42:12.209 [http-nio-8080-exec-13] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 12:44:49.233 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.236 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 12:44:49.320 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:44:49.320 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 12:44:49.326 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.357 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:44:49.360 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.360 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 12:44:49.392 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.399 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.399 [main] UserDataTest - Inserted record for ID: 70
+[INFO ] 2020-03-10 12:44:49.417 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:44:49.420 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.428 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:44:49.430 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.430 [main] UserDataTest - Deleted record for ID: 70
+[INFO ] 2020-03-10 12:44:49.448 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.452 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 12:44:49.454 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.454 [main] LocationDataTest - Deleted record for ID: 57
+[INFO ] 2020-03-10 12:44:49.455 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 12:44:49.470 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:44:49.476 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.476 [main] LocationDataTest - Location Test Location 43 Updated found by getById()
+[INFO ] 2020-03-10 12:44:49.476 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 12:44:49.478 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 12:44:49.492 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 12:44:49.492 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 12:44:49.492 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 12:44:49.493 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 12:44:49.500 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.504 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 12:44:49.509 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.509 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 12:44:49.510 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 12:44:49.514 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:44:49.521 [main] LocationDataTest - Inserted record with the ID: 58
+[INFO ] 2020-03-10 12:44:49.521 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 12:44:49.526 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 12:45:01.102 [http-nio-8080-exec-12] CrudService - getAll Finished
+[ERROR] 2020-03-10 12:45:01.173 [http-nio-8080-exec-12] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:45:01.175 [http-nio-8080-exec-12] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:45:53.972 [http-nio-8080-exec-5] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:45:53.975 [http-nio-8080-exec-5] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:46:44.095 [http-nio-8080-exec-22] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 12:46:44.097 [http-nio-8080-exec-22] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:08:39.540 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:39.544 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:08:39.785 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:08:39.785 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:08:39.795 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:39.872 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:08:39.878 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:39.878 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:08:39.959 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:39.974 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:39.974 [main] UserDataTest - Inserted record for ID: 71
+[INFO ] 2020-03-10 13:08:40.021 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:08:40.026 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.042 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:08:40.045 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.047 [main] UserDataTest - Deleted record for ID: 71
+[INFO ] 2020-03-10 13:08:40.092 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.098 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:08:40.104 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.104 [main] LocationDataTest - Deleted record for ID: 58
+[INFO ] 2020-03-10 13:08:40.106 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:08:40.152 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:08:40.172 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.173 [main] LocationDataTest - Location Test Location 43 Updated Updated found by getById()
+[INFO ] 2020-03-10 13:08:40.173 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:08:40.175 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:08:40.197 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:08:40.197 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:08:40.197 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:08:40.199 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:08:40.206 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.211 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:08:40.229 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.229 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:08:40.231 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:08:40.242 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:08:40.258 [main] LocationDataTest - Inserted record with the ID: 59
+[INFO ] 2020-03-10 13:08:40.258 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:08:40.267 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:02.933 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:02.936 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:10:03.024 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:10:03.025 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:10:03.031 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.064 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:10:03.068 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.068 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:10:03.101 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.108 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.108 [main] UserDataTest - Inserted record for ID: 72
+[INFO ] 2020-03-10 13:10:03.127 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:10:03.134 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.141 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:10:03.143 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.144 [main] UserDataTest - Deleted record for ID: 72
+[INFO ] 2020-03-10 13:10:03.155 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.159 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:10:03.161 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.161 [main] LocationDataTest - Deleted record for ID: 59
+[INFO ] 2020-03-10 13:10:03.162 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:10:03.174 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:10:03.179 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.179 [main] LocationDataTest - Location Test Location 43 Updated Updated Updated found by getById()
+[INFO ] 2020-03-10 13:10:03.179 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:10:03.180 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:10:03.188 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:10:03.188 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:10:03.188 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:10:03.189 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:10:03.193 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.197 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:10:03.203 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.203 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:10:03.204 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:10:03.208 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:03.216 [main] LocationDataTest - Inserted record with the ID: 60
+[INFO ] 2020-03-10 13:10:03.216 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:10:03.221 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:10:21.095 [http-nio-8080-exec-10] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:11:29.728 [http-nio-8080-exec-2] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:11:29.730 [http-nio-8080-exec-2] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:12:58.152 [http-nio-8080-exec-8] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:12:58.158 [http-nio-8080-exec-8] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:20:26.281 [http-nio-8080-exec-1] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:20:26.284 [http-nio-8080-exec-1] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:23:39.334 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.336 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:23:39.420 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:23:39.420 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:23:39.426 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.457 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:23:39.460 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.460 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:23:39.491 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.500 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.500 [main] UserDataTest - Inserted record for ID: 73
+[INFO ] 2020-03-10 13:23:39.517 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:23:39.519 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.527 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:23:39.529 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.530 [main] UserDataTest - Deleted record for ID: 73
+[INFO ] 2020-03-10 13:23:39.547 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.551 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:23:39.553 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.553 [main] LocationDataTest - Deleted record for ID: 56
+[INFO ] 2020-03-10 13:23:39.553 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:23:39.566 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:23:39.570 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.571 [main] LocationDataTest - Location Test Location 26 found by getById()
+[INFO ] 2020-03-10 13:23:39.571 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:23:39.571 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:23:39.579 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:23:39.579 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:23:39.579 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:23:39.580 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:23:39.583 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.587 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:23:39.592 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.592 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:23:39.592 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:23:39.596 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:23:39.602 [main] LocationDataTest - Inserted record with the ID: 61
+[INFO ] 2020-03-10 13:23:39.602 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:23:39.608 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:24:02.137 [http-nio-8080-exec-1] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:24:02.213 [http-nio-8080-exec-1] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:24:02.215 [http-nio-8080-exec-1] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:31:08.570 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.572 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:31:08.660 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:31:08.661 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:31:08.666 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.703 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:31:08.707 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.707 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:31:08.740 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.746 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.746 [main] UserDataTest - Inserted record for ID: 74
+[INFO ] 2020-03-10 13:31:08.764 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:31:08.767 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.774 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:31:08.776 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.777 [main] UserDataTest - Deleted record for ID: 74
+[INFO ] 2020-03-10 13:31:08.792 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.797 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:31:08.799 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.800 [main] LocationDataTest - Deleted record for ID: 61
+[INFO ] 2020-03-10 13:31:08.801 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:31:08.813 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:31:08.817 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.818 [main] LocationDataTest - Location Test Location 26 Updated found by getById()
+[INFO ] 2020-03-10 13:31:08.818 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:31:08.819 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:31:08.826 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:31:08.826 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:31:08.826 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:31:08.827 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:31:08.830 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.835 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:31:08.841 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.841 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:31:08.841 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:31:08.845 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:08.852 [main] LocationDataTest - Inserted record with the ID: 62
+[INFO ] 2020-03-10 13:31:08.852 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:31:08.857 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:31:29.146 [http-nio-8080-exec-13] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:31:29.214 [http-nio-8080-exec-13] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:31:29.217 [http-nio-8080-exec-13] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:32:03.782 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.785 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:32:03.877 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:32:03.877 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:32:03.883 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.914 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:32:03.917 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.917 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:32:03.951 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.958 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.958 [main] UserDataTest - Inserted record for ID: 75
+[INFO ] 2020-03-10 13:32:03.979 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:32:03.982 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.990 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:32:03.992 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:03.993 [main] UserDataTest - Deleted record for ID: 75
+[INFO ] 2020-03-10 13:32:04.010 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.014 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:32:04.015 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.016 [main] LocationDataTest - Deleted record for ID: 60
+[INFO ] 2020-03-10 13:32:04.016 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:32:04.030 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:32:04.035 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.035 [main] LocationDataTest - Location Test Location 89 found by getById()
+[INFO ] 2020-03-10 13:32:04.035 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:32:04.036 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:32:04.047 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:32:04.047 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:32:04.047 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:32:04.048 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:32:04.053 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.057 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:32:04.061 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.061 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:32:04.062 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:32:04.066 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:04.073 [main] LocationDataTest - Inserted record with the ID: 63
+[INFO ] 2020-03-10 13:32:04.073 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:32:04.079 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:32:16.220 [http-nio-8080-exec-8] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:32:16.356 [http-nio-8080-exec-8] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:32:16.358 [http-nio-8080-exec-8] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:32:57.856 [http-nio-8080-exec-15] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:32:57.858 [http-nio-8080-exec-15] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:38:34.697 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:34.701 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:38:34.857 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:38:34.857 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:38:34.866 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:34.928 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:38:34.933 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:34.934 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:38:34.989 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.001 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.001 [main] UserDataTest - Inserted record for ID: 76
+[INFO ] 2020-03-10 13:38:35.030 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:38:35.034 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.045 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:38:35.048 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.048 [main] UserDataTest - Deleted record for ID: 76
+[INFO ] 2020-03-10 13:38:35.061 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.067 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:38:35.070 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.070 [main] LocationDataTest - Deleted record for ID: 63
+[INFO ] 2020-03-10 13:38:35.071 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:38:35.089 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:38:35.103 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.104 [main] LocationDataTest - Location Test Location 89 Updated found by getById()
+[INFO ] 2020-03-10 13:38:35.104 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:38:35.104 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:38:35.119 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:38:35.119 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:38:35.119 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:38:35.120 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:38:35.125 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.131 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:38:35.138 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.138 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:38:35.138 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:38:35.143 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:38:35.161 [main] LocationDataTest - Inserted record with the ID: 64
+[INFO ] 2020-03-10 13:38:35.161 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:38:35.169 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:39:03.724 [http-nio-8080-exec-23] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:39:03.801 [http-nio-8080-exec-23] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:39:03.803 [http-nio-8080-exec-23] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2020-03-10 13:41:30.536 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.538 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-10 13:41:30.630 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:41:30.630 [main] UserDataTest - Got all users
+[INFO ] 2020-03-10 13:41:30.651 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.709 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:41:30.713 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.714 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-10 13:41:30.754 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.764 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.764 [main] UserDataTest - Inserted record for ID: 77
+[INFO ] 2020-03-10 13:41:30.784 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:41:30.788 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.798 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:41:30.800 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.801 [main] UserDataTest - Deleted record for ID: 77
+[INFO ] 2020-03-10 13:41:30.825 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.833 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-10 13:41:30.835 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.836 [main] LocationDataTest - Deleted record for ID: 62
+[INFO ] 2020-03-10 13:41:30.838 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-10 13:41:30.855 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:41:30.860 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.860 [main] LocationDataTest - Location Test Location 92 found by getById()
+[INFO ] 2020-03-10 13:41:30.860 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-10 13:41:30.861 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-10 13:41:30.872 [main] CrudService - getAll Finished
+[INFO ] 2020-03-10 13:41:30.872 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-10 13:41:30.872 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-10 13:41:30.872 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-10 13:41:30.876 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.882 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-10 13:41:30.888 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.888 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-10 13:41:30.888 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-10 13:41:30.892 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:30.905 [main] LocationDataTest - Inserted record with the ID: 65
+[INFO ] 2020-03-10 13:41:30.905 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-10 13:41:30.912 [main] CrudService - getById Finished
+[INFO ] 2020-03-10 13:41:52.328 [http-nio-8080-exec-31] CrudService - getAll Finished
+[ERROR] 2020-03-10 13:42:32.519 [http-nio-8080-exec-41] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2020-03-10 13:42:32.521 [http-nio-8080-exec-41] CrudService - org.hibernate.exception.ConstraintViolationException: could not execute statement
