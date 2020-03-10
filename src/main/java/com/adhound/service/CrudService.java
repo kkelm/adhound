@@ -3,6 +3,7 @@ package com.adhound.service;
 import com.adhound.persistence.SessionFactoryProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -94,10 +95,34 @@ public class CrudService<GenericType> {
         //logger.info("insertRecord Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Serializable id = session.save(type);
+        Serializable id = null;
+        /*
+        id = session.save(type);
         transaction.commit();
         session.close();
-        logger.info("insertRecord Finished");
+        */
+
+        try {
+            id = session.save(type);
+            transaction.commit();
+            session.close();
+        }
+        catch (HibernateException he) {
+            logger.error(he);
+            try {
+                transaction.rollback();
+                throw he;
+            } catch (Exception ex) {
+                logger.error(ex);
+                throw ex;
+            }
+        }
+        finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
         return id;
     }
 

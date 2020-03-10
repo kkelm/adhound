@@ -68,7 +68,8 @@ class UserDataTest {
      */
     @Test
     void testInsertUser() {
-        String newUsername = "testUsername" + Math.round(Math.random()*100) + "@email.com";
+        //String newUsername = "testUsername" + Math.round(Math.random()*100) + "@email.com";
+        String newUsername = "testUsername@email.com";
         User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
 
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
