@@ -5,9 +5,7 @@ import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
-import org.hibernate.HibernateException;
 import org.hibernate.exception.ConstraintViolationException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,9 +19,11 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import java.io.IOException;
 import java.io.Serializable;
-import java.sql.SQLException;
 import java.util.*;
 
+/**
+ * This class is the controller for the registration page.
+ */
 @WebServlet(
         urlPatterns = {"/register"}
 )
@@ -37,7 +37,7 @@ public class Register extends HttpServlet {
     List <State> states = this.crud.getAll();
 
     private static Validator validator;
-    private Object ConstraintViolationException;
+    //private Object ConstraintViolationException;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -117,9 +117,9 @@ public class Register extends HttpServlet {
                     request.setAttribute("registrantFirstName", "");
                 }
             }
-            catch (Exception e) {
+            catch (ConstraintViolationException constraintException) {
 
-                if (((ConstraintViolationException) e).getConstraintName().equals("users.username") && ((ConstraintViolationException) e).getCause().getMessage().contains("Duplicate")) {
+                if (constraintException.getConstraintName().equals("users.username") && constraintException.getCause().getMessage().contains("Duplicate")) {
                     errors.put("username", "Username Already Exists");
                 }
 
@@ -138,11 +138,8 @@ public class Register extends HttpServlet {
                 String message = next.getMessage();
 
                 errors.put(property, message);
-
             }
-
         }
-
 
         request.setAttribute("errormessages", errors);
 
@@ -150,7 +147,6 @@ public class Register extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
         dispatcher.forward(request, response);
-
 
     }
 
