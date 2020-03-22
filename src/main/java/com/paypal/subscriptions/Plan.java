@@ -4,15 +4,16 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Plan{
+public class Plan {
+
+	private final Logger logger = LogManager.getLogger(this.getClass());
 
 	@JsonProperty("quantity_supported")
 	private boolean quantitySupported;
@@ -46,6 +47,8 @@ public class Plan{
 
 	@JsonProperty("status")
 	private String status;
+
+
 
 	public void setQuantitySupported(boolean quantitySupported){
 		this.quantitySupported = quantitySupported;
@@ -95,7 +98,10 @@ public class Plan{
 		return name;
 	}
 
-	public void setBillingCycles(List<BillingCyclesItem> billingCycles) { this.billingCycles = billingCycles; }
+	public void setBillingCycles(List<BillingCyclesItem> billingCycles) {
+
+		this.billingCycles = billingCycles;
+	}
 
 	public List<BillingCyclesItem> getBillingCycles(){
 		return billingCycles;
