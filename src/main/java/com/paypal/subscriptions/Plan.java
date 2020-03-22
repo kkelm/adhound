@@ -10,7 +10,6 @@ import org.apache.logging.log4j.Logger;
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Plan {
 
 	private final Logger logger = LogManager.getLogger(this.getClass());
