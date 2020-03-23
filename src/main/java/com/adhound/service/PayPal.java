@@ -1,11 +1,18 @@
 package com.adhound.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.paypal.subscriptions.Plan;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.net.ssl.HttpsURLConnection;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.MediaType;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
@@ -63,7 +70,7 @@ public class PayPal implements PropertiesLoader {
             HashMap<String, Object> jsonMap = new HashMap();
             jsonMap = mapper.readValue(jsonString, HashMap.class);
 
-            accessToken = jsonMap.get("access_token").toString();
+            accessToken = "Bearer " + jsonMap.get("access_token").toString();
 
         }
         catch (MalformedURLException urlException) {
@@ -78,6 +85,38 @@ public class PayPal implements PropertiesLoader {
             logger.error(exception.getMessage());
             logger.error(exception.getStackTrace());
         }
+    }
+
+    public Plan getPlan()  {
+        // Get subscription information
+        /**
+         * .path("{userName}")
+         * .resolveTemplate("userName", "janedoe")
+         * .queryParam("chapter", "1")
+         * // http://example.com/webapi/read/janedoe?chapter=1
+         * Response response = myResource.request(...)        .get();
+         */
+        Plan plan = new Plan();
+
+        this.setAccessToken();
+
+        try {
+            Client client = ClientBuilder.newClient();
+            WebTarget target = client.target("https://api.sandbox.paypal.com/v1/billing/plans").path("{plan}").resolveTemplate("plan", "P-51006304PY025420FLZZKVXA");
+
+            String response = target.request(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.getAccessToken()).get(String.class);
+
+            ObjectMapper mapper = new ObjectMapper();
+
+            plan = mapper.readValue(response, Plan.class);
+        }
+        catch (JsonProcessingException jsonException) {
+            logger.error(jsonException.getMessage());
+            logger.error(jsonException.getStackTrace());
+        }
+
+
+        return plan;
     }
 
 }
