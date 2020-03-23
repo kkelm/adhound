@@ -1,18 +1,8 @@
 package com.paypal.subscriptions;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import javax.annotation.Generated;
-
-@Generated("com.robohorse.robopojogenerator")
 public class LinksItem{
-
-	@JsonProperty("method")
 	private String method;
-
-	@JsonProperty("rel")
 	private String rel;
-
-	@JsonProperty("href")
 	private String href;
 
 	public void setMethod(String method){
