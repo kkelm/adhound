@@ -15,29 +15,22 @@ public interface PropertiesLoader {
      * @param propertiesFilePath a path to a file on the java classpath list
      * @return a populated Properties instance or an empty Properties instance if
      * the file path was not found.
-     * @throws Exception The class Exception and its subclasses are a form of
+     * @throws IOException The class Exception and its subclasses are a form of
      * Throwable that indicates conditions that a reasonable application might
      * want to catch.
      */
-    default Properties loadProperties(String propertiesFilePath) throws Exception {
+    default Properties loadProperties(String propertiesFilePath) throws IOException {
 
         Properties properties = new Properties();
 
         try {
             properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
         }
-        catch (FileNotFoundException fileNotFound) {
-            fileNotFound.printStackTrace();
-            throw fileNotFound;
-        }
         catch (IOException ioException) {
             ioException.printStackTrace();
             throw ioException;
         }
-        catch (Exception exception) {
-            exception.printStackTrace();
-            throw exception;
-        }
+
         return properties;
     }
 }

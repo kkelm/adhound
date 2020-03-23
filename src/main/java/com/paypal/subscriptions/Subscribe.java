@@ -1,11 +1,23 @@
 package com.paypal.subscriptions;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+import javax.annotation.Generated;
+
+@Generated("com.robohorse.robopojogenerator")
 public class Subscribe {
+
+	@JsonProperty("create_time")
 	private String createTime;
+
+	@JsonProperty("links")
 	private List<LinksItem> links;
+
+	@JsonProperty("id")
 	private String id;
+
+	@JsonProperty("status")
 	private String status;
 
 	public void setCreateTime(String createTime){
