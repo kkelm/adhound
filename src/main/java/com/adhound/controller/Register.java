@@ -5,9 +5,12 @@ import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
+import com.adhound.service.PayPal;
+import com.paypal.subscriptions.Subscribe;
 import org.hibernate.exception.ConstraintViolationException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -89,10 +92,12 @@ public class Register extends HttpServlet {
             //newId = (int) userData.crud.insertRecord(newUser);
 
             try {
+
                 newId = (int) userData.crud.insertRecord(newUser);
                 newUser = (User) userData.crud.getById(newId);
 
                 UserRole userRole = new UserRole(newUser, newUser.getUsername());
+
                 Serializable userRoleId = userData.crud.insertRecord(userRole);
 
                 User insertedUser = (User) userData.crud.getById(newId);
@@ -110,6 +115,18 @@ public class Register extends HttpServlet {
                      * Pass the array list to the view.
                      */
                     request.setAttribute("registrantFirstName", insertedUser.getFirstName());
+
+                    PayPal payPal = new PayPal();
+                    Subscribe subscribe = payPal.getSubscription(newUser);
+
+                    String payPalLink = subscribe.getLinks().get(0).getHref();
+
+                    // https://3.132.89.15/adhound/login?subscription_id=I-PA969CXNBM30&ba_token=BA-72T08463W0957404A&token=3KX659821M988210X  I-RWJ15JRNJ7X8
+
+                    // subscribe.getId() = subscription_id=I-RWJ15JRNJ7X8 <-- gets returned from PayPal in the return URL
+
+                    response.sendRedirect(payPalLink);
+                    return;
 
                 }
                 else {
