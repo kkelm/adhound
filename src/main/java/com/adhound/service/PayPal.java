@@ -118,46 +118,66 @@ public class PayPal implements PropertiesLoader {
 
     public Subscribe getSubscription(User user) {
 
-        Plan plan = this.getPlan();
-
-        Client client = ClientBuilder.newClient();
-        WebTarget target = client.target("https://api.sandbox.paypal.com/v1/billing/subscriptions/");
-
-        String subscriber = "{" +
-                " \"plan_id\": \"" + plan.getId() + "\"," +
-                "\"subscriber\": {" +
-                "\"name\": {" +
-                "\"given_name\": \"" + user.getFirstName() + "\"," +
-                "\"surname\": \"" + user.getLastName() + "\"" +
-                "}," +
-                "\"email_address\": \"" + user.getEmail() + "\"," +
-                "\"shipping_address\": {" +
-                "\"name\": {" +
-                "\"full_name\": \"" + user.getFirstName() + " " + user.getLastName() + "\"" +
-                "}," +
-                "\"address\": {" +
-                "\"address_line_1\": \"" + user.getAddress() + "\"," +
-                "\"address_line_2\": \"\"," +
-                "\"admin_area_2\": \"" + user.getCity() + "\"," +
-                "\"admin_area_1\": \"" + user.getState().getAbbreviation() + "\"," +
-                "\"postal_code\": \"" + user.getZipcode() + "\"," +
-                "\"country_code\": \"US\"" +
-                "}" +
-                "}" +
-                "}" +
-                "}";
-
-        String response = target.request(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.getAccessToken()).post(Entity.json(subscriber), String.class);
-
         Subscribe subscription = null;
 
         try {
+
+            properties = this.loadProperties("/adhound.properties");
+
+            Plan plan = this.getPlan();
+
+            Client client = ClientBuilder.newClient();
+            WebTarget target = client.target("https://api.sandbox.paypal.com/v1/billing/subscriptions/");
+
+            String subscriber = "{" +
+                    " \"plan_id\": \"" + plan.getId() + "\"," +
+                    "\"subscriber\": {" +
+                        "\"name\": {" +
+                            "\"given_name\": \"" + user.getFirstName() + "\"," +
+                            "\"surname\": \"" + user.getLastName() + "\"" +
+                        "}," +
+                        "\"email_address\": \"" + user.getEmail() + "\"," +
+                        "\"shipping_address\": {" +
+                            "\"name\": {" +
+                                "\"full_name\": \"" + user.getFirstName() + " " + user.getLastName() + "\"" +
+                            "}," +
+                            "\"address\": {" +
+                                "\"address_line_1\": \"" + user.getAddress() + "\"," +
+                                "\"address_line_2\": \"\"," +
+                                "\"admin_area_2\": \"" + user.getCity() + "\"," +
+                                "\"admin_area_1\": \"" + user.getState().getAbbreviation() + "\"," +
+                                "\"postal_code\": \"" + user.getZipcode() + "\"," +
+                                "\"country_code\": \"US\"" +
+                            "}" +
+                        "}" +
+                    "}," +
+
+                    "\"application_context\": {" +
+                        "\"shipping_preference\": \"SET_PROVIDED_ADDRESS\"," +
+                        "\"return_url\": \"" + properties.getProperty("returnUrl").toString() + "\"," +
+                        "\"cancel_url\": \"" + properties.getProperty("cancelUrl").toString() + "\"" +
+                    "}" +
+
+                "}";
+
+                /*
+                * URLs must be a valid domain name or IP address URL with ports didn't work
+                */
+
+            String response = target.request(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.getAccessToken()).post(Entity.json(subscriber), String.class);
+
             ObjectMapper mapResponse = new ObjectMapper();
 
             subscription = mapResponse.readValue(response, Subscribe.class);
+
         }
-        catch (JsonProcessingException e) {
-            e.printStackTrace();
+        catch (JsonProcessingException jsonException) {
+            logger.error(jsonException.getMessage());
+            logger.error(jsonException.getStackTrace());
+        }
+        catch (IOException ioException ) {
+            logger.error(ioException.getMessage());
+            logger.error(ioException.getStackTrace());
         }
 
         return subscription;

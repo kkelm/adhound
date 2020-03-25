@@ -19,7 +19,7 @@
         <location>/error401.jsp</location>
     </error-page>
     <error-page>
-        <error-code>500</error-code>
+        <error-code>501</error-code>
         <location>/error500.jsp</location>
     </error-page>
 
