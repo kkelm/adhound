@@ -1,6 +1,7 @@
-package com.adhound.persistence;
+package com.adhound.service;
 
 import com.adhound.entity.User;
+import com.adhound.persistence.SessionFactoryProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -10,6 +11,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import javax.ws.rs.core.GenericType;
 import java.util.List;
 
 public class Authentication {
@@ -17,7 +19,9 @@ public class Authentication {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    public boolean userLogin(String username, String password) {
+    public Authentication() {}
+
+    public int userAuthentication(String username) {
 
         try (Session session = sessionFactory.openSession()) {
 
@@ -28,21 +32,20 @@ public class Authentication {
             Root<User> root = query.from(User.class);
 
             Expression<String> usernameColumn = root.get("username");
-            Expression<String> passwordColumn = root.get("password");
 
-            query.where(criteriaBuilder.equal(usernameColumn, username), criteriaBuilder.equal(passwordColumn, password));
+            query.where(criteriaBuilder.equal(usernameColumn, username));
 
             List<User> user = session.createQuery(query).getResultList();
             session.close();
 
             if (user.size() > 0) {
-                return true;
+                return user.iterator().next().getId();
             }
         }
         catch (Exception e) {
-            logger.error(e);
+            logger.error(e.getMessage());
         }
 
-        return false;
+        return 0;
     }
 }
