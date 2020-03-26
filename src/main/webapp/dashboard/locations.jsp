@@ -33,7 +33,7 @@
             </c:when>
             <c:otherwise>
                 <div class="list-group-item">
-                    <h5 class="mb-1">No Locations Found<</h5>
+                    <h5 class="mb-1">No Locations Found</h5>
                 </div>
             </c:otherwise>
 
