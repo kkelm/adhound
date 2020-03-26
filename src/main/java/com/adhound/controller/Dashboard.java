@@ -32,7 +32,7 @@ public class Dashboard extends HttpServlet {
 
         session = request.getSession();
 
-        int userId = userData.authentication.userAuthentication(request.getUserPrincipal().getName());
+        int userId = userData.userAuthentication(request.getUserPrincipal().getName());
 
         this.crud = new CrudService(User.class);
         List<User> user = this.crud.getAll();

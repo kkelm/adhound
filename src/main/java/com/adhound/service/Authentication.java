@@ -21,6 +21,11 @@ public class Authentication {
 
     public Authentication() {}
 
+    /**
+     * This method gets the user ID of the current user.
+     * @param username
+     * @return
+     */
     public int userAuthentication(String username) {
 
         try (Session session = sessionFactory.openSession()) {

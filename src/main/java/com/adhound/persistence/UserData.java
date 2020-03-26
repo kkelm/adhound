@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * This is the User DAO
  */
-public class UserData {
+public class UserData extends Authentication {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -23,7 +23,7 @@ public class UserData {
      */
     public UserData() {
         this.crud = new CrudService(User.class);
-        this.authentication = new Authentication();
+        authentication = new Authentication();
     }
 
 }

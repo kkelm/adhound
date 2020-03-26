@@ -5,6 +5,15 @@
 <%@ include file="../template/header.jsp" %>
 
 <section>
+
+    <div class="row">
+        <div class="col-md">
+            <a href="${pageContext.request.contextPath}/dashboard/addLocation" class="col-xs flex-fill m-1 float-right">
+                <span class="fas fa-plus-square" style="font-size: 3vw;"></span>
+            </a>
+        </div>
+    </div>
+
     <div class="list-group">
 
         <c:choose>
@@ -41,9 +50,5 @@
 
     </div>
 </section>
-
-
-
-
 
 <%@ include file="../template/footer.jsp" %>

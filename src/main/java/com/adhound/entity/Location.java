@@ -1,8 +1,10 @@
 package com.adhound.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @Entity(name = "Location")
@@ -18,6 +20,8 @@ public class Location {
     @ManyToOne
     private User user;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Location Name")
     @Column(name = "name")
     private String name;
 
@@ -29,7 +33,8 @@ public class Location {
 
     @Column(name = "address")
     private String address;
-
+    @NotNull
+    @NotEmpty(message = "Enter a City")
     @Column(name = "city")
     private String city;
 
@@ -40,6 +45,8 @@ public class Location {
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Zipcode")
     @Column(name = "zipcode")
     private String zipcode;
 
