@@ -1,5 +1,7 @@
 package com.adhound.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -87,10 +89,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<UserRole> userRole = new HashSet<>();
 
-
     // mappedBy refers to the instance variable in Location
     // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JsonIgnore
     private Set<Location> locations = new HashSet<>();
 
     /**
@@ -377,13 +379,9 @@ public class User {
         this.userRole = userRole;
     }
 
-    public Set<Location> getLocations() {
-        return locations;
-    }
+    public Set<Location> getLocations() { return locations; }
 
-    public void setLocations(Set<Location> locations) {
-        this.locations = locations;
-    }
+    public void setLocations(Set<Location> locations) { this.locations = locations; }
 
     @Override
     public String toString() {

@@ -38,9 +38,9 @@ public class Locations extends HttpServlet {
         int userId = userData.authentication.userAuthentication(request.getUserPrincipal().getName());
 
         User user = (User) userData.crud.getById(userId);
-        Set<Location> locations = user.getLocations();
+        //Set<Location> locations = user.getLocations();
 
-        request.setAttribute("locations", locations);
+        //request.setAttribute("locations", locations);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/locations.jsp");
         dispatcher.forward(request, response);

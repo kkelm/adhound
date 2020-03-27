@@ -2,12 +2,18 @@ package com.adhound.persistence;
 
 import com.adhound.entity.Location;
 import com.adhound.entity.User;
-import com.adhound.entity.UserRole;
+import com.adhound.api.Locations;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.core.Response;
 import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
@@ -37,11 +43,13 @@ class LocationDataTest {
     @Test
     void testGetAllLocations() {
         logger.info("Start Location getAll()");
+
         List<Location> locations = locationData.crud.getAll();
         int currentSize = locations.size();
         assertEquals(currentSize, locations.size());
         logger.info("Got all users");
         logger.info("End Location getAll()");
+
     }
 
     /**
@@ -49,7 +57,6 @@ class LocationDataTest {
      */
     @Test
     void testGetByIdLocation() {
-
         logger.info("Start Location getById()");
         List<User> users = userData.crud.getAll();
         Iterator userList = users.iterator();
@@ -112,14 +119,6 @@ class LocationDataTest {
         logger.info("End Location Update");
 
         assertEquals(userLocation, updatedRecord);
-/*
-        Location updateRecord = (Location) locationData.crud.getById(userLocationId);
-        updateRecord.setName( updateRecord.getName() + " Updated");
-        locationData.crud.updateRecords(updateRecord);
-        Location getRecord = (Location) locationData.crud.getById(1);
-        assertEquals(updateRecord.getName() + " Updated", getRecord.getName());
-*/
-        // logger.info("Updated the location name for ID: " + getRecord.getId());
     }
 
     /**
@@ -141,10 +140,10 @@ class LocationDataTest {
         assertNull(userData.crud.getById(deleteId));
 
         logger.info("Deleted record for ID: " + deleteId);
-        /*
-        int deleteId = users.get((users.size() - 1)).getId();
-        userData.crud.deleteRecord(userData.crud.getById(deleteId));
-        assertNull(userData.crud.getById(deleteId));
-        */
+    }
+
+    @Test
+    void testGetLocation () throws JsonProcessingException {
+
     }
 }
