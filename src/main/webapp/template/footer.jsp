@@ -36,10 +36,12 @@
 <script src="${pageContext.request.contextPath}/css/bootstrap/4.4.1/js/bootstrap.min.js" type="text/javascript"></script>
 
 <c:choose>
-    <c:when test="${fn:length(errormessages) gt 0}">
+    <c:when test="${fn:length(errors) gt 0}">
         <script>
-            let form = document.querySelector("form");
+            let form = document.querySelector("#adhoundForm");
+            console.log(form);
             form.classList.add('was-validated');
+            let v = "";
         </script>
     </c:when>
     <c:otherwise>

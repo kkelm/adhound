@@ -4,6 +4,8 @@
 
 <%@ include file="../template/header.jsp" %>
 
+<c:set var="errors" value="${errormessages}" scope="session" />
+
 <section class="container">
 
     <div class="py-5 text-center">
@@ -21,12 +23,12 @@
                         ${locationName} has been added.
                     </div>
 
-                    <a href="dashboard" class="btn btn-primary p-2" role="button">Dashboard</a>
+                    <a href="${pageContext.request.contextPath}/dashboard/locations" class="btn btn-primary p-2" role="button">Locations</a>
 
                 </c:when>
                 <c:otherwise>
 
-                    <form action="${pageContext.request.contextPath}/dashboard/addLocation" method="post" class="needs-validation" novalidate>
+                    <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/addLocation" method="post" class="needs-validation" novalidate>
 
                         <div class="row">
                             <div class="col-md mb-3">
@@ -41,9 +43,9 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="phoneTextbox">Phone</label>
-                                <input value='${param.phoneTextbox}' type="text" id="phoneTextbox" name="phoneTextbox" class="form-control" required />
+                                <input value='${param.phoneTextbox}' type="text" id="phoneTextbox" name="phoneTextbox" class="form-control" />
                                 <div class="invalid-feedback">
-                                        ${errormessages.phone}
+
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -55,10 +57,7 @@
                         <div class="row">
                             <div class="col-md mb-3">
                                 <label for="addresssTextbox">Street Address</label>
-                                <input value='${param.addresssTextbox}' required type="text" id="addresssTextbox" name="addresssTextbox" class="form-control" />
-                                <div class="invalid-feedback">
-                                        ${errormessages.address}
-                                </div>
+                                <input value='${param.addresssTextbox}' type="text" id="addresssTextbox" name="addresssTextbox" class="form-control" />
                             </div>
                         </div>
 
