@@ -4,6 +4,8 @@ import com.adhound.entity.Location;
 import com.adhound.entity.User;
 import com.adhound.api.Locations;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.paypal.subscriptions.Plan;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Ignore;
@@ -13,6 +15,11 @@ import org.junit.jupiter.api.Test;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
 import java.util.Iterator;
@@ -143,7 +150,9 @@ class LocationDataTest {
     }
 
     @Test
-    void testGetLocation () throws JsonProcessingException {
+    void testGetLocationsAPI () {
+
+
 
     }
 }

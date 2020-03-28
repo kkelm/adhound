@@ -23,7 +23,7 @@
 
                 <c:forEach var="location" items="${locations}">
 
-                    <a href="${pageContext.request.contextPath}/dashboard/locations/${location.id}" class="row d-flex m-0 text-justify list-group-item list-group-item-action align-items-start justify-content-between">
+                    <a href="${pageContext.request.contextPath}/dashboard/location?id=${location.id}" class="row d-flex m-0 text-justify list-group-item list-group-item-action align-items-start justify-content-between">
                         <div class="col-lg-4 col-md-6">
                             ${location.name}
                         </div>
