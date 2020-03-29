@@ -28,7 +28,7 @@
                 </c:when>
                 <c:otherwise>
 
-                    <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/updateLocation" method="post" class="needs-validation" novalidate>
+                    <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/location?id=${location.id}" method="post" class="needs-validation" novalidate>
 
                         <div class="row">
                             <div class="col-md mb-3">
