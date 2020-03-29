@@ -1,13 +1,13 @@
 package com.adhound.controller;
 
-import com.adhound.entity.State;
-import com.adhound.entity.User;
-import com.adhound.entity.UserRole;
+import com.adhound.entity.*;
+import com.adhound.persistence.LocationData;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import com.adhound.service.PayPal;
 import com.paypal.subscriptions.Subscribe;
 import org.hibernate.exception.ConstraintViolationException;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,22 +24,23 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * This class is the controller for the registration page.
+ * This class is the controller for the add location page.
  */
 @WebServlet(
-        urlPatterns = {"/register"}
+        urlPatterns = {"/dashboard/addLocation"}
 )
 
-public class Register extends HttpServlet {
+public class addLocation extends HttpServlet {
 
     HttpSession session;
 
-    public CrudService crud = new CrudService(State.class);
+    public CrudService stateCrud = new CrudService(State.class);
+    List<State> states = this.stateCrud.getAll();
 
-    List <State> states = this.crud.getAll();
+    public CrudService regionCrud = new CrudService(Region.class);
+    List<Region> regions = this.regionCrud.getAll();
 
     private static Validator validator;
-    //private Object ConstraintViolationException;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +49,9 @@ public class Register extends HttpServlet {
 
         request.setAttribute("states", states);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
+        request.setAttribute("regions", regions);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/addLocation.jsp");
         dispatcher.forward(request, response);
 
     }
@@ -56,30 +59,31 @@ public class Register extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
+        // HashMap for the returned errors
         Map<String, String> errors = new HashMap<>();
 
         session = request.getSession();
 
         UserData userData = new UserData();
+        int userId = userData.userAuthentication(request.getUserPrincipal().getName());
+        User user = (User) userData.crud.getById(userId);
 
-        User newUser = new User();
+        Location newLocation = new Location();
 
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        validator = factory.getValidator();
+        newLocation.setUser(user);
 
-        newUser.setUsername(request.getParameter("emailTextbox").trim());
-        newUser.setPassword(request.getParameter("passwordTextbox").trim());
-        newUser.setFirstName(request.getParameter("firstNameTextbox").trim());
-        newUser.setLastName(request.getParameter("lastNameTextbox").trim());
-        newUser.setPhone(request.getParameter("phoneTextbox").trim());
-        newUser.setFax(request.getParameter("faxTextbox").trim());
-        newUser.setEmail(request.getParameter("emailTextbox").trim());
-        newUser.setAddress(request.getParameter("addresssTextbox").trim());
-        newUser.setCity(request.getParameter("cityTextbox").trim());
-        newUser.setStateId(Integer.parseInt(request.getParameter("stateIdDropdown").trim()));
-        newUser.setZipcode(request.getParameter("zipcodeTextbox").trim());
+        newLocation.setName(request.getParameter("nameTextbox").trim());
+        newLocation.setPhone(request.getParameter("phoneTextbox").trim());
+        newLocation.setFax(request.getParameter("faxTextbox").trim());
+        newLocation.setAddress(request.getParameter("addresssTextbox").trim());
+        newLocation.setCity(request.getParameter("cityTextbox").trim());
+        newLocation.setStateId(Integer.parseInt(request.getParameter("stateIdDropdown").trim()));
+        newLocation.setZipcode(request.getParameter("zipcodeTextbox").trim());
+        newLocation.setRegionId(Integer.parseInt(request.getParameter("regionIdDropdown").trim()));
 
-        Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
+        Set<ConstraintViolation<Location>> constraintViolations = validator.validate(newLocation);
         //constraintViolations.isEmpty()
         //constraintViolations.iterator().next()
         //constraintViolations.iterator().next().getPropertyPath().toString()
@@ -90,49 +94,32 @@ public class Register extends HttpServlet {
             int newId = 0;
             //newId = (int) userData.crud.insertRecord(newUser);
 
-            try {
+                newId = (int) userData.crud.insertRecord(newLocation);
 
-                newId = (int) userData.crud.insertRecord(newUser);
-                newUser = (User) userData.crud.getById(newId);
+                LocationData locationData = new LocationData();
+                Location insertedLocation = (Location) locationData.crud.getById(newId);
 
-                UserRole userRole = new UserRole(newUser, newUser.getUsername());
-
-                Serializable userRoleId = userData.crud.insertRecord(userRole);
-
-                User insertedUser = (User) userData.crud.getById(newId);
-
-                if (insertedUser != null) {
+                if (insertedLocation != null) {
                     /**
                      * Instantiate a new array list of user data.
                      */
-                    List <User> user = new ArrayList<>();
+                    List <Location> location = new ArrayList<>();
                     /**
                      * Add the user data to the array list.
                      */
-                    user.add(insertedUser);
+                    location.add(insertedLocation);
                     /**
                      * Pass the array list to the view.
                      */
-                    request.setAttribute("registrantFirstName", insertedUser.getFirstName());
-
-                    PayPal payPal = new PayPal();
-                    Subscribe subscribe = payPal.getSubscription(newUser);
-
-                    String payPalLink = subscribe.getLinks().get(0).getHref();
-
-                    // https://3.132.89.15/adhound/login?subscription_id=I-PA969CXNBM30&ba_token=BA-72T08463W0957404A&token=3KX659821M988210X  I-RWJ15JRNJ7X8
-
-                    // subscribe.getId() = subscription_id=I-RWJ15JRNJ7X8 <-- gets returned from PayPal in the return URL
-
-                    response.sendRedirect(payPalLink);
-                    return;
+                    request.setAttribute("locationName", insertedLocation.getName());
 
                 }
                 else {
 
                     request.setAttribute("registrantFirstName", "");
                 }
-            }
+
+            /*
             catch (ConstraintViolationException constraintException) {
 
                 if (constraintException.getConstraintName().equals("users.username") && constraintException.getCause().getMessage().contains("Duplicate")) {
@@ -140,28 +127,31 @@ public class Register extends HttpServlet {
                 }
 
             }
-
+            */
         }
         else {
 
-            Iterator<ConstraintViolation<User>> errorMessages = constraintViolations.iterator();
+            Iterator<ConstraintViolation<Location>> errorMessages = constraintViolations.iterator();
 
             while (errorMessages.hasNext()) {
 
-                ConstraintViolation<User> next = errorMessages.next();
+                ConstraintViolation<Location> next = errorMessages.next();
 
                 String property = next.getPropertyPath().toString();
                 String message = next.getMessage();
 
                 errors.put(property, message);
             }
+
         }
 
         request.setAttribute("errormessages", errors);
 
         request.setAttribute("states", states);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
+        request.setAttribute("regions", regions);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/addLocation.jsp");
         dispatcher.forward(request, response);
 
     }

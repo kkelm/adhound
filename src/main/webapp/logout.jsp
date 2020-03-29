@@ -1,16 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
+<%@ page session="true"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome/all.min.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <style>
 
@@ -76,26 +74,24 @@
 </head>
 <body class="text-center">
 
-<form class="login-form" action="${pageContext.request.contextPath}/j_security_check" method="post">
-    <img class="brand-logo mb-2 w-100" src="${pageContext.request.contextPath}/images/AdHound-Logo-Square.jpg" alt="AdHound">
+<form class="login-form" action="dashboard" method="get">
+    <img class="brand-logo mb-2 w-100" src="./images/AdHound-Logo-Square.jpg" alt="AdHound">
 
-    <label for="usernameTextbox" class="sr-only">Username</label>
-    <input type="text" id="usernameTextbox" name="j_username" value="kkelm@email.com" class="form-control mb-3" placeholder="Username" required autofocus />
+    User '<%=request.getRemoteUser()%>' has been logged out.
 
-    <label for="passwordTextbox" class="sr-only">Password</label>
-    <input type="password" id="passwordTextbox" name="j_password" class="form-control mb-3" value="123abc" placeholder="Password" required />
+    <% session.invalidate(); %>
+
+    <br/><br/>
 
     <button type="submit" class="btn btn-primary btn-block mb-3" role="button">Login</button>
-
-    <a href="register" class="btn btn-secondary btn-block" role="button">Register</a>
 
     <p class="mt-4 text-muted">&copy; 2020</p>
 
 </form>
 
-<script src="${pageContext.request.contextPath}/js/jquery-3.4.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/popper/popper.js"></script>
-<script src="${pageContext.request.contextPath}/css/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper/popper.js"></script>
+<script src="./css/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

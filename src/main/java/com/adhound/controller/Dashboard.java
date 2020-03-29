@@ -17,10 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(
-        urlPatterns = {"/"}
+        urlPatterns = {"/dashboard"}
 )
 
-public class Home extends HttpServlet {
+public class Dashboard extends HttpServlet {
 
     HttpSession session;
 
@@ -32,11 +32,13 @@ public class Home extends HttpServlet {
 
         session = request.getSession();
 
+        int userId = userData.userAuthentication(request.getUserPrincipal().getName());
+
         this.crud = new CrudService(User.class);
         List<User> user = this.crud.getAll();
         request.setAttribute("results", user);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/index.jsp");
         dispatcher.forward(request, response);
 
     }
@@ -70,7 +72,7 @@ public class Home extends HttpServlet {
             request.setAttribute("results", "");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/index.jsp");
         dispatcher.forward(request, response);
 
 

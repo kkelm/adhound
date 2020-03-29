@@ -1,14 +1,21 @@
 package com.adhound.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity(name = "User")
 @Table(name = "users")
+
 
 public class User {
 
@@ -17,33 +24,51 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @Column(name = "username")
+    @NotNull
+    @NotEmpty(message = "Enter a Username")
+    @Email(message = "Enter a Valid e-Mail Address")
+    @Column(name = "username", unique = true, nullable = false)
     private String username;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Password")
     @Column(name = "password")
     private String password;
 
+    @NotNull
+    @NotEmpty(message = "Enter a First Name")
     @Column(name = "first_name")
     private String firstName;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Last Name")
     @Column(name = "last_name")
     private String lastName;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Phone Number")
     @Column(name = "phone")
     private String phone;
 
     @Column(name = "fax")
     private String fax;
 
+    @NotNull
+    @NotEmpty(message = "Enter a e-Mail Address")
     @Column(name = "email")
     private String email;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Street Address")
     @Column(name = "address")
     private String address;
 
+    @NotNull
+    @NotEmpty(message = "Enter a City")
     @Column(name = "city")
     private String city;
 
+    @Range(min = 1, max = 50)
     @Column(name = "state_id")
     private int stateId;
 
@@ -51,16 +76,23 @@ public class User {
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Zipcode")
     @Column(name = "zipcode")
     private String zipcode;
 
+/*
     @OneToOne
     @JoinColumn(name = "username", insertable = false, updatable = false, nullable = false)
     private UserRole userRole;
+*/
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<UserRole> userRole = new HashSet<>();
 
     // mappedBy refers to the instance variable in Location
     // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JsonIgnore
     private Set<Location> locations = new HashSet<>();
 
     /**
@@ -336,24 +368,20 @@ public class User {
      *
      * @return the UserRole object
      */
-    public UserRole getUserRole() { return userRole; }
+    public Set<UserRole> getUserRole() { return userRole; }
 
     /**
      * Sets the user role object for the user's role.
      *
      * @param userRole the UserRole object
      */
-    public void setUserRole(UserRole userRole) {
+    public void setUserRole(Set<UserRole> userRole) {
         this.userRole = userRole;
     }
 
-    public Set<Location> getLocations() {
-        return locations;
-    }
+    public Set<Location> getLocations() { return locations; }
 
-    public void setLocations(Set<Location> locations) {
-        this.locations = locations;
-    }
+    public void setLocations(Set<Location> locations) { this.locations = locations; }
 
     @Override
     public String toString() {
@@ -371,7 +399,6 @@ public class User {
                 ", stateId=" + stateId +
                 ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
-                ", userRole=" + userRole +
                 ", locations=" + locations +
                 '}';
     }

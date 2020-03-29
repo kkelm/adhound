@@ -1,9 +1,14 @@
 package com.adhound.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity(name = "Location")
 @Table(name = "locations")
@@ -18,6 +23,8 @@ public class Location {
     @ManyToOne
     private User user;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Location Name")
     @Column(name = "name")
     private String name;
 
@@ -29,7 +36,8 @@ public class Location {
 
     @Column(name = "address")
     private String address;
-
+    @NotNull
+    @NotEmpty(message = "Enter a City")
     @Column(name = "city")
     private String city;
 
@@ -40,6 +48,8 @@ public class Location {
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     private State state;
 
+    @NotNull
+    @NotEmpty(message = "Enter a Zipcode")
     @Column(name = "zipcode")
     private String zipcode;
 
@@ -183,7 +193,6 @@ public class Location {
         if (o == null || getClass() != o.getClass()) return false;
         Location location = (Location) o;
         return id == location.id &&
-                Objects.equals(user, location.user) &&
                 Objects.equals(name, location.name) &&
                 Objects.equals(phone, location.phone) &&
                 Objects.equals(fax, location.fax) &&
@@ -196,6 +205,6 @@ public class Location {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user, name, phone, fax, address, city, stateId, zipcode, regionId);
+        return Objects.hash(id, name, phone, fax, address, city, stateId, zipcode, regionId);
     }
 }

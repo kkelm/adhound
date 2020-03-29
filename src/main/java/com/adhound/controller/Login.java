@@ -1,7 +1,6 @@
 package com.adhound.controller;
 
-import com.adhound.entity.User;
-import com.adhound.persistence.UserData;
+import com.adhound.service.Authentication;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,10 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 
 @WebServlet(
         urlPatterns = {"/login"}
@@ -23,6 +18,7 @@ import java.util.List;
 public class Login extends HttpServlet {
 
     HttpSession session;
+    Authentication authentication;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,7 +37,7 @@ public class Login extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        /* NOT USED
         session = request.getSession();
 
         UserData userData = new UserData();
@@ -52,18 +48,13 @@ public class Login extends HttpServlet {
         if (!username.trim().isEmpty() && !password.trim().isEmpty()) {
             //session.setAttribute("title", username);
 
-            /**
-             * Instantiate a new array list of user data.
-             */
+            // Instantiate a new array list of user data.
             List <User> user = new ArrayList<>();
-            /**
-             * Add the user data to the array list.
-             */
-            user.add((User) userData.crud.getById(1));
-            /**
-             * Pass the array list to the view.
-             */
+            // Add the user data to the array list.
+            user.add((User) userData.crud.getById(2));
+            // Pass the array list to the view.
             request.setAttribute("results", user);
+
         }
         else {
             session.setAttribute("message", "Please enter a valid username and password.");
@@ -72,7 +63,7 @@ public class Login extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
         dispatcher.forward(request, response);
-
+        */
 
     }
 

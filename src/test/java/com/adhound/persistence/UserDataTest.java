@@ -8,8 +8,13 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,6 +27,8 @@ class UserDataTest {
 
     UserData userData;
 
+    private static Validator validator;
+
     /**
      * Sets up the tests with a new objects.
      */
@@ -30,6 +37,9 @@ class UserDataTest {
         //Database database = Database.getInstance();
         //database.createDatabase("adhound.sql");
         userData = new UserData();
+
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
     }
 
     /**
@@ -58,11 +68,17 @@ class UserDataTest {
      */
     @Test
     void testInsertUser() {
-        String newUsername = "testUsername" + Math.round(Math.random()*100);
+        //String newUsername = "testUsername" + Math.round(Math.random()*100) + "@email.com";
+        String newUsername = "testUsername@email.com";
         User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
+
+        Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
+
         int newId = (int) userData.crud.insertRecord(newUser);
 
-        UserRole userRole = new UserRole(newUser.getUsername());
+        newUser = (User) userData.crud.getById(newId);
+
+        UserRole userRole = new UserRole(newUser, newUser.getUsername());
         Serializable userRoleId = userData.crud.insertRecord(userRole);
 
         User insertedUser = (User) userData.crud.getById(newId);
