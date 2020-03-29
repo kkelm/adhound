@@ -10,10 +10,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.JsonObject;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Iterator;
 import java.util.Set;
@@ -79,6 +77,36 @@ public class Locations {
 
         String json = mapper.writeValueAsString(location);
 
+        return Response.status(200).entity(json).build();
+    }
+
+    @PUT
+    @Path("/{username}/update")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response putLocation (@PathParam("username") String username, Location location) throws JsonProcessingException {
+
+        int userId = userData.authentication.userAuthentication(username);
+        User user = (User) userData.crud.getById(userId);
+        Set<Location> userLocations = user.getLocations();
+
+        Iterator locations = userLocations.iterator();
+
+        LocationData locationData = new LocationData();
+
+        while(locations.hasNext()) {
+            Location currentLocation = (Location) locations.next();
+            if (currentLocation.getId() == location.getId()) {
+                locationData.crud.updateRecords(location);
+                location = (Location) locationData.crud.getById(location.getId());
+                break;
+            }
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+        String json = mapper.writeValueAsString(location);
 
         return Response.status(200).entity(json).build();
     }

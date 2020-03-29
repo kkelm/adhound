@@ -61,7 +61,7 @@ public class addLocation extends HttpServlet {
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         validator = factory.getValidator();
-
+        // HashMap for the returned errors
         Map<String, String> errors = new HashMap<>();
 
         session = request.getSession();
