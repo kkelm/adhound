@@ -26,8 +26,8 @@
 ## File-based project format:
 *.iws
 
-/src/main/resources/
-/src/test/resources/
+#/src/main/resources/
+#/src/test/resources/
 
 ## Plugin-specific files:
 
