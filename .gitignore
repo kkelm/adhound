@@ -35,10 +35,10 @@
 /out/
 
 # Maven
-target/
-logs/
-lib/
-profiles/
+/target/
+/logs/
+/lib/
+/profiles/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
