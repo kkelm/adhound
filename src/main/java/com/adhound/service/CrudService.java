@@ -119,9 +119,9 @@ public class CrudService<GenericType> {
 
         }
         finally {
-            if (session != null) {
+            //if (session != null) {
                 session.close();
-            }
+            //}
         }
 
         return id;
@@ -132,12 +132,21 @@ public class CrudService<GenericType> {
      * @param type Entity to be deleted
      */
     public void deleteRecord(GenericType type) {
-        //logger.info("deleteRecord Started");
+
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.delete(type);
-        transaction.commit();
-        session.close();
+        try {
+            session.delete(type);
+            transaction.commit();
+        }
+        catch (HibernateException e) {
+            transaction.rollback();
+            throw e;
+        }
+        finally {
+            session.close();
+        }
+
         logger.info("deleteRecord Finished");
     }
 }

@@ -1,13 +1,10 @@
 package com.adhound.test.util;
 
 import java.io.*;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import org.apache.ibatis.jdbc.ScriptRunner;
 
-import java.sql.Statement;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;

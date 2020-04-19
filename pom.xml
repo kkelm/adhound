@@ -27,6 +27,7 @@
         <jupiter-version>5.0.0</jupiter-version>
         <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
+        <maven-help-plugin>3.2.0</maven-help-plugin>
         <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
         <mybatis-version>3.5.4</mybatis-version>
         <!-- <mybatis-version>3.5.3</mybatis-version> -->
@@ -200,26 +201,33 @@
             <id>local</id>
             <properties>
                 <profile.name>local</profile.name>
-                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
-                <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound-test</db.jdbcUrl>
-                <db.user>devfecta</db.user>
-                <db.password>m3tallica</db.password>
             </properties>
         </profile>
         <profile>
             <id>aws</id>
             <properties>
-                <profile.name>AWS</profile.name>
-                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
-                <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound</db.jdbcUrl>
-                <db.user>root</db.user>
-                <db.password>m3tallica</db.password>
+                <profile.name>aws</profile.name>
             </properties>
         </profile>
     </profiles>
 
     <build>
         <finalName>adhound</finalName>
+
+        <filters>
+            <filter>profiles/${profile.name}.properties</filter>
+        </filters>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.properties</include>
+                    <include>hibernate.cfg.xml</include>
+                </includes>
+            </resource>
+        </resources>
 
         <plugins>
             <plugin>
@@ -244,6 +252,20 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin-version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>${maven-help-plugin}</version>
+                <executions>
+                    <execution>
+                        <id>show-profiles</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>active-profiles</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>

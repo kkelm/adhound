@@ -26,8 +26,8 @@
 ## File-based project format:
 *.iws
 
-/src/main/resources/
-/src/test/resources/
+#/src/main/resources/
+#/src/test/resources/
 
 ## Plugin-specific files:
 
@@ -35,9 +35,10 @@
 /out/
 
 # Maven
-/target/
-/log/
-/lib/
+target/
+logs/
+lib/
+profiles/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

@@ -111,6 +111,9 @@ public class PayPal implements PropertiesLoader {
             logger.error(jsonException.getMessage());
             logger.error(jsonException.getStackTrace());
         }
+        catch (Exception e) {
+            logger.error(e.getMessage());
+        }
 
 
         return plan;
