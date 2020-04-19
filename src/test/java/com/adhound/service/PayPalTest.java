@@ -24,9 +24,7 @@ class PayPalTest implements PropertiesLoader {
     }
 
     @Test
-    void testGetAccessToken() {
-        assertNotNull(payPal.getAccessToken());
-    }
+    void testGetAccessToken() { assertNotNull(payPal.getAccessToken()); }
 
     @Test
     void testGetSubscription() {
