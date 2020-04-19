@@ -47,6 +47,9 @@ public class Plan {
 	@JsonProperty("status")
 	private String status;
 
+	@JsonProperty("usage_type")
+	private String usageType;
+
 
 
 	public void setQuantitySupported(boolean quantitySupported){
@@ -136,6 +139,14 @@ public class Plan {
 		return status;
 	}
 
+	public void setUsageType(String usageType){
+		this.usageType = usageType;
+	}
+
+	public String getUsageType(){
+		return usageType;
+	}
+
 	@Override
  	public String toString(){
 		return 
@@ -151,6 +162,7 @@ public class Plan {
 			",links = '" + links + '\'' +
 			",id = '" + id + '\'' +
 			",status = '" + status + '\'' +
+			",usageType = '" + usageType + '\'' +
 			"}";
 		}
 

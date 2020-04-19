@@ -2344,3 +2344,279 @@
 [INFO ] 2020-03-29 13:38:49.759 [http-nio-8080-exec-7] CrudService - updateRecords Finished
 [INFO ] 2020-03-29 13:38:49.768 [http-nio-8080-exec-7] CrudService - getById Finished
 [INFO ] 2020-03-29 13:38:51.302 [http-nio-8080-exec-3] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:58.947 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:58.950 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-29 13:45:59.082 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 13:45:59.083 [main] UserDataTest - Got all users
+[INFO ] 2020-03-29 13:45:59.089 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.128 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-29 13:45:59.131 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.132 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-29 13:45:59.175 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.183 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.183 [main] UserDataTest - Inserted record for ID: 217
+[INFO ] 2020-03-29 13:45:59.206 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 13:45:59.211 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.220 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-29 13:45:59.222 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.223 [main] UserDataTest - Deleted record for ID: 217
+[INFO ] 2020-03-29 13:45:59.233 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.237 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-29 13:45:59.239 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.239 [main] LocationDataTest - Deleted record for ID: 204
+[INFO ] 2020-03-29 13:45:59.240 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-29 13:45:59.253 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 13:45:59.259 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.259 [main] LocationDataTest - Location Test Location 43 Updated found by getById()
+[INFO ] 2020-03-29 13:45:59.259 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-29 13:45:59.259 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-29 13:45:59.269 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 13:45:59.269 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-29 13:45:59.269 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-29 13:45:59.270 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-29 13:45:59.274 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.278 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-29 13:45:59.283 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.283 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-29 13:45:59.284 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-29 13:45:59.287 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:45:59.297 [main] LocationDataTest - Inserted record with the ID: 205
+[INFO ] 2020-03-29 13:45:59.297 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-29 13:45:59.303 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 13:46:00.192 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.542 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.544 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-03-29 14:09:00.633 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 14:09:00.633 [main] UserDataTest - Got all users
+[INFO ] 2020-03-29 14:09:00.639 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.673 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-29 14:09:00.676 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.676 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-03-29 14:09:00.710 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.719 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.719 [main] UserDataTest - Inserted record for ID: 218
+[INFO ] 2020-03-29 14:09:00.739 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 14:09:00.744 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.753 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-29 14:09:00.755 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.755 [main] UserDataTest - Deleted record for ID: 218
+[INFO ] 2020-03-29 14:09:00.774 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.777 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-03-29 14:09:00.779 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.779 [main] LocationDataTest - Deleted record for ID: 203
+[INFO ] 2020-03-29 14:09:00.780 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-03-29 14:09:00.793 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 14:09:00.799 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.799 [main] LocationDataTest - Location Test Location 6 found by getById()
+[INFO ] 2020-03-29 14:09:00.799 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-03-29 14:09:00.800 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-03-29 14:09:00.810 [main] CrudService - getAll Finished
+[INFO ] 2020-03-29 14:09:00.810 [main] LocationDataTest - Got all users
+[INFO ] 2020-03-29 14:09:00.810 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-03-29 14:09:00.811 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-03-29 14:09:00.815 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.820 [main] CrudService - updateRecords Finished
+[INFO ] 2020-03-29 14:09:00.825 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.825 [main] LocationDataTest - End Location Update
+[INFO ] 2020-03-29 14:09:00.825 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-03-29 14:09:00.829 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:00.837 [main] LocationDataTest - Inserted record with the ID: 206
+[INFO ] 2020-03-29 14:09:00.837 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-03-29 14:09:00.842 [main] CrudService - getById Finished
+[INFO ] 2020-03-29 14:09:01.891 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:03.861 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:03.873 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-04-18 19:09:04.138 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:09:04.138 [main] UserDataTest - Got all users
+[INFO ] 2020-04-18 19:09:04.153 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.216 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:09:04.226 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.226 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-04-18 19:09:04.264 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.273 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.273 [main] UserDataTest - Inserted record for ID: 88
+[INFO ] 2020-04-18 19:09:04.300 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:09:04.305 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.317 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:09:04.319 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.320 [main] UserDataTest - Deleted record for ID: 88
+[INFO ] 2020-04-18 19:09:04.336 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.370 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:09:04.377 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.569 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-04-18 19:09:04.635 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:09:04.652 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.653 [main] LocationDataTest - Location asdfad found by getById()
+[INFO ] 2020-04-18 19:09:04.653 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-04-18 19:09:04.654 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-04-18 19:09:04.900 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:09:04.900 [main] LocationDataTest - Got all users
+[INFO ] 2020-04-18 19:09:04.900 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-04-18 19:09:04.901 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-04-18 19:09:04.905 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.911 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:09:04.917 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.917 [main] LocationDataTest - End Location Update
+[INFO ] 2020-04-18 19:09:04.918 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-04-18 19:09:04.924 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:04.933 [main] LocationDataTest - Inserted record with the ID: 18
+[INFO ] 2020-04-18 19:09:04.933 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-04-18 19:09:04.938 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:09:06.327 [main] CrudService - getById Finished
+[ERROR] 2020-04-18 19:09:07.963 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:09:07.963 [main] PayPal - [Ljava.lang.StackTraceElement;@7852ab30
+[ERROR] 2020-04-18 19:09:10.301 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:09:10.301 [main] PayPal - [Ljava.lang.StackTraceElement;@2ae88712
+[INFO ] 2020-04-18 19:17:19.426 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.434 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-04-18 19:17:19.626 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:17:19.626 [main] UserDataTest - Got all users
+[INFO ] 2020-04-18 19:17:19.654 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.749 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:17:19.768 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.769 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-04-18 19:17:19.857 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.873 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.873 [main] UserDataTest - Inserted record for ID: 89
+[INFO ] 2020-04-18 19:17:19.932 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:17:19.940 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.955 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:17:19.958 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:19.959 [main] UserDataTest - Deleted record for ID: 89
+[INFO ] 2020-04-18 19:17:20.071 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:20.086 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:17:20.087 [main] LocationDataTest - Deleted record for ID: 18
+[INFO ] 2020-04-18 19:17:20.091 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-04-18 19:17:20.173 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:17:20.194 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:20.195 [main] LocationDataTest - Location asdfad found by getById()
+[INFO ] 2020-04-18 19:17:20.195 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-04-18 19:17:20.196 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-04-18 19:17:20.233 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:17:20.233 [main] LocationDataTest - Got all users
+[INFO ] 2020-04-18 19:17:20.233 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-04-18 19:17:20.236 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-04-18 19:17:20.245 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:20.253 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:17:20.271 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:20.271 [main] LocationDataTest - End Location Update
+[INFO ] 2020-04-18 19:17:20.276 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-04-18 19:17:20.288 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:17:20.305 [main] LocationDataTest - Inserted record with the ID: 19
+[INFO ] 2020-04-18 19:17:20.305 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-04-18 19:17:20.316 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:18:40.582 [http-nio-8080-exec-1] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:19:17.490 [http-nio-8080-exec-6] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:20:24.346 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.349 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-04-18 19:20:24.442 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:20:24.442 [main] UserDataTest - Got all users
+[INFO ] 2020-04-18 19:20:24.452 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.495 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:20:24.502 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.502 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-04-18 19:20:24.531 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.539 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.539 [main] UserDataTest - Inserted record for ID: 90
+[INFO ] 2020-04-18 19:20:24.559 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:20:24.562 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.570 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:20:24.572 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.572 [main] UserDataTest - Deleted record for ID: 90
+[INFO ] 2020-04-18 19:20:24.590 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.595 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:20:24.595 [main] LocationDataTest - Deleted record for ID: 1
+[INFO ] 2020-04-18 19:20:24.597 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-04-18 19:20:24.622 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:20:24.632 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.633 [main] LocationDataTest - Location asdfad found by getById()
+[INFO ] 2020-04-18 19:20:24.633 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-04-18 19:20:24.633 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-04-18 19:20:24.647 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:20:24.647 [main] LocationDataTest - Got all users
+[INFO ] 2020-04-18 19:20:24.647 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-04-18 19:20:24.649 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-04-18 19:20:24.653 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.657 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:20:24.662 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.662 [main] LocationDataTest - End Location Update
+[INFO ] 2020-04-18 19:20:24.663 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-04-18 19:20:24.667 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:20:24.674 [main] LocationDataTest - Inserted record with the ID: 20
+[INFO ] 2020-04-18 19:20:24.674 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-04-18 19:20:24.679 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:21:37.162 [http-nio-8080-exec-9] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:41:02.819 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:02.829 [main] UserDataTest - Got user information for ID: 1
+[INFO ] 2020-04-18 19:41:02.927 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:41:02.927 [main] UserDataTest - Got all users
+[INFO ] 2020-04-18 19:41:02.938 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:02.982 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:41:02.991 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:02.991 [main] UserDataTest - Updated the password for ID: 1
+[INFO ] 2020-04-18 19:41:03.025 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.033 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.034 [main] UserDataTest - Inserted record for ID: 91
+[INFO ] 2020-04-18 19:41:03.056 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:41:03.060 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.068 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:41:03.070 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.071 [main] UserDataTest - Deleted record for ID: 91
+[INFO ] 2020-04-18 19:41:03.081 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.085 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:41:03.089 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.089 [main] LocationDataTest - Deleted record for ID: 20
+[INFO ] 2020-04-18 19:41:03.090 [main] LocationDataTest - Start Location getById()
+[INFO ] 2020-04-18 19:41:03.116 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:41:03.125 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.125 [main] LocationDataTest - Location asdfad found by getById()
+[INFO ] 2020-04-18 19:41:03.125 [main] LocationDataTest - End Location getById()
+[INFO ] 2020-04-18 19:41:03.127 [main] LocationDataTest - Start Location getAll()
+[INFO ] 2020-04-18 19:41:03.149 [main] CrudService - getAll Finished
+[INFO ] 2020-04-18 19:41:03.149 [main] LocationDataTest - Got all users
+[INFO ] 2020-04-18 19:41:03.149 [main] LocationDataTest - End Location getAll()
+[INFO ] 2020-04-18 19:41:03.150 [main] LocationDataTest - Start Location Update
+[INFO ] 2020-04-18 19:41:03.154 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.160 [main] CrudService - updateRecords Finished
+[INFO ] 2020-04-18 19:41:03.167 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.167 [main] LocationDataTest - End Location Update
+[INFO ] 2020-04-18 19:41:03.167 [main] LocationDataTest - Start Location Insert
+[INFO ] 2020-04-18 19:41:03.171 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:03.180 [main] LocationDataTest - Inserted record with the ID: 21
+[INFO ] 2020-04-18 19:41:03.180 [main] LocationDataTest - End Location Insert
+[INFO ] 2020-04-18 19:41:03.186 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:41.481 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:41.498 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:41:41.500 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:41.502 [main] LocationDataTest - Deleted record for ID: 19
+[INFO ] 2020-04-18 19:41:58.435 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:58.452 [main] CrudService - deleteRecord Finished
+[INFO ] 2020-04-18 19:41:58.454 [main] CrudService - getById Finished
+[INFO ] 2020-04-18 19:41:58.456 [main] LocationDataTest - Deleted record for ID: 21
+[ERROR] 2020-04-18 19:42:39.202 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:42:39.203 [main] PayPal - [Ljava.lang.StackTraceElement;@30a791a6
+[ERROR] 2020-04-18 19:43:55.251 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:43:55.252 [main] PayPal - [Ljava.lang.StackTraceElement;@2b15ba1a
+[ERROR] 2020-04-18 19:46:49.872 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:46:49.873 [main] PayPal - [Ljava.lang.StackTraceElement;@78a165db
+[ERROR] 2020-04-18 19:47:46.270 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:47:46.272 [main] PayPal - [Ljava.lang.StackTraceElement;@50d05167
+[ERROR] 2020-04-18 19:56:18.001 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 19:56:18.002 [main] PayPal - [Ljava.lang.StackTraceElement;@78e97d4d
+[ERROR] 2020-04-18 20:30:00.737 [main] PayPal - Unrecognized field "usage_type" (class com.paypal.subscriptions.Plan), not marked as ignorable (11 known properties: "create_time", "billing_cycles", "status", "update_time", "links", "quantity_supported", "product_id", "description", "payment_preferences", "name", "id"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 164] (through reference chain: com.paypal.subscriptions.Plan["usage_type"])
+[ERROR] 2020-04-18 20:30:00.738 [main] PayPal - [Ljava.lang.StackTraceElement;@e2f6a45
+[ERROR] 2020-04-18 20:32:45.303 [main] PayPal - Unrecognized field "service_type" (class com.paypal.subscriptions.PaymentPreferences), not marked as ignorable (4 known properties: "auto_bill_outstanding", "setup_fee", "payment_failure_threshold", "setup_fee_failure_action"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 503] (through reference chain: com.paypal.subscriptions.Plan["payment_preferences"]->com.paypal.subscriptions.PaymentPreferences["service_type"])
+[ERROR] 2020-04-18 20:32:45.303 [main] PayPal - [Ljava.lang.StackTraceElement;@1203d787
+[ERROR] 2020-04-18 20:34:36.925 [main] PayPal - Unrecognized field "encType" (class com.paypal.subscriptions.LinksItem), not marked as ignorable (3 known properties: "method", "href", "rel"])
+ at [Source: (String)"{"id":"P-51006304PY025420FLZZKVXA","product_id":"AdHound","name":"Annual Subscription","status":"ACTIVE","description":"Annual AdHound Subscription","usage_type":"LICENSED","billing_cycles":[{"pricing_scheme":{"version":1,"fixed_price":{"currency_code":"USD","value":"200.0"},"create_time":"2020-03-18T23:12:28Z","update_time":"2020-03-18T23:12:28Z"},"frequency":{"interval_unit":"YEAR","interval_count":1},"tenure_type":"REGULAR","sequence":1,"total_cycles":0}],"payment_preferences":{"service_type""[truncated 884 chars]; line: 1, column: 894] (through reference chain: com.paypal.subscriptions.Plan["links"]->java.util.ArrayList[0]->com.paypal.subscriptions.LinksItem["encType"])
+[ERROR] 2020-04-18 20:34:36.928 [main] PayPal - [Ljava.lang.StackTraceElement;@7c871ce4
+[INFO ] 2020-04-18 20:35:24.707 [main] CrudService - getById Finished

@@ -18,6 +18,9 @@ public class PaymentPreferences{
 	@JsonProperty("payment_failure_threshold")
 	private int paymentFailureThreshold;
 
+	@JsonProperty("service_type")
+	private String serviceType;
+
 	public void setSetupFee(SetupFee setupFee){
 		this.setupFee = setupFee;
 	}
@@ -48,6 +51,12 @@ public class PaymentPreferences{
 
 	public int getPaymentFailureThreshold(){
 		return paymentFailureThreshold;
+	}
+
+	public void setServiceType(String serviceType){ this.serviceType = serviceType; }
+
+	public String getServiceType(){
+		return serviceType;
 	}
 
 	@Override
