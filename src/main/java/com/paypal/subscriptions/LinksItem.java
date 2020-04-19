@@ -4,6 +4,7 @@ public class LinksItem{
 	private String method;
 	private String rel;
 	private String href;
+	private String encType;
 
 	public void setMethod(String method){
 		this.method = method;
@@ -27,6 +28,14 @@ public class LinksItem{
 
 	public String getHref(){
 		return href;
+	}
+
+	public void setEncType(String encType){
+		this.encType = encType;
+	}
+
+	public String getEncType(){
+		return encType;
 	}
 
 	@Override
