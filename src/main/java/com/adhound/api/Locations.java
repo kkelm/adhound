@@ -176,10 +176,9 @@ public class Locations {
      * @return JSON string of location data
      */
     @DELETE
-    @Path("/{username}/location/{id}/delete")
+    @Path("/{username}/location/delete/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-
     public Response deleteLocation (@PathParam("username") String username, @PathParam("id") int id) {
 
         String json = "";
