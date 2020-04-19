@@ -33,3 +33,5 @@
 [INFO ] 2020-04-19 10:00:20.391 [main] CrudService - getById Finished
 [INFO ] 2020-04-19 10:00:20.653 [main] CrudService - getById Finished
 [INFO ] 2020-04-19 10:00:20.681 [main] CrudService - getById Finished
+[ERROR] 2020-04-19 10:23:50.612 [main] PayPal - Server returned HTTP response code: 401 for URL: https://api.sandbox.paypal.com/v1/oauth2/token
+[ERROR] 2020-04-19 10:23:50.616 [main] PayPal - [Ljava.lang.StackTraceElement;@543b0737
