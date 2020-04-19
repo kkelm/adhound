@@ -32,13 +32,13 @@
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+/out/*
 
 # Maven
 target/
 logs/
 lib/
-profiles/
+profiles/*.properties
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
