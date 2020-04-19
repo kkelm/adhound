@@ -10,6 +10,8 @@ import com.adhound.service.CrudService;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -34,6 +36,8 @@ import java.util.*;
 )
 
 public class ViewLocation extends HttpServlet {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     HttpSession session;
 

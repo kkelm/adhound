@@ -3,6 +3,7 @@ package com.adhound.persistence;
 import com.adhound.entity.Location;
 import com.adhound.entity.User;
 import com.adhound.api.Locations;
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.paypal.subscriptions.Plan;
@@ -34,6 +35,7 @@ class LocationDataTest {
 
     UserData userData;
     LocationData locationData;
+    ObjectMapper mapper;
 
     /**
      * Sets up the tests with a new objects.
@@ -42,6 +44,8 @@ class LocationDataTest {
     void setUp() {
         userData = new UserData();
         locationData = new LocationData();
+
+        mapper = new ObjectMapper();
     }
 
     /**
@@ -150,9 +154,44 @@ class LocationDataTest {
     }
 
     @Test
-    void testGetLocationsAPI () {
+    void testGetLocationsAPI () throws JsonProcessingException {
 
+        // Get user information
+        User user = (User) userData.crud.getById(2);
+        // Get locations associated with the user
+        Set <Location> userLocations = user.getLocations();
+        // Get a location from the set
+        Location userLocation = userLocations.iterator().next();
+        // Get the ID of the location to delete
+        int locationId = userLocation.getId();
 
+        Locations locationsApi = new Locations();
+
+        Response response = locationsApi.getLocation(user.getUsername(), locationId);
+
+        Location location = mapper.readValue((String) response.getEntity(), Location.class);
+
+        assertEquals(200, response.getStatus());
+
+    }
+
+    @Test
+    void testDeleteLocationAPI () {
+
+        // Get user information
+        User user = (User) userData.crud.getById(2);
+        // Get locations associated with the user
+        Set <Location> userLocations = user.getLocations();
+        // Get a location from the set
+        Location userLocation = userLocations.iterator().next();
+        // Get the ID of the location to delete
+        int deleteId = userLocation.getId();
+
+        Locations locationsApi = new Locations();
+
+        Response response = locationsApi.deleteLocation(user.getUsername(), deleteId);
+
+        assertEquals(200, response.getStatus());
 
     }
 }

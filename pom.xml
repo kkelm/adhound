@@ -200,31 +200,13 @@
         <profile>
             <id>local</id>
             <properties>
-                <profile.name>Local</profile.name>
-                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
-                <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound</db.jdbcUrl>
-                <db.user>devfecta</db.user>
-                <db.password>m3tallica</db.password>
-            </properties>
-        </profile>
-        <profile>
-            <id>local-test</id>
-            <properties>
-                <profile.name>Local Test</profile.name>
-                <db.mysqlDriverClass>com.mysql.cj.jdbc.Driver</db.mysqlDriverClass>
-                <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound-test</db.jdbcUrl>
-                <db.user>devfecta</db.user>
-                <db.password>m3tallica</db.password>
+                <profile.name>local</profile.name>
             </properties>
         </profile>
         <profile>
             <id>aws</id>
             <properties>
-                <profile.name>AWS</profile.name>
-                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
-                <db.jdbcUrl>jdbc:mysql://localhost:3306/adhound</db.jdbcUrl>
-                <db.user>root</db.user>
-                <db.password>m3tallica</db.password>
+                <profile.name>aws</profile.name>
             </properties>
         </profile>
     </profiles>
@@ -232,10 +214,18 @@
     <build>
         <finalName>adhound</finalName>
 
+        <filters>
+            <filter>profiles/${profile.name}.properties</filter>
+        </filters>
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
+                <includes>
+                    <include>*.properties</include>
+                    <include>hibernate.cfg.xml</include>
+                </includes>
             </resource>
         </resources>
 
