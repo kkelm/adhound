@@ -12,7 +12,6 @@ import java.util.Set;
 
 @Entity(name = "Location")
 @Table(name = "locations")
-
 public class Location {
 
     @Id
@@ -169,6 +168,19 @@ public class Location {
     public void setRegion(Region region) {
         this.region = region;
     }
+
+    // mappedBy refers to the location_contact table
+    //// CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @JoinTable(name = "location_contact", joinColumns = {
+            @JoinColumn(name = "location_id")
+    }, inverseJoinColumns = {
+            @JoinColumn(name = "contact_id")
+    })
+    private Set<LocationContacts> locationContacts = new HashSet<>();
+
+    //@JsonIgnore
+
 
     @Override
     public String toString() {

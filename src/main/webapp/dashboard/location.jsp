@@ -102,7 +102,7 @@
                                 <button type="button" onclick="editForm(document.forms.adhoundForm.elements)" class="btn btn-primary btn-lg btn-block" role="button">Edit Location</button>
                             </div>
                             <div class="col-md mb-3">
-                                <button type="button" onclick="window.location='${pageContext.request.contextPath}/dashboard/deleteLocation?id=${location.id}'" class="btn btn-danger btn-lg btn-block" role="button">Delete Location</button>
+                                <button type="button" onclick="window.location='${pageContext.request.contextPath}/dashboard/deleteLocation?id=${location.id}'" class="btn btn-danger btn-lg btn-block d-none" role="button">Delete Location</button>
                             </div>
                             <div class="col-md mb-3">
                                 <button type="submit" id="updateButton" class="btn btn-success btn-lg btn-block d-none" role="button">Update Location</button>
