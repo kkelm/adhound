@@ -171,6 +171,8 @@ public class Location {
         this.region = region;
     }
 
+
+
     public Set<Location> getLocations(User user) {
         LocationData locationData = new LocationData();
         List<Location> allLocations = locationData.crud.getAll();
@@ -183,18 +185,22 @@ public class Location {
                 locations.add(userLocation);
             }
         }
+
         return locations;
     }
 
     // mappedBy refers to the location_contact table
     //// CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "location_contact", joinColumns = {
             @JoinColumn(name = "location_id")
     }, inverseJoinColumns = {
             @JoinColumn(name = "contact_id")
     })
-    private Set<LocationContacts> locationContacts = new HashSet<>();
+    private Set<LocationContacts> locationContacts;
+
+    public Set<LocationContacts> getLocationContacts() { return locationContacts; }
+    public void setLocationContacts(Set<LocationContacts> locationContacts) { this.locationContacts = locationContacts; }
 
     //@JsonIgnore
 

@@ -75,21 +75,10 @@ class LocationDataTest {
         List<User> users = userData.crud.getAll();
         Iterator userList = users.iterator();
 
-        User getUser = (User) userData.crud.getById(2);
+        User getUser = (User) userData.crud.getById(1);
 
         Set<Location> locations = location.getLocations(getUser);
 
-/*
-        Set<Location> locations = new HashSet<>();
-
-        for (Location location : allLocations) {
-            if (location.getUser().equals(getUser)) {
-                Location userLocation = (Location) locationData.crud.getById(location.getId());
-                locations.add(userLocation);
-            }
-        }
-*/
-        String test = "";
 
         //Location location = new Location();
         //Set<Location> userLocations = location.getLocations();
@@ -126,6 +115,14 @@ class LocationDataTest {
         //newObject.setUser(user);
         int newId = (int) locationData.crud.insertRecord(newObject);
         logger.info("Inserted record with the ID: " + newId);
+
+        newLocationName = "Test Location " + Math.round(Math.random()*100);
+        newObject = new Location(user, newLocationName, "(123) 456-7890", "(987) 654-3210", "123 Test Street", "Madison", 33, "12345", 1);
+        //user.getLocations().add(newObject);
+        //newObject.setUser(user);
+        newId = (int) locationData.crud.insertRecord(newObject);
+        logger.info("Inserted record with the ID: " + newId);
+
         logger.info("End Location Insert");
         Location getRecord = (Location) locationData.crud.getById(newId);
 

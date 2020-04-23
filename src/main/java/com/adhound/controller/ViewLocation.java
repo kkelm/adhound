@@ -64,7 +64,7 @@ public class ViewLocation extends HttpServlet {
         String json = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
-        mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+        //mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
         Location location = mapper.reader().forType(Location.class).readValue(json);
 

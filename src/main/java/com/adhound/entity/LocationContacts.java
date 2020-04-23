@@ -170,17 +170,17 @@ public class LocationContacts {
     public String toString() {
         return "LocationContacts{" +
                 "id=" + id +
-                ", name='" + firstName + '\'' +
-                ", name='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fax='" + fax + '\'' +
-                ", address='" + email + '\'' +
+                ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", stateId=" + stateId +
                 ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
-                ", region=" + typeId +
+                ", typeId=" + typeId +
                 '}';
     }
 
