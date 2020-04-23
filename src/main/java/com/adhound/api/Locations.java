@@ -32,6 +32,10 @@ public class Locations {
      */
     UserData userData = new UserData();
     /**
+     * The Location object.
+     */
+    Location location = new Location();
+    /**
      * The Location data.
      */
     LocationData locationData = new LocationData();
@@ -55,7 +59,7 @@ public class Locations {
             int userId = userData.authentication.userAuthentication(username);
 
             User user = (User) userData.crud.getById(userId);
-            Set<Location> locations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 /*
         LocationData locationData = new LocationData();
         Location location = new Location();
@@ -67,7 +71,7 @@ public class Locations {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-            json = mapper.writeValueAsString(locations);
+            json = mapper.writeValueAsString(userLocations);
         }
         catch (JsonProcessingException jsonException) {
             logger.error(jsonException.getMessage());
@@ -95,12 +99,12 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
             Iterator locations = userLocations.iterator();
 
             locationData = new LocationData();
-            Location location = null;
+            //Location location = null;
 
             while(locations.hasNext()) {
                 Location currentLocation = (Location) locations.next();
@@ -143,7 +147,7 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
             Iterator locations = userLocations.iterator();
 
@@ -192,7 +196,7 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
             locationData = new LocationData();
 

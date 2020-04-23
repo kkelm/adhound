@@ -1,5 +1,6 @@
 package com.adhound.entity;
 
+import com.adhound.persistence.LocationData;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -7,6 +8,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -167,6 +169,21 @@ public class Location {
 
     public void setRegion(Region region) {
         this.region = region;
+    }
+
+    public Set<Location> getLocations(User user) {
+        LocationData locationData = new LocationData();
+        List<Location> allLocations = locationData.crud.getAll();
+
+        Set<Location> locations = new HashSet<>();
+
+        for (Location location : allLocations) {
+            if (location.getUser().equals(user)) {
+                Location userLocation = (Location) locationData.crud.getById(location.getId());
+                locations.add(userLocation);
+            }
+        }
+        return locations;
     }
 
     // mappedBy refers to the location_contact table
