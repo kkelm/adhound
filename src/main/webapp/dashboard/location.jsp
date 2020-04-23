@@ -130,7 +130,7 @@
                     <h3>Location Contacts</h3>
                 </div>
                 <div class="col-md-5">
-                    <a href="${pageContext.request.contextPath}/dashboard/location/${locationId}/addContact" class="col-xs flex-fill m-1 float-right">
+                    <a href="${pageContext.request.contextPath}/dashboard/location/addContact?location=${locationId}" class="col-xs flex-fill m-1 float-right">
                         <span class="fas fa-plus-square" style="font-size: 1.5vw;"></span>
                     </a>
                 </div>

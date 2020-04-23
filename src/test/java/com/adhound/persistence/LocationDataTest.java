@@ -1,6 +1,7 @@
 package com.adhound.persistence;
 
 import com.adhound.entity.Location;
+import com.adhound.entity.LocationContact;
 import com.adhound.entity.User;
 import com.adhound.api.Locations;
 import com.fasterxml.jackson.core.JsonParser;
@@ -36,6 +37,7 @@ class LocationDataTest {
 
     UserData userData;
     LocationData locationData;
+    LocationContactData locationContactData;
     Location location;
     ObjectMapper mapper;
 
@@ -47,6 +49,7 @@ class LocationDataTest {
         userData = new UserData();
         location = new Location();
         locationData = new LocationData();
+        locationContactData = new LocationContactData();
 
         mapper = new ObjectMapper();
     }
@@ -215,5 +218,22 @@ class LocationDataTest {
 
         assertEquals(200, response.getStatus());
 
+    }
+
+    @Test
+    void testGetLocationContact () {
+
+        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(1);
+
+        assertEquals("Test 1", newLocationContact.getFirstName());
+    }
+
+    @Test
+    void testInsertLocationContact () {
+        LocationContact newObject = new LocationContact("FirstName", "LastName", "(123) 456-7890", "(987) 654-3210", "test@email.com", "123 Test Street", "Madison", 33, "12345", 1);
+        int newId = (int) locationContactData.crud.insertRecord(newObject);
+        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(newId);
+
+        assertEquals(newObject, newLocationContact);
     }
 }

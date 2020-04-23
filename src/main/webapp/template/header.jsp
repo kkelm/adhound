@@ -43,4 +43,4 @@
 </nav>
 
 
-<main class="container p-2">
+<main class="container p-2" style="margin-bottom: 10%">

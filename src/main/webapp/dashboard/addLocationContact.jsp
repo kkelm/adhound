@@ -17,18 +17,18 @@
         <div class="col-md md-1">
 
             <c:choose>
-                <c:when test="${not empty contactName}">
+                <c:when test="${not empty contactFirstName}">
 
                     <div class="alert alert-success" role="alert">
-                        ${contactName} has been added.
+                        ${contactFirstName} has been added.
                     </div>
 
-                    <a href="${pageContext.request.contextPath}/dashboard/locations" class="btn btn-primary p-2" role="button">Locations</a>
+                    <a href="${pageContext.request.contextPath}/dashboard/location?id=${locationId}" class="btn btn-primary p-2" role="button">Locations</a>
 
                 </c:when>
                 <c:otherwise>
 
-                    <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/addContact" method="post" class="needs-validation" novalidate>
+                    <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/location/addContact" method="post" class="needs-validation" novalidate>
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
@@ -49,7 +49,7 @@
 
                         <div class="row">
                             <div class="col-md mb-3">
-                                <label for="emailTextbox">First Name</label>
+                                <label for="emailTextbox">e-Mail Address</label>
                                 <input value='${param.emailTextbox}' type="text" id="emailTextbox" name="emailTextbox" class="form-control" required />
                                 <div class="invalid-feedback">
                                         ${errormessages.emailTextbox}
@@ -105,17 +105,6 @@
 
                         <div class="row">
                             <div class="col-md mb-3">
-                                <label for="locationDropdown">Location</label>
-                                <select required type="text" id="locationDropdown" name="locationDropdown" class="form-control">
-                                    <c:forEach var="location" items="${locations}">
-                                        <option value="${location.id}" <c:if test="${param.locationDropdown eq location.id}">selected</c:if>>${location.name}</option>
-                                    </c:forEach>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md mb-3">
                                 <label for="contactTypeDropdown">Region</label>
                                 <select required type="text" id="contactTypeDropdown" name="contactTypeDropdown" class="form-control">
                                     <option value="1" <c:if test="${param.contactType eq '1'}">selected</c:if>>Main Contact</option>
@@ -130,6 +119,8 @@
                                 <button type="submit" class="btn btn-primary btn-lg btn-block" role="button">Add Contact</button>
                             </div>
                         </div>
+
+                        <input type="hidden" value="${locationId}" id="locationId" name="locationId" />
 
                     </form>
 

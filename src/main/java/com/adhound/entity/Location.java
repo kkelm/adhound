@@ -1,7 +1,6 @@
 package com.adhound.entity;
 
 import com.adhound.persistence.LocationData;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -171,8 +170,12 @@ public class Location {
         this.region = region;
     }
 
-
-
+    /**
+     * Gets locations for a specific user.
+     *
+     * @param user the User object
+     * @return the user locations
+     */
     public Set<Location> getLocations(User user) {
         LocationData locationData = new LocationData();
         List<Location> allLocations = locationData.crud.getAll();
@@ -197,10 +200,10 @@ public class Location {
     }, inverseJoinColumns = {
             @JoinColumn(name = "contact_id")
     })
-    private Set<LocationContacts> locationContacts;
+    private Set<LocationContact> locationContacts;
 
-    public Set<LocationContacts> getLocationContacts() { return locationContacts; }
-    public void setLocationContacts(Set<LocationContacts> locationContacts) { this.locationContacts = locationContacts; }
+    public Set<LocationContact> getLocationContacts() { return locationContacts; }
+    public void setLocationContacts(Set<LocationContact> locationContacts) { this.locationContacts = locationContacts; }
 
     //@JsonIgnore
 

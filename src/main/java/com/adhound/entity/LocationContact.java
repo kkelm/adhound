@@ -1,19 +1,16 @@
 package com.adhound.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity(name = "LocationContacts")
-@Table(name = "location_contacts", uniqueConstraints = {@UniqueConstraint(columnNames = "ID")})
-public class LocationContacts {
+@Table(name = "location_contacts")
+public class LocationContact {
     private int id;
     private String firstName;
     private String lastName;
@@ -150,9 +147,9 @@ public class LocationContacts {
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "locationContacts")
     private List<Location> locations;
 
-    public LocationContacts() {}
+    public LocationContact() {}
 
-    public LocationContacts(String firstName, String lastName, String phone, String fax, String email, String address, String city, int stateId, State state, String zipcode, int typeId) {
+    public LocationContact(String firstName, String lastName, String phone, String fax, String email, String address, String city, int stateId, String zipcode, int typeId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -161,14 +158,13 @@ public class LocationContacts {
         this.address = address;
         this.city = city;
         this.stateId = stateId;
-        this.state = state;
         this.zipcode = zipcode;
         this.typeId = typeId;
     }
 
     @Override
     public String toString() {
-        return "LocationContacts{" +
+        return "LocationContact{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -188,7 +184,7 @@ public class LocationContacts {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        LocationContacts that = (LocationContacts) o;
+        LocationContact that = (LocationContact) o;
         return id == that.id &&
                 Objects.equals(firstName, that.firstName) &&
                 Objects.equals(lastName, that.lastName) &&

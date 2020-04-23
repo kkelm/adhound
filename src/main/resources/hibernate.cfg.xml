@@ -23,7 +23,7 @@
         <mapping class="com.adhound.entity.Location"/>
         <mapping class="com.adhound.entity.Region"/>
         <mapping class="com.adhound.entity.State"/>
-        <mapping class="com.adhound.entity.LocationContacts"/>
+        <mapping class="com.adhound.entity.LocationContact"/>
 
     </session-factory>
 
