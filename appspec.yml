@@ -15,8 +15,8 @@ permissions: # Permissions used to handle the files. (Linux Instances Only)
       - file
 hooks:
   BeforeInstall:
-  - location: /opt/tomcat/webapps/adhound/WEB-INF/classes/beforeInstall.sh
-    runas: root
+  - location: /opt/tomcat/webapps/adhound/beforeInstall.sh
+  #  runas: root
   #- location: rm -R /opt/tomcat/webapps/adhound
   #  runas: root
   #- location: rm /opt/tomcat/webapps/adhound.war
