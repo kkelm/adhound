@@ -31,6 +31,14 @@ public class Locations {
      * The User data.
      */
     UserData userData = new UserData();
+    /**
+     * The Location object.
+     */
+    Location location = new Location();
+    /**
+     * The Location data.
+     */
+    LocationData locationData = new LocationData();
 
     /**
      * Gets all of the locations related to a specific user.
@@ -51,7 +59,7 @@ public class Locations {
             int userId = userData.authentication.userAuthentication(username);
 
             User user = (User) userData.crud.getById(userId);
-            Set<Location> locations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 /*
         LocationData locationData = new LocationData();
         Location location = new Location();
@@ -63,7 +71,7 @@ public class Locations {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-            json = mapper.writeValueAsString(locations);
+            json = mapper.writeValueAsString(userLocations);
         }
         catch (JsonProcessingException jsonException) {
             logger.error(jsonException.getMessage());
@@ -91,12 +99,12 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
             Iterator locations = userLocations.iterator();
 
-            LocationData locationData = new LocationData();
-            Location location = null;
+            locationData = new LocationData();
+            //Location location = null;
 
             while(locations.hasNext()) {
                 Location currentLocation = (Location) locations.next();
@@ -139,11 +147,11 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
             Iterator locations = userLocations.iterator();
 
-            LocationData locationData = new LocationData();
+            locationData = new LocationData();
 
             while(locations.hasNext()) {
                 Location currentLocation = (Location) locations.next();
@@ -176,10 +184,9 @@ public class Locations {
      * @return JSON string of location data
      */
     @DELETE
-    @Path("/{username}/location/{id}/delete")
+    @Path("/{username}/location/delete/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-
     public Response deleteLocation (@PathParam("username") String username, @PathParam("id") int id) {
 
         String json = "";
@@ -189,9 +196,9 @@ public class Locations {
         try {
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
-            Set<Location> userLocations = user.getLocations();
+            Set<Location> userLocations = location.getLocations(user);
 
-            LocationData locationData = new LocationData();
+            locationData = new LocationData();
 
             Location location  = (Location) locationData.crud.getById(id);
 
@@ -224,6 +231,40 @@ public class Locations {
 
         return Response.status(statusCode).entity(json).build();
 
+    }
+
+    /*
+    Location Contacts
+     */
+    /**
+     * Gets all of the contacts for a specific location.
+     *
+     * @param location the location ID
+     * @return JSON string of location contacts
+     */
+    @GET
+    @Path("/{location}/contacts")
+    @Produces("application/json")
+    public Response getLocations (@PathParam("location") int location) {
+        String json = "";
+        int statusCode = 200;
+
+        try {
+            locationData = new LocationData();
+
+            Location locations = (Location) locationData.crud.getById(location);
+
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+            json = mapper.writeValueAsString(locations);
+        }
+        catch (JsonProcessingException jsonException) {
+            logger.error(jsonException.getMessage());
+            statusCode = 500;
+        }
+
+        return Response.status(statusCode).entity(json).build();
     }
 
 }

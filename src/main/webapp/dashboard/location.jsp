@@ -6,6 +6,8 @@
 
 <c:set var="errors" value="${errormessages}" scope="session" />
 
+<c:set var="contacts" scope="page" value=""/>
+
 <section class="container">
 
     <div class="py-5 text-center">
@@ -14,7 +16,7 @@
 
     <div class="row">
 
-        <div class="col-md md-1">
+        <div class="col-md-7 md-1">
 
             <c:choose>
                 <c:when test="${not empty locationName}">
@@ -27,6 +29,9 @@
 
                 </c:when>
                 <c:otherwise>
+
+                    <c:set var="contacts" scope="page" value="${location.locationContacts}"/>
+                    <c:set var="locationId" scope="page" value="${location.id}"/>
 
                     <form id="adhoundForm" action="${pageContext.request.contextPath}/dashboard/location?id=${location.id}" method="post" class="needs-validation" novalidate>
 
@@ -102,6 +107,9 @@
                                 <button type="button" onclick="editForm(document.forms.adhoundForm.elements)" class="btn btn-primary btn-lg btn-block" role="button">Edit Location</button>
                             </div>
                             <div class="col-md mb-3">
+                                <button type="button" onclick="window.location='${pageContext.request.contextPath}/dashboard/deleteLocation?id=${location.id}'" class="btn btn-danger btn-lg btn-block d-none" role="button">Delete Location</button>
+                            </div>
+                            <div class="col-md mb-3">
                                 <button type="submit" id="updateButton" class="btn btn-success btn-lg btn-block d-none" role="button">Update Location</button>
                             </div>
                             <div class="col-md mb-3">
@@ -114,6 +122,38 @@
                 </c:otherwise>
             </c:choose>
 
+        </div>
+
+        <div class="col-md-5 md-1 text-left">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3>Location Contacts</h3>
+                </div>
+                <div class="col-md-5">
+                    <a href="${pageContext.request.contextPath}/dashboard/location/addContact?location=${locationId}" class="col-xs flex-fill m-1 float-right">
+                        <span class="fas fa-plus-square" style="font-size: 1.5vw;"></span>
+                    </a>
+                </div>
+            </div>
+            <c:choose>
+                <c:when test="${fn:length(contacts) gt 0}">
+                    <c:forEach var="contact" items="${contacts}">
+                        <div class="row">
+                            <div class="col-md list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    ${contact.firstName} ${contact.lastName}<br/>
+                                    ${contact.phone} ${contact.fax}<br/>
+                                    ${contact.email}
+                                </a>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </c:when>
+
+                <c:otherwise>
+                    No Contacts
+                </c:otherwise>
+            </c:choose>
         </div>
 
     </div>

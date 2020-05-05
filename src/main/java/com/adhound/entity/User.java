@@ -88,13 +88,13 @@ public class User {
 */
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<UserRole> userRole = new HashSet<>();
-
+/*
     // mappedBy refers to the instance variable in Location
     // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonIgnore
     private Set<Location> locations = new HashSet<>();
-
+*/
     /**
      * Instantiates a new User.
      */
@@ -378,11 +378,11 @@ public class User {
     public void setUserRole(Set<UserRole> userRole) {
         this.userRole = userRole;
     }
-
+/*
     public Set<Location> getLocations() { return locations; }
 
     public void setLocations(Set<Location> locations) { this.locations = locations; }
-
+*/
     @Override
     public String toString() {
         return "User{" +
@@ -399,7 +399,6 @@ public class User {
                 ", stateId=" + stateId +
                 ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
-                ", locations=" + locations +
                 '}';
     }
 

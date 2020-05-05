@@ -35,7 +35,8 @@
 /out/*
 
 # Maven
-target/
+target/*
+!target/adhound.war
 logs/
 lib/
 profiles/*.properties

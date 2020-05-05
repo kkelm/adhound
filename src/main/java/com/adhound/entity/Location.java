@@ -1,18 +1,18 @@
 package com.adhound.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.adhound.persistence.LocationData;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity(name = "Location")
 @Table(name = "locations")
-
 public class Location {
 
     @Id
@@ -169,6 +169,44 @@ public class Location {
     public void setRegion(Region region) {
         this.region = region;
     }
+
+    /**
+     * Gets locations for a specific user.
+     *
+     * @param user the User object
+     * @return the user locations
+     */
+    public Set<Location> getLocations(User user) {
+        LocationData locationData = new LocationData();
+        List<Location> allLocations = locationData.crud.getAll();
+
+        Set<Location> locations = new HashSet<>();
+
+        for (Location location : allLocations) {
+            if (location.getUser().equals(user)) {
+                Location userLocation = (Location) locationData.crud.getById(location.getId());
+                locations.add(userLocation);
+            }
+        }
+
+        return locations;
+    }
+
+    // mappedBy refers to the location_contact table
+    //// CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "location_contact", joinColumns = {
+            @JoinColumn(name = "location_id")
+    }, inverseJoinColumns = {
+            @JoinColumn(name = "contact_id")
+    })
+    private Set<LocationContact> locationContacts;
+
+    public Set<LocationContact> getLocationContacts() { return locationContacts; }
+    public void setLocationContacts(Set<LocationContact> locationContacts) { this.locationContacts = locationContacts; }
+
+    //@JsonIgnore
+
 
     @Override
     public String toString() {

@@ -1,6 +1,7 @@
 package com.adhound.persistence;
 
 import com.adhound.entity.Location;
+import com.adhound.entity.LocationContact;
 import com.adhound.entity.User;
 import com.adhound.api.Locations;
 import com.fasterxml.jackson.core.JsonParser;
@@ -23,6 +24,7 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -35,6 +37,8 @@ class LocationDataTest {
 
     UserData userData;
     LocationData locationData;
+    LocationContactData locationContactData;
+    Location location;
     ObjectMapper mapper;
 
     /**
@@ -43,7 +47,9 @@ class LocationDataTest {
     @BeforeEach
     void setUp() {
         userData = new UserData();
+        location = new Location();
         locationData = new LocationData();
+        locationContactData = new LocationContactData();
 
         mapper = new ObjectMapper();
     }
@@ -72,9 +78,18 @@ class LocationDataTest {
         List<User> users = userData.crud.getAll();
         Iterator userList = users.iterator();
 
+        User getUser = (User) userData.crud.getById(1);
+
+        Set<Location> locations = location.getLocations(getUser);
+
+
+        //Location location = new Location();
+        //Set<Location> userLocations = location.getLocations();
+        /*
         while (userList.hasNext()) {
 
             User user = (User) userList.next();
+            //Set<Location> userLocations = user.getLocations();
             Set<Location> userLocations = user.getLocations();
 
             if (userLocations.iterator().hasNext()) {
@@ -85,8 +100,9 @@ class LocationDataTest {
                 break;
             }
         }
-
+        */
         logger.info("End Location getById()");
+
     }
 
     /**
@@ -102,6 +118,14 @@ class LocationDataTest {
         //newObject.setUser(user);
         int newId = (int) locationData.crud.insertRecord(newObject);
         logger.info("Inserted record with the ID: " + newId);
+
+        newLocationName = "Test Location " + Math.round(Math.random()*100);
+        newObject = new Location(user, newLocationName, "(123) 456-7890", "(987) 654-3210", "123 Test Street", "Madison", 33, "12345", 1);
+        //user.getLocations().add(newObject);
+        //newObject.setUser(user);
+        newId = (int) locationData.crud.insertRecord(newObject);
+        logger.info("Inserted record with the ID: " + newId);
+
         logger.info("End Location Insert");
         Location getRecord = (Location) locationData.crud.getById(newId);
 
@@ -117,7 +141,8 @@ class LocationDataTest {
         // Get user information
         User user = (User) userData.crud.getById(2);
         // Get locations associated with the user
-        Set<Location> userLocations = user.getLocations();
+        //Set<Location> userLocations = user.getLocations();
+        Set<Location> userLocations = location.getLocations(user);
         // Get a location from the set
         Location userLocation = userLocations.iterator().next();
         // Get the location name, add "Updated" to the name, and set the new name
@@ -140,7 +165,7 @@ class LocationDataTest {
         // Get user information
         User user = (User) userData.crud.getById(2);
         // Get locations associated with the user
-        Set <Location> userLocations = user.getLocations();
+        Set<Location> userLocations = location.getLocations(user);
         // Get a location from the set
         Location userLocation = userLocations.iterator().next();
         // Get the ID of the location to delete
@@ -159,7 +184,7 @@ class LocationDataTest {
         // Get user information
         User user = (User) userData.crud.getById(2);
         // Get locations associated with the user
-        Set <Location> userLocations = user.getLocations();
+        Set<Location> userLocations = location.getLocations(user);
         // Get a location from the set
         Location userLocation = userLocations.iterator().next();
         // Get the ID of the location to delete
@@ -181,7 +206,7 @@ class LocationDataTest {
         // Get user information
         User user = (User) userData.crud.getById(2);
         // Get locations associated with the user
-        Set <Location> userLocations = user.getLocations();
+        Set<Location> userLocations = location.getLocations(user);
         // Get a location from the set
         Location userLocation = userLocations.iterator().next();
         // Get the ID of the location to delete
@@ -193,5 +218,22 @@ class LocationDataTest {
 
         assertEquals(200, response.getStatus());
 
+    }
+
+    @Test
+    void testGetLocationContact () {
+
+        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(7);
+
+        assertEquals("FirstName", newLocationContact.getFirstName());
+    }
+
+    @Test
+    void testInsertLocationContact () {
+        LocationContact newObject = new LocationContact("FirstName", "LastName", "(123) 456-7890", "(987) 654-3210", "test@email.com", "123 Test Street", "Madison", 33, "12345", 1);
+        int newId = (int) locationContactData.crud.insertRecord(newObject);
+        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(newId);
+
+        assertEquals(newObject, newLocationContact);
     }
 }
