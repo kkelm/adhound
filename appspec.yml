@@ -1,0 +1,27 @@
+version: 0.0
+# More Info: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure.html
+os: linux
+files:
+  - source: / # Represents where and what files to copy from.
+    destination: /opt/tomcat/webapps/adhound.war # Represents where and what files to copy to.
+    overwrite: yes
+permissions: # Permissions used to handle the files. (Linux Instances Only)
+  - object: /opt/tomcat/webapps
+    pattern: "**"
+    owner: root
+    group: root
+    mode: 755
+    type:
+      - file
+hooks:
+  BeforeInstall:
+    #- location: rm -R /var/www/html/*
+    #  runas: root
+    #- location: scripts/startapache.sh
+    #  runas: root
+  AfterInstall:
+    #- location: scripts/restartapache.sh
+    #  runas: root
+  AfterAllowTestTraffic:
+  BeforeAllowTraffic:
+  AfterAllowTraffic:

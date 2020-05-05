@@ -223,9 +223,9 @@ class LocationDataTest {
     @Test
     void testGetLocationContact () {
 
-        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(1);
+        LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(7);
 
-        assertEquals("Test 1", newLocationContact.getFirstName());
+        assertEquals("FirstName", newLocationContact.getFirstName());
     }
 
     @Test
