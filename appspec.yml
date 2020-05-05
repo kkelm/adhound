@@ -8,8 +8,8 @@ files:
 permissions: # Permissions used to handle the files. (Linux Instances Only)
   - object: /home/ubuntu
     pattern: "**"
-    owner: ubuntu
-    group: ubuntu
+    owner: root
+    group: root
     mode: 755
     type:
       - file
