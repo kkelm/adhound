@@ -29,7 +29,7 @@ public class Dashboard extends HttpServlet {
     UserData userData = new UserData();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        /*
         session = request.getSession();
 
         int userId = userData.userAuthentication(request.getUserPrincipal().getName());
@@ -37,7 +37,7 @@ public class Dashboard extends HttpServlet {
         this.crud = new CrudService(User.class);
         List<User> user = this.crud.getAll();
         request.setAttribute("results", user);
-
+        */
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/index.jsp");
         dispatcher.forward(request, response);
 
@@ -45,7 +45,7 @@ public class Dashboard extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        /*
         session = request.getSession();
 
         String searchText = request.getParameter("idTextbox").trim();
@@ -54,24 +54,18 @@ public class Dashboard extends HttpServlet {
             int id = Integer.parseInt(searchText);
             //session.setAttribute("title", username);
 
-            /**
-             * Instantiate a new array list of user data.
-             */
+            // Instantiate a new array list of user data.
             List<User> user = new ArrayList<>();
-            /**
-             * Add the user data to the array list.
-             */
+            // Add the user data to the array list.
             user.add((User) userData.crud.getById(id));
-            /**
-             * Pass the array list to the view.
-             */
+            // Pass the array list to the view.
             request.setAttribute("results", user);
         }
         else {
             session.setAttribute("message", "Please enter a valid ID.");
             request.setAttribute("results", "");
         }
-
+        */
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/index.jsp");
         dispatcher.forward(request, response);
 
