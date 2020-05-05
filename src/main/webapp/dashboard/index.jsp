@@ -4,7 +4,7 @@
 <%@ include file="../template/header.jsp" %>
 
 <section class="row align-items-center h-100">
-testing
+
 </section>
 
 <%@ include file="../template/footer.jsp" %>
