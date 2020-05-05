@@ -3,13 +3,13 @@ version: 0.0
 os: linux
 files:
   - source: / # Represents where and what files to copy from.
-    destination: /opt/tomcat/webapps # Represents where and what files to copy to.
+    destination: /home/ubuntu # Represents where and what files to copy to.
     overwrite: yes
 permissions: # Permissions used to handle the files. (Linux Instances Only)
-  - object: /opt/tomcat/webapps
+  - object: /home/ubuntu
     pattern: "**"
-    owner: root
-    group: root
+    owner: ubuntu
+    group: ubuntu
     mode: 755
     type:
       - file
