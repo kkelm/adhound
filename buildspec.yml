@@ -6,7 +6,7 @@ phases:
   install:
     commands:
       - echo Entered Install Phase...
-      - apt update -y # Runs the update command on your build image.
+      # - apt update -y # Runs the update command on your build image.
       # The upgrade command is skipped because that could cause version issues.
     finally:
       - echo Running Install Finally...
