@@ -222,10 +222,16 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
+                <!--
                 <includes>
                     <include>*.properties</include>
                     <include>hibernate.cfg.xml</include>
                 </includes>
+                -->
+            </resource>
+            <resource>
+                <directory>src/main/webapp/META-INF</directory>
+                <filtering>true</filtering>
             </resource>
         </resources>
 
@@ -239,12 +245,25 @@
                     <webResources>
                         <resource>
                             <filtering>true</filtering> <!-- THIS IS IMPORTANT! It tells maven to replace your variables with the properties values -->
-                            <directory>src/main/webapp</directory>
+                            <directory>src/main/webapp/META-INF</directory>
+                            <targetPath>META-INF</targetPath>
+                            <!--
                             <includes>
-                                <include>src/main/resources/hibernate.cfg.xml</include> <!-- the path to hibernate.cfg.xml -->
+                                <include>src/main/resources/hibernate.cfg.xml</include> the path to hibernate.cfg.xml
                             </includes>
+                            -->
                         </resource>
                     </webResources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <!-- specify UTF-8, ISO-8859-1 or any other file encoding -->
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
 
