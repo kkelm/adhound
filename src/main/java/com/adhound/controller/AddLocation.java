@@ -4,9 +4,6 @@ import com.adhound.entity.*;
 import com.adhound.persistence.LocationData;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
-import com.adhound.service.PayPal;
-import com.paypal.subscriptions.Subscribe;
-import org.hibernate.exception.ConstraintViolationException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,7 +17,6 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -30,7 +26,7 @@ import java.util.*;
         urlPatterns = {"/dashboard/addLocation"}
 )
 
-public class addLocation extends HttpServlet {
+public class AddLocation extends HttpServlet {
 
     HttpSession session;
 

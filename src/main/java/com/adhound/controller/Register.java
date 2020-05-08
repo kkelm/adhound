@@ -1,8 +1,6 @@
 package com.adhound.controller;
 
-import com.adhound.entity.State;
-import com.adhound.entity.User;
-import com.adhound.entity.UserRole;
+import com.adhound.entity.*;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import com.adhound.service.PayPal;
@@ -15,10 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import javax.validation.*;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;

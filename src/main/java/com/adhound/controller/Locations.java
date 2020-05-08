@@ -1,13 +1,9 @@
 package com.adhound.controller;
 
-import com.adhound.entity.Location;
-import com.adhound.entity.User;
-import com.adhound.service.Authentication;
 import com.adhound.persistence.LocationData;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.glassfish.jersey.server.ServerProperties;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,7 +17,6 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Set;
 
 @WebServlet(

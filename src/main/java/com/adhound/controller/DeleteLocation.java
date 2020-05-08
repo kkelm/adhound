@@ -1,11 +1,7 @@
 package com.adhound.controller;
 
 import com.adhound.entity.Location;
-import com.adhound.entity.User;
 import com.adhound.persistence.LocationData;
-import com.adhound.persistence.UserData;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -27,7 +23,7 @@ import java.io.IOException;
         urlPatterns = {"/dashboard/deleteLocation/*"}
 )
 
-public class deleteLocation extends HttpServlet {
+public class DeleteLocation extends HttpServlet {
 
     HttpSession session;
 

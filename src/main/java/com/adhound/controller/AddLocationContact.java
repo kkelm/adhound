@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import javax.validation.*;
 import java.io.IOException;
 import java.util.*;
 
@@ -26,7 +23,7 @@ import java.util.*;
         urlPatterns = {"/dashboard/location/addContact"}
 )
 
-public class addLocationContact extends HttpServlet {
+public class AddLocationContact extends HttpServlet {
 
     HttpSession session;
 
