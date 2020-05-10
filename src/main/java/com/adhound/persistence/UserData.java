@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * This is the User DAO
+ * @author kkelm
  */
 public class UserData extends Authentication {
 

@@ -167,16 +167,12 @@
     <script src="./js/popper/popper.js"></script>
     <script src="./css/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <c:choose>
-        <c:when test="${fn:length(errormessages) gt 0}">
-            <script>
-                let form = document.querySelector("form");
-                form.classList.add('was-validated');
-            </script>
-        </c:when>
-        <c:otherwise>
-        </c:otherwise>
-    </c:choose>
+    <c:if test="${fn:length(errormessages) gt 0}">
+        <script>
+            let form = document.querySelector("form");
+            form.classList.add('was-validated');
+        </script>
+    </c:if>
 
 </body>
 </html>

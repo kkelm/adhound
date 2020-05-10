@@ -1,18 +1,19 @@
 package com.adhound.persistence;
 
+import com.adhound.entity.Location;
 import com.adhound.entity.User;
 import com.adhound.entity.UserRole;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.hibernate.exception.ConstraintViolationException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import javax.validation.*;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -27,6 +28,8 @@ class UserDataTest {
 
     UserData userData;
 
+    User newUser;
+
     private static Validator validator;
 
     /**
@@ -37,6 +40,8 @@ class UserDataTest {
         //Database database = Database.getInstance();
         //database.createDatabase("adhound.sql");
         userData = new UserData();
+
+        newUser = new User("testUsername@email.com", "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         validator = factory.getValidator();
@@ -69,22 +74,26 @@ class UserDataTest {
     @Test
     void testInsertUser() {
         //String newUsername = "testUsername" + Math.round(Math.random()*100) + "@email.com";
-        String newUsername = "testUsername@email.com";
-        User newUser = new User(newUsername, "testPassword", "testFirstName", "testLastName", "123-456-7890", "987-654-3210", "test@email.com", "123 Test Street", "testCity", 33, "12345");
-
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
 
-        int newId = (int) userData.crud.insertRecord(newUser);
+        try {
 
-        newUser = (User) userData.crud.getById(newId);
+            int newId = (int) userData.crud.insertRecord(newUser);
+            newUser = (User) userData.crud.getById(newId);
 
-        UserRole userRole = new UserRole(newUser, newUser.getUsername());
-        Serializable userRoleId = userData.crud.insertRecord(userRole);
+            UserRole userRole = new UserRole(newUser, newUser.getUsername());
+            Serializable userRoleId = userData.crud.insertRecord(userRole);
 
-        User insertedUser = (User) userData.crud.getById(newId);
-        assertEquals(newUser, insertedUser);
+            User insertedUser = (User) userData.crud.getById(newId);
+            assertEquals(newUser, insertedUser);
 
-        logger.info("Inserted record for ID: " + newId);
+            logger.info("Inserted record for ID: " + newId);
+        }
+        catch(ConstraintViolationException e) {
+            assertEquals(ConstraintViolationException.class, e.getClass());
+            logger.info("Threw Exception when inserting user:  " + e.getCause());
+        }
+
     }
 
     /**
@@ -114,6 +123,13 @@ class UserDataTest {
         // List<User> allUsersMinusOne = userData.crud.getAll();
         // assertNotEquals(allUsersMinusOne, allUsers);
         logger.info("Deleted record for ID: " + deleteId);
+
+        LocationData locationData = new LocationData();
+        Location location = new Location();
+        Set<Location> userLocations = location.getLocations((User) userData.crud.getById(deleteId));
+
+        assertEquals(0, userLocations.size());
+
     }
 
 }

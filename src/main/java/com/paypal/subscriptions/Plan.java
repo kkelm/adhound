@@ -8,7 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Generated;
-
+/**
+ * PayPal object based off of their API.
+ * @author kkelm
+ *
+ */
 @Generated("com.robohorse.robopojogenerator")
 public class Plan {
 

@@ -4,7 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import javax.annotation.Generated;
-
+/**
+ * PayPal object based off of their API.
+ * @author kkelm
+ *
+ */
 @Generated("com.robohorse.robopojogenerator")
 public class Subscribe {
 

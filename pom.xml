@@ -222,15 +222,14 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
-                <!--
-                <includes>
-                    <include>*.properties</include>
-                    <include>hibernate.cfg.xml</include>
-                </includes>
-                -->
             </resource>
             <resource>
                 <directory>src/main/webapp/META-INF</directory>
+                <filtering>true</filtering>
+            </resource>
+
+            <resource>
+                <directory>src/test/resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>

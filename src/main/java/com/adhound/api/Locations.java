@@ -19,6 +19,7 @@ import java.util.Set;
 
 /**
  * API endpoints for locations.
+ * @author kkelm
  */
 @Path("/locations")
 public class Locations {
@@ -28,15 +29,15 @@ public class Locations {
     /**
      * The User data.
      */
-    UserData userData = new UserData();
+    private UserData userData = new UserData();
     /**
      * The Location object.
      */
-    Location location = new Location();
+    private Location location = new Location();
     /**
      * The Location data.
      */
-    LocationData locationData = new LocationData();
+    private LocationData locationData = new LocationData();
 
     /**
      * Gets all of the locations related to a specific user.
@@ -58,14 +59,7 @@ public class Locations {
 
             User user = (User) userData.crud.getById(userId);
             Set<Location> userLocations = location.getLocations(user);
-/*
-        LocationData locationData = new LocationData();
-        Location location = new Location();
-        location.setUser(user);
 
-        Location locations = (Location) locationData.crud.getAll();
-        Set<Location> l = location.getLocations();
-*/
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -102,7 +96,6 @@ public class Locations {
             Iterator locations = userLocations.iterator();
 
             locationData = new LocationData();
-            //Location location = null;
 
             while(locations.hasNext()) {
                 Location currentLocation = (Location) locations.next();
@@ -202,25 +195,6 @@ public class Locations {
 
             locationData.crud.deleteRecord(location);
 
-            /*
-            Iterator locations = userLocations.iterator();
-
-            LocationData locationData = new LocationData();
-
-            while(locations.hasNext()) {
-                Location currentLocation = (Location) locations.next();
-                if (currentLocation.getId() == location.getId()) {
-                    locationData.crud.updateRecords(location);
-                    location = (Location) locationData.crud.getById(location.getId());
-                    break;
-                }
-            }
-
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.enable(SerializationFeature.INDENT_OUTPUT);
-
-            json = mapper.writeValueAsString(location);
-            */
         }
         catch (HibernateException e) {
             logger.error(e.getMessage());
@@ -231,9 +205,7 @@ public class Locations {
 
     }
 
-    /*
-    Location Contacts
-     */
+    // Location Contacts
     /**
      * Gets all of the contacts for a specific location.
      *

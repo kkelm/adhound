@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * The CRUD service.
- *
+ * @author kkelm
  * @param <GenericType> represents an unknown return type
  */
 public class CrudService<GenericType> {
@@ -26,7 +26,7 @@ public class CrudService<GenericType> {
     /**
      * Declare a generic class and type that is then set in the constructor.
      */
-    private  Class<GenericType> entityClass;
+    private Class<GenericType> entityClass;
 
     /**
      * The initialize a SessionFactory.
@@ -63,8 +63,6 @@ public class CrudService<GenericType> {
      * @return the record data
      */
     public GenericType getById(int id) {
-        //logger.info(id + " ID was passed to getById");
-        //logger.info("getById Started");
         Session session = sessionFactory.openSession();
         GenericType user = session.get(entityClass, id);
         session.close();
@@ -77,7 +75,6 @@ public class CrudService<GenericType> {
      * @param type Entity to be updated
      */
     public void updateRecords(GenericType type) {
-        //logger.info("updateRecords Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(type);
@@ -92,15 +89,9 @@ public class CrudService<GenericType> {
      * @return id of of the new record
      */
     public Serializable insertRecord(GenericType type) {
-        //logger.info("insertRecord Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         Serializable id = null;
-        /*
-        id = session.save(type);
-        transaction.commit();
-        session.close();
-        */
 
         try {
             id = session.save(type);
@@ -119,9 +110,7 @@ public class CrudService<GenericType> {
 
         }
         finally {
-            //if (session != null) {
-                session.close();
-            //}
+            session.close();
         }
 
         return id;

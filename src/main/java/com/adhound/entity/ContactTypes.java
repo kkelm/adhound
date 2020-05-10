@@ -4,7 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Objects;
-
+/**
+ * Object for location contact types.
+ * @author kkelm
+ *
+ */
 @Entity
 @Table(name = "contact_types", schema = "adhound", catalog = "")
 public class ContactTypes {

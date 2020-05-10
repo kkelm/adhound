@@ -1,5 +1,9 @@
 package com.paypal.subscriptions;
-
+/**
+ * PayPal object based off of their API.
+ * @author kkelm
+ *
+ */
 public class LinksItem{
 	private String method;
 	private String rel;

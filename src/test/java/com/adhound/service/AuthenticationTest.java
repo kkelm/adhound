@@ -17,6 +17,8 @@ class AuthenticationTest {
 
     @Test
     void testUserAuthentication() {
+
         assertEquals(2, userData.userAuthentication("distributor@email.com"));
+
     }
 }

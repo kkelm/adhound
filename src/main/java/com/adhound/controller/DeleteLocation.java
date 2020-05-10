@@ -18,6 +18,7 @@ import java.io.IOException;
 
 /**
  * This class is the controller for the delete location page.
+ * @author kkelm
  */
 @WebServlet(
         urlPatterns = {"/dashboard/deleteLocation/*"}
@@ -25,7 +26,7 @@ import java.io.IOException;
 
 public class DeleteLocation extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -49,10 +50,6 @@ public class DeleteLocation extends HttpServlet {
 
         session = request.getSession();
 
-        //UserData userData = new UserData();
-        //int userId = userData.userAuthentication(request.getUserPrincipal().getName());
-        //User user = (User) userData.crud.getById(userId);
-
         String domain = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();
 
         Client client = ClientBuilder.newClient();
@@ -64,18 +61,6 @@ public class DeleteLocation extends HttpServlet {
                 .path("{id}").resolveTemplate("id", request.getParameter("id"));
 
         String json = target.request(MediaType.APPLICATION_JSON).delete(String.class);
-        /*
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-
-        Location location = mapper.reader().forType(Location.class).readValue(json);
-
-        LocationData locationData = new LocationData();
-
-        location = (Location) locationData.crud.getById(location.getId());
-        */
-        //RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/locations");
-        //dispatcher.forward(request, response);
 
         response.sendRedirect("locations");
 

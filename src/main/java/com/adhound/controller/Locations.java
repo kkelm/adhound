@@ -19,17 +19,22 @@ import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.util.Set;
 
+/**
+ * This class is the controller for the locations page and displays all of the users locations.
+ * @author kkelm
+ */
+
 @WebServlet(
         urlPatterns = {"/dashboard/locations"}
 )
 
 public class Locations extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService crud;
+    private CrudService crud;
 
-    LocationData locationData = new LocationData();
+    private LocationData locationData = new LocationData();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -49,16 +54,6 @@ public class Locations extends HttpServlet {
         Set locations = mapper.readValue(json, Set.class);
 
         request.setAttribute("locations", locations);
-
-        // plan = mapper.readValue(response, Plan.class);
-
-        /*
-        int userId = userData.authentication.userAuthentication(request.getUserPrincipal().getName());
-
-        User user = (User) userData.crud.getById(userId);
-        //Set<Location> locations = user.getLocations();
-        //request.setAttribute("locations", locations);
-        */
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/locations.jsp");
         dispatcher.forward(request, response);

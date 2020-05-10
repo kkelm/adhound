@@ -2,7 +2,11 @@ package com.paypal.subscriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
-
+/**
+ * PayPal object based off of their API.
+ * @author kkelm
+ *
+ */
 @Generated("com.robohorse.robopojogenerator")
 public class PricingScheme{
 

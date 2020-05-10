@@ -12,16 +12,20 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
-
+/**
+ * Used for a variety of custom authentication processes.
+ * @author kkelm
+ *
+ */
 public class Authentication {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+    private SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     public Authentication() {}
 
     /**
-     * This method gets the user ID of the current user.
+     * This method checks to see if the current user's username exists in the database and gets the user ID of the current user.
      * @param username
      * @return
      */
@@ -43,7 +47,7 @@ public class Authentication {
             session.close();
 
             if (user.size() > 0) {
-                return user.iterator().next().getId();
+                return user.get(0).getId();
             }
         }
         catch (Exception e) {

@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * The Location data.
+ * @author kkelm
  */
 public class LocationData {
 

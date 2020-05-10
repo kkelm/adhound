@@ -4,6 +4,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+/**
+ * Object for location contact types.
+ * @author kkelm
+ *
+ */
+
 @Entity(name = "Region")
 @Table(name = "location_regions")
 

@@ -23,13 +23,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Properties;
-
+/**
+ * Gets and processes PayPal data to AdHound can communicate with PayPal.
+ * @author kkelm
+ */
 public class PayPal implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     private String accessToken;
-    Properties properties;
+    private Properties properties;
 
     public PayPal() {}
 
@@ -38,9 +41,6 @@ public class PayPal implements PropertiesLoader {
     public void setAccessToken() {
 
         try {
-
-
-
 
             properties = this.loadProperties("/adhound.properties");
             // Parameters needed to get token

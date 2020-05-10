@@ -21,7 +21,7 @@
 
 
 <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <a class="navbar-brand" href="${pageContext.request.contextPath}/dashboard"><img src="${pageContext.request.contextPath}/images/AdHound-Logo.gif" class="img-responsive" style="max-height: 30px" /></a>
+    <a class="navbar-brand" href="${pageContext.request.contextPath}/dashboard"><img src="${pageContext.request.contextPath}/images/AdHound-Logo.gif" alt="AdHound" class="img-responsive" style="max-height: 30px" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mb-1"></span>
     </button>

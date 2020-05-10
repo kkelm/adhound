@@ -10,7 +10,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-
+/**
+ * Object for a location.
+ * @author kkelm
+ *
+ */
 @Entity(name = "Location")
 @Table(name = "locations")
 public class Location {

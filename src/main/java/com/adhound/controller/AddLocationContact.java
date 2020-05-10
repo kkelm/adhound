@@ -18,6 +18,7 @@ import java.util.*;
 
 /**
  * This class is the controller for the add location page.
+ * @author kkelm
  */
 @WebServlet(
         urlPatterns = {"/dashboard/location/addContact"}
@@ -25,10 +26,10 @@ import java.util.*;
 
 public class AddLocationContact extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService stateCrud = new CrudService(State.class);
-    List<State> states = this.stateCrud.getAll();
+    private  CrudService stateCrud = new CrudService(State.class);
+    private List<State> states = this.stateCrud.getAll();
 
     private static Validator validator;
 
@@ -58,17 +59,9 @@ public class AddLocationContact extends HttpServlet {
 
         session = request.getSession();
 
-        //UserData userData = new UserData();
-        //int userId = userData.userAuthentication(request.getUserPrincipal().getName());
-        //User user = (User) userData.crud.getById(userId);
-
-        //Location newLocation = new Location();
-
         LocationContact locationContact = new LocationContact();
         LocationContactData locationContactData = new LocationContactData();
         int locationId = Integer.parseInt(request.getParameter("locationId").trim());
-
-        //newLocation.setUser(user);
 
         locationContact.setFirstName(request.getParameter("firstNameTextbox").trim());
         locationContact.setLastName(request.getParameter("lastNameTextbox").trim());
@@ -81,9 +74,8 @@ public class AddLocationContact extends HttpServlet {
         locationContact.setZipcode(request.getParameter("zipcodeTextbox").trim());
         locationContact.setTypeId(Integer.parseInt(request.getParameter("contactTypeDropdown").trim()));
 
-
-
         Set<ConstraintViolation<LocationContact>> constraintViolations = validator.validate(locationContact);
+        // FOR REFERENCE
         //constraintViolations.isEmpty()
         //constraintViolations.iterator().next()
         //constraintViolations.iterator().next().getPropertyPath().toString()
@@ -96,9 +88,6 @@ public class AddLocationContact extends HttpServlet {
             newId = (int) locationContactData.crud.insertRecord(locationContact);
             LocationContact newLocationContact = (LocationContact) locationContactData.crud.getById(newId);
 
-            // LocationData locationData = new LocationData();
-            // Location insertedLocation = (Location) locationData.crud.getById(newId);
-
             if (newLocationContact != null) {
                 LocationData locationData = new LocationData();
                 Location location = (Location) locationData.crud.getById(locationId);
@@ -106,16 +95,7 @@ public class AddLocationContact extends HttpServlet {
                 locationContacts.add(locationContact);
                 location.setLocationContacts(locationContacts);
                 locationData.crud.updateRecords(location);
-                /*
-                 // Instantiate a new array list of user data.
-                List <Location> location = new ArrayList<>();
 
-                 // Add the user data to the array list.
-                location.add(insertedLocation);
-
-                 // Pass the array list to the view.
-                request.setAttribute("locationName", insertedLocation.getName());
-                */
                 request.setAttribute("contactFirstName", locationContact.getFirstName());
             }
             else {
@@ -149,6 +129,5 @@ public class AddLocationContact extends HttpServlet {
         dispatcher.forward(request, response);
 
     }
-
 
 }

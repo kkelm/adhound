@@ -7,7 +7,11 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Objects;
-
+/**
+ * Object for a location contact.
+ * @author kkelm
+ *
+ */
 @Entity(name = "LocationContacts")
 @Table(name = "location_contacts")
 public class LocationContact {
