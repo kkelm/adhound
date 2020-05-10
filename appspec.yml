@@ -6,7 +6,7 @@ files:
     destination: /opt/tomcat/webapps # Represents where and what files to copy to.
     overwrite: yes
 permissions: # Permissions used to handle the files. (Linux Instances Only)
-  - object: /opt/tomcat/webapps
+  - object: /home/ubuntu
     pattern: "**"
     owner: root
     group: root
