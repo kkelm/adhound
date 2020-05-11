@@ -81,12 +81,15 @@ public class Register extends HttpServlet {
             int newId = 0;
 
             try {
+                UserRole userRole = new UserRole();
+                userRole.setUsername(newUser.getUsername());
+                newUser.setUserRole(userRole);
 
                 newId = (int) userData.crud.insertRecord(newUser);
                 newUser = (User) userData.crud.getById(newId);
 
-                UserRole userRole = new UserRole(newUser, newUser.getUsername());
-                Serializable userRoleId = userData.crud.insertRecord(userRole);
+                //UserRole userRole = new UserRole(newUser, newUser.getUsername());
+                //Serializable userRoleId = userData.crud.insertRecord(userRole);
 
                 User insertedUser = (User) userData.crud.getById(newId);
 

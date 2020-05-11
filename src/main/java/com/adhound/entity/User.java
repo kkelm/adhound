@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -19,7 +20,7 @@ import java.util.Set;
 @Table(name = "users")
 
 
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -85,6 +86,21 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<UserRole> userRole = new HashSet<>();
+    /**
+     * Gets the user role object for the user's role.
+     *
+     * @return the UserRole object
+     */
+    public Set<UserRole> getUserRole() { return userRole; }
+
+    /**
+     * Sets the user role object for the user's role.
+     *
+     * @param userRole the UserRole object
+     */
+    public void setUserRole(UserRole userRole) {
+        this.userRole.add(userRole);
+    }
 
     /**
      * Instantiates a new User.
@@ -354,22 +370,6 @@ public class User {
         this.zipcode = zipcode;
     }
 
-    /**
-     * Gets the user role object for the user's role.
-     *
-     * @return the UserRole object
-     */
-    public Set<UserRole> getUserRole() { return userRole; }
-
-    /**
-     * Sets the user role object for the user's role.
-     *
-     * @param userRole the UserRole object
-     */
-    public void setUserRole(Set<UserRole> userRole) {
-        this.userRole = userRole;
-    }
-
     @Override
     public String toString() {
         return "User{" +
@@ -386,7 +386,6 @@ public class User {
                 ", stateId=" + stateId +
                 ", state=" + state +
                 ", zipcode='" + zipcode + '\'' +
-                ", userRole='" + userRole + '\'' +
                 '}';
     }
 

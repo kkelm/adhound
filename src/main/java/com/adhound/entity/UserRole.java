@@ -21,9 +21,7 @@ public class UserRole {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "username",
-            foreignKey = @ForeignKey(name = "username_fk"), insertable = false, updatable = false
-    )
+    @JoinColumn(name = "username", referencedColumnName = "userName", insertable = false, updatable = false, nullable = false)
     private User user;
 
     @Column(name ="username")
@@ -65,6 +63,7 @@ public class UserRole {
         this.id = id;
     }
 
+    /*
     public User getUser() {
         return user;
     }
@@ -72,7 +71,7 @@ public class UserRole {
     public void setUser(User user) {
         this.user = user;
     }
-
+    */
     /**
      * Gets the username.
      *

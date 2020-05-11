@@ -77,14 +77,13 @@ class UserDataTest {
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
 
         try {
+            UserRole userRole = new UserRole();
+            userRole.setUsername(newUser.getUsername());
+            newUser.setUserRole(userRole);
 
             int newId = (int) userData.crud.insertRecord(newUser);
-            newUser = (User) userData.crud.getById(newId);
-
-            UserRole userRole = new UserRole(newUser, newUser.getUsername());
-            Serializable userRoleId = userData.crud.insertRecord(userRole);
-
             User insertedUser = (User) userData.crud.getById(newId);
+
             assertEquals(newUser, insertedUser);
 
             logger.info("Inserted record for ID: " + newId);
