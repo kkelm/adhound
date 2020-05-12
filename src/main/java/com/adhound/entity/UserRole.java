@@ -7,10 +7,9 @@ import java.io.Serializable;
 
 /**
  * Object for user role data.
- * @author kkelm
  *
+ * @author kkelm
  */
-
 @Entity(name = "UserRole")
 @Table(name = "user_roles")
 public class UserRole {
@@ -38,6 +37,7 @@ public class UserRole {
     /**
      * Instantiates a new User role.
      *
+     * @param user     the user
      * @param username string
      */
     public UserRole(User user, String username) {
@@ -72,6 +72,7 @@ public class UserRole {
         this.user = user;
     }
     */
+
     /**
      * Gets the username.
      *

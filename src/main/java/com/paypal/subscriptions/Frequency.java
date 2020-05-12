@@ -2,10 +2,11 @@ package com.paypal.subscriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
+
 /**
  * PayPal object based off of their API.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Generated("com.robohorse.robopojogenerator")
 public class Frequency{
@@ -16,19 +17,39 @@ public class Frequency{
 	@JsonProperty("interval_unit")
 	private String intervalUnit;
 
-	public void setIntervalCount(int intervalCount){
+    /**
+     * Set interval count.
+     *
+     * @param intervalCount the interval count
+     */
+    public void setIntervalCount(int intervalCount){
 		this.intervalCount = intervalCount;
 	}
 
-	public int getIntervalCount(){
+    /**
+     * Get interval count int.
+     *
+     * @return the int
+     */
+    public int getIntervalCount(){
 		return intervalCount;
 	}
 
-	public void setIntervalUnit(String intervalUnit){
+    /**
+     * Set interval unit.
+     *
+     * @param intervalUnit the interval unit
+     */
+    public void setIntervalUnit(String intervalUnit){
 		this.intervalUnit = intervalUnit;
 	}
 
-	public String getIntervalUnit(){
+    /**
+     * Get interval unit string.
+     *
+     * @return the string
+     */
+    public String getIntervalUnit(){
 		return intervalUnit;
 	}
 

@@ -16,8 +16,9 @@ import java.util.List;
 
 /**
  * The CRUD service.
- * @author kkelm
+ *
  * @param <GenericType> represents an unknown return type
+ * @author kkelm
  */
 public class CrudService<GenericType> {
 
@@ -35,6 +36,7 @@ public class CrudService<GenericType> {
 
     /**
      * Injects a new class when this service is instantiated.
+     *
      * @param entity the entity
      */
     public CrudService(Class<GenericType> entity) {
@@ -43,6 +45,7 @@ public class CrudService<GenericType> {
 
     /**
      * Gets all records related to a certain generic type.
+     *
      * @return the all users
      */
     public List<GenericType> getAll() {
@@ -59,6 +62,7 @@ public class CrudService<GenericType> {
 
     /**
      * Gets record data related to a certain generic type.
+     *
      * @param id the id
      * @return the record data
      */
@@ -72,6 +76,7 @@ public class CrudService<GenericType> {
 
     /**
      * Updates a user record in the database.
+     *
      * @param type Entity to be updated
      */
     public void updateRecords(GenericType type) {
@@ -85,6 +90,7 @@ public class CrudService<GenericType> {
 
     /**
      * Inserts a new record for the entity into the database.
+     *
      * @param type Entity to be inserted
      * @return id of of the new record
      */
@@ -118,6 +124,7 @@ public class CrudService<GenericType> {
 
     /**
      * Deletes an entity record from the database.
+     *
      * @param type Entity to be deleted
      */
     public void deleteRecord(GenericType type) {

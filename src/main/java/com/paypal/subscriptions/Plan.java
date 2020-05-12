@@ -8,10 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Generated;
+
 /**
  * PayPal object based off of their API.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Generated("com.robohorse.robopojogenerator")
 public class Plan {
@@ -55,99 +56,218 @@ public class Plan {
 	private String usageType;
 
 
-
-	public void setQuantitySupported(boolean quantitySupported){
+    /**
+     * Set quantity supported.
+     *
+     * @param quantitySupported the quantity supported
+     */
+    public void setQuantitySupported(boolean quantitySupported){
 		this.quantitySupported = quantitySupported;
 	}
 
-	public boolean isQuantitySupported(){
+    /**
+     * Is quantity supported boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isQuantitySupported(){
 		return quantitySupported;
 	}
 
-	public void setUpdateTime(String updateTime){
+    /**
+     * Set update time.
+     *
+     * @param updateTime the update time
+     */
+    public void setUpdateTime(String updateTime){
 		this.updateTime = updateTime;
 	}
 
-	public String getUpdateTime(){
+    /**
+     * Get update time string.
+     *
+     * @return the string
+     */
+    public String getUpdateTime(){
 		return updateTime;
 	}
 
-	public void setCreateTime(String createTime){
+    /**
+     * Set create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(String createTime){
 		this.createTime = createTime;
 	}
 
-	public String getCreateTime(){
+    /**
+     * Get create time string.
+     *
+     * @return the string
+     */
+    public String getCreateTime(){
 		return createTime;
 	}
 
-	public void setPaymentPreferences(PaymentPreferences paymentPreferences){
+    /**
+     * Set payment preferences.
+     *
+     * @param paymentPreferences the payment preferences
+     */
+    public void setPaymentPreferences(PaymentPreferences paymentPreferences){
 		this.paymentPreferences = paymentPreferences;
 	}
 
-	public PaymentPreferences getPaymentPreferences(){
+    /**
+     * Get payment preferences payment preferences.
+     *
+     * @return the payment preferences
+     */
+    public PaymentPreferences getPaymentPreferences(){
 		return paymentPreferences;
 	}
 
-	public void setProductId(String productId){
+    /**
+     * Set product id.
+     *
+     * @param productId the product id
+     */
+    public void setProductId(String productId){
 		this.productId = productId;
 	}
 
-	public String getProductId(){
+    /**
+     * Get product id string.
+     *
+     * @return the string
+     */
+    public String getProductId(){
 		return productId;
 	}
 
-	public void setName(String name){
+    /**
+     * Set name.
+     *
+     * @param name the name
+     */
+    public void setName(String name){
 		this.name = name;
 	}
 
-	public String getName(){
+    /**
+     * Get name string.
+     *
+     * @return the string
+     */
+    public String getName(){
 		return name;
 	}
 
-	public void setBillingCycles(List<BillingCyclesItem> billingCycles) {
+    /**
+     * Sets billing cycles.
+     *
+     * @param billingCycles the billing cycles
+     */
+    public void setBillingCycles(List<BillingCyclesItem> billingCycles) {
 
 		this.billingCycles = billingCycles;
 	}
 
-	public List<BillingCyclesItem> getBillingCycles(){
+    /**
+     * Get billing cycles list.
+     *
+     * @return the list
+     */
+    public List<BillingCyclesItem> getBillingCycles(){
 		return billingCycles;
 	}
 
-	public void setDescription(String description){
+    /**
+     * Set description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description){
 		this.description = description;
 	}
 
-	public String getDescription(){
+    /**
+     * Get description string.
+     *
+     * @return the string
+     */
+    public String getDescription(){
 		return description;
 	}
 
-	public void setLinks(List<LinksItem> links) { this.links = links; }
+    /**
+     * Sets links.
+     *
+     * @param links the links
+     */
+    public void setLinks(List<LinksItem> links) { this.links = links; }
 
-	public List<LinksItem> getLinks(){
+    /**
+     * Get links list.
+     *
+     * @return the list
+     */
+    public List<LinksItem> getLinks(){
 		return links;
 	}
 
-	public void setId(String id){
+    /**
+     * Set id.
+     *
+     * @param id the id
+     */
+    public void setId(String id){
 		this.id = id;
 	}
 
-	public String getId(){
+    /**
+     * Get id string.
+     *
+     * @return the string
+     */
+    public String getId(){
 		return id;
 	}
 
-	public void setStatus(String status){
+    /**
+     * Set status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status){
 		this.status = status;
 	}
 
-	public String getStatus(){
+    /**
+     * Get status string.
+     *
+     * @return the string
+     */
+    public String getStatus(){
 		return status;
 	}
 
-	public void setUsageType(String usageType){
+    /**
+     * Set usage type.
+     *
+     * @param usageType the usage type
+     */
+    public void setUsageType(String usageType){
 		this.usageType = usageType;
 	}
 
-	public String getUsageType(){
+    /**
+     * Get usage type string.
+     *
+     * @return the string
+     */
+    public String getUsageType(){
 		return usageType;
 	}
 

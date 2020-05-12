@@ -19,6 +19,7 @@ import java.util.Set;
 
 /**
  * API endpoints for locations.
+ *
  * @author kkelm
  */
 @Path("/locations")
@@ -122,11 +123,10 @@ public class Locations {
     /**
      * Updates a location related to a specific user.
      *
-     * @param username the logged in user's username
      * @param locationUpdated the id of the location
+     * @param username        the logged in user's username
      * @return JSON string of location data
      */
-
     @PUT
     @Path("/update/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -212,6 +212,7 @@ public class Locations {
     }
 
     // Location Contacts
+
     /**
      * Gets all of the contacts for a specific location.
      *

@@ -4,10 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import javax.annotation.Generated;
+
 /**
  * PayPal object based off of their API.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Generated("com.robohorse.robopojogenerator")
 public class Subscribe {
@@ -24,18 +25,39 @@ public class Subscribe {
 	@JsonProperty("status")
 	private String status;
 
-	public void setCreateTime(String createTime){
+    /**
+     * Set create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(String createTime){
 		this.createTime = createTime;
 	}
 
-	public String getCreateTime(){
+    /**
+     * Get create time string.
+     *
+     * @return the string
+     */
+    public String getCreateTime(){
 		return createTime;
 	}
 
-	public void setLinks(List<LinksItem> links){
+    /**
+     * Set links.
+     *
+     * @param links the links
+     */
+    public void setLinks(List<LinksItem> links){
 		this.links = links;
 	}
-	// Links contain this link to redirect the user to the PayPal page to complete the registration process
+
+    /**
+     * Get links list.
+     *
+     * @return the list
+     */
+// Links contain this link to redirect the user to the PayPal page to complete the registration process
 	/*
 	"links": [
         {
@@ -49,19 +71,39 @@ public class Subscribe {
 		return links;
 	}
 
-	public void setId(String id){
+    /**
+     * Set id.
+     *
+     * @param id the id
+     */
+    public void setId(String id){
 		this.id = id;
 	}
 
-	public String getId(){
+    /**
+     * Get id string.
+     *
+     * @return the string
+     */
+    public String getId(){
 		return id;
 	}
 
-	public void setStatus(String status){
+    /**
+     * Set status.
+     *
+     * @param status the status
+     */
+    public void setStatus(String status){
 		this.status = status;
 	}
 
-	public String getStatus(){
+    /**
+     * Get status string.
+     *
+     * @return the string
+     */
+    public String getStatus(){
 		return status;
 	}
 

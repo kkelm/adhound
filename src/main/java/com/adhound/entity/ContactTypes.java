@@ -4,10 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Objects;
+
 /**
  * Object for location contact types.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Entity
 @Table(name = "contact_types", schema = "adhound", catalog = "")
@@ -16,6 +17,11 @@ public class ContactTypes {
     private String name;
     private String description;
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -23,26 +29,51 @@ public class ContactTypes {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     @Basic
     @Column(name = "name")
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
     @Basic
     @Column(name = "description")
     public String getDescription() {
         return description;
     }
 
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
     public void setDescription(String description) {
         this.description = description;
     }

@@ -12,22 +12,27 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
+
 /**
  * Used for a variety of custom authentication processes.
- * @author kkelm
  *
+ * @author kkelm
  */
 public class Authentication {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     private SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * Instantiates a new Authentication.
+     */
     public Authentication() {}
 
     /**
      * This method checks to see if the current user's username exists in the database and gets the user ID of the current user.
-     * @param username
-     * @return
+     *
+     * @param username the username
+     * @return int
      */
     public int userAuthentication(String username) {
 

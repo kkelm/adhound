@@ -12,10 +12,11 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import lombok.*;
+
 /**
  * Object for user data.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Entity(name = "User")
 @Table(name = "users")
@@ -97,6 +98,7 @@ public class User implements Serializable {
     /*
     public Set<UserRole> getUserRole() { return userRole; }
     */
+
     /**
      * Sets the user role object for the user's role.
      *

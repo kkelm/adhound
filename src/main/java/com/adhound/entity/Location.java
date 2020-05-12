@@ -10,10 +10,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+
 /**
  * Object for a location.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Entity(name = "Location")
 @Table(name = "locations")
@@ -64,8 +65,24 @@ public class Location {
     @JoinColumn(name = "region_id", insertable = false, updatable = false, nullable = false)
     private Region region;
 
+    /**
+     * Instantiates a new Location.
+     */
     public Location() {}
 
+    /**
+     * Instantiates a new Location.
+     *
+     * @param user     the user
+     * @param name     the name
+     * @param phone    the phone
+     * @param fax      the fax
+     * @param address  the address
+     * @param city     the city
+     * @param stateId  the state id
+     * @param zipcode  the zipcode
+     * @param regionId the region id
+     */
     public Location(User user, String name, String phone, String fax, String address, String city, int stateId, String zipcode, int regionId) {
         this.user = user;
         this.name = name;
@@ -78,98 +95,218 @@ public class Location {
         this.regionId = regionId;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
     public void setUser(User user) {
         this.user = user;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
     public String getPhone() {
         return phone;
     }
 
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    /**
+     * Gets fax.
+     *
+     * @return the fax
+     */
     public String getFax() {
         return fax;
     }
 
+    /**
+     * Sets fax.
+     *
+     * @param fax the fax
+     */
     public void setFax(String fax) {
         this.fax = fax;
     }
 
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
     public String getAddress() {
         return address;
     }
 
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
     public String getCity() {
         return city;
     }
 
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * Gets state id.
+     *
+     * @return the state id
+     */
     public int getStateId() {
         return stateId;
     }
 
+    /**
+     * Sets state id.
+     *
+     * @param stateId the state id
+     */
     public void setStateId(int stateId) {
         this.stateId = stateId;
     }
 
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
     public State getState() {
         return state;
     }
 
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
     public void setState(State state) {
         this.state = state;
     }
 
+    /**
+     * Gets zipcode.
+     *
+     * @return the zipcode
+     */
     public String getZipcode() {
         return zipcode;
     }
 
+    /**
+     * Sets zipcode.
+     *
+     * @param zipcode the zipcode
+     */
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 
+    /**
+     * Gets region id.
+     *
+     * @return the region id
+     */
     public int getRegionId() {
         return regionId;
     }
 
+    /**
+     * Sets region id.
+     *
+     * @param regionId the region id
+     */
     public void setRegionId(int regionId) {
         this.regionId = regionId;
     }
 
+    /**
+     * Gets region.
+     *
+     * @return the region
+     */
     public Region getRegion() {
         return region;
     }
 
+    /**
+     * Sets region.
+     *
+     * @param region the region
+     */
     public void setRegion(Region region) {
         this.region = region;
     }
@@ -206,7 +343,18 @@ public class Location {
     })
     private Set<LocationContact> locationContacts;
 
+    /**
+     * Gets location contacts.
+     *
+     * @return the location contacts
+     */
     public Set<LocationContact> getLocationContacts() { return locationContacts; }
+
+    /**
+     * Sets location contacts.
+     *
+     * @param locationContacts the location contacts
+     */
     public void setLocationContacts(Set<LocationContact> locationContacts) { this.locationContacts = locationContacts; }
 
     //@JsonIgnore

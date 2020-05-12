@@ -18,6 +18,7 @@ import java.io.IOException;
 
 /**
  * This class is the controller for the delete location page.
+ *
  * @author kkelm
  */
 @WebServlet(

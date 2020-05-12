@@ -26,8 +26,14 @@ class UserDataTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The User data.
+     */
     UserData userData;
 
+    /**
+     * The New user.
+     */
     User newUser;
 
     private static Validator validator;

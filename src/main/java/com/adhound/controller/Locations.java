@@ -21,9 +21,9 @@ import java.util.Set;
 
 /**
  * This class is the controller for the locations page and displays all of the users locations.
+ *
  * @author kkelm
  */
-
 @WebServlet(
         urlPatterns = {"/dashboard/locations"}
 )

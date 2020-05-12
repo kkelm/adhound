@@ -14,9 +14,9 @@ import java.io.IOException;
 
 /**
  * This class is the controller for the dashboard.
+ *
  * @author kkelm
  */
-
 @WebServlet(
         urlPatterns = {"/dashboard"}
 )

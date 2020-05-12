@@ -9,14 +9,21 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * This is the User DAO
+ *
  * @author kkelm
  */
 public class UserData extends Authentication {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The Crud.
+     */
     public CrudService crud;
 
+    /**
+     * The Authentication.
+     */
     public Authentication authentication;
 
     /**

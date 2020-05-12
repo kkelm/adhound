@@ -2,10 +2,11 @@ package com.paypal.subscriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
+
 /**
  * PayPal object based off of their API.
- * @author kkelm
  *
+ * @author kkelm
  */
 @Generated("com.robohorse.robopojogenerator")
 public class PricingScheme{
@@ -22,35 +23,75 @@ public class PricingScheme{
 	@JsonProperty("version")
 	private int version;
 
-	public void setUpdateTime(String updateTime){
+    /**
+     * Set update time.
+     *
+     * @param updateTime the update time
+     */
+    public void setUpdateTime(String updateTime){
 		this.updateTime = updateTime;
 	}
 
-	public String getUpdateTime(){
+    /**
+     * Get update time string.
+     *
+     * @return the string
+     */
+    public String getUpdateTime(){
 		return updateTime;
 	}
 
-	public void setCreateTime(String createTime){
+    /**
+     * Set create time.
+     *
+     * @param createTime the create time
+     */
+    public void setCreateTime(String createTime){
 		this.createTime = createTime;
 	}
 
-	public String getCreateTime(){
+    /**
+     * Get create time string.
+     *
+     * @return the string
+     */
+    public String getCreateTime(){
 		return createTime;
 	}
 
-	public void setFixedPrice(FixedPrice fixedPrice){
+    /**
+     * Set fixed price.
+     *
+     * @param fixedPrice the fixed price
+     */
+    public void setFixedPrice(FixedPrice fixedPrice){
 		this.fixedPrice = fixedPrice;
 	}
 
-	public FixedPrice getFixedPrice(){
+    /**
+     * Get fixed price fixed price.
+     *
+     * @return the fixed price
+     */
+    public FixedPrice getFixedPrice(){
 		return fixedPrice;
 	}
 
-	public void setVersion(int version){
+    /**
+     * Set version.
+     *
+     * @param version the version
+     */
+    public void setVersion(int version){
 		this.version = version;
 	}
 
-	public int getVersion(){
+    /**
+     * Get version int.
+     *
+     * @return the int
+     */
+    public int getVersion(){
 		return version;
 	}
 

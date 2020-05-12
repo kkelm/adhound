@@ -21,6 +21,7 @@ import java.util.*;
 
 /**
  * This class is the controller for the add location page.
+ *
  * @author kkelm
  */
 @WebServlet(

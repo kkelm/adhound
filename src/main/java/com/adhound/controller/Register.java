@@ -17,8 +17,10 @@ import javax.validation.*;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
+
 /**
  * This class is the controller for the registration page.
+ *
  * @author kkelm
  */
 @WebServlet(

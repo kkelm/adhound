@@ -23,8 +23,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Properties;
+
 /**
  * Gets and processes PayPal data to AdHound can communicate with PayPal.
+ *
  * @author kkelm
  */
 public class PayPal implements PropertiesLoader {
@@ -34,10 +36,21 @@ public class PayPal implements PropertiesLoader {
     private String accessToken;
     private Properties properties;
 
+    /**
+     * Instantiates a new Pay pal.
+     */
     public PayPal() {}
 
+    /**
+     * Gets access token.
+     *
+     * @return the access token
+     */
     public String getAccessToken() { return accessToken; }
 
+    /**
+     * Sets access token.
+     */
     public void setAccessToken() {
 
         try {
@@ -87,6 +100,11 @@ public class PayPal implements PropertiesLoader {
 
     }
 
+    /**
+     * Gets plan.
+     *
+     * @return the plan
+     */
     public Plan getPlan()  {
         // Get subscription information
         /**
@@ -124,6 +142,12 @@ public class PayPal implements PropertiesLoader {
         return plan;
     }
 
+    /**
+     * Gets subscription.
+     *
+     * @param user the user
+     * @return the subscription
+     */
     public Subscribe getSubscription(User user) {
 
         Subscribe subscription = null;

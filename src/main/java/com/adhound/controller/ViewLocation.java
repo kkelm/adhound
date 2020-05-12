@@ -3,9 +3,7 @@ package com.adhound.controller;
 import com.adhound.entity.*;
 import com.adhound.persistence.LocationData;
 import com.adhound.service.CrudService;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mchange.v2.cfg.PropertiesConfigSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,15 +18,14 @@ import javax.validation.*;
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.DataInput;
 import java.io.IOException;
 import java.util.*;
 
 /**
  * This class is the controller for the view location page.
+ *
  * @author kkelm
  */
-
 @WebServlet(
         urlPatterns = {"/dashboard/location"}
 )
@@ -102,18 +99,6 @@ public class ViewLocation extends HttpServlet {
         Set<ConstraintViolation<Location>> constraintViolations = validator.validate(location);
 
         if (constraintViolations.isEmpty()) {
-            /*
-            String domain = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();
-            Client client = ClientBuilder.newClient();
-            WebTarget target = client.target(domain + "/adhound/api/locations/update").path("{username}").resolveTemplate("username", request.getUserPrincipal().getName());
-
-            ObjectMapper mapper = new ObjectMapper();
-            String locationJSON = mapper.writeValueAsString(location);
-
-            Response json = target.request().put(Entity.entity(locationJSON, MediaType.APPLICATION_JSON));
-
-            location = json.readEntity(Location.class);
-            */
 
             String domain = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();
 

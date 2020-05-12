@@ -9,6 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 /**
  * This class provides a SessionFactory for DAOs using Hibernate
+ *
  * @author kkelm
  * @version 1.0 2/13/2020.
  */
@@ -22,6 +23,7 @@ public class SessionFactoryProvider {
     private SessionFactoryProvider() {
 
     }
+
     /**
      * Reads in the Hibernate config file to setup a connection to the database. Assigns the connection meta
      * to the SessionFactory object.

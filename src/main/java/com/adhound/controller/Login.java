@@ -13,9 +13,9 @@ import java.io.IOException;
 
 /**
  * This class is the controller for the login page.
+ *
  * @author kkelm
  */
-
 @WebServlet(
         urlPatterns = {"/login"}
 )
