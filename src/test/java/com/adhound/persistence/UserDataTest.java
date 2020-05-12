@@ -118,7 +118,6 @@ class UserDataTest {
         int deleteId = allUsers.get((allUsers.size() - 1)).getId();
         userData.crud.deleteRecord(userData.crud.getById(deleteId));
         assertNull(userData.crud.getById(deleteId));
-        // TODO: Could compare objects but couldn't there be a performance issue if the table was large?
         // List<User> allUsersMinusOne = userData.crud.getAll();
         // assertNotEquals(allUsersMinusOne, allUsers);
         logger.info("Deleted record for ID: " + deleteId);

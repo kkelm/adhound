@@ -11,6 +11,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import lombok.*;
 /**
  * Object for user data.
  * @author kkelm
@@ -85,14 +86,17 @@ public class User implements Serializable {
     private String zipcode;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<UserRole> userRole = new HashSet<>();
     /**
      * Gets the user role object for the user's role.
      *
      * @return the UserRole object
      */
+    /*
     public Set<UserRole> getUserRole() { return userRole; }
-
+    */
     /**
      * Sets the user role object for the user's role.
      *

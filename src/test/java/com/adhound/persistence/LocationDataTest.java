@@ -6,6 +6,7 @@ import com.adhound.entity.User;
 import com.adhound.api.Locations;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.paypal.subscriptions.Plan;
 import org.apache.logging.log4j.LogManager;
@@ -17,9 +18,7 @@ import org.junit.jupiter.api.Test;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.client.*;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -197,6 +196,46 @@ class LocationDataTest {
         Location location = mapper.readValue((String) response.getEntity(), Location.class);
 
         assertEquals(200, response.getStatus());
+
+    }
+
+    @Test
+    void testUpdateLocationAPI () {
+
+        // Get Location data
+        LocationData locationData = new LocationData();
+        Location location = (Location) locationData.crud.getById(391);
+        // Set updated Location data
+        location.setName("Update Name");
+        location.setPhone("Update");
+        location.setFax("Update ");
+        location.setAddress("Update");
+        location.setCity("Update");
+        location.setStateId(49);
+        location.setZipcode("33333");
+        location.setRegionId(3);
+
+        try{
+            Client client = ClientBuilder.newClient();
+
+            WebTarget target = client.target("http://localhost:8080/adhound/api/locations")
+                    .path("{update}").resolveTemplate("update", "update")
+                    .path("{username}").resolveTemplate("username", "kkelm@email.com");
+
+            ObjectMapper mapper = new ObjectMapper();
+
+            String locationJSON = mapper.writeValueAsString(location);
+
+            Invocation.Builder invocationBuilder = target.request(MediaType.APPLICATION_JSON);
+            Response json = invocationBuilder.put(Entity.entity(locationJSON, MediaType.APPLICATION_JSON));
+
+            location = json.readEntity(Location.class);
+            String test = "";
+        }
+        catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
 
     }
 

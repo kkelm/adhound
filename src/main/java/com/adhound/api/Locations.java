@@ -123,19 +123,25 @@ public class Locations {
      * Updates a location related to a specific user.
      *
      * @param username the logged in user's username
-     * @param location the id of the location
+     * @param locationUpdated the id of the location
      * @return JSON string of location data
      */
+
     @PUT
-    @Path("/{username}/update")
+    @Path("/update/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response putLocation (@PathParam("username") String username, Location location) {
+    public Response putLocation (String locationUpdated, @PathParam("username") String username) {
 
         String json = "";
         int statusCode = 200;
 
+        ObjectMapper mapper = new ObjectMapper();
+
         try {
+            //Location location = mapper.reader().forType(Location.class).readValue(locationUpdated);
+            Location location = mapper.readValue(locationUpdated, Location.class);
+
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
             Set<Location> userLocations = location.getLocations(user);
@@ -153,7 +159,7 @@ public class Locations {
                 }
             }
 
-            ObjectMapper mapper = new ObjectMapper();
+            mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
             json = mapper.writeValueAsString(location);
