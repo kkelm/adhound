@@ -8,6 +8,11 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Object for a location contact.
+ *
+ * @author kkelm
+ */
 @Entity(name = "LocationContacts")
 @Table(name = "location_contacts")
 public class LocationContact {
@@ -24,6 +29,11 @@ public class LocationContact {
     private String zipcode;
     private int typeId;
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -31,10 +41,20 @@ public class LocationContact {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
     @NotNull
     @NotEmpty(message = "Enter a First Name")
     @Column(name = "first_name")
@@ -42,10 +62,20 @@ public class LocationContact {
         return firstName;
     }
 
+    /**
+     * Sets first name.
+     *
+     * @param firstName the first name
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
     @NotNull
     @NotEmpty(message = "Enter a Last Name")
     @Column(name = "last_name")
@@ -53,46 +83,96 @@ public class LocationContact {
         return lastName;
     }
 
+    /**
+     * Sets last name.
+     *
+     * @param lastName the last name
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
     @Column(name = "phone")
     public String getPhone() {
         return phone;
     }
 
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    /**
+     * Gets fax.
+     *
+     * @return the fax
+     */
     @Column(name = "fax")
     public String getFax() {
         return fax;
     }
 
+    /**
+     * Sets fax.
+     *
+     * @param fax the fax
+     */
     public void setFax(String fax) {
         this.fax = fax;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
     @Column(name = "email")
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
     @Column(name = "address")
     public String getAddress() {
         return address;
     }
 
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
     @NotNull
     @NotEmpty(message = "Enter a City Name")
     @Column(name = "city")
@@ -100,29 +180,59 @@ public class LocationContact {
         return city;
     }
 
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * Gets state id.
+     *
+     * @return the state id
+     */
     @Column(name = "state_id")
     public int getStateId() {
         return stateId;
     }
 
+    /**
+     * Sets state id.
+     *
+     * @param stateId the state id
+     */
     public void setStateId(int stateId) {
         this.stateId = stateId;
     }
 
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
     @OneToOne
     @JoinColumn(name = "state_id", insertable = false, updatable = false, nullable = false)
     public State getState() {
         return state;
     }
 
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
     public void setState(State state) {
         this.state = state;
     }
 
+    /**
+     * Gets zipcode.
+     *
+     * @return the zipcode
+     */
     @NotNull
     @NotEmpty(message = "Enter a Zipcode")
     @Column(name = "zipcode")
@@ -130,15 +240,30 @@ public class LocationContact {
         return zipcode;
     }
 
+    /**
+     * Sets zipcode.
+     *
+     * @param zipcode the zipcode
+     */
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
     @Column(name = "type_id")
     public int getTypeId() {
         return typeId;
     }
 
+    /**
+     * Sets type id.
+     *
+     * @param typeId the type id
+     */
     public void setTypeId(int typeId) {
         this.typeId = typeId;
     }
@@ -147,8 +272,25 @@ public class LocationContact {
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "locationContacts")
     private List<Location> locations;
 
+    /**
+     * Instantiates a new Location contact.
+     */
     public LocationContact() {}
 
+    /**
+     * Instantiates a new Location contact.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param phone     the phone
+     * @param fax       the fax
+     * @param email     the email
+     * @param address   the address
+     * @param city      the city
+     * @param stateId   the state id
+     * @param zipcode   the zipcode
+     * @param typeId    the type id
+     */
     public LocationContact(String firstName, String lastName, String phone, String fax, String email, String address, String city, int stateId, String zipcode, int typeId) {
         this.firstName = firstName;
         this.lastName = lastName;

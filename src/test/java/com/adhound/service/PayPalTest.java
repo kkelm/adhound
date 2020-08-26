@@ -11,11 +11,25 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Pay pal test.
+ */
 class PayPalTest implements PropertiesLoader {
 
+    /**
+     * The Pay pal.
+     */
     PayPal payPal;
+    /**
+     * The User data.
+     */
     UserData userData;
 
+    /**
+     * Sets up.
+     *
+     * @throws Exception the exception
+     */
     @BeforeEach
     void setUp() throws Exception {
         userData = new UserData();
@@ -23,9 +37,15 @@ class PayPalTest implements PropertiesLoader {
         payPal.setAccessToken();
     }
 
+    /**
+     * Test get access token.
+     */
     @Test
     void testGetAccessToken() { assertNotNull(payPal.getAccessToken()); }
 
+    /**
+     * Test get subscription.
+     */
     @Test
     void testGetSubscription() {
 
@@ -35,6 +55,11 @@ class PayPalTest implements PropertiesLoader {
 
     }
 
+    /**
+     * Test subscribe.
+     *
+     * @throws JsonProcessingException the json processing exception
+     */
     @Test
     void testSubscribe() throws JsonProcessingException {
 

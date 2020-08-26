@@ -3,24 +3,25 @@ package com.adhound.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
+/**
+ * Object for user role data.
+ *
+ * @author kkelm
+ */
 @Entity(name = "UserRole")
 @Table(name = "user_roles")
-
 public class UserRole {
 
     @Id
-
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "username",
-            foreignKey = @ForeignKey(name = "username_fk"), insertable = false, updatable = false
-    )
+    @JoinColumn(name = "username", referencedColumnName = "userName", insertable = false, updatable = false, nullable = false)
     private User user;
-
 
     @Column(name ="username")
     private String username;
@@ -36,11 +37,11 @@ public class UserRole {
     /**
      * Instantiates a new User role.
      *
+     * @param user     the user
      * @param username string
      */
     public UserRole(User user, String username) {
         this.user = user;
-        // this.roleName = roleName;
         this.username = username;
     }
 
@@ -62,8 +63,7 @@ public class UserRole {
         this.id = id;
     }
 
-
-
+    /*
     public User getUser() {
         return user;
     }
@@ -71,8 +71,7 @@ public class UserRole {
     public void setUser(User user) {
         this.user = user;
     }
-
-
+    */
 
     /**
      * Gets the username.

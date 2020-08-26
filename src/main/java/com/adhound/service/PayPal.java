@@ -24,17 +24,33 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Properties;
 
+/**
+ * Gets and processes PayPal data to AdHound can communicate with PayPal.
+ *
+ * @author kkelm
+ */
 public class PayPal implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     private String accessToken;
-    Properties properties;
+    private Properties properties;
 
+    /**
+     * Instantiates a new Pay pal.
+     */
     public PayPal() {}
 
+    /**
+     * Gets access token.
+     *
+     * @return the access token
+     */
     public String getAccessToken() { return accessToken; }
 
+    /**
+     * Sets access token.
+     */
     public void setAccessToken() {
 
         try {
@@ -43,7 +59,7 @@ public class PayPal implements PropertiesLoader {
             // Parameters needed to get token
             String tokenParameters = "grant_type=client_credentials";
             System.setProperty("https.protocols", "TLSv1.1,TLSv1.2,SSLv3,SSLv2Hello");
-            URL url = new URL("https://api.sandbox.paypal.com/v1/oauth2/token");
+            URL url = new URL(properties.getProperty("paypalTokenUrl"));
             // Establishes a connection to PayPal
             HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             // Gets and formats the PayPal credentials to send to PayPal
@@ -84,6 +100,11 @@ public class PayPal implements PropertiesLoader {
 
     }
 
+    /**
+     * Gets plan.
+     *
+     * @return the plan
+     */
     public Plan getPlan()  {
         // Get subscription information
         /**
@@ -97,9 +118,11 @@ public class PayPal implements PropertiesLoader {
 
         this.setAccessToken();
 
+
+
         try {
             Client client = ClientBuilder.newClient();
-            WebTarget target = client.target("https://api.sandbox.paypal.com/v1/billing/plans").path("{plan}").resolveTemplate("plan", "P-51006304PY025420FLZZKVXA");
+            WebTarget target = client.target(properties.getProperty("paypalPlansUrl")).path("{plan}").resolveTemplate("plan", properties.getProperty("paypalPlan"));
 
             String response = target.request(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.getAccessToken()).get(String.class);
 
@@ -119,6 +142,12 @@ public class PayPal implements PropertiesLoader {
         return plan;
     }
 
+    /**
+     * Gets subscription.
+     *
+     * @param user the user
+     * @return the subscription
+     */
     public Subscribe getSubscription(User user) {
 
         Subscribe subscription = null;
@@ -130,7 +159,7 @@ public class PayPal implements PropertiesLoader {
             Plan plan = this.getPlan();
 
             Client client = ClientBuilder.newClient();
-            WebTarget target = client.target("https://api.sandbox.paypal.com/v1/billing/subscriptions/");
+            WebTarget target = client.target(properties.getProperty("paypalSubscriptionsUrl"));
 
             String subscriber = "{" +
                     " \"plan_id\": \"" + plan.getId() + "\"," +

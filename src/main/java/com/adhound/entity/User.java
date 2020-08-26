@@ -1,7 +1,5 @@
 package com.adhound.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -9,15 +7,22 @@ import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import lombok.*;
 
+/**
+ * Object for user data.
+ *
+ * @author kkelm
+ */
 @Entity(name = "User")
 @Table(name = "users")
 
 
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -81,20 +86,28 @@ public class User {
     @Column(name = "zipcode")
     private String zipcode;
 
-/*
-    @OneToOne
-    @JoinColumn(name = "username", insertable = false, updatable = false, nullable = false)
-    private UserRole userRole;
-*/
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<UserRole> userRole = new HashSet<>();
-/*
-    // mappedBy refers to the instance variable in Location
-    // CascadeType.ALL removes locations associated with the user, orphanRemoval does the same in hibernate
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JsonIgnore
-    private Set<Location> locations = new HashSet<>();
-*/
+    /**
+     * Gets the user role object for the user's role.
+     *
+     * @return the UserRole object
+     */
+    /*
+    public Set<UserRole> getUserRole() { return userRole; }
+    */
+
+    /**
+     * Sets the user role object for the user's role.
+     *
+     * @param userRole the UserRole object
+     */
+    public void setUserRole(UserRole userRole) {
+        this.userRole.add(userRole);
+    }
+
     /**
      * Instantiates a new User.
      */
@@ -363,26 +376,6 @@ public class User {
         this.zipcode = zipcode;
     }
 
-    /**
-     * Gets the user role object for the user's role.
-     *
-     * @return the UserRole object
-     */
-    public Set<UserRole> getUserRole() { return userRole; }
-
-    /**
-     * Sets the user role object for the user's role.
-     *
-     * @param userRole the UserRole object
-     */
-    public void setUserRole(Set<UserRole> userRole) {
-        this.userRole = userRole;
-    }
-/*
-    public Set<Location> getLocations() { return locations; }
-
-    public void setLocations(Set<Location> locations) { this.locations = locations; }
-*/
     @Override
     public String toString() {
         return "User{" +

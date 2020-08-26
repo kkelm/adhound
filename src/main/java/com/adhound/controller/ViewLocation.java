@@ -1,14 +1,8 @@
 package com.adhound.controller;
 
-import com.adhound.entity.Location;
-import com.adhound.entity.Region;
-import com.adhound.entity.State;
-import com.adhound.entity.User;
+import com.adhound.entity.*;
 import com.adhound.persistence.LocationData;
-import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,17 +14,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import javax.validation.*;
 import javax.ws.rs.client.*;
-import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * This class is the controller for the view location page.
+ *
+ * @author kkelm
+ */
 @WebServlet(
         urlPatterns = {"/dashboard/location"}
 )
@@ -39,13 +34,13 @@ public class ViewLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService stateCrud = new CrudService(State.class);
-    List<State> states = this.stateCrud.getAll();
+    private CrudService stateCrud = new CrudService(State.class);
+    private List<State> states = this.stateCrud.getAll();
 
-    public CrudService regionCrud = new CrudService(Region.class);
-    List<Region> regions = this.regionCrud.getAll();
+    private CrudService regionCrud = new CrudService(Region.class);
+    private List<Region> regions = this.regionCrud.getAll();
 
     private static Validator validator;
 
@@ -64,7 +59,6 @@ public class ViewLocation extends HttpServlet {
         String json = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
-        //mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
         Location location = mapper.reader().forType(Location.class).readValue(json);
 
@@ -73,16 +67,6 @@ public class ViewLocation extends HttpServlet {
         request.setAttribute("states", states);
 
         request.setAttribute("regions", regions);
-
-        // plan = mapper.readValue(response, Plan.class);
-
-        /*
-        int userId = userData.authentication.userAuthentication(request.getUserPrincipal().getName());
-
-        User user = (User) userData.crud.getById(userId);
-        //Set<Location> locations = user.getLocations();
-        //request.setAttribute("locations", locations);
-        */
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/location.jsp");
         dispatcher.forward(request, response);
@@ -120,21 +104,18 @@ public class ViewLocation extends HttpServlet {
 
             Client client = ClientBuilder.newClient();
 
-            WebTarget target = client.target(domain + "/adhound/api/locations")
-                    .path("{username}").resolveTemplate("username", request.getUserPrincipal().getName())
-                    .path("{update}").resolveTemplate("update", "update");
+            WebTarget target = client.target(domain + "/adhound/api/locations/update");
 
             ObjectMapper mapper = new ObjectMapper();
 
             String locationJSON = mapper.writeValueAsString(location);
 
-            Response json = target.request(MediaType.APPLICATION_JSON).put(Entity.json(locationJSON));
+            Response responseJSON = target.path(request.getUserPrincipal().getName()).request().put(Entity.json(locationJSON));
 
-            //location = mapper.reader().forType(Location.class).readValue(json);
-
-            location = json.readEntity(Location.class);
+            location = responseJSON.readEntity(Location.class);
 
             request.setAttribute("locationName", location.getName());
+
         }
         else {
 

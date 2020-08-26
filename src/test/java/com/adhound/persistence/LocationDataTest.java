@@ -6,6 +6,7 @@ import com.adhound.entity.User;
 import com.adhound.api.Locations;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.paypal.subscriptions.Plan;
 import org.apache.logging.log4j.LogManager;
@@ -17,9 +18,7 @@ import org.junit.jupiter.api.Test;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.client.*;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -31,14 +30,32 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Location data test.
+ */
 class LocationDataTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The User data.
+     */
     UserData userData;
+    /**
+     * The Location data.
+     */
     LocationData locationData;
+    /**
+     * The Location contact data.
+     */
     LocationContactData locationContactData;
+    /**
+     * The Location.
+     */
     Location location;
+    /**
+     * The Mapper.
+     */
     ObjectMapper mapper;
 
     /**
@@ -82,25 +99,11 @@ class LocationDataTest {
 
         Set<Location> locations = location.getLocations(getUser);
 
+        Iterator locationIterator = locations.iterator();
 
-        //Location location = new Location();
-        //Set<Location> userLocations = location.getLocations();
-        /*
-        while (userList.hasNext()) {
+        Location location = (Location) locationData.crud.getById(293);
 
-            User user = (User) userList.next();
-            //Set<Location> userLocations = user.getLocations();
-            Set<Location> userLocations = user.getLocations();
-
-            if (userLocations.iterator().hasNext()) {
-                Location location = userLocations.iterator().next();
-                Location locationFound  = (Location) locationData.crud.getById(location.getId());
-                assertEquals(location, locationFound);
-                logger.info("Location " + location.getName() + " found by getById()");
-                break;
-            }
-        }
-        */
+        assertTrue(locations.contains(location));
         logger.info("End Location getById()");
 
     }
@@ -178,6 +181,11 @@ class LocationDataTest {
         logger.info("Deleted record for ID: " + deleteId);
     }
 
+    /**
+     * Test get locations api.
+     *
+     * @throws JsonProcessingException the json processing exception
+     */
     @Test
     void testGetLocationsAPI () throws JsonProcessingException {
 
@@ -200,6 +208,9 @@ class LocationDataTest {
 
     }
 
+    /**
+     * Test delete location api.
+     */
     @Test
     void testDeleteLocationAPI () {
 
@@ -220,6 +231,9 @@ class LocationDataTest {
 
     }
 
+    /**
+     * Test get location contact.
+     */
     @Test
     void testGetLocationContact () {
 
@@ -228,6 +242,9 @@ class LocationDataTest {
         assertEquals("FirstName", newLocationContact.getFirstName());
     }
 
+    /**
+     * Test insert location contact.
+     */
     @Test
     void testInsertLocationContact () {
         LocationContact newObject = new LocationContact("FirstName", "LastName", "(123) 456-7890", "(987) 654-3210", "test@email.com", "123 Test Street", "Madison", 33, "12345", 1);

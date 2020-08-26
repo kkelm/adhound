@@ -36,9 +36,9 @@
 
 # Maven
 target/*
-!target/adhound.war
-logs/
-lib/
+## !target/adhound.war
+logs/*
+lib/*
 profiles/*.properties
 
 # mpeltonen/sbt-idea plugin

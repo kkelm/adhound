@@ -4,9 +4,6 @@ import com.adhound.entity.*;
 import com.adhound.persistence.LocationData;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
-import com.adhound.service.PayPal;
-import com.paypal.subscriptions.Subscribe;
-import org.hibernate.exception.ConstraintViolationException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,25 +17,26 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.*;
 
 /**
  * This class is the controller for the add location page.
+ *
+ * @author kkelm
  */
 @WebServlet(
         urlPatterns = {"/dashboard/addLocation"}
 )
 
-public class addLocation extends HttpServlet {
+public class AddLocation extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService stateCrud = new CrudService(State.class);
-    List<State> states = this.stateCrud.getAll();
+    private  CrudService stateCrud = new CrudService(State.class);
+    private List<State> states = this.stateCrud.getAll();
 
-    public CrudService regionCrud = new CrudService(Region.class);
-    List<Region> regions = this.regionCrud.getAll();
+    private  CrudService regionCrud = new CrudService(Region.class);
+    private List<Region> regions = this.regionCrud.getAll();
 
     private static Validator validator;
 
@@ -84,6 +82,7 @@ public class addLocation extends HttpServlet {
         newLocation.setRegionId(Integer.parseInt(request.getParameter("regionIdDropdown").trim()));
 
         Set<ConstraintViolation<Location>> constraintViolations = validator.validate(newLocation);
+        // FOR REFERENCE
         //constraintViolations.isEmpty()
         //constraintViolations.iterator().next()
         //constraintViolations.iterator().next().getPropertyPath().toString()
@@ -119,15 +118,6 @@ public class addLocation extends HttpServlet {
                     request.setAttribute("registrantFirstName", "");
                 }
 
-            /*
-            catch (ConstraintViolationException constraintException) {
-
-                if (constraintException.getConstraintName().equals("users.username") && constraintException.getCause().getMessage().contains("Duplicate")) {
-                    errors.put("username", "Username Already Exists");
-                }
-
-            }
-            */
         }
         else {
 

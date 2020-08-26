@@ -7,8 +7,6 @@ import com.adhound.persistence.UserData;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.google.gson.JsonObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.HibernateException;
@@ -21,6 +19,8 @@ import java.util.Set;
 
 /**
  * API endpoints for locations.
+ *
+ * @author kkelm
  */
 @Path("/locations")
 public class Locations {
@@ -30,15 +30,15 @@ public class Locations {
     /**
      * The User data.
      */
-    UserData userData = new UserData();
+    private UserData userData = new UserData();
     /**
      * The Location object.
      */
-    Location location = new Location();
+    private Location location = new Location();
     /**
      * The Location data.
      */
-    LocationData locationData = new LocationData();
+    private LocationData locationData = new LocationData();
 
     /**
      * Gets all of the locations related to a specific user.
@@ -60,14 +60,7 @@ public class Locations {
 
             User user = (User) userData.crud.getById(userId);
             Set<Location> userLocations = location.getLocations(user);
-/*
-        LocationData locationData = new LocationData();
-        Location location = new Location();
-        location.setUser(user);
 
-        Location locations = (Location) locationData.crud.getAll();
-        Set<Location> l = location.getLocations();
-*/
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -104,7 +97,6 @@ public class Locations {
             Iterator locations = userLocations.iterator();
 
             locationData = new LocationData();
-            //Location location = null;
 
             while(locations.hasNext()) {
                 Location currentLocation = (Location) locations.next();
@@ -131,20 +123,25 @@ public class Locations {
     /**
      * Updates a location related to a specific user.
      *
-     * @param username the logged in user's username
-     * @param location the id of the location
+     * @param locationUpdated the id of the location
+     * @param username        the logged in user's username
      * @return JSON string of location data
      */
     @PUT
-    @Path("/{username}/update")
+    @Path("/update/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response putLocation (@PathParam("username") String username, Location location) {
+    public Response putLocation (String locationUpdated, @PathParam("username") String username) {
 
         String json = "";
         int statusCode = 200;
 
+        ObjectMapper mapper = new ObjectMapper();
+
         try {
+            //Location location = mapper.reader().forType(Location.class).readValue(locationUpdated);
+            Location location = mapper.readValue(locationUpdated, Location.class);
+
             int userId = userData.authentication.userAuthentication(username);
             User user = (User) userData.crud.getById(userId);
             Set<Location> userLocations = location.getLocations(user);
@@ -162,7 +159,7 @@ public class Locations {
                 }
             }
 
-            ObjectMapper mapper = new ObjectMapper();
+            mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
             json = mapper.writeValueAsString(location);
@@ -204,25 +201,6 @@ public class Locations {
 
             locationData.crud.deleteRecord(location);
 
-            /*
-            Iterator locations = userLocations.iterator();
-
-            LocationData locationData = new LocationData();
-
-            while(locations.hasNext()) {
-                Location currentLocation = (Location) locations.next();
-                if (currentLocation.getId() == location.getId()) {
-                    locationData.crud.updateRecords(location);
-                    location = (Location) locationData.crud.getById(location.getId());
-                    break;
-                }
-            }
-
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.enable(SerializationFeature.INDENT_OUTPUT);
-
-            json = mapper.writeValueAsString(location);
-            */
         }
         catch (HibernateException e) {
             logger.error(e.getMessage());
@@ -233,9 +211,8 @@ public class Locations {
 
     }
 
-    /*
-    Location Contacts
-     */
+    // Location Contacts
+
     /**
      * Gets all of the contacts for a specific location.
      *

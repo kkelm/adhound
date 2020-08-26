@@ -18,6 +18,7 @@ import java.util.List;
  * The CRUD service.
  *
  * @param <GenericType> represents an unknown return type
+ * @author kkelm
  */
 public class CrudService<GenericType> {
 
@@ -26,7 +27,7 @@ public class CrudService<GenericType> {
     /**
      * Declare a generic class and type that is then set in the constructor.
      */
-    private  Class<GenericType> entityClass;
+    private Class<GenericType> entityClass;
 
     /**
      * The initialize a SessionFactory.
@@ -35,6 +36,7 @@ public class CrudService<GenericType> {
 
     /**
      * Injects a new class when this service is instantiated.
+     *
      * @param entity the entity
      */
     public CrudService(Class<GenericType> entity) {
@@ -43,6 +45,7 @@ public class CrudService<GenericType> {
 
     /**
      * Gets all records related to a certain generic type.
+     *
      * @return the all users
      */
     public List<GenericType> getAll() {
@@ -59,12 +62,11 @@ public class CrudService<GenericType> {
 
     /**
      * Gets record data related to a certain generic type.
+     *
      * @param id the id
      * @return the record data
      */
     public GenericType getById(int id) {
-        //logger.info(id + " ID was passed to getById");
-        //logger.info("getById Started");
         Session session = sessionFactory.openSession();
         GenericType user = session.get(entityClass, id);
         session.close();
@@ -74,10 +76,10 @@ public class CrudService<GenericType> {
 
     /**
      * Updates a user record in the database.
+     *
      * @param type Entity to be updated
      */
     public void updateRecords(GenericType type) {
-        //logger.info("updateRecords Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(type);
@@ -88,19 +90,14 @@ public class CrudService<GenericType> {
 
     /**
      * Inserts a new record for the entity into the database.
+     *
      * @param type Entity to be inserted
      * @return id of of the new record
      */
     public Serializable insertRecord(GenericType type) {
-        //logger.info("insertRecord Started");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         Serializable id = null;
-        /*
-        id = session.save(type);
-        transaction.commit();
-        session.close();
-        */
 
         try {
             id = session.save(type);
@@ -119,9 +116,7 @@ public class CrudService<GenericType> {
 
         }
         finally {
-            //if (session != null) {
-                session.close();
-            //}
+            session.close();
         }
 
         return id;
@@ -129,6 +124,7 @@ public class CrudService<GenericType> {
 
     /**
      * Deletes an entity record from the database.
+     *
      * @param type Entity to be deleted
      */
     public void deleteRecord(GenericType type) {

@@ -1,8 +1,6 @@
 package com.adhound.controller;
 
-import com.adhound.entity.State;
-import com.adhound.entity.User;
-import com.adhound.entity.UserRole;
+import com.adhound.entity.*;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import com.adhound.service.PayPal;
@@ -15,16 +13,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import javax.validation.*;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
 
 /**
  * This class is the controller for the registration page.
+ *
+ * @author kkelm
  */
 @WebServlet(
         urlPatterns = {"/register"}
@@ -32,11 +29,11 @@ import java.util.*;
 
 public class Register extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService crud = new CrudService(State.class);
+    private CrudService crud = new CrudService(State.class);
 
-    List <State> states = this.crud.getAll();
+    private List <State> states = this.crud.getAll();
 
     private static Validator validator;
     //private Object ConstraintViolationException;
@@ -80,24 +77,21 @@ public class Register extends HttpServlet {
         newUser.setZipcode(request.getParameter("zipcodeTextbox").trim());
 
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(newUser);
-        //constraintViolations.isEmpty()
-        //constraintViolations.iterator().next()
-        //constraintViolations.iterator().next().getPropertyPath().toString()
-        //constraintViolations.iterator().next().getInvalidValue()
-        //constraintViolations.iterator().next().getMessage()
+
         if (constraintViolations.isEmpty()) {
 
             int newId = 0;
-            //newId = (int) userData.crud.insertRecord(newUser);
 
             try {
+                UserRole userRole = new UserRole();
+                userRole.setUsername(newUser.getUsername());
+                newUser.setUserRole(userRole);
 
                 newId = (int) userData.crud.insertRecord(newUser);
                 newUser = (User) userData.crud.getById(newId);
 
-                UserRole userRole = new UserRole(newUser, newUser.getUsername());
-
-                Serializable userRoleId = userData.crud.insertRecord(userRole);
+                //UserRole userRole = new UserRole(newUser, newUser.getUsername());
+                //Serializable userRoleId = userData.crud.insertRecord(userRole);
 
                 User insertedUser = (User) userData.crud.getById(newId);
 
@@ -119,10 +113,6 @@ public class Register extends HttpServlet {
                     Subscribe subscribe = payPal.getSubscription(newUser);
 
                     String payPalLink = subscribe.getLinks().get(0).getHref();
-
-                    // https://3.132.89.15/adhound/login?subscription_id=I-PA969CXNBM30&ba_token=BA-72T08463W0957404A&token=3KX659821M988210X  I-RWJ15JRNJ7X8
-
-                    // subscribe.getId() = subscription_id=I-RWJ15JRNJ7X8 <-- gets returned from PayPal in the return URL
 
                     response.sendRedirect(payPalLink);
                     return;

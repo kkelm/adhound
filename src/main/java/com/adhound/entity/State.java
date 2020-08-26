@@ -4,6 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+/**
+ * Object for state data.
+ *
+ * @author kkelm
+ */
 @Entity(name = "State")
 @Table(name = "states")
 

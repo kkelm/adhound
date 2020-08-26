@@ -1,13 +1,9 @@
 package com.adhound.controller;
 
-import com.adhound.entity.Location;
-import com.adhound.entity.User;
-import com.adhound.service.Authentication;
 import com.adhound.persistence.LocationData;
 import com.adhound.persistence.UserData;
 import com.adhound.service.CrudService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.glassfish.jersey.server.ServerProperties;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,20 +17,24 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Set;
 
+/**
+ * This class is the controller for the locations page and displays all of the users locations.
+ *
+ * @author kkelm
+ */
 @WebServlet(
         urlPatterns = {"/dashboard/locations"}
 )
 
 public class Locations extends HttpServlet {
 
-    HttpSession session;
+    private HttpSession session;
 
-    public CrudService crud;
+    private CrudService crud;
 
-    LocationData locationData = new LocationData();
+    private LocationData locationData = new LocationData();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -54,16 +54,6 @@ public class Locations extends HttpServlet {
         Set locations = mapper.readValue(json, Set.class);
 
         request.setAttribute("locations", locations);
-
-        // plan = mapper.readValue(response, Plan.class);
-
-        /*
-        int userId = userData.authentication.userAuthentication(request.getUserPrincipal().getName());
-
-        User user = (User) userData.crud.getById(userId);
-        //Set<Location> locations = user.getLocations();
-        //request.setAttribute("locations", locations);
-        */
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard/locations.jsp");
         dispatcher.forward(request, response);

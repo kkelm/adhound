@@ -10,6 +10,9 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * The type Database.
+ */
 public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -19,14 +22,18 @@ public class Database {
     private Properties properties;
 
     private Connection connection;
+
     /**
      * Private constructor prevents instantiating this class anywhere else, and calls the loadProperties method.
      */
     public Database() {
         loadProperties();
     }
+
     /**
      * Runs a SQL file to create the AdHound database.
+     *
+     * @param sqlFile the sql file
      */
 
     public void createDatabase(String sqlFile) {
@@ -88,15 +95,19 @@ public class Database {
         }
 
     }
+
     /**
      * Gets the only Database object available
+     *
      * @return Database object
      */
     public static Database getInstance() {
         return instance;
     }
+
     /**
      * Gets the Connection object to the database
+     *
      * @return Connection object
      */
     public Connection getConnection() {
@@ -105,8 +116,9 @@ public class Database {
 
     /**
      * Makes a connection to the database using properties.
-     * @throws SQLException
-     * @throws ClassCastException
+     *
+     * @throws SQLException       the sql exception
+     * @throws ClassCastException the class cast exception
      */
     public void setConnection() throws SQLException, ClassCastException {
 

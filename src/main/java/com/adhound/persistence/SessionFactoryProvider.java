@@ -23,6 +23,7 @@ public class SessionFactoryProvider {
     private SessionFactoryProvider() {
 
     }
+
     /**
      * Reads in the Hibernate config file to setup a connection to the database. Assigns the connection meta
      * to the SessionFactory object.

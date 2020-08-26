@@ -1,40 +1,85 @@
 package com.paypal.subscriptions;
 
+/**
+ * PayPal object based off of their API.
+ *
+ * @author kkelm
+ */
 public class LinksItem{
 	private String method;
 	private String rel;
 	private String href;
 	private String encType;
 
-	public void setMethod(String method){
+    /**
+     * Set method.
+     *
+     * @param method the method
+     */
+    public void setMethod(String method){
 		this.method = method;
 	}
 
-	public String getMethod(){
+    /**
+     * Get method string.
+     *
+     * @return the string
+     */
+    public String getMethod(){
 		return method;
 	}
 
-	public void setRel(String rel){
+    /**
+     * Set rel.
+     *
+     * @param rel the rel
+     */
+    public void setRel(String rel){
 		this.rel = rel;
 	}
 
-	public String getRel(){
+    /**
+     * Get rel string.
+     *
+     * @return the string
+     */
+    public String getRel(){
 		return rel;
 	}
 
-	public void setHref(String href){
+    /**
+     * Set href.
+     *
+     * @param href the href
+     */
+    public void setHref(String href){
 		this.href = href;
 	}
 
-	public String getHref(){
+    /**
+     * Get href string.
+     *
+     * @return the string
+     */
+    public String getHref(){
 		return href;
 	}
 
-	public void setEncType(String encType){
+    /**
+     * Set enc type.
+     *
+     * @param encType the enc type
+     */
+    public void setEncType(String encType){
 		this.encType = encType;
 	}
 
-	public String getEncType(){
+    /**
+     * Get enc type string.
+     *
+     * @return the string
+     */
+    public String getEncType(){
 		return encType;
 	}
 

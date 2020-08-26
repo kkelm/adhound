@@ -11,22 +11,23 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * This class is the controller for the login page.
+ *
+ * @author kkelm
+ */
 @WebServlet(
         urlPatterns = {"/login"}
 )
 
 public class Login extends HttpServlet {
 
-    HttpSession session;
-    Authentication authentication;
+    private HttpSession session;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         session = request.getSession();
-
-        //UserData userData = new UserData();
-        //request.setAttribute("results", userData.getAllUsers(""));
 
         //session.setAttribute("title", "All Users");
 
@@ -36,35 +37,6 @@ public class Login extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        /* NOT USED
-        session = request.getSession();
-
-        UserData userData = new UserData();
-
-        String username = request.getParameter("usernameTextbox").trim();
-        String password = request.getParameter("passwordTextbox").trim();
-
-        if (!username.trim().isEmpty() && !password.trim().isEmpty()) {
-            //session.setAttribute("title", username);
-
-            // Instantiate a new array list of user data.
-            List <User> user = new ArrayList<>();
-            // Add the user data to the array list.
-            user.add((User) userData.crud.getById(2));
-            // Pass the array list to the view.
-            request.setAttribute("results", user);
-
-        }
-        else {
-            session.setAttribute("message", "Please enter a valid username and password.");
-            request.setAttribute("results", "");
-        }
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
-        dispatcher.forward(request, response);
-        */
-
-    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { }
 
 }

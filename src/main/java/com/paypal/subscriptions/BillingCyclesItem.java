@@ -3,6 +3,11 @@ package com.paypal.subscriptions;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
+/**
+ * PayPal object based off of their API.
+ *
+ * @author kkelm
+ */
 @Generated("com.robohorse.robopojogenerator")
 public class BillingCyclesItem{
 
@@ -21,43 +26,93 @@ public class BillingCyclesItem{
 	@JsonProperty("frequency")
 	private Frequency frequency;
 
-	public void setSequence(int sequence){
+    /**
+     * Set sequence.
+     *
+     * @param sequence the sequence
+     */
+    public void setSequence(int sequence){
 		this.sequence = sequence;
 	}
 
-	public int getSequence(){
+    /**
+     * Get sequence int.
+     *
+     * @return the int
+     */
+    public int getSequence(){
 		return sequence;
 	}
 
-	public void setTenureType(String tenureType){
+    /**
+     * Set tenure type.
+     *
+     * @param tenureType the tenure type
+     */
+    public void setTenureType(String tenureType){
 		this.tenureType = tenureType;
 	}
 
-	public String getTenureType(){
+    /**
+     * Get tenure type string.
+     *
+     * @return the string
+     */
+    public String getTenureType(){
 		return tenureType;
 	}
 
-	public void setTotalCycles(int totalCycles){
+    /**
+     * Set total cycles.
+     *
+     * @param totalCycles the total cycles
+     */
+    public void setTotalCycles(int totalCycles){
 		this.totalCycles = totalCycles;
 	}
 
-	public int getTotalCycles(){
+    /**
+     * Get total cycles int.
+     *
+     * @return the int
+     */
+    public int getTotalCycles(){
 		return totalCycles;
 	}
 
-	public void setPricingScheme(PricingScheme pricingScheme){
+    /**
+     * Set pricing scheme.
+     *
+     * @param pricingScheme the pricing scheme
+     */
+    public void setPricingScheme(PricingScheme pricingScheme){
 		this.pricingScheme = pricingScheme;
 	}
 
-	public PricingScheme getPricingScheme(){
+    /**
+     * Get pricing scheme pricing scheme.
+     *
+     * @return the pricing scheme
+     */
+    public PricingScheme getPricingScheme(){
 		return pricingScheme;
 	}
 
-	public void setFrequency(Frequency frequency){
+    /**
+     * Set frequency.
+     *
+     * @param frequency the frequency
+     */
+    public void setFrequency(Frequency frequency){
 		this.frequency = frequency;
 	}
 
-	public Frequency getFrequency(){
+    /**
+     * Get frequency frequency.
+     *
+     * @return the frequency
+     */
+    public Frequency getFrequency(){
 		return frequency;
 	}
 
